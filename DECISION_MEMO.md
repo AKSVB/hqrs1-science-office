@@ -52,3 +52,7 @@ Direction from here: a visual grammar derived from the top 150 science creators,
 ## 2026-09-27, owner decision: narrator voice
 
 The narrator changes from Rhea to a deep, calm male voice (Bomani - Nightfall Narrator, ElevenLabs voice id 3TTKYlYj1FFtGcSNKlJv). The owner's own cloned voice replaces it as soon as a clean 1 to 3 minute reading sample is supplied. The existing Rhea tracks under production/assets/voice/ are retained for reference only; all new Reels are voiced with Bomani.
+
+## 2026-09-27, free pipeline: first two flagship Reels delivered
+
+Owner directive: no paid generation. The office rebuilt production on free sources: procedural and three.js scene plates (production/visuals, eight scenes, NASA public-domain textures), an offline neural narrator (Piper, male), a synthesized ambient bed and the four sound effects already bought. The fire-amoeba and youngest-planet Reels were cut to the style bible (a different plate per scene, kinetic numbers, mechanism plates, word captions with digits, wipe once, source end card) and pushed under production/out/. Known limits, in order of visible impact: the free voice is flatter than the paid one; word timing is evenly spread, not aligned; plates are illustrative rather than photographic (the top animated science channels are illustrated too). Next: the owner's verdict on these two decides whether two brains, quantum jump and the organoid carousel are cut the same way; the voice upgrade path is a recording of the owner's own voice.
