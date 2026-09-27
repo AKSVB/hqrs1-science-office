@@ -132,3 +132,7 @@ Confirm each date with the Publications Desk the week before.
 ## 9. Escalation
 
 The Monitor escalates to the Director when: a desk misses its SLA by more than a day; a fact-check returns RED on a story already scheduled; a post's skip rate is in the worst quartile two days running; or any comment thread raises a factual correction. The Director's response goes into `DECISION_MEMO.md` the same day and, if a correction is warranted, into a pinned comment on the post within 24 hours.
+
+## 10. Storage rule
+
+GitHub (`AKSVB/hqrs1-science-office`) is the archive of record while the account's cloud credits last. The owner keeps a mirror on the local D: drive at `D:\hqrs1-science-office` by running `tools/sync-to-local.ps1` after each cycle (macOS/Linux: `tools/sync-to-local.sh`). Once cloud credits are exhausted, the local folder becomes the working copy: all new renders, assets and memos are saved there first, and the Editor notes the switch in `DECISION_MEMO.md`. Generated media that would exceed GitHub's comfortable size (large PNG batches, MP4s over 50 MB) goes only to the local folder from that point on, with the spec and prompts still committed so any asset can be regenerated.
