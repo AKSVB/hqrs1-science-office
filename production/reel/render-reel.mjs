@@ -89,8 +89,8 @@ const html = `<!doctype html><html><head><meta charset="utf-8">
   .v-bars { display:flex; flex-direction:column; gap:34px; }
   .v-bar-h { display:flex; justify-content:space-between; font: 500 36px/1 var(--font-body); color: var(--ink-2); margin-bottom:14px; }
   .bar { height:22px; border-radius:11px; }
-  .v-dots { display:grid; gap:14px; justify-content:center; }
-  .v-dots i { display:block; width:64px; height:64px; border-radius:50%; background: var(--line); }
+  .v-dots { display:grid; gap:12px; justify-content:center; }
+  .v-dots i { display:block; width:52px; height:52px; border-radius:50%; background: var(--line); }
   .v-dots i.lit { background: var(--accent-2); box-shadow: 0 0 30px rgba(255,176,32,0.6); }
   .v-scale { position:relative; height:620px; display:flex; align-items:flex-end; justify-content:center; gap:60px; }
   .v-circle { border-radius:50%; background: rgba(79,227,240,0.15); border: 4px solid var(--accent); display:flex; align-items:center; justify-content:center; font: 600 32px/1.2 var(--font-body); text-align:center; color: var(--ink); }
@@ -121,7 +121,7 @@ const html = `<!doctype html><html><head><meta charset="utf-8">
   const easeOut = (x) => 1 - Math.pow(1 - x, 3);
   const scenes = [...document.querySelectorAll(".scene")];
   const dots = document.querySelectorAll(".v-dots");
-  dots.forEach(d => { const n = +d.dataset.n; d.style.gridTemplateColumns = "repeat(" + d.dataset.cols + ", 64px)"; for (let k = 0; k < n; k++) d.appendChild(document.createElement("i")); });
+  dots.forEach(d => { const n = +d.dataset.n; d.style.gridTemplateColumns = "repeat(" + d.dataset.cols + ", 52px)"; for (let k = 0; k < n; k++) d.appendChild(document.createElement("i")); });
   const orbitDots = [...document.querySelectorAll(".orbit i")];
   const rnd = (k) => { const x = Math.sin(k * 9301 + 49297) * 233280; return x - Math.floor(x); };
   window.seek = (t) => {
