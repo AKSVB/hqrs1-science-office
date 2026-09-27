@@ -1,0 +1,81 @@
+{
+  "notes": {
+    "storyboard": "storyboards/carousel-organoids-5-years.md, converted slide by slide. Science unchanged from scripts/carousel-organoids-5-years.json (fact-check row 6, GREEN). Slide order per the carousel system: cover, mechanism, number. Added on slide 3: 'Some kept to about seven years' (in the fact-check row).",
+    "stills": "OR-01 to OR-04 at 4:5 in production/assets/carousel-organoids-5-years/. A missing plate falls back to the dark field with a warning.",
+    "mechanism": "Slide 2 is the methyl-clock plate (production/reel/visuals.mjs) drawn at its final state: the rising density of methyl marks is the definition of what a methylation clock reads; the aligned rulers are the finding as reported. No data are plotted."
+  },
+  "handle": "@hqrs_1",
+  "caption": "Lab-grown cortical organoids kept alive for five years matured through fetal-, newborn- and early-childhood-like stages, and their DNA methylation clocks matched the time spent in the dish. About 425,000 cells profiled from about 110 organoids. Arlotta lab, Harvard and the Broad Institute. Nature, August 2026. The resemblance is in gene expression, not function.\n\nSource on slide 8.\n\nImages are generated illustrations.\n\n#neuroscience #organoids #brain #science #stemcells",
+  "slides": [
+    {
+      "type": "cover",
+      "bg": { "image": "production/assets/carousel-organoids-5-years/OR-01-organoid-in-dish.png", "focus": [0.7, 0.35] },
+      "kicker": "Neuroscience",
+      "title": "Alive in a dish: *5 years*",
+      "sub": "And by its DNA-methylation clock it knows, in effect, how old it is. Nature, August 2026."
+    },
+    {
+      "type": "plate-diagram",
+      "kicker": "The clock",
+      "title": "Methylation clocks matched *dish time*",
+      "visual": { "type": "methyl-clock", "years": 5, "dur": 5, "dots": 96, "unit": " yr", "labels": { "top": "clock age", "bottom": "dish time", "strand": "methyl marks" }, "joins": [1, 3, 5], "enter": 0 },
+      "at": 5, "len": 5
+    },
+    {
+      "type": "number",
+      "bg": { "image": "production/assets/carousel-organoids-5-years/OR-02-multiwell-plate-incubator.png", "focus": [0.5, 0.4] },
+      "kicker": "Time in the dish",
+      "number": "5 yr",
+      "title": "cortical organoids, still growing",
+      "body": "Lab-grown clusters of brain cells from the Arlotta lab at Harvard and the Broad Institute. Some kept to about seven years."
+    },
+    {
+      "type": "list",
+      "bg": { "image": "production/assets/carousel-organoids-5-years/OR-03-organoid-section-layers.png", "focus": [0.5, 0.4], "scrim": 1 },
+      "kicker": "The stages",
+      "title": "They matured *on schedule*",
+      "items": [
+        "A **fetal-like** stage",
+        "A **newborn-like** stage",
+        "An **early-childhood-like** stage"
+      ]
+    },
+    {
+      "type": "number",
+      "bg": { "image": "production/assets/carousel-organoids-5-years/OR-04-dna-methyl-marks.png", "focus": [0.5, 0.35] },
+      "kicker": "The dataset",
+      "number": "~425k",
+      "title": "cells profiled",
+      "body": "From about 110 organoids, combining new and earlier data. Faravelli, Arlotta and colleagues."
+    },
+    {
+      "type": "compare",
+      "kicker": "Careful",
+      "myth": "These are tiny thinking brains",
+      "fact": "They resemble brain tissue in gene expression, not in function",
+      "body": "The match is molecular. Function was not shown."
+    },
+    {
+      "type": "statement",
+      "bg": { "image": "production/assets/carousel-organoids-5-years/OR-01-organoid-in-dish.png", "focus": [0.5, 0.5], "scrim": 0.85 },
+      "kicker": "Why people argue",
+      "title": "The ethics question comes up *every time*",
+      "body": "As organoids get older and more lifelike, the debate about how to treat them grows with them."
+    },
+    {
+      "type": "source",
+      "items": [
+        "Arlotta lab, Harvard and Broad Institute. Nature, 19 August 2026. Article s41586-026-10877-x.",
+        "https://www.nature.com/articles/s41586-026-10877-x",
+        "NIH news release: https://www.nih.gov/news-events/news-releases/brain-organoid-maturation-driven-lifelike-developmental-clock"
+      ],
+      "note": "Numbers as reported in coverage. Our desk has not yet opened the paper. Images: generated illustrations."
+    },
+    {
+      "type": "cta",
+      "title": "One verified science story a day",
+      "body": "No hype, source on the last slide, every time.",
+      "ask": "Save this. Send it to the friend who thinks mini-brains can think."
+    }
+  ]
+}

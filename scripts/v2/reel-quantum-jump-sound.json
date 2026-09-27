@@ -1,0 +1,103 @@
+{
+  "notes": {
+    "storyboard": "storyboards/reel-quantum-jump-sound.md, converted scene by scene. Science unchanged from scripts/reel-quantum-jump-sound.json (fact-check row 3, GREEN). The spec's four-step schematic is dropped for two steps (jumps confirmed between the first excited state and the ground state only).",
+    "timing": "Scene times are the storyboard estimates against the cut Rhea track (44.2 s). fit_audio scales them to the actual narration; sfx cues are scene-relative so they follow. The Editor replaces --auto-words with the aligned words JSON.",
+    "audio": "Narration: production/assets/voice/reel-quantum-jump-sound-piper.mp3. Bed: production/assets/sound/bed-a-synth.mp3. Bell strike at the hook (-20 dB) and at 41.0 (-24 dB). The motif file does not exist yet; its cues are skipped with a warning until it does.",
+    "numbers": "2 ms (0.002 s by definition), 2.1 ms (T1, simulation readout, labelled 'slowed'), 1986, 2007, 2026: all from the fact-check row. No device numbers."
+  },
+  "handle": "@hqrs_1",
+  "style": "bible",
+  "audio": "production/assets/voice/reel-quantum-jump-sound-piper.mp3",
+  "fit_audio": true,
+  "music": "production/assets/sound/bed-a-synth.mp3",
+  "sfx": [
+    { "path": "production/assets/sound/motif.mp3", "scene": 0, "at": 0, "db": -8 },
+    { "path": "production/assets/sound/bell-strike.mp3", "scene": 0, "at": 0, "db": -20 },
+    { "path": "production/assets/sound/thud.mp3", "scene": 3, "at": 0 },
+    { "path": "production/assets/sound/tick.mp3", "scene": 3, "at": 1.3 },
+    { "path": "production/assets/sound/tick.mp3", "scene": 4, "at": 2.6 },
+    { "path": "production/assets/sound/tick.mp3", "scene": 4, "at": 4.6 },
+    { "path": "production/assets/sound/thud.mp3", "scene": 6, "at": 1.6 },
+    { "path": "production/assets/sound/tick.mp3", "scene": 6, "at": 2.6 },
+    { "path": "production/assets/sound/tick.mp3", "scene": 7, "at": 0.57 },
+    { "path": "production/assets/sound/tick.mp3", "scene": 7, "at": 1.14 },
+    { "path": "production/assets/sound/tick.mp3", "scene": 7, "at": 1.71 },
+    { "path": "production/assets/sound/tick.mp3", "scene": 7, "at": 2.29 },
+    { "path": "production/assets/sound/thud.mp3", "scene": 7, "at": 2.4 },
+    { "path": "production/assets/sound/motif.mp3", "scene": 8, "at": 0, "db": -8 },
+    { "path": "production/assets/sound/tick.mp3", "scene": 9, "at": 0 },
+    { "path": "production/assets/sound/tick.mp3", "scene": 9, "at": 1.9 },
+    { "path": "production/assets/sound/tick.mp3", "scene": 10, "at": 0 },
+    { "path": "production/assets/sound/bell-strike.mp3", "scene": 10, "at": 0, "db": -24 },
+    { "path": "production/assets/sound/settle.mp3", "scene": "end", "at": 0 }
+  ],
+  "end": {
+    "short": true,
+    "bg": { "image": "production/assets/reel-quantum-jump-sound/QJ-01-bell-rim-struck.png", "move": "push-in", "from": 1.12, "to": 1.14, "focus": [0.5, 0.4], "scrim": 0.7 },
+    "source": "Science 393, 1217. 17 Sept 2026. Makihara, Szakiel, Safavi-Naeini; Stanford.",
+    "note": "Images: generated illustrations."
+  },
+  "caption": "Sound does not fade. It jumps.\nScience 393, 1217-1220, 17 Sept 2026, DOI 10.1126/science.aeh7535. Makihara, Szakiel, Safavi-Naeini and colleagues, Stanford.\n\nStanford physicists (Safavi-Naeini lab) directly watched single phonons, the quantum packets of vibration, jump between energy levels in a mechanical resonator in real time. Quantum jumps: ions 1986, photons 2007, sound 2026. Science, 17 Sept 2026, DOI 10.1126/science.aeh7535.\n\n#physics #quantum #science #stanford",
+  "voiceover_script": "Sound does not fade away smoothly. At the smallest scale, it jumps. Sound is vibration, and vibration is energy. At the quantum level that energy comes in packets called phonons. A phonon can only sit on fixed energy steps, never in between. Physicists at Stanford, in the Safavi-Naeini lab, built a tiny mechanical resonator that rings for about two milliseconds, and watched single phonons jump between those steps in real time. It is the first direct real-time observation of a quantum jump in sound. Quantum jumps were seen in ions in 1986, in photons in 2007, and now in sound.",
+  "scenes": [
+    {
+      "start": 0, "end": 2.8,
+      "bg": { "image": "production/assets/reel-quantum-jump-sound/QJ-01-bell-rim-struck.png", "move": "push-in", "from": 1.0, "to": 1.08, "focus": [0.5, 0.4], "scrim": 0.45, "parallax": true },
+      "caption": "Sound does not fade. It jumps.", "label_out": 1.5
+    },
+    {
+      "start": 2.8, "end": 5.6,
+      "bg": { "image": "production/assets/reel-quantum-jump-sound/QJ-02-chip-suspended-beam.png", "move": "push-in", "from": 1.0, "to": 1.1, "focus": [0.5, 0.4], "scrim": 0.45 },
+      "caption": "At the smallest scale"
+    },
+    {
+      "start": 5.6, "end": 8.9,
+      "bg": { "image": "production/assets/reel-quantum-jump-sound/QJ-01-bell-rim-struck.png", "move": "pan-right", "amount": 0.05, "focus": [0.45, 0.4], "scrim": 0.45 },
+      "caption": "Vibration is energy"
+    },
+    {
+      "start": 8.9, "end": 13.8,
+      "transition": "wipe-up",
+      "bg": { "image": "production/assets/reel-quantum-jump-sound/QJ-02-chip-suspended-beam.png", "move": "pan-left", "amount": 0.04, "focus": [0.5, 0.4], "scrim": 0.75 },
+      "visual": { "type": "staircase", "levels": 2, "labels": ["ground state", "first excited state"], "start": 0, "appear": 1.3, "ballLabel": "phonon", "enter": 0.4, "jumps": [] }
+    },
+    {
+      "start": 13.8, "end": 19.1,
+      "bg": { "image": "production/assets/reel-quantum-jump-sound/QJ-02-chip-suspended-beam.png", "move": "pan-left", "amount": 0.04, "focus": [0.5, 0.4], "scrim": 0.75 },
+      "visual": { "type": "staircase", "levels": 2, "labels": ["ground state", "first excited state"], "start": 0, "appear": 0, "enter": 0,
+        "jumps": [ { "t": 2.6, "from": 0, "to": 1, "drift": { "t0": 0, "frac": 0.4 } }, { "t": 4.6, "from": 1, "to": 0, "drift": { "t0": 2.6, "frac": 0.4 } } ] }
+    },
+    {
+      "start": 19.1, "end": 24.0,
+      "bg": { "image": "production/assets/reel-quantum-jump-sound/QJ-04-dilution-fridge-stages.png", "move": "tilt-up", "amount": 0.1, "focus": [0.5, 0.48], "scrim": 0.45 },
+      "caption": "Stanford, Safavi-Naeini lab"
+    },
+    {
+      "start": 24.0, "end": 27.5,
+      "bg": { "image": "production/assets/reel-quantum-jump-sound/QJ-03-chip-on-gold-mount.png", "move": "push-in", "from": 1.0, "to": 1.1, "focus": [0.5, 0.4], "scrim": 0.45 },
+      "big": { "text": "2 ms", "at": 1.6, "flip": { "at": 2.6, "text": "0.002 s" }, "exit": 3.5 }
+    },
+    {
+      "start": 27.5, "end": 33.0,
+      "bg": { "image": "production/assets/reel-quantum-jump-sound/QJ-02-chip-suspended-beam.png", "move": "push-in", "from": 1.0, "to": 1.06, "focus": [0.5, 0.4], "scrim": 0.8 },
+      "visual": { "type": "telegraph", "stairs": { "labels": ["ground state", "first excited state"] }, "start": 1, "drop": { "at": 2.4 }, "rate": 160, "enter": 0,
+        "readout": { "from": 0, "to": 2.1, "dur": 2.4, "unit": " ms", "decimals": 1, "label": "slowed" }, "jumpLabel": "one jump" }
+    },
+    {
+      "start": 33.0, "end": 37.3,
+      "bg": { "image": "production/assets/reel-quantum-jump-sound/QJ-03-chip-on-gold-mount.png", "move": "push-out", "from": 1.1, "to": 1.0, "focus": [0.5, 0.4], "scrim": 0.45 },
+      "caption": "First direct real-time observation"
+    },
+    {
+      "start": 37.3, "end": 41.0,
+      "bg": { "image": "production/assets/reel-quantum-jump-sound/QJ-04-dilution-fridge-stages.png", "move": "pan-right", "amount": 0.03, "focus": [0.5, 0.45], "scrim": 0.8 },
+      "visual": { "type": "timeline", "min": 1980, "max": 2030, "cursor": { "from": 1986, "to": 2026, "dur": 3.7 },
+        "ticks": [ { "value": 1986, "label": "ions 1986" }, { "value": 2007, "label": "photons 2007" }, { "value": 2026, "label": "sound 2026", "colour": "amber" } ] }
+    },
+    {
+      "start": 41.0, "end": 44.2,
+      "bg": { "image": "production/assets/reel-quantum-jump-sound/QJ-01-bell-rim-struck.png", "move": "push-in", "from": 1.08, "to": 1.12, "focus": [0.5, 0.4], "scrim": 0.45 },
+      "caption": "Sound, 2026"
+    }
+  ]
+}

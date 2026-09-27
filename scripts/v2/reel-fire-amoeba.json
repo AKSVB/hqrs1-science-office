@@ -1,0 +1,106 @@
+{
+  "notes": {
+    "storyboard": "storyboards/reel-fire-amoeba.md, converted scene by scene. Science unchanged from scripts/reel-fire-amoeba.json (fact-check row 8, GREEN).",
+    "timing": "Scene times are the storyboard estimates against the cut Rhea track (40.9 s). fit_audio scales them to the actual narration; sfx cues are scene-relative so they follow. The Editor replaces --auto-words with the aligned words JSON and moves cuts to word boundaries.",
+    "audio": "Narration: production/assets/voice/reel-fire-amoeba-piper.mp3 (offline Piper). Bed: production/assets/sound/bed-a-synth.mp3. The motif file (first 2 s of the bed, cut by the Editor) does not exist yet; its two cues are listed and the renderer skips them with a warning until it does.",
+    "numbers": "140 F, 145 F, 63 C, 158 F, 5 min: all from the fact-check row. Rail ends 32 F and 212 F are the scale, unlabelled."
+  },
+  "handle": "@hqrs_1",
+  "style": "bible",
+  "audio": "production/assets/voice/reel-fire-amoeba-piper.mp3",
+  "fit_audio": true,
+  "music": "production/assets/sound/bed-a-synth.mp3",
+  "sfx": [
+    { "path": "production/assets/sound/motif.mp3", "scene": 0, "at": 0, "db": -8 },
+    { "path": "production/assets/sound/thud.mp3", "scene": 1, "at": 0.1 },
+    { "path": "production/assets/sound/tick.mp3", "scene": 1, "at": 1.3 },
+    { "path": "production/assets/sound/tick.mp3", "scene": 4, "at": 0.5 },
+    { "path": "production/assets/sound/thud.mp3", "scene": 5, "at": 0 },
+    { "path": "production/assets/sound/tick.mp3", "scene": 5, "at": 1.07 },
+    { "path": "production/assets/sound/tick.mp3", "scene": 5, "at": 1.55 },
+    { "path": "production/assets/sound/tick.mp3", "scene": 5, "at": 2.02 },
+    { "path": "production/assets/sound/tick.mp3", "scene": 5, "at": 2.5 },
+    { "path": "production/assets/sound/tick.mp3", "scene": 5, "at": 2.98 },
+    { "path": "production/assets/sound/tick.mp3", "scene": 5, "at": 3.1 },
+    { "path": "production/assets/sound/tick.mp3", "scene": 6, "at": 0.96 },
+    { "path": "production/assets/sound/tick.mp3", "scene": 6, "at": 1.52 },
+    { "path": "production/assets/sound/tick.mp3", "scene": 6, "at": 2.08 },
+    { "path": "production/assets/sound/tick.mp3", "scene": 6, "at": 2.64 },
+    { "path": "production/assets/sound/tick.mp3", "scene": 6, "at": 3.2 },
+    { "path": "production/assets/sound/settle.mp3", "scene": 6, "at": 3.2, "db": -14 },
+    { "path": "production/assets/sound/tick.mp3", "scene": 7, "at": 0 },
+    { "path": "production/assets/sound/motif.mp3", "scene": 9, "at": 0, "db": -8 },
+    { "path": "production/assets/sound/settle.mp3", "scene": "end", "at": 0 }
+  ],
+  "end": {
+    "short": true,
+    "bg": { "image": "production/assets/reel-fire-amoeba/FA-01-amoeba-in-pool.png", "move": "push-in", "from": 1.12, "to": 1.14, "focus": [0.5, 0.42], "scrim": 0.7 },
+    "source": "Cell, 22 Sept 2026. Rappaport, Oliverio, Syracuse University.",
+    "note": "Images: generated illustrations."
+  },
+  "caption": "Something is reproducing at 145 F. And it is not a bacterium.\nCell, 22 Sept 2026. Rappaport, Oliverio and colleagues, Syracuse University.\n\nIncendiamoeba cascadensis, the 'fire amoeba', divides at 145 F (63 C) and survived a five-minute spike to 158 F (70 C) in a protective state. The previous limit for complex (eukaryotic) life was about 140 F. Found in Lassen Volcanic National Park. Rappaport, Oliverio and colleagues, Syracuse University. Cell, 22 Sept 2026.\n\n#biology #extremophile #science #microbiology",
+  "voiceover_script": "Something is reproducing at one hundred and forty five degrees Fahrenheit. And it is not a bacterium. It is an amoeba, a complex cell like the ones in your body, found in a hot stream in Lassen Volcanic National Park. Meet Incendiamoeba cascadensis, the fire amoeba. It divides at one hundred and forty five degrees, and it survived a five-minute spike to one hundred and fifty eight in a protective state. The old limit for complex life was about one hundred and forty. The record moved by only a few degrees, but it moved. The study, from Syracuse University, is in the journal Cell this month.",
+  "scenes": [
+    {
+      "start": 0, "end": 2.6,
+      "bg": { "image": "production/assets/reel-fire-amoeba/FA-01-amoeba-in-pool.png", "move": "push-in", "from": 1.0, "to": 1.06, "focus": [0.5, 0.42], "scrim": 0.45, "parallax": true },
+      "caption": "Something is reproducing at 145 F", "label_out": 1.5
+    },
+    {
+      "start": 2.6, "end": 6.8,
+      "bg": { "image": "production/assets/reel-fire-amoeba/FA-02-cell-edge-macro.png", "move": "pan-left", "amount": 0.05, "focus": [0.5, 0.4], "scrim": 0.45 },
+      "big": { "text": "145 F", "at": 0.1, "flip": { "at": 1.3, "text": "63 C" }, "exit": 2.0 },
+      "caption": "Not a bacterium", "label_in": 2.2
+    },
+    {
+      "start": 6.8, "end": 10.6,
+      "bg": { "image": "production/assets/reel-fire-amoeba/FA-04-cell-interior.png", "move": "push-in", "from": 1.0, "to": 1.1, "focus": [0.5, 0.4], "scrim": 0.45 },
+      "caption": "A complex cell, like yours"
+    },
+    {
+      "start": 10.6, "end": 15.4,
+      "bg": { "image": "production/assets/reel-fire-amoeba/FA-03-lassen-hot-stream.png", "move": "tilt-up", "amount": 0.1, "focus": [0.5, 0.52], "scrim": 0.45 },
+      "caption": "Lassen Volcanic National Park"
+    },
+    {
+      "start": 15.4, "end": 17.9,
+      "bg": { "image": "production/assets/reel-fire-amoeba/FA-01-amoeba-in-pool.png", "move": "push-in", "from": 1.06, "to": 1.12, "focus": [0.5, 0.42], "scrim": 0.45 },
+      "caption": "Incendiamoeba cascadensis"
+    },
+    {
+      "start": 17.9, "end": 22.5,
+      "transition": "wipe-up",
+      "bg": { "image": "production/assets/reel-fire-amoeba/FA-05-cell-dividing.png", "move": "pan-right", "amount": 0.04, "focus": [0.5, 0.4], "scrim": 0.75 },
+      "visual": { "type": "thermometer", "min": 32, "max": 212, "unit": " F", "ticks": 20, "enter": 0.4,
+        "keys": [ { "t": 0.4, "v": 32 }, { "t": 3.1, "v": 145 } ],
+        "flash": 140,
+        "markers": [ { "value": 140, "label": "Old limit 140 F", "colour": "cyan", "at": 0.1 }, { "value": 145, "label": "Divides 145 F", "colour": "amber", "at": 3.1 } ] }
+    },
+    {
+      "start": 22.5, "end": 27.3,
+      "bg": { "image": "production/assets/reel-fire-amoeba/FA-06-protective-state.png", "move": "push-in", "from": 1.0, "to": 1.08, "focus": [0.5, 0.4], "scrim": 0.75 },
+      "visual": { "type": "thermometer", "min": 32, "max": 212, "unit": " F", "ticks": 20, "enter": 0,
+        "keys": [ { "t": 0, "v": 145 }, { "t": 0.4, "v": 158 }, { "t": 3.2, "v": 158 }, { "t": 4.0, "v": 145 } ],
+        "markers": [ { "value": 140, "label": "Old limit 140 F", "colour": "cyan", "at": 0 }, { "value": 145, "label": "Divides 145 F", "colour": "amber", "at": 0 }, { "value": 158, "label": "Spike 158 F", "colour": "amber", "at": 0.1 } ],
+        "timer": { "at": 0.4, "dur": 2.8, "seconds": 300, "label": "Protective state" } }
+    },
+    {
+      "start": 27.3, "end": 31.9,
+      "bg": { "image": "production/assets/reel-fire-amoeba/FA-06-protective-state.png", "move": "pan-left", "amount": 0.03, "focus": [0.5, 0.4], "scrim": 0.8 },
+      "visual": { "type": "thermometer", "min": 32, "max": 212, "unit": " F", "ticks": 20, "enter": 0,
+        "keys": [ { "t": 0, "v": 145 } ],
+        "pulse": { "value": 140, "t0": 0, "period": 1 },
+        "markers": [ { "value": 140, "label": "Old limit 140 F", "colour": "cyan", "at": 0 }, { "value": 145, "label": "Divides 145 F", "colour": "amber", "at": 0 }, { "value": 158, "label": "Spike 158 F", "colour": "amber", "at": 0 } ] }
+    },
+    {
+      "start": 31.9, "end": 36.2,
+      "bg": { "image": "production/assets/reel-fire-amoeba/FA-02-cell-edge-macro.png", "move": "push-out", "from": 1.1, "to": 1.0, "focus": [0.5, 0.4], "scrim": 0.45 },
+      "caption": "140 F to 145 F"
+    },
+    {
+      "start": 36.2, "end": 40.9,
+      "bg": { "image": "production/assets/reel-fire-amoeba/FA-03-lassen-hot-stream.png", "move": "pan-right", "amount": 0.05, "focus": [0.5, 0.5], "scrim": 0.45 },
+      "caption": "Syracuse University, in Cell"
+    }
+  ]
+}
