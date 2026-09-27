@@ -5,3 +5,7 @@ Stills are generated with ElevenLabs Creative (flux-2-pro by default; gpt-image-
 Layout: `assets/<post-name>/<scene>-<slug>.png` plus `prompts.json` recording model, parameters and prompt for every file, so a still can be regenerated. `tests/` holds calibration renders.
 
 Prompting (FLUX): subject first, natural prose, 30 to 80 words, no negative prompts, describe lighting and lens, leave the lower third dark and empty for captions, "no text, no letters, no watermark".
+
+## Voice (free path)
+
+Piper TTS runs offline: model `production/tools/piper/vits-piper-en_US-ryan-medium/` (male, medium quality, MIT-licensed model from the rhasspy/piper voices, mirrored on the k2-fsa/sherpa-onnx GitHub releases). Synthesize with `python3 -m piper -m <model.onnx> --length-scale 1.12 --sentence-silence 0.35 -f out.wav < script.txt`, then master with the ffmpeg chain in this folder's history (highpass 70 Hz, gentle compression, loudnorm -16 LUFS). Zero credits. The owner's cloned voice replaces it when a recording is supplied; ElevenLabs remains the paid upgrade.

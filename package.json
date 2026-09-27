@@ -1,0 +1,23 @@
+{
+  "name": "hqrs1-science-office",
+  "version": "1.0.0",
+  "description": "A working office for the Instagram science account @hqrs_1. Thirteen roles, one pipeline, one goal: publish one verified science story a day in a repeatable format, measure what moves non-follower reach, and scale what works.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AKSVB/hqrs1-science-office.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AKSVB/hqrs1-science-office/issues"
+  },
+  "homepage": "https://github.com/AKSVB/hqrs1-science-office#readme",
+  "dependencies": {
+    "three": "^0.186.1"
+  }
+}
