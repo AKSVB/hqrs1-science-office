@@ -36,7 +36,7 @@ cd production/reel     && node render-reel.mjs ../../scripts/reel-two-brains.jso
 
 Output lands in `production/out/<spec-name>/`. Upload the PNGs as a carousel, or the MP4 as a Reel. Paste `caption.txt`.
 
-Voiceover: every Reel spec carries a `voiceover_script`. The office generates the audio with ElevenLabs (voice "Rhea - Social Media Narrator", model eleven_multilingual_v2, one take, about 500 to 750 credits per Reel; the account allows two generations at a time), saves it as `production/out/<name>/<name>-voice.mp3`, and renders with
+Voiceover: every Reel spec carries a `voiceover_script`. The office generates the audio with ElevenLabs (voice "Bomani - Nightfall Narrator" (deep, calm male; owner decision 2026-09-27; a clone of the owner's voice replaces it once a sample is supplied), model eleven_multilingual_v2, one take, about 500 to 750 credits per Reel; the account allows two generations at a time), saves it as `production/out/<name>/<name>-voice.mp3`, and renders with
 
 ```bash
 node render-reel.mjs ../../scripts/<name>.json --jpeg --audio ../out/<name>/<name>-voice.mp3

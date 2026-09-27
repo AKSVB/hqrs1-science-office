@@ -1,0 +1,552 @@
+[
+ {
+  "word": "Something",
+  "start": 0.25,
+  "end": 0.875
+ },
+ {
+  "word": "is",
+  "start": 0.875,
+  "end": 1.072
+ },
+ {
+  "word": "reproducing",
+  "start": 1.072,
+  "end": 1.82
+ },
+ {
+  "word": "at",
+  "start": 1.82,
+  "end": 2.016
+ },
+ {
+  "word": "one",
+  "start": 2.016,
+  "end": 2.274
+ },
+ {
+  "word": "hundred",
+  "start": 2.274,
+  "end": 2.776
+ },
+ {
+  "word": "and",
+  "start": 2.776,
+  "end": 3.034
+ },
+ {
+  "word": "forty",
+  "start": 3.034,
+  "end": 3.414
+ },
+ {
+  "word": "five",
+  "start": 3.414,
+  "end": 3.733
+ },
+ {
+  "word": "degrees",
+  "start": 3.733,
+  "end": 4.236
+ },
+ {
+  "word": "Fahrenheit.",
+  "start": 4.236,
+  "end": 4.923
+ },
+ {
+  "word": "And",
+  "start": 5.229,
+  "end": 5.487
+ },
+ {
+  "word": "it",
+  "start": 5.487,
+  "end": 5.683
+ },
+ {
+  "word": "is",
+  "start": 5.683,
+  "end": 5.879
+ },
+ {
+  "word": "not",
+  "start": 5.879,
+  "end": 6.137
+ },
+ {
+  "word": "a",
+  "start": 6.137,
+  "end": 6.272
+ },
+ {
+  "word": "bacterium.",
+  "start": 6.272,
+  "end": 6.897
+ },
+ {
+  "word": "It",
+  "start": 7.204,
+  "end": 7.4
+ },
+ {
+  "word": "is",
+  "start": 7.4,
+  "end": 7.596
+ },
+ {
+  "word": "an",
+  "start": 7.596,
+  "end": 7.793
+ },
+ {
+  "word": "amoeba,",
+  "start": 7.793,
+  "end": 8.234
+ },
+ {
+  "word": "a",
+  "start": 8.369,
+  "end": 8.504
+ },
+ {
+  "word": "complex",
+  "start": 8.504,
+  "end": 9.007
+ },
+ {
+  "word": "cell",
+  "start": 9.007,
+  "end": 9.326
+ },
+ {
+  "word": "like",
+  "start": 9.326,
+  "end": 9.645
+ },
+ {
+  "word": "the",
+  "start": 9.645,
+  "end": 9.902
+ },
+ {
+  "word": "ones",
+  "start": 9.902,
+  "end": 10.221
+ },
+ {
+  "word": "in",
+  "start": 10.221,
+  "end": 10.417
+ },
+ {
+  "word": "your",
+  "start": 10.417,
+  "end": 10.736
+ },
+ {
+  "word": "body,",
+  "start": 10.736,
+  "end": 11.055
+ },
+ {
+  "word": "found",
+  "start": 11.19,
+  "end": 11.57
+ },
+ {
+  "word": "in",
+  "start": 11.57,
+  "end": 11.766
+ },
+ {
+  "word": "a",
+  "start": 11.766,
+  "end": 11.901
+ },
+ {
+  "word": "hot",
+  "start": 11.901,
+  "end": 12.159
+ },
+ {
+  "word": "stream",
+  "start": 12.159,
+  "end": 12.6
+ },
+ {
+  "word": "in",
+  "start": 12.6,
+  "end": 12.796
+ },
+ {
+  "word": "Lassen",
+  "start": 12.796,
+  "end": 13.238
+ },
+ {
+  "word": "Volcanic",
+  "start": 13.238,
+  "end": 13.802
+ },
+ {
+  "word": "National",
+  "start": 13.802,
+  "end": 14.366
+ },
+ {
+  "word": "Park.",
+  "start": 14.366,
+  "end": 14.685
+ },
+ {
+  "word": "Meet",
+  "start": 14.992,
+  "end": 15.311
+ },
+ {
+  "word": "Incendiamoeba",
+  "start": 15.311,
+  "end": 16.181
+ },
+ {
+  "word": "cascadensis,",
+  "start": 16.181,
+  "end": 16.93
+ },
+ {
+  "word": "the",
+  "start": 17.064,
+  "end": 17.322
+ },
+ {
+  "word": "fire",
+  "start": 17.322,
+  "end": 17.641
+ },
+ {
+  "word": "amoeba.",
+  "start": 17.641,
+  "end": 18.082
+ },
+ {
+  "word": "It",
+  "start": 18.389,
+  "end": 18.585
+ },
+ {
+  "word": "divides",
+  "start": 18.585,
+  "end": 19.088
+ },
+ {
+  "word": "at",
+  "start": 19.088,
+  "end": 19.284
+ },
+ {
+  "word": "one",
+  "start": 19.284,
+  "end": 19.542
+ },
+ {
+  "word": "hundred",
+  "start": 19.542,
+  "end": 20.045
+ },
+ {
+  "word": "and",
+  "start": 20.045,
+  "end": 20.302
+ },
+ {
+  "word": "forty",
+  "start": 20.302,
+  "end": 20.682
+ },
+ {
+  "word": "five",
+  "start": 20.682,
+  "end": 21.001
+ },
+ {
+  "word": "degrees,",
+  "start": 21.001,
+  "end": 21.504
+ },
+ {
+  "word": "and",
+  "start": 21.639,
+  "end": 21.897
+ },
+ {
+  "word": "it",
+  "start": 21.897,
+  "end": 22.093
+ },
+ {
+  "word": "survived",
+  "start": 22.093,
+  "end": 22.657
+ },
+ {
+  "word": "a",
+  "start": 22.657,
+  "end": 22.792
+ },
+ {
+  "word": "five-minute",
+  "start": 22.792,
+  "end": 23.479
+ },
+ {
+  "word": "spike",
+  "start": 23.479,
+  "end": 23.859
+ },
+ {
+  "word": "to",
+  "start": 23.859,
+  "end": 24.055
+ },
+ {
+  "word": "one",
+  "start": 24.055,
+  "end": 24.313
+ },
+ {
+  "word": "hundred",
+  "start": 24.313,
+  "end": 24.816
+ },
+ {
+  "word": "and",
+  "start": 24.816,
+  "end": 25.073
+ },
+ {
+  "word": "fifty",
+  "start": 25.073,
+  "end": 25.453
+ },
+ {
+  "word": "eight",
+  "start": 25.453,
+  "end": 25.833
+ },
+ {
+  "word": "in",
+  "start": 25.833,
+  "end": 26.03
+ },
+ {
+  "word": "a",
+  "start": 26.03,
+  "end": 26.165
+ },
+ {
+  "word": "protective",
+  "start": 26.165,
+  "end": 26.851
+ },
+ {
+  "word": "state.",
+  "start": 26.851,
+  "end": 27.232
+ },
+ {
+  "word": "The",
+  "start": 27.538,
+  "end": 27.796
+ },
+ {
+  "word": "old",
+  "start": 27.796,
+  "end": 28.053
+ },
+ {
+  "word": "limit",
+  "start": 28.053,
+  "end": 28.434
+ },
+ {
+  "word": "for",
+  "start": 28.434,
+  "end": 28.691
+ },
+ {
+  "word": "complex",
+  "start": 28.691,
+  "end": 29.194
+ },
+ {
+  "word": "life",
+  "start": 29.194,
+  "end": 29.513
+ },
+ {
+  "word": "was",
+  "start": 29.513,
+  "end": 29.77
+ },
+ {
+  "word": "about",
+  "start": 29.77,
+  "end": 30.151
+ },
+ {
+  "word": "one",
+  "start": 30.151,
+  "end": 30.408
+ },
+ {
+  "word": "hundred",
+  "start": 30.408,
+  "end": 30.911
+ },
+ {
+  "word": "and",
+  "start": 30.911,
+  "end": 31.168
+ },
+ {
+  "word": "forty.",
+  "start": 31.168,
+  "end": 31.549
+ },
+ {
+  "word": "The",
+  "start": 31.855,
+  "end": 32.113
+ },
+ {
+  "word": "record",
+  "start": 32.113,
+  "end": 32.554
+ },
+ {
+  "word": "moved",
+  "start": 32.554,
+  "end": 32.935
+ },
+ {
+  "word": "by",
+  "start": 32.935,
+  "end": 33.131
+ },
+ {
+  "word": "only",
+  "start": 33.131,
+  "end": 33.45
+ },
+ {
+  "word": "a",
+  "start": 33.45,
+  "end": 33.585
+ },
+ {
+  "word": "few",
+  "start": 33.585,
+  "end": 33.842
+ },
+ {
+  "word": "degrees,",
+  "start": 33.842,
+  "end": 34.345
+ },
+ {
+  "word": "but",
+  "start": 34.48,
+  "end": 34.737
+ },
+ {
+  "word": "it",
+  "start": 34.737,
+  "end": 34.934
+ },
+ {
+  "word": "moved.",
+  "start": 34.934,
+  "end": 35.314
+ },
+ {
+  "word": "The",
+  "start": 35.62,
+  "end": 35.878
+ },
+ {
+  "word": "study,",
+  "start": 35.878,
+  "end": 36.258
+ },
+ {
+  "word": "from",
+  "start": 36.393,
+  "end": 36.712
+ },
+ {
+  "word": "Syracuse",
+  "start": 36.712,
+  "end": 37.276
+ },
+ {
+  "word": "University,",
+  "start": 37.276,
+  "end": 37.963
+ },
+ {
+  "word": "is",
+  "start": 38.098,
+  "end": 38.294
+ },
+ {
+  "word": "in",
+  "start": 38.294,
+  "end": 38.49
+ },
+ {
+  "word": "the",
+  "start": 38.49,
+  "end": 38.748
+ },
+ {
+  "word": "journal",
+  "start": 38.748,
+  "end": 39.251
+ },
+ {
+  "word": "Cell",
+  "start": 39.251,
+  "end": 39.57
+ },
+ {
+  "word": "this",
+  "start": 39.57,
+  "end": 39.888
+ },
+ {
+  "word": "month.",
+  "start": 39.888,
+  "end": 40.269
+ },
+ {
+  "word": "Source",
+  "start": 40.575,
+  "end": 41.017
+ },
+ {
+  "word": "in",
+  "start": 41.017,
+  "end": 41.213
+ },
+ {
+  "word": "the",
+  "start": 41.213,
+  "end": 41.471
+ },
+ {
+  "word": "caption.",
+  "start": 41.471,
+  "end": 41.973
+ }
+]

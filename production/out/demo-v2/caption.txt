@@ -1,0 +1,1 @@
+DEMO SPEC for renderer v2. Exercises every v2 feature against the fire-amoeba voiceover. Not for publication.

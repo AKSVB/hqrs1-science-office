@@ -57,7 +57,7 @@ intake -> score -> script -> fact-check gate -> render -> editor QC gate -> sche
 - Carousel: 1080x1350 PNGs, 6-10 slides, cover text sits in the vertical middle third so it survives the 3:4 grid crop.
 - Hook visible and readable in frame 1; skip risk judged by watching the first 3 seconds cold.
 - Captions burned in; SRT exported; voiceover and on-screen text promise the same thing.
-- Voiceover muxed with `--audio` (Rhea voice, one take); Reel length equals narration plus the 2.5 s end card; under 60 s.
+- Voiceover muxed with `--audio` (Bomani voice, one take); Reel length equals narration plus the 2.5 s end card; under 60 s.
 - Source slide or source line present and matches the Fact-Checker's memo.
 - Alt text written for every slide (Publisher pastes it at upload).
 - Handle @hqrs_1 on every slide and frame, outside Instagram's UI overlays.

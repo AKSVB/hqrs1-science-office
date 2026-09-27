@@ -48,3 +48,7 @@ What the owner must supply for the next cycle: a screenshot or export of Insight
 The owner reviewed the first 23 rendered posts and rejected them: text on a dark background is the look of accounts that stall, not of the top of the field. All rendered outputs were removed from the repository. Kept: the fact-checked specs (the words are sound), the research memos, the 13 voiceover tracks (now under `production/assets/voice/`), and one calibration still that shows AI-generated photoreal imagery is viable at about 3 cents a frame.
 
 Direction from here: a visual grammar derived from the top 150 science creators, a style bible, a renderer that composes photoreal stills with camera motion, mechanism animation, kinetic numbers, word-by-word captions, music and sound effects, and a rebuild of three flagship Reels and two carousels for the owner's approval before anything else is produced. AI video is not available on the current ElevenLabs plan; stock imagery sources are blocked from this environment.
+
+## 2026-09-27, owner decision: narrator voice
+
+The narrator changes from Rhea to a deep, calm male voice (Bomani - Nightfall Narrator, ElevenLabs voice id 3TTKYlYj1FFtGcSNKlJv). The owner's own cloned voice replaces it as soon as a clean 1 to 3 minute reading sample is supplied. The existing Rhea tracks under production/assets/voice/ are retained for reference only; all new Reels are voiced with Bomani.
