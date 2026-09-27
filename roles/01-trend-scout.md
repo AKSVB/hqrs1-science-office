@@ -12,4 +12,4 @@ Deliver, with a URL for every claim:
 5. Tentpole events in the next 30 days (launches, eclipses, prize announcements, sky events) with dates.
 6. Three immediate plays for this week.
 
-Do not invent account names or numbers. Label anything unverified. Plain dense prose. File the memo as `office/research/YYYY-MM-DD-trend-scout.md`.
+Do not invent account names or numbers. Label anything unverified. Plain dense prose. File the memo as `research/YYYY-MM-DD-trend-scout.md`.

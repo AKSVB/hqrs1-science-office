@@ -1,6 +1,6 @@
 # 30-day content calendar: 28 Sep to 27 Oct 2026
 
-Slots: Reels 18:30 weekdays, 11:00 weekends; carousels 08:00; Stories 2-4 a day. Adjust after the first Insights read (week 2). Every story below is scored in `office/research/02-publications-desk.md` or `01-trend-scout.md`; the Fact-Checker's verdict decides whether it ships as written, with a caveat, or not at all. "Spec" names the JSON in `office/scripts/`.
+Slots: Reels 18:30 weekdays, 11:00 weekends; carousels 08:00; Stories 2-4 a day. Adjust after the first Insights read (week 2). Every story below is scored in `research/02-publications-desk.md` or `01-trend-scout.md`; the Fact-Checker's verdict decides whether it ships as written, with a caveat, or not at all. "Spec" names the JSON in `scripts/`.
 
 Legend: R = Reel, C = carousel, T = Trial Reel first, TP = tentpole (time-sensitive).
 

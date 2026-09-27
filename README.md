@@ -7,7 +7,7 @@ Everything here is runnable. Research memos are filed under `research/`, scripts
 ## Layout
 
 ```
-office/
+.
   README.md                 this file
   OPERATING_MANUAL.md       roles, cadence, gates, KPIs, decision rules
   DECISION_MEMO.md          the Director's calls for the first 30 days
@@ -30,11 +30,11 @@ office/
 ```bash
 # needs node 22+, playwright (global install is fine), and a full ffmpeg
 pip install imageio-ffmpeg           # one-time, provides a static ffmpeg with libx264
-cd office/production/carousel && node render.mjs ../../scripts/carousel-organoids-5-years.json
-cd office/production/reel     && node render-reel.mjs ../../scripts/reel-two-brains.json --jpeg
+cd production/carousel && node render.mjs ../../scripts/carousel-organoids-5-years.json
+cd production/reel     && node render-reel.mjs ../../scripts/reel-two-brains.json --jpeg
 ```
 
-Output lands in `office/production/out/<spec-name>/`. Upload the PNGs as a carousel, or the MP4 as a Reel. Paste `caption.txt`. Record the voiceover from `*-voiceover.txt` (or use Instagram's text-to-speech) and add it in the Instagram editor, or pass an `audio` path in the spec to mux it at render time.
+Output lands in `production/out/<spec-name>/`. Upload the PNGs as a carousel, or the MP4 as a Reel. Paste `caption.txt`. Record the voiceover from `*-voiceover.txt` (or use Instagram's text-to-speech) and add it in the Instagram editor, or pass an `audio` path in the spec to mux it at render time.
 
 ## Weekly loop (short version)
 

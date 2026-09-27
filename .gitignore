@@ -1,0 +1,6 @@
+node_modules/
+.DS_Store
+# render intermediates (final PNG/MP4/SRT/caption files are committed)
+production/out/**/frames/
+production/out/**/*.html
+production/out/**/check-*.png

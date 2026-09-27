@@ -1,10 +1,10 @@
 # Account strategy: @hqrs_1
 
-Version 1.0, 2026-09-27. Built from the four research memos in `office/research/`. Every claim traces to a cited source there; assumptions are labelled.
+Version 1.0, 2026-09-27. Built from the four research memos in `research/`. Every claim traces to a cited source there; assumptions are labelled.
 
 ## 1. Where the account stands
 
-The office could not open instagram.com from this environment, and the handle does not surface in web search, so the current follower count, post history and Insights are unknown. The plan below assumes an account under 1,000 followers with no fixed format. Two things change once the owner pastes Insights into `office/analytics/weekly_log.csv`: the posting slots (from "most active times") and the growth table (from the observed follow rate).
+The office could not open instagram.com from this environment, and the handle does not surface in web search, so the current follower count, post history and Insights are unknown. The plan below assumes an account under 1,000 followers with no fixed format. Two things change once the owner pastes Insights into `analytics/weekly_log.csv`: the posting slots (from "most active times") and the growth table (from the observed follow rate).
 
 ## 2. What the evidence says growth requires
 
@@ -62,7 +62,7 @@ At the research base assumption of 9 follows per 1,000 non-follower views and 60
 | +10,000 | 26 weeks | ~71k | ~14k |
 | +100,000 | 52 weeks | ~355k | ~70k |
 
-The pessimistic rate (3 per 1,000) triples the views needed; the optimistic (20 per 1,000) more than halves them. The only benchmark found for the follow rate is one creator's self-reported log, so the first two weeks of Insights matter more than any of these numbers. `office/analytics/projection.mjs` recomputes the table from the log.
+The pessimistic rate (3 per 1,000) triples the views needed; the optimistic (20 per 1,000) more than halves them. The only benchmark found for the follow rate is one creator's self-reported log, so the first two weeks of Insights matter more than any of these numbers. `analytics/projection.mjs` recomputes the table from the log.
 
 Practical reading: 1k comes from consistent 3-5k-view Reels. 10k needs a repeatable 10-20k-view format or a few 100k+ outliers. 100k needs several 1M+ Reels or a sustained 50k average. This is why the office optimises sends per reach and follows per 1,000 views, and why the tentpole calendar matters: event weeks are where outliers happen (NASA added 4.6M followers in the Artemis II week).
 
