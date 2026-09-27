@@ -16,15 +16,15 @@ A new heat record for complex life
 
 5
 00:00:16,500 --> 00:00:21,000
-And it survives even hotter
+Survived 158 F for five minutes, in a protective state
 
 6
 00:00:21,000 --> 00:00:25,000
-Complex life now has a higher known heat limit
+Complex life was thought to stop at 140 F
 
 7
 00:00:25,000 --> 00:00:28,500
-Syracuse-led team, published in Cell
+Syracuse team, Rappaport and Oliverio, published in Cell
 
 8
 00:00:28,500 --> 00:00:32,000

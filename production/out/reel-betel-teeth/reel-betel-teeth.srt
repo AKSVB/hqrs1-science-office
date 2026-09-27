@@ -1,6 +1,6 @@
 1
 00:00:00,000 --> 00:00:03,500
-Humans were getting high 25,000 years ago
+The headline: humans got high 25,000 years ago
 
 2
 00:00:03,500 --> 00:00:08,000
@@ -16,11 +16,11 @@ Traces of arecoline, from betel nut
 
 5
 00:00:16,000 --> 00:00:20,000
-The world's 4th most common addictive drug
+Today the world's 4th most used psychoactive substance
 
 6
 00:00:20,000 --> 00:00:25,500
-Between 16,000 and 25,000 years old
+Dated between 16,000 and 25,000 years
 
 7
 00:00:25,500 --> 00:00:29,500
@@ -28,4 +28,4 @@ Headlines quote the top of that range
 
 8
 00:00:29,500 --> 00:00:35,000
-The earliest evidence of human drug use found so far
+It may be the earliest evidence of drug use

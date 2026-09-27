@@ -12,11 +12,11 @@ Younger than any known world
 
 4
 00:00:13,500 --> 00:00:17,500
-It beats the previous youngest planet by a wide margin
+The previous youngest planets are over 5 million years old
 
 5
 00:00:17,500 --> 00:00:21,500
-About 2 Jupiter masses
+Roughly Jupiter's mass; models give about 2 to 4
 
 6
 00:00:21,500 --> 00:00:25,500
@@ -24,7 +24,7 @@ About 450 light-years away
 
 7
 00:00:25,500 --> 00:00:29,500
-Still embedded in the disk it formed from
+Still embedded in its disk, about 55 au from its star
 
 8
 00:00:29,500 --> 00:00:35,000
