@@ -1,31 +1,31 @@
 1
-00:00:00,000 --> 00:00:04,000
+00:00:00,000 --> 00:00:05,624
 Earth is 4.5 billion years old. This planet is under 1 million.
 
 2
-00:00:04,000 --> 00:00:08,000
+00:00:05,624 --> 00:00:11,248
 Elias 2-24 b, the youngest planet ever found
 
 3
-00:00:08,000 --> 00:00:13,500
+00:00:11,248 --> 00:00:18,981
 Younger than any known world
 
 4
-00:00:13,500 --> 00:00:17,500
+00:00:18,981 --> 00:00:24,605
 The previous youngest planets are over 5 million years old
 
 5
-00:00:17,500 --> 00:00:21,500
+00:00:24,605 --> 00:00:30,229
 Roughly Jupiter's mass; models give about 2 to 4
 
 6
-00:00:21,500 --> 00:00:25,500
+00:00:30,229 --> 00:00:35,853
 About 450 light-years away
 
 7
-00:00:25,500 --> 00:00:29,500
+00:00:35,853 --> 00:00:41,477
 Still embedded in its disk, about 55 au from its star
 
 8
-00:00:29,500 --> 00:00:35,000
+00:00:41,477 --> 00:00:49,210
 In archival Keck data, by a Universidad Diego Portales team

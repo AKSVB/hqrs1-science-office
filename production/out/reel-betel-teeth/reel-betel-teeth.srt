@@ -1,31 +1,31 @@
 1
-00:00:00,000 --> 00:00:03,500
+00:00:00,000 --> 00:00:04,890
 The headline: humans got high 25,000 years ago
 
 2
-00:00:03,500 --> 00:00:08,000
+00:00:04,890 --> 00:00:11,177
 Two forager skeletons from Sulawesi, Indonesia
 
 3
-00:00:08,000 --> 00:00:12,000
+00:00:11,177 --> 00:00:16,766
 A dental wear pattern never described before
 
 4
-00:00:12,000 --> 00:00:16,000
+00:00:16,766 --> 00:00:22,354
 Traces of arecoline, from betel nut
 
 5
-00:00:16,000 --> 00:00:20,000
+00:00:22,354 --> 00:00:27,943
 Today the world's 4th most used psychoactive substance
 
 6
-00:00:20,000 --> 00:00:25,500
+00:00:27,943 --> 00:00:35,627
 Dated between 16,000 and 25,000 years
 
 7
-00:00:25,500 --> 00:00:29,500
+00:00:35,627 --> 00:00:41,216
 Headlines quote the top of that range
 
 8
-00:00:29,500 --> 00:00:35,000
+00:00:41,216 --> 00:00:48,900
 It may be the earliest evidence of drug use
