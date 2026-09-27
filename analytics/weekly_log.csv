@@ -1,0 +1,7 @@
+# One row per post. Fill at 24 h, update at 7 d. Numbers from Instagram Insights (professional account). Leave blank if unknown.
+# date: post date YYYY-MM-DD. slot: local posting time HH:MM. format: reel|carousel|static|story. trial: yes|no (Trial Reel).
+# followers_at_post: follower count at posting. views: total views (7 d). nonfollower_pct: share of views from non-followers (0-100).
+# avg_watch_s: average watch time seconds (reels). length_s: length seconds. skip_pct: skip rate (0-100). reach: accounts reached.
+# likes, comments, sends (shares), saves, profile_visits, follows: counts from the post. topic: short tag. hook: first line on screen.
+date,slot,format,trial,spec,followers_at_post,views,nonfollower_pct,avg_watch_s,length_s,skip_pct,reach,likes,comments,sends,saves,profile_visits,follows,topic,hook
+2026-09-28,18:30,reel,no,sample-cell-turnover-reel,0,,,,24,,,,,,,,,human-body,Your body is replacing 4 million cells every second

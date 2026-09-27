@@ -1,0 +1,22 @@
+{
+  "handle": "@hqrs_1",
+  "caption": "Your body rebuilds itself faster than you think.\n\nSender & Milo (Nature Medicine, 2021) modelled cell turnover across every tissue. Result: roughly 330 billion cells replaced per day, about 1% of all your cells. Blood cells dominate by count (~86%), gut lining by mass share is next.\n\nThe 'every 7 years' number is a folk myth; there is no single turnover time. Neurons in the cortex mostly last a lifetime. Gut epithelium turns over in days.\n\nSource in slide 7. Save this for the next time someone quotes the 7-year thing.\n\n#science #biology #humanbody #sciencefacts #cells #learnontiktok #stem",
+  "slides": [
+    { "type": "cover", "kicker": "Human body", "title": "You are not the same body you were *yesterday*", "sub": "A 2021 Nature Medicine model counted how many cells you replace every day." },
+    { "type": "number", "kicker": "Every 24 hours", "number": "330 bn", "title": "cells replaced per day", "body": "About *1 percent* of all the cells in your body. Roughly 80 grams of tissue." },
+    { "type": "number", "kicker": "Who does the replacing", "number": "86%", "title": "of that count is blood cells", "body": "Red blood cells and neutrophils have short lives and huge numbers.", "bars": [
+      { "label": "Blood cells", "value": "~86% of cells", "pct": 86 },
+      { "label": "Gut lining", "value": "~12%", "pct": 12 },
+      { "label": "Skin, fat, everything else", "value": "~2%", "pct": 2 } ] },
+    { "type": "compare", "kicker": "The famous claim", "myth": "Every cell is replaced every 7 years", "fact": "There is no single number", "body": "Gut lining: days. Red blood cells: ~4 months. Fat cells: ~10 years. Most cortical neurons: your whole life." },
+    { "type": "list", "kicker": "Why it matters", "title": "Three things this changes", "items": [
+      "**Cancer risk** tracks with division count. Tissues that divide most are where most cancers start.",
+      "**Nutrition**: ~80 g of new tissue a day needs steady protein and iron.",
+      "**Ageing** is partly the slow drift of copying errors in fast-turnover tissues." ] },
+    { "type": "statement", "kicker": "The exception", "title": "Your memories live in cells that never get *replaced*", "body": "Most neurons in the cerebral cortex are as old as you are. Damage there is permanent, which is why brain injury and stroke are different from a cut." },
+    { "type": "source", "items": [
+      "Sender R, Milo R. The distribution of cellular turnover in the human body. Nature Medicine 27, 45-48 (2021).",
+      "Bianconi E et al. An estimation of the number of cells in the human body. Annals of Human Biology (2013)." ], "note": "Numbers are model estimates for a reference 70 kg adult male. Percentages rounded." },
+    { "type": "cta", "title": "One verified science story a day", "body": "No hype, source on the last slide, every time.", "ask": "Save this. Send it to the friend who still says 7 years." }
+  ]
+}

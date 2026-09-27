@@ -1,0 +1,32 @@
+{
+  "notes": {
+    "story": "Publications desk item 7: Elias 2-24 b, youngest planet ever found, under 1 million years old.",
+    "sources": [
+      "https://science.nasa.gov/universe/newfound-baby-planet-smashes-record-for-youngest-known-world/",
+      "https://www.sciencedaily.com/releases/2026/09/260917003712.htm",
+      "https://earthsky.org/space/baby-exoplanet-elias-2-24-b-w-m-keck-observatory/"
+    ],
+    "journal": "Astrophysical Journal Letters, Sept 16, 2026, Universidad Diego Portales (Andrea Bernardi)",
+    "caveats_on_screen": [
+      "Age ladder (scene 3) is labelled 'not to scale': the planet bar is drawn at 1 percent width so it is visible; the true ratio (under 1 million vs 4.5 billion) is under 0.03 percent.",
+      "The brief asked for a 'previous record >5 million years' rung. That number is not in the publications memo, so the ladder has two rungs (Earth, Elias 2-24 b) and the previous record is mentioned without a number.",
+      "Mass and distance are approximate (about 2 Jupiter masses, about 450 light-years)."
+    ],
+    "facts_from_secondary_coverage": true
+  },
+  "handle": "@hqrs_1",
+  "duration": 38,
+  "end": { "kicker": "Follow @hqrs_1", "title": "One verified science story a day", "body": "Source in the caption.", "seconds": 3 },
+  "caption": "Elias 2-24 b is the youngest planet ever found: under 1 million years old, about 2 Jupiter masses, roughly 450 light-years away and still embedded in its disk. Found in archival Keck data by a Universidad Diego Portales team (Andrea Bernardi). Astrophysical Journal Letters, 2026.\n\n#space #astronomy #exoplanet #science",
+  "voiceover_script": "Earth is four and a half billion years old. This planet is not even one million. It is called Elias 2-24 b, and it is the youngest planet ever found. It beats the previous record holder by a wide margin. It weighs in at about two Jupiter masses, sits about four hundred and fifty light-years away, and it is still embedded in the disk of material it formed from. Nobody pointed a new telescope at it. The team, led by Andrea Bernardi at Universidad Diego Portales, found it in archival data from the Keck Observatory. The paper is in the Astrophysical Journal Letters. Source in the caption.",
+  "scenes": [
+    { "start": 0, "end": 4, "kicker": "Astrophysical Journal Letters, 2026", "caption": "Earth is 4.5 billion years old. This planet is under 1 million." },
+    { "start": 4, "end": 8, "kicker": "Meet", "caption": "*Elias 2-24 b*, the youngest planet ever found" },
+    { "start": 8, "end": 13.5, "kicker": "Age ladder (not to scale)", "caption": "Younger than any known world", "visual": { "type": "bars", "items": [ { "label": "Earth", "value": "4.5 billion yr", "pct": 100 }, { "label": "Elias 2-24 b", "value": "under 1 million yr", "pct": 1 } ] } },
+    { "start": 13.5, "end": 17.5, "kicker": "The record", "caption": "It beats the previous youngest planet by a wide margin" },
+    { "start": 17.5, "end": 21.5, "kicker": "Mass", "caption": "About *2 Jupiter masses*", "visual": { "type": "counter", "from": 0, "to": 2, "suffix": "x", "label": "the mass of Jupiter, approximately" } },
+    { "start": 21.5, "end": 25.5, "kicker": "Distance", "caption": "About *450 light-years* away", "visual": { "type": "counter", "from": 0, "to": 450, "suffix": " ly", "label": "approximate distance" } },
+    { "start": 25.5, "end": 29.5, "kicker": "Still forming", "caption": "Still embedded in the disk it formed from" },
+    { "start": 29.5, "end": 35, "kicker": "How it was found", "caption": "In *archival* Keck data, by a Universidad Diego Portales team" }
+  ]
+}
