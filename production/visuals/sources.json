@@ -1,0 +1,9 @@
+{
+  "note": "Public-domain textures used by production/visuals scenes. Files live in production/assets/textures/. All are NASA imagery from the NASA 3D Resources collection (github.com/nasa/NASA-3D-Resources, 'Images and Textures/'), which NASA states are free and without copyright (usage: https://www.nasa.gov/nasa-brand-center/images-and-media). Nothing else was downloaded.",
+  "files": [
+    { "file": "production/assets/textures/jupiter-nasa.jpg", "source": "NASA-3D-Resources / Images and Textures / Jupiter / Jupiter.jpg", "url": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/master/Images%20and%20Textures/Jupiter/Jupiter.jpg", "size": "720x360", "licence": "Public domain (NASA)", "used_by": "protoplanetary-disk (planet map)" },
+    { "file": "production/assets/textures/earth-relief-nasa.jpg", "source": "NASA-3D-Resources / Images and Textures / Earth (A) / Earth (A).jpg", "url": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/master/Images%20and%20Textures/Earth%20(A)/Earth%20(A).jpg", "size": "1440x720", "licence": "Public domain (NASA)", "used_by": "earth-limb (land/sea map, recoloured in shader)" },
+    { "file": "production/assets/textures/earth-apollo-photo-nasa.jpg", "source": "NASA-3D-Resources / Images and Textures / Earth (B) / Earth (B).jpg", "url": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/master/Images%20and%20Textures/Earth%20(B)/Earth%20(B).jpg", "size": "4095x4095", "licence": "Public domain (NASA)", "used_by": "reserved (2D photographic fallback for earth-limb)" },
+    { "file": "production/assets/textures/starmap-tycho-nasa.jpg", "source": "NASA-3D-Resources / Images and Textures / Tycho Star Map / Tycho Star Map.jpg", "url": "https://raw.githubusercontent.com/nasa/NASA-3D-Resources/master/Images%20and%20Textures/Tycho%20Star%20Map/Tycho%20Star%20Map.jpg", "size": "2880x1440", "licence": "Public domain (NASA)", "used_by": "protoplanetary-disk, earth-limb (sky background)" }
+  ]
+}

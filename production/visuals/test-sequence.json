@@ -1,0 +1,14 @@
+{
+  "handle": "@hqrs_1",
+  "style": "bible",
+  "caption": "TEST SPEC for bg.sequence: a 3 s code-rendered hotspring-amoeba plate looping under a 6 s hook. Not for publication.",
+  "end": { "seconds": 1.5, "short": true, "source": "Cell, 22 Sept 2026. Rappaport, Oliverio, Syracuse University.", "note": "Images: code-rendered illustrations", "bg": { "sequence": "production/assets/reel-fire-amoeba/FA-01-seq", "fps": 30, "move": "push-in", "from": 1.12, "to": 1.14, "focus": [0.5, 0.42] } },
+  "scenes": [
+    { "start": 0, "end": 3.0,
+      "bg": { "sequence": "production/assets/reel-fire-amoeba/FA-01-seq", "fps": 30, "move": "push-in", "from": 1.0, "to": 1.06, "focus": [0.5, 0.42], "scrim": 0.45 },
+      "caption": "Something is reproducing at 145 F", "label_in": 0.1, "label_out": 1.5 },
+    { "start": 3.0, "end": 6.0,
+      "bg": { "sequence": "production/assets/reel-fire-amoeba/FA-01-seq", "fps": 30, "move": "push-in", "from": 1.06, "to": 1.12, "focus": [0.5, 0.42], "scrim": 0.45 },
+      "caption": "Incendiamoeba cascadensis" }
+  ]
+}

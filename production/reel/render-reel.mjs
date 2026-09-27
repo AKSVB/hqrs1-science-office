@@ -16,6 +16,8 @@
 // Scene fields: start, end, kicker, caption, captions, visual, layout, plus v2:
 //   bg: { image, move: push-in|push-out|pan-left|pan-right|tilt-up|tilt-down|drift, from, to, amount (pan/tilt travel as a fraction of the frame),
 //         focus:[x,y], scrim:0-1, parallax:true (a second copy masked to the subject, moving at 1.5x) }
+//       or bg: { sequence: "dir-of-frames", fps: 30, ...same move fields }: an animated plate from production/visuals/render-plate.mjs
+//         (--frames N --out-dir dir); the frame shown is indexed by the scene's local time and loops; the Ken Burns move applies on top.
 //   transition: cut (default) | fade | wipe-up (0.40 s upward wipe with a 2 px cyan edge)
 //   caption + label_in / label_out (local seconds; 6-frame rise and fade), or captions: [{ text, in, out }]
 //   big: { text | count:{from,to,decimals}, at, hold, exit, flip:{ at, text, size } }   (kinetic number: slam-in or count-up + 4 px shake, one unit flip)
@@ -26,7 +28,7 @@
 // Style-bible layout (style: "bible"): labels bottom-anchored at y 1150 (x 72 to 1008), mechanism plates centred in y 480 to 1150,
 //   big numbers centred in y 560 to 1150, the handle as .handle-reel, the hook line rising at 0.1 s, plates fading in over 0.6 s.
 import { createRequire } from "node:module";
-import { readFileSync, mkdirSync, writeFileSync, rmSync, existsSync } from "node:fs";
+import { readFileSync, mkdirSync, writeFileSync, rmSync, existsSync, readdirSync } from "node:fs";
 import { resolve, dirname, basename } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { spawnSync } from "node:child_process";
@@ -148,6 +150,16 @@ const karaoke = chunks.length > 0;
 const prepBg = (sc) => {
   if (!sc.bg) return;
   if (typeof sc.bg === "string") sc.bg = { image: sc.bg };
+  if (sc.bg.sequence) {
+    // Animated plate: a directory of frames (f00000.png ...) rendered by production/visuals/render-plate.mjs.
+    const dir = asset(sc.bg.sequence);
+    const files = existsSync(dir) ? readdirSync(dir).filter(f => /\.(png|jpe?g)$/i.test(f)).sort() : [];
+    if (!files.length) { warn(`background sequence has no frames, using gradient: ${dir}`); sc.bg.src = null; return; }
+    sc.bg.frames = files.map(f => pathToFileURL(resolve(dir, f)).href);
+    sc.bg.fps = sc.bg.fps ?? 30;
+    sc.bg.src = sc.bg.frames[0];
+    return;
+  }
   if (sc.bg.image) {
     const p = asset(sc.bg.image);
     if (existsSync(p)) sc.bg.src = pathToFileURL(p).href;
@@ -163,7 +175,8 @@ const bgHtml = (bg) => {
   const move = bg.move || "push-in";
   const defFrom = move === "push-out" ? 1.15 : move === "drift" ? 1.06 : 1.0, defTo = move === "push-out" ? 1.0 : move === "drift" ? 1.14 : 1.15;
   const img = (cls) => `<img class="${cls}" src="${bg.src}" style="transform-origin:${focus[0] * 100}% ${focus[1] * 100}%${cls === "par" ? `;-webkit-mask-image:radial-gradient(circle at ${focus[0] * 100}% ${focus[1] * 100}%, #000 0, #000 16%, transparent 44%);mask-image:radial-gradient(circle at ${focus[0] * 100}% ${focus[1] * 100}%, #000 0, #000 16%, transparent 44%)` : ""}">`;
-  return `<div class="bg" data-move="${esc(move)}" data-from="${bg.from ?? defFrom}" data-to="${bg.to ?? defTo}" data-amount="${bg.amount ?? ""}" data-fx="${focus[0]}" data-fy="${focus[1]}">${img("base")}${bg.parallax ? img("par") : ""}</div>`;
+  const seq = bg.frames ? ` data-frames="${attr(bg.frames)}" data-seqfps="${bg.fps}"` : "";
+  return `<div class="bg" data-move="${esc(move)}" data-from="${bg.from ?? defFrom}" data-to="${bg.to ?? defTo}" data-amount="${bg.amount ?? ""}" data-fx="${focus[0]}" data-fy="${focus[1]}"${seq}>${img("base")}${bg.parallax ? img("par") : ""}</div>`;
 };
 const wordCount = (s) => String(s).replace(/[*_]/g, "").trim().split(/\s+/).filter(Boolean).length;
 
@@ -329,7 +342,18 @@ const html = `<!doctype html><html><head><meta charset="utf-8">
     }
     return { s, tx, ty };
   };
-  const applyBg = (bg, q) => {
+  // Frame sequences: the frame is indexed by local time (looping); decoded once at load so seek stays synchronous.
+  const seqFrames = new Map();
+  window.preloadSequences = () => Promise.all([...document.querySelectorAll(".bg[data-frames]")].map(bg => {
+    const urls = JSON.parse(bg.dataset.frames); const imgs = urls.map(u => { const im = new Image(); im.src = u; return im; }); seqFrames.set(bg, imgs);
+    return Promise.all(imgs.map(im => im.decode().catch(() => null)));
+  }));
+  const applyBg = (bg, q, local = 0) => {
+    if (bg.dataset.frames) {
+      const imgs = seqFrames.get(bg) || (seqFrames.set(bg, JSON.parse(bg.dataset.frames).map(u => { const im = new Image(); im.src = u; return im; })), seqFrames.get(bg));
+      const n = imgs.length, idx = ((Math.floor(Math.max(0, local) * +bg.dataset.seqfps) % n) + n) % n, src = imgs[idx].src;
+      bg.querySelectorAll("img").forEach(im => { if (im.src !== src) im.src = src; });
+    }
     const kb = kenBurns(bg, q);
     bg.querySelector(".base").style.transform = "translate(" + kb.tx.toFixed(2) + "px," + kb.ty.toFixed(2) + "px) scale(" + kb.s.toFixed(4) + ")";
     const par = bg.querySelector(".par"); // parallax plate: the subject moves at 1.5x the base drift
@@ -361,7 +385,7 @@ const html = `<!doctype html><html><head><meta charset="utf-8">
       // Background Ken Burns, progress linear over the scene.
       const bg = sc.querySelector(".bg");
       if (bg) {
-        const q = clamp(local / len, 0, 1), kb = applyBg(bg, q);
+        const q = clamp(local / len, 0, 1), kb = applyBg(bg, q, local);
         parX = -3 * (kb.tx === 0 ? 0 : Math.sign(kb.tx) * Math.min(1, Math.abs(kb.tx) / 60));
         parY = (kb.tx === 0 && kb.ty === 0) ? -3 * q : -3 * (kb.ty === 0 ? 0 : Math.sign(kb.ty) * Math.min(1, Math.abs(kb.ty) / 60));
       }
@@ -441,7 +465,7 @@ const html = `<!doctype html><html><head><meta charset="utf-8">
     ec.classList.toggle("on", ecOn);
     if (ecOn) {
       ec.style.opacity = clamp((t - (DUR - ENDCARD)) / FADE, 0, 1);
-      if (ecBg) applyBg(ecBg, clamp((t - (DUR - ENDCARD)) / ENDCARD, 0, 1)); // the payoff still keeps its base-plate move
+      if (ecBg) applyBg(ecBg, clamp((t - (DUR - ENDCARD)) / ENDCARD, 0, 1), t - (DUR - ENDCARD)); // the payoff still keeps its base-plate move
     }
   };
 </script></body></html>`;
@@ -456,6 +480,7 @@ page.on("pageerror", (e) => { console.error("page error:", e.message); });
 await page.goto(pathToFileURL(htmlFile).href, { waitUntil: "networkidle" });
 await page.evaluate(() => document.fonts.ready);
 await page.evaluate(() => Promise.all([...document.images].map(i => i.decode().catch(() => null))));
+await page.evaluate(() => window.preloadSequences ? window.preloadSequences() : null);
 const nFrames = Math.ceil(duration * fps);
 const ext = useJpeg ? "jpeg" : "png";
 const t0 = Date.now();

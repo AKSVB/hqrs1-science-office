@@ -4,3 +4,5 @@ node_modules/
 production/out/**/frames/
 production/out/**/*.html
 production/out/**/check-*.png
+production/assets/*/*-seq/*.png
+production/out/**/frames/
