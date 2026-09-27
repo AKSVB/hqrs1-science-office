@@ -1,10 +1,10 @@
 1
 00:00:00,000 --> 00:00:03,500
-You do not have one brain. You have two.
+Your brain is built by two cell lineages that never mix
 
 2
 00:00:03,500 --> 00:00:08,000
-Two cell populations build it. They never mix.
+Two stem-cell populations, separate from gastrulation onward
 
 3
 00:00:08,000 --> 00:00:12,000
@@ -24,8 +24,8 @@ The same split shows up across species
 
 7
 00:00:24,500 --> 00:00:29,000
-Two nervous systems evolved separately, then fused
+Lineages that diverged around 550 million years ago
 
 8
 00:00:29,000 --> 00:00:33,000
-The paper says two lineages. "Two organs" is press framing.
+Two lineages, shown in mice. "Two organs" is press framing.
