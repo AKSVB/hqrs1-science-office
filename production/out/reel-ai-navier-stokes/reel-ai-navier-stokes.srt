@@ -1,35 +1,35 @@
 1
-00:00:00,000 --> 00:00:04,000
+00:00:00,000 --> 00:00:05,244
 An AI "solved" a million-dollar maths problem
 
 2
-00:00:04,000 --> 00:00:08,000
+00:00:05,244 --> 00:00:10,489
 OpenAI says its agents proved a version of Navier-Stokes
 
 3
-00:00:08,000 --> 00:00:13,500
+00:00:10,489 --> 00:00:17,700
 A multi-agent proof, by their account
 
 4
-00:00:13,500 --> 00:00:18,000
+00:00:17,700 --> 00:00:23,599
 It addresses forced versions. Forced vs unforced matters.
 
 5
-00:00:18,000 --> 00:00:22,000
+00:00:23,599 --> 00:00:28,844
 OpenAI says it will not claim the $1M prize
 
 6
-00:00:22,000 --> 00:00:26,500
+00:00:28,844 --> 00:00:34,744
 Fields Medalists publish a joint statement
 
 7
-00:00:26,500 --> 00:00:30,500
+00:00:34,744 --> 00:00:39,988
 AI-benchmark mathematics is a "severe misalignment"
 
 8
-00:00:30,500 --> 00:00:34,500
+00:00:39,988 --> 00:00:45,232
 Not peer-reviewed. A priority dispute has been reported.
 
 9
-00:00:34,500 --> 00:00:37,000
+00:00:45,232 --> 00:00:48,510
 Big claim. Big pushback. Contested.
