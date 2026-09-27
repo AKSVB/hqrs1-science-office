@@ -14,8 +14,8 @@ Legend: R = Reel, C = carousel, T = Trial Reel first, TP = tentpole (time-sensit
 | 30 Sep | Wed | C: You are not the same body you were yesterday | sample-cell-turnover | Carousel twin of the launch Reel. |
 | 1 Oct | Thu | R: Sound jumps, it does not fade | reel-quantum-jump-sound | Science, 17 Sept. GREEN. |
 | 2 Oct | Fri | R: The fire amoeba | reel-fire-amoeba | Cell, Syracuse. GREEN. (Sealed-letters Reel pulled: paper is from June, fact-check RED.) |
-| 3 Oct | Sat | C: Ig Nobel 2026, one prize per slide | carousel-ig-nobel-2026 | Humour lane; test saves. |
-| 4 Oct | Sun | TP R: Saturn is at its brightest tonight | (write Fri; numbers from NASA skywatching page) | Opposition 4 Oct. Post 11:00 so it is found before dark. |
+| 3 Oct | Sat | C: Ig Nobel 2026, five of the ten prizes | carousel-ig-nobel-2026 | Winners and institutions verified (fact-check 06). Humour lane; test saves. |
+| 4 Oct | Sun | TP R: Saturn is at its brightest tonight | (write Fri) | Opposition 4 Oct 2026, 12:00 UTC; magnitude +0.3, rises at sunset, up all night, rings about 7.5 degrees open (fact-check 06). Post 11:00. |
 
 ## Week 2: first data, first collab (5 to 11 Oct)
 
@@ -27,7 +27,7 @@ Legend: R = Reel, C = carousel, T = Trial Reel first, TP = tentpole (time-sensit
 | 8 Oct | Thu | C: A brain in a dish that knows how old it is | carousel-organoids-5-years | Nature, Harvard/Broad. Ethics question in caption. |
 | 9 Oct | Fri | R (T): The youngest planet ever found | reel-youngest-planet | ApJL. AMBER: mass wording applied. |
 | 10 Oct | Sat | C: The Aug 12 gravity hoax, what actually happened | carousel-project-anchor-debunk | Debunk template; evergreen. |
-| 11 Oct | Sun | R: One flash in 10 tonnes of xenon, and why 2.6 sigma is not a discovery | (write from fact-check row 9) | LZ dark matter. GREEN if framed as not a discovery. Collab candidate: a physics account. |
+| 11 Oct | Sun | R: One flash in 10 tonnes of xenon, and why 2.6 sigma is not a discovery | reel-lz-dark-matter | LZ dark matter. GREEN if framed as not a discovery. Collab candidate: a physics account. |
 
 Analytics Officer: first full Insights read on 11 Oct. Fix slots, compute follow rate, re-run projection.
 
@@ -38,10 +38,10 @@ Analytics Officer: first full Insights read on 11 Oct. Fix slots, compute follow
 | 12 Oct | Mon | R: Paralysed; their avatar talks and waves | reel-avatar-bci | Nature Neuroscience, UCSF. n = 3, 2 in real time, on screen. |
 | 13 Oct | Tue | C: The biggest T. rex died mid-repair | carousel-trex-scotty | Journal unverified; attribute to ORNL and Smithsonian. Ships only if Fact-Checker returns GREEN or AMBER. |
 | 14 Oct | Wed | R (T): The headline says 25,000 years. Here is the range. | reel-betel-teeth | Science Advances, 9 Sept. AMBER wording applied. |
-| 15 Oct | Thu | R: Your brain decides a gamble half a second before you do | (write from memo item 11) | Nature Neuroscience, UCSF. |
+| 15 Oct | Thu | R: Two brain patches predict a gamble about 0.5 s before the choice | reel-brain-gamble | Nature Neuroscience, 15 Sept. AMBER: 6 patients, video game, on screen. |
 | 16 Oct | Fri | C: Dinosaur eggs where it snowed | carousel-dino-eggs-patagonia | Journal unverified; ships on Fact-Checker verdict. |
 | 17 Oct | Sat | R: An AI says it cracked a $1M maths problem. 25 mathematicians say stop. | reel-ai-navier-stokes | Contested framing on screen. |
-| 18 Oct | Sun | C: How we verify a story (behind the scenes) | (write) | Trust post; pin it. |
+| 18 Oct | Sun | C: How we verify a story (behind the scenes) | carousel-how-we-verify | Trust post; pin it. |
 
 First Hindi/English bilingual test this week if the owner approves: re-render reel-two-brains with Hindi captions and voiceover.
 
@@ -49,12 +49,12 @@ First Hindi/English bilingual test this week if the owner approves: re-render re
 
 | Date | Day | Post | Spec | Notes |
 |---|---|---|---|---|
-| 19 Oct | Mon | R: 13 atoms make matter out of nothing | (write from memo item 14) | Nature Physics, Duke. |
-| 20 Oct | Tue | C: Half a million DNA edits, 15,000 built your skeleton | (write from memo item 15) | Nature, Kyoto/Weizmann. |
-| 21 Oct | Wed | TP R: Orionids peak tonight, how to see them | (write; NASA skywatching) | Peak around 21 Oct; confirm. |
-| 22 Oct | Thu | R (T): The planet that orbits backwards | (write from memo item 16) | A&A. |
-| 23 Oct | Fri | C: One storm, one fifth of a year's plastic rain | (write from memo item 17) | Virginia Tech. |
-| 24 Oct | Sat | R: A Roman letter recalibrated how we date the planet | (write from memo item 18) | Science Advances, Berkeley. |
+| 19 Oct | Mon | R: 13 atoms simulate a string snapping into new particles | reel-13-atoms-string-breaking | Nature Physics, 23 Sept. AMBER: simulation, not the vacuum; no "first". |
+| 20 Oct | Tue | C: Half a million DNA edits, 15,000 work differently in human cartilage | carousel-skeleton-dna-edits | Nature, 23 Sept. GREEN, hook reworded. |
+| 21 Oct | Wed | TP R: Orionids peak tonight, how to see them | (write) | Peak 21 to 22 Oct; up to about 20 per hour, fewer with the 80% Moon up, best before dawn (fact-check 06). Do not promise 25. |
+| 22 Oct | Thu | R (T): The planet that orbits backwards and tilted | reel-planet-backwards | A&A, Sept 2026; Geneva. GREEN: 136-degree tilt, first retrograde planet around a red dwarf. |
+| 23 Oct | Fri | C: One storm, nearly one fifth of a year's plastic rain | carousel-helene-microplastics | IEAM, 25 Sept; Virginia Tech. GREEN. |
+| 24 Oct | Sat | C: Pliny's eyewitness account recalibrated how we date the planet | carousel-pompeii-dating | Science Advances, 25 Sept; Berkeley. GREEN: Oplontis samples, AD 79, no 24 August on screen. |
 | 25 Oct | Sun | R: Best of the month (top 3 by sends, re-cut) | (re-cut) | Original re-cut with new framing; not a repost. |
 | 26 Oct | Mon | Director: day-30 format review; decision memo update | | Apply double-down or kill rules. |
 | 27 Oct | Tue | Publications Desk: next 30-day list | | |

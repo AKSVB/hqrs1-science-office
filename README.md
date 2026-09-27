@@ -34,7 +34,15 @@ cd production/carousel && node render.mjs ../../scripts/carousel-organoids-5-yea
 cd production/reel     && node render-reel.mjs ../../scripts/reel-two-brains.json --jpeg
 ```
 
-Output lands in `production/out/<spec-name>/`. Upload the PNGs as a carousel, or the MP4 as a Reel. Paste `caption.txt`. Record the voiceover from `*-voiceover.txt` (or use Instagram's text-to-speech) and add it in the Instagram editor, or pass an `audio` path in the spec to mux it at render time.
+Output lands in `production/out/<spec-name>/`. Upload the PNGs as a carousel, or the MP4 as a Reel. Paste `caption.txt`.
+
+Voiceover: every Reel spec carries a `voiceover_script`. The office generates the audio with ElevenLabs (voice "Rhea - Social Media Narrator", model eleven_multilingual_v2, one take, about 500 to 750 credits per Reel; the account allows two generations at a time), saves it as `production/out/<name>/<name>-voice.mp3`, and renders with
+
+```bash
+node render-reel.mjs ../../scripts/<name>.json --jpeg --audio ../out/<name>/<name>-voice.mp3
+```
+
+`--audio` muxes the track and stretches the scene timings so the scenes end when the narration ends; the end card keeps its length. Without `--audio` the Reel renders silent at the spec's own timings, for Instagram's text-to-speech or a recorded voice.
 
 ## Weekly loop (short version)
 

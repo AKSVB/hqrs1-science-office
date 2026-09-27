@@ -1,31 +1,31 @@
 1
-00:00:00,000 --> 00:00:04,000
+00:00:00,000 --> 00:00:05,404
 Something is reproducing at 145 degrees Fahrenheit
 
 2
-00:00:04,000 --> 00:00:08,000
+00:00:05,404 --> 00:00:10,808
 Incendiamoeba cascadensis, the fire amoeba
 
 3
-00:00:08,000 --> 00:00:12,000
+00:00:10,808 --> 00:00:16,211
 A complex cell, a eukaryote, like the cells in you
 
 4
-00:00:12,000 --> 00:00:16,500
+00:00:16,211 --> 00:00:22,290
 A new heat record for complex life
 
 5
-00:00:16,500 --> 00:00:21,000
+00:00:22,290 --> 00:00:28,370
 Survived 158 F for five minutes, in a protective state
 
 6
-00:00:21,000 --> 00:00:25,000
+00:00:28,370 --> 00:00:33,773
 Complex life was thought to stop at 140 F
 
 7
-00:00:25,000 --> 00:00:28,500
+00:00:33,773 --> 00:00:38,502
 Syracuse team, Rappaport and Oliverio, published in Cell
 
 8
-00:00:28,500 --> 00:00:32,000
+00:00:38,502 --> 00:00:43,230
 The limits of life keep moving

@@ -35,3 +35,10 @@ Fact-check outcomes and story-level calls (memo filed as `research/05-fact-check
 - Environment call: the Fact-Checker could not open any publisher. Next cycle needs the web-search allowance raised and nature.com, science.org, cell.com, arxiv.org, pubmed.ncbi.nlm.nih.gov and eurekalert.org allowed through the proxy; the owner sets this in the environment's network settings.
 
 What the owner must supply for the next cycle: a screenshot or export of Insights (followers, last 10 posts' views, non-follower share, follows from posts, most active times), confirmation on the Hindi line, the posting time zone, and a yes or no on the bio and pinned-post changes in `strategy/ACCOUNT_STRATEGY.md` section 5.
+
+## 2026-09-27, second cycle: voiceovers and wave 2
+
+1. Voiceovers: every Reel now ships with a narrated track. Voice "Rhea - Social Media Narrator" (ElevenLabs, eleven_multilingual_v2), one take per Reel, about 500 to 750 credits each, nine Reels this cycle. Reason: burned-in captions carry sound-off viewers, but a voice carries watch time, the first ranking signal. Would change if: the observed watch time on voiced Reels trails the silent versions, or the owner prefers to record in their own voice, which the office would then favour for trust.
+2. Fit-to-audio rendering adopted: scene timings stretch to the narration rather than the narration being cut to the scenes. Reason: the script is the unit of meaning; the visuals follow it.
+3. Wave 2 stories (fact-check memo `research/06-fact-check-wave2.md`): brain gamble AMBER (six patients, video game, on screen), string breaking AMBER (a simulation, no "first"), skeleton DNA GREEN with hook reworded, retrograde planet GREEN with "136-degree tilt, first around a red dwarf", Helene microplastics GREEN ("nearly one fifth", three sites), Vesuvius dating GREEN (Oplontis, AD 79, no "teenager"), Ig Nobel GREEN with winners now named, Saturn opposition and Orionids GREEN with the numbers in the calendar. All applied to the specs and scheduled.
+4. Environment note: web search worked again this cycle; publisher fetches remain blocked. The domain allow-list request from the first cycle stands.

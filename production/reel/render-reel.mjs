@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 // Reel renderer: JSON timeline -> 1080x1920 H.264 MP4 (+ SRT captions).
 // Frames are captured deterministically via window.seek(t), so output is reproducible.
-// Usage: node render-reel.mjs <spec.json> [out.mp4] [--fps 30] [--jpeg]
+// Usage: node render-reel.mjs <spec.json> [out.mp4] [--fps 30] [--jpeg] [--audio voice.mp3] [--fit-audio]
+// --audio muxes a voiceover and stretches scene timings to its length (video keeps its own duration; audio is padded).
 // Visual types per scene: text | counter | bars | dots | scale | list
 import { createRequire } from "node:module";
 import { readFileSync, mkdirSync, writeFileSync, rmSync, existsSync } from "node:fs";
@@ -19,6 +20,8 @@ const spec = JSON.parse(readFileSync(specPath, "utf8"));
 const fpsIdx = args.indexOf("--fps");
 const fps = fpsIdx > -1 ? Number(args[fpsIdx + 1]) : 30;
 const useJpeg = args.includes("--jpeg");
+const audioIdx = args.indexOf("--audio");
+const fitAudio = args.includes("--fit-audio") || audioIdx > -1;
 const name = basename(specPath, ".json");
 const outMp4 = resolve(args[1] && !args[1].startsWith("--") ? args[1] : resolve(here, "../out", name, `${name}.mp4`));
 const outdir = dirname(outMp4);
@@ -33,7 +36,27 @@ const ffmpegCandidates = [process.env.FFMPEG, (() => { const r = spawnSync("pyth
 const ffmpeg = ffmpegCandidates.find(c => { const r = spawnSync(c, ["-hide_banner", "-encoders"]); return r.status === 0 && r.stdout.toString().includes("libx264"); });
 if (!ffmpeg) throw new Error("ffmpeg with libx264 not found. Run: pip install imageio-ffmpeg");
 
-const duration = spec.duration ?? Math.max(...spec.scenes.map(s => s.end));
+// Audio: from --audio <file> or spec.audio (relative to the spec). With --fit-audio (implied by --audio)
+// every scene is stretched or squeezed so the scenes end when the voice ends, plus a short tail; the end card keeps its length.
+const audioPath = audioIdx > -1 ? resolve(args[audioIdx + 1]) : (spec.audio ? resolve(dirname(specPath), spec.audio) : null);
+let duration = spec.duration ?? Math.max(...spec.scenes.map(s => s.end));
+const endSeconds = spec.end ? (spec.end.seconds ?? 2.5) : 0;
+if (fitAudio && audioPath) {
+  const probe = spawnSync("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", audioPath]);
+  let audioDur = probe.status === 0 ? parseFloat(probe.stdout.toString()) : NaN;
+  if (!Number.isFinite(audioDur)) {
+    // Fall back to ffmpeg's own duration line when ffprobe is absent.
+    const r = spawnSync((() => { const c = spawnSync("python3", ["-c", "import imageio_ffmpeg as i; print(i.get_ffmpeg_exe())"]); return c.status === 0 ? c.stdout.toString().trim() : "ffmpeg"; })(), ["-hide_banner", "-i", audioPath]);
+    const m = r.stderr.toString().match(/Duration: (\d+):(\d+):(\d+\.\d+)/);
+    if (m) audioDur = (+m[1]) * 3600 + (+m[2]) * 60 + (+m[3]);
+  }
+  if (!Number.isFinite(audioDur)) throw new Error("could not read audio duration: " + audioPath);
+  const scenesEnd = Math.max(...spec.scenes.map(s => s.end));
+  const factor = (audioDur + 0.6) / scenesEnd;
+  for (const sc of spec.scenes) { sc.start = +(sc.start * factor).toFixed(3); sc.end = +(sc.end * factor).toFixed(3); }
+  duration = +(scenesEnd * factor + endSeconds).toFixed(3);
+  console.log(`fit to audio: ${audioDur.toFixed(2)} s voice, scenes scaled x${factor.toFixed(3)}, total ${duration} s`);
+}
 const esc = (s) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 const rich = (s) => esc(s).replace(/\*\*(.+?)\*\*/g, "<b>$1</b>").replace(/\*(.+?)\*/g, '<span class="hl">$1</span>');
 
@@ -159,9 +182,9 @@ if (spec.voiceover_script) writeFileSync(resolve(outdir, `${name}-voiceover.txt`
 if (spec.caption) writeFileSync(resolve(outdir, "caption.txt"), spec.caption.trim() + "\n");
 
 const ff = [ "-y", "-framerate", String(fps), "-i", resolve(framesDir, `f%05d.${ext}`) ];
-if (spec.audio) ff.push("-i", resolve(dirname(specPath), spec.audio), "-shortest");
+if (audioPath) ff.push("-i", audioPath);
 ff.push("-c:v", "libx264", "-pix_fmt", "yuv420p", "-profile:v", "high", "-crf", "18", "-r", String(fps), "-movflags", "+faststart");
-if (spec.audio) ff.push("-c:a", "aac", "-b:a", "192k");
+if (audioPath) ff.push("-c:a", "aac", "-b:a", "192k", "-af", "apad", "-shortest");
 ff.push(outMp4);
 const r = spawnSync(ffmpeg, ff, { stdio: ["ignore", "ignore", "pipe"] });
 if (r.status !== 0) { console.error(r.stderr.toString().split("\n").slice(-15).join("\n")); process.exit(1); }
