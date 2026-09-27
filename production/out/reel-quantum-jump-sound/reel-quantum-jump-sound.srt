@@ -1,0 +1,31 @@
+1
+00:00:00,000 --> 00:00:03,500
+Sound does not fade. It jumps.
+
+2
+00:00:03,500 --> 00:00:07,500
+Sound is vibration. Vibration is energy.
+
+3
+00:00:07,500 --> 00:00:12,000
+That energy comes in packets called phonons
+
+4
+00:00:12,000 --> 00:00:17,000
+Energy sits on steps. Nothing in between.
+
+5
+00:00:17,000 --> 00:00:21,500
+Watched single phonons jump between steps, in real time
+
+6
+00:00:21,500 --> 00:00:25,500
+A tiny mechanical resonator, one vibration packet at a time
+
+7
+00:00:25,500 --> 00:00:29,500
+The first real-time quantum jump of sound
+
+8
+00:00:29,500 --> 00:00:33,000
+Device details are still being checked against the paper.
