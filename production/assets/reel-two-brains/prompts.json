@@ -1,0 +1,104 @@
+{
+  "flow_id": "jGECfRY3UlN9hkq1jUgg",
+  "flow_url": "https://elevenlabs.io/app/flows/jGECfRY3UlN9hkq1jUgg",
+  "grade": "grade.sh (originals kept in raw/)",
+  "note": "",
+  "files": [
+    {
+      "file": "TB-01-embryo-two-colours.png",
+      "model": "flux-2-pro",
+      "node_type": "image-generation",
+      "parameters": {
+        "aspect_ratio": "9:16",
+        "resolution": "2K",
+        "output_format": "png"
+      },
+      "storyboard_aspect": "9:16",
+      "prompt": "A mouse embryo under a fluorescence microscope, its curled body a faint grey translucent outline on a black field, the developing brain at the head end glowing in two colours that meet at a crisp boundary, cool cyan toward the front of the head and warm amber toward the back, fine cellular texture, shallow depth of field, the embryo filling the upper middle of the frame, the lower third black and empty, no text, no letters, no watermark.",
+      "node_id": "aCSYlKI8R2EK3PbMhtuU",
+      "generation_id": null,
+      "status": "not generated: workspace quota exceeded (455 credits per still, 208 left)",
+      "graded": false
+    },
+    {
+      "file": "TB-02-embryo-gastrulation.png",
+      "model": "flux-2-pro",
+      "node_type": "image-generation",
+      "parameters": {
+        "aspect_ratio": "9:16",
+        "resolution": "2K",
+        "output_format": "png"
+      },
+      "storyboard_aspect": "9:16",
+      "prompt": "A very early mouse embryo at the gastrulation stage, a small elongated cup-shaped cluster of cells with a visible inner cavity, photographed in dark-field microscopy so the cells glow pale silver-blue against pure black, individual rounded cells resolved on the surface, one subtle warm highlight along one side of the cluster, shallow depth of field, the embryo in the upper half of the frame and the lower third black, no text, no letters, no watermark.",
+      "node_id": "iuNiS1DUIdVr8MoqxkbI",
+      "generation_id": null,
+      "status": "not generated: workspace quota exceeded (455 credits per still, 208 left)",
+      "graded": false
+    },
+    {
+      "file": "TB-03-forebrain-midbrain-cyan.png",
+      "model": "flux-2-pro",
+      "node_type": "image-generation",
+      "parameters": {
+        "aspect_ratio": "9:16",
+        "resolution": "2K",
+        "output_format": "png"
+      },
+      "storyboard_aspect": "9:16",
+      "prompt": "The front of a developing embryonic brain seen in close-up under a fluorescence microscope, the forebrain and midbrain vesicles glowing a luminous cyan with fine cellular grain, the rest of the tissue a faint dark grey, a black background, the glowing tissue curving across the upper two thirds of the frame, shallow depth of field with a soft bloom on the brightest cells, the lower third of the frame black and empty, no text, no letters, no watermark.",
+      "node_id": "JTJwcBeMCr9nSWO8DP68",
+      "generation_id": null,
+      "status": "not generated: workspace quota exceeded (455 credits per still, 208 left)",
+      "graded": false
+    },
+    {
+      "file": "TB-04-hindbrain-amber.png",
+      "model": "flux-2-pro",
+      "node_type": "image-generation",
+      "parameters": {
+        "aspect_ratio": "9:16",
+        "resolution": "2K",
+        "output_format": "png"
+      },
+      "storyboard_aspect": "9:16",
+      "prompt": "The hindbrain of a developing embryo seen in close-up under a fluorescence microscope, a segmented tube-like region glowing warm amber with fine cellular grain, tapering into the faint grey outline of the spinal cord, black background, the glowing tissue crossing the upper two thirds of the frame diagonally, shallow depth of field with a soft bloom on the brightest cells, the lower third of the frame black and empty, no text, no letters, no watermark.",
+      "node_id": "X8eP4BXThUgFR01Tjk9u",
+      "generation_id": null,
+      "status": "not generated: workspace quota exceeded (455 credits per still, 208 left)",
+      "graded": false
+    },
+    {
+      "file": "TB-05-zebrafish-embryo.png",
+      "model": "flux-2-pro",
+      "node_type": "image-generation",
+      "parameters": {
+        "aspect_ratio": "9:16",
+        "resolution": "2K",
+        "output_format": "png"
+      },
+      "storyboard_aspect": "9:16",
+      "prompt": "A transparent zebrafish embryo a few days old photographed through a stereo microscope, its large dark eye and the clear tissue of its developing brain visible through the skin, a yolk sac below, faint cyan and amber highlights within the head from the illumination, the body curving across the upper middle of the frame on a black field, shallow depth of field, the lower third of the frame black and empty, no text, no letters, no watermark.",
+      "node_id": "yZcDwtQJybNji4slMfCq",
+      "generation_id": null,
+      "status": "not generated: workspace quota exceeded (455 credits per still, 208 left)",
+      "graded": false
+    },
+    {
+      "file": "TB-06-acorn-worm.png",
+      "model": "flux-2-pro",
+      "node_type": "image-generation",
+      "parameters": {
+        "aspect_ratio": "9:16",
+        "resolution": "2K",
+        "output_format": "png"
+      },
+      "storyboard_aspect": "9:16",
+      "prompt": "An acorn worm, a soft pale orange marine worm with a rounded acorn-shaped proboscis and a darker collar behind it, lying half-buried in dark fine sand on the seafloor, lit by a single warm beam from above with cold blue water fading to black behind, fine particles drifting in the light, macro underwater photograph with shallow depth of field, the animal in the upper half of the frame and the lower third dark sand, no text, no letters, no watermark.",
+      "node_id": "08KctMB1jfrha6tvaCGl",
+      "generation_id": null,
+      "status": "not generated: workspace quota exceeded (455 credits per still, 208 left)",
+      "graded": false
+    }
+  ]
+}

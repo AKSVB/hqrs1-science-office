@@ -1,0 +1,109 @@
+{
+  "flow_id": "jGECfRY3UlN9hkq1jUgg",
+  "flow_url": "https://elevenlabs.io/app/flows/jGECfRY3UlN9hkq1jUgg",
+  "grade": "grade.sh (originals kept in raw/)",
+  "note": "",
+  "files": [
+    {
+      "file": "FA-01-amoeba-in-pool.png",
+      "model": "flux-2-pro",
+      "node_type": "image-generation",
+      "parameters": {
+        "aspect_ratio": "9:16",
+        "resolution": "2K",
+        "output_format": "png"
+      },
+      "storyboard_aspect": "9:16",
+      "prompt": "A single translucent amoeba glowing softly amber from within, floating in dark teal hot-spring water, its lobed body filling the upper middle of the frame, fine steam drifting across the top, small bubbles rising around it, dark volcanic rock at the edges, photographed as an extreme macro with a shallow depth of field, cool ambient light with one warm glow from the cell, the lower third of the frame dark still water, no text, no letters, no watermark.",
+      "node_id": "j4HlgBwo1N5rD4i5TpEo",
+      "generation_id": null,
+      "status": "not generated: workspace quota exceeded (455 credits per still, 208 left)",
+      "graded": false
+    },
+    {
+      "file": "FA-02-cell-edge-macro.png",
+      "model": "flux-2-pro",
+      "node_type": "image-generation",
+      "parameters": {
+        "aspect_ratio": "9:16",
+        "resolution": "2K",
+        "output_format": "png"
+      },
+      "storyboard_aspect": "9:16",
+      "prompt": "The rippling edge of a translucent amoeba seen through a research microscope at very high magnification, granular cytoplasm and a thin membrane in sharp focus, amber light glowing through the cell from behind, the surrounding water a deep blue-black with drifting motes, the cell edge crossing the upper half of the frame diagonally, shallow depth of field, the lower third of the frame dark and empty, no text, no letters, no watermark.",
+      "node_id": "ajJMOX1vrhV3IScryGCQ",
+      "generation_id": "wxnZK9hM28PL9OJS9Dxv",
+      "session_id": "P3p4h04IHduXQ8Km8Fyq",
+      "status": "accepted",
+      "credits": 454.5,
+      "size": "1152x2048",
+      "checks": "no text, no face, subject present; lower-third luminance 2.8% raw, 7.3% graded",
+      "graded": true,
+      "raw": "raw/FA-02-cell-edge-macro.png"
+    },
+    {
+      "file": "FA-03-lassen-hot-stream.png",
+      "model": "flux-2-pro",
+      "node_type": "image-generation",
+      "parameters": {
+        "aspect_ratio": "9:16",
+        "resolution": "2K",
+        "output_format": "png"
+      },
+      "storyboard_aspect": "9:16",
+      "prompt": "A steaming hot stream cutting through grey and rust-coloured volcanic rock in a mountain valley at dawn, thick white steam rising from the water and catching low warm light, pale mineral crusts along the banks, conifers dark on the ridge behind, wisps of steam curling into a cold blue sky, photographed with a wide lens from low on the bank, the lower third of the frame in deep shadow, no text, no letters, no watermark.",
+      "node_id": "8lCw7NAdTxhuYgSArPza",
+      "generation_id": null,
+      "status": "not generated: workspace quota exceeded (455 credits per still, 208 left)",
+      "graded": false
+    },
+    {
+      "file": "FA-04-cell-interior.png",
+      "model": "flux-2-pro",
+      "node_type": "image-generation",
+      "parameters": {
+        "aspect_ratio": "9:16",
+        "resolution": "2K",
+        "output_format": "png"
+      },
+      "storyboard_aspect": "9:16",
+      "prompt": "The interior of a single amoeba seen in cross-section under a fluorescence microscope, a round nucleus glowing softly at the centre, surrounding organelles and vacuoles as faint cyan and pale shapes in a translucent body, dark blue background, one warm amber highlight along the membrane on the upper right, shallow depth of field, the cell in the upper two thirds of the frame and the lower third dark and empty, no text, no letters, no watermark.",
+      "node_id": "QpuwSUwNMbjRV6tziPbo",
+      "generation_id": null,
+      "status": "not generated: workspace quota exceeded (455 credits per still, 208 left)",
+      "graded": false
+    },
+    {
+      "file": "FA-05-cell-dividing.png",
+      "model": "flux-2-pro",
+      "node_type": "image-generation",
+      "parameters": {
+        "aspect_ratio": "9:16",
+        "resolution": "2K",
+        "output_format": "png"
+      },
+      "storyboard_aspect": "9:16",
+      "prompt": "A translucent amoeba caught in the act of dividing, its body pinched into two lobes joined by a thin bridge, both lobes glowing amber from within, suspended in dark teal hot-spring water with rising bubbles and faint steam above, extreme macro photograph, shallow depth of field, cool ambient light from above and one warm glow from the cell, the lower third of the frame dark water, no text, no letters, no watermark.",
+      "node_id": "EsBIdEiFvG9VhgCCKvPW",
+      "generation_id": null,
+      "status": "not generated: workspace quota exceeded (455 credits per still, 208 left)",
+      "graded": false
+    },
+    {
+      "file": "FA-06-protective-state.png",
+      "model": "flux-2-pro",
+      "node_type": "image-generation",
+      "parameters": {
+        "aspect_ratio": "9:16",
+        "resolution": "2K",
+        "output_format": "png"
+      },
+      "storyboard_aspect": "9:16",
+      "prompt": "A single amoeba contracted into a dense, rounded, thick-walled ball, its amber glow dimmed to a deep ember at the core, surrounded by vigorous small bubbles and swirling steam in near-boiling teal water, dark volcanic grit below, extreme macro photograph, shallow depth of field, cold blue rim light and one warm ember at the centre, the lower third of the frame dark and empty, no text, no letters, no watermark.",
+      "node_id": "qO9iexpFeV3vxXhiOxOC",
+      "generation_id": null,
+      "status": "not generated: workspace quota exceeded (455 credits per still, 208 left)",
+      "graded": false
+    }
+  ]
+}

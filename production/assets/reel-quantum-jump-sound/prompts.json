@@ -1,0 +1,72 @@
+{
+  "flow_id": "jGECfRY3UlN9hkq1jUgg",
+  "flow_url": "https://elevenlabs.io/app/flows/jGECfRY3UlN9hkq1jUgg",
+  "grade": "grade.sh (originals kept in raw/)",
+  "note": "",
+  "files": [
+    {
+      "file": "QJ-01-bell-rim-struck.png",
+      "model": "flux-2-pro",
+      "node_type": "image-generation",
+      "parameters": {
+        "aspect_ratio": "9:16",
+        "resolution": "2K",
+        "output_format": "png"
+      },
+      "storyboard_aspect": "9:16",
+      "prompt": "The rim of a small brass bell an instant after being struck, the polished edge softened by vibration blur so it appears doubled, a dark charcoal studio background, lit by one warm lamp from the upper left and a faint cool rim light from the right, extreme macro, very shallow depth of field, the rim curving through the upper middle of the frame, the lower third dark and empty, no text, no letters, no watermark.",
+      "node_id": "FzKAZj41V9NFwbUr0Pfl",
+      "generation_id": null,
+      "status": "not generated: workspace quota exceeded (455 credits per still, 208 left)",
+      "graded": false
+    },
+    {
+      "file": "QJ-02-chip-suspended-beam.png",
+      "model": "flux-2-pro",
+      "node_type": "image-generation",
+      "parameters": {
+        "aspect_ratio": "9:16",
+        "resolution": "2K",
+        "output_format": "png"
+      },
+      "storyboard_aspect": "9:16",
+      "prompt": "An extreme macro photograph of a silicon microchip with a tiny suspended beam etched with a repeating pattern of holes, standing free over a dark trench, the silicon a cold blue-grey with fine crystalline texture, one thin gold electrode catching a warm reflection, the beam running diagonally across the upper half of the frame, shallow depth of field with its far end softly blurred, the lower third in deep shadow, no text, no letters, no watermark.",
+      "node_id": "y7vHOXcUqONAwBfFTChb",
+      "generation_id": null,
+      "status": "not generated: workspace quota exceeded (455 credits per still, 208 left)",
+      "graded": false
+    },
+    {
+      "file": "QJ-03-chip-on-gold-mount.png",
+      "model": "flux-2-pro",
+      "node_type": "image-generation",
+      "parameters": {
+        "aspect_ratio": "9:16",
+        "resolution": "2K",
+        "output_format": "png"
+      },
+      "storyboard_aspect": "9:16",
+      "prompt": "A small dark silicon chip on a gold-plated copper sample holder, fine wire bonds arcing from its edges, sitting at the base of a cylindrical cryostat stage among gold surfaces and coaxial cables, a faint frost bloom on the metal, lit by one warm work lamp from above with cold blue ambient light from the sides, macro lens, the chip in the upper centre of the frame, the lower third dark, no text, no letters, no watermark.",
+      "node_id": "rPW19WI2ECDZ1aXwSf39",
+      "generation_id": null,
+      "status": "not generated: workspace quota exceeded (455 credits per still, 208 left)",
+      "graded": false
+    },
+    {
+      "file": "QJ-04-dilution-fridge-stages.png",
+      "model": "flux-2-pro",
+      "node_type": "image-generation",
+      "parameters": {
+        "aspect_ratio": "9:16",
+        "resolution": "2K",
+        "output_format": "png"
+      },
+      "storyboard_aspect": "9:16",
+      "prompt": "The open interior of a dilution refrigerator, a tall stack of circular gold-plated plates hanging from thin rods, dense bundles of coaxial cables and copper braids running between the stages, faint cold mist at the lowest plate, a dark laboratory behind, lit by one warm lamp from the upper right with cool blue fill, medium lens from slightly below, the stack filling the upper two thirds of the frame, the lower third dark, no text, no letters, no watermark.",
+      "node_id": "HylE2mwKe8bde2jVty7P",
+      "generation_id": null,
+      "status": "not generated: workspace quota exceeded (455 credits per still, 208 left)",
+      "graded": false
+    }
+  ]
+}

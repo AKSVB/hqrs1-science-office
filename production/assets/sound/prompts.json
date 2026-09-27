@@ -1,0 +1,14 @@
+{
+  "flow_id": "jGECfRY3UlN9hkq1jUgg",
+  "flow_url": "https://elevenlabs.io/app/flows/jGECfRY3UlN9hkq1jUgg",
+  "note": "SFX prompts are the style bible section 7 strings verbatim; the bell strike is the storyboards/README.md cue for the quantum Reel, shortened to under 2 s. Bed A (eleven_music_v2, 50 s, about 900 credits) was NOT generated: the workspace quota ran out (208 credits left at the time). Its brief is recorded below so it can be run when credits are topped up.",
+  "files": [
+    {"file": "thud.mp3", "cue": "thud", "node_type": "sfx", "model": "eleven_text_to_sound_v2", "parameters": {"duration_seconds": 1.0, "prompt_influence": 0.6, "loop": false}, "prompt": "a single low soft impact, felt more than heard, 120 ms, no reverb tail", "generation_id": "xGu2TCmZxPVRDOUHHQKf", "node_id": "U0iptu4oQsUNxHWeDp9b", "duration_secs": 1.0, "credits": 10},
+    {"file": "tick.mp3", "cue": "tick", "node_type": "sfx", "model": "eleven_text_to_sound_v2", "parameters": {"duration_seconds": 0.5, "prompt_influence": 0.6, "loop": false}, "prompt": "a soft short mechanical tick, wooden, 40 ms", "generation_id": "SwmmTtIFpc57Nk6s9GYV", "node_id": "xYv6zpwqabQmmlPYNGqQ", "duration_secs": 0.48, "credits": 5},
+    {"file": "settle.mp3", "cue": "settle", "node_type": "sfx", "model": "eleven_text_to_sound_v2", "parameters": {"duration_seconds": 1.5, "prompt_influence": 0.6, "loop": false}, "prompt": "a low soft resonant tone fading over 1.2 s", "generation_id": "SmPp3JqAmsMjn7SfA0Bu", "node_id": "N5hVWkSpgweBFJF624T0", "duration_secs": 1.48, "credits": 15},
+    {"file": "bell-strike.mp3", "cue": "bell strike (reel-quantum-jump-sound hook, 0.0 s and 41.0 s)", "node_type": "sfx", "model": "eleven_text_to_sound_v2", "parameters": {"duration_seconds": 1.9, "prompt_influence": 0.6, "loop": false}, "prompt": "one soft strike on a small brass bell, ringing, decaying", "generation_id": "iE5t8YmeU2Fackw44mhR", "node_id": "fMw6YsMJsT7DktbtpECV", "duration_secs": 1.88, "credits": 19}
+  ],
+  "pending": [
+    {"file": "bed-a.mp3", "cue": "bed A (hqrs-bed-a); motif.mp3 is its first 2 s, cut by the Editor", "node_type": "music", "model": "eleven_music_v2", "parameters": {"duration_seconds": 50, "lyrics_type": "instrumental", "instrumental": true}, "prompt": "84 bpm, minor key, a low sustained synth pad, a soft sub pulse on beats 1 and 3, a single four-note motif on a muted electric piano in the first 2 seconds and again at a marked payoff point near the end, no drums, no lead melody, ends on the motif. Instrumental, cinematic science documentary underscore, calm and dark, no vocals.", "status": "not generated: quota exceeded"}
+  ]
+}

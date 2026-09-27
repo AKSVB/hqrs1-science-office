@@ -1,0 +1,104 @@
+{
+  "flow_id": "jGECfRY3UlN9hkq1jUgg",
+  "flow_url": "https://elevenlabs.io/app/flows/jGECfRY3UlN9hkq1jUgg",
+  "grade": "grade.sh --space (originals kept in raw/)",
+  "note": "",
+  "files": [
+    {
+      "file": "YP-01-earth-limb-sunrise.png",
+      "model": "flux-2-pro",
+      "node_type": "image-generation",
+      "parameters": {
+        "aspect_ratio": "9:16",
+        "resolution": "2K",
+        "output_format": "png"
+      },
+      "storyboard_aspect": "9:16",
+      "prompt": "The curved limb of planet Earth seen from low orbit, a thin luminous blue line of atmosphere along the curve, the sun breaking over the edge at the upper right as a small hard flare, swirls of cloud and dark ocean on the day side, the night side fading to black below, photographed with a medium telephoto lens from a spacecraft window, deep black space filling the lower third of the frame, no text, no letters, no watermark.",
+      "node_id": "xKynh1FPLmub19MFIGv0",
+      "generation_id": null,
+      "status": "not generated: workspace quota exceeded (455 credits per still, 208 left)",
+      "graded": false
+    },
+    {
+      "file": "YP-02-newborn-planet-in-gap.png",
+      "model": "flux-2-pro",
+      "node_type": "image-generation",
+      "parameters": {
+        "aspect_ratio": "9:16",
+        "resolution": "2K",
+        "output_format": "png"
+      },
+      "storyboard_aspect": "9:16",
+      "prompt": "A newly formed giant planet glowing a dull deep red like cooling iron, seen close from inside a dark cleared gap in a vast protoplanetary disk, thick dusty orange-brown bands of disk above and below the gap, faint threads of gas drawn toward the planet, the planet in the upper centre of the frame, cinematic wide lens, one warm light from the planet, a cold faint glow from the star, the lower third dark, no text, no letters, no watermark.",
+      "node_id": "M4rSHByOILccXxTkc2ci",
+      "generation_id": null,
+      "status": "not generated: workspace quota exceeded (455 credits per still, 208 left)",
+      "graded": false
+    },
+    {
+      "file": "YP-03-disk-wide-gap.png",
+      "model": "flux-2-pro",
+      "node_type": "image-generation",
+      "parameters": {
+        "aspect_ratio": "9:16",
+        "resolution": "2K",
+        "output_format": "png"
+      },
+      "storyboard_aspect": "9:16",
+      "prompt": "A young star at the centre of a wide swirling protoplanetary disk seen from a slight angle, the disk dusty ochre and brown with a dark ring-shaped gap far out from the star, a single small point of warm light inside the gap, the outer disk fading into a blue-black field, rendered like an infrared observatory image, the disk filling the upper two thirds, the lower third dark space, no text, no letters, no watermark.",
+      "node_id": "4vqigtqt6vaTxck5ZBcu",
+      "generation_id": null,
+      "status": "not generated: workspace quota exceeded (455 credits per still, 208 left)",
+      "graded": false
+    },
+    {
+      "file": "YP-04-planet-accretion-close.png",
+      "model": "flux-2-pro",
+      "node_type": "image-generation",
+      "parameters": {
+        "aspect_ratio": "9:16",
+        "resolution": "2K",
+        "output_format": "png"
+      },
+      "storyboard_aspect": "9:16",
+      "prompt": "A giant gas planet still forming, its banded cloud tops a deep red-orange with darker storm belts, thin glowing streams of disk material spiralling down onto it from a faint dusty ring, the planet's limb in the upper half of the frame lit by its own heat, a cold distant star as a small point of light at the top edge, cinematic telephoto lens, the lower third of the frame fading to black, no text, no letters, no watermark.",
+      "node_id": "a0y0j24G9Rh8MKyi50UN",
+      "generation_id": null,
+      "status": "not generated: workspace quota exceeded (455 credits per still, 208 left)",
+      "graded": false
+    },
+    {
+      "file": "YP-05-keck-domes-night.png",
+      "model": "flux-2-pro",
+      "node_type": "image-generation",
+      "parameters": {
+        "aspect_ratio": "9:16",
+        "resolution": "2K",
+        "output_format": "png"
+      },
+      "storyboard_aspect": "9:16",
+      "prompt": "Two large white observatory domes side by side on a bare volcanic summit at night, the Milky Way arching above them in a clear dark sky, thin cirrus on the horizon, a faint red glow of instrument light at the base of one dome, cinder and rock in the foreground, photographed with a wide lens on a long exposure, the summit occupying the middle of the frame and the lower third dark ground, no text, no letters, no watermark.",
+      "node_id": "MnuYx37MIDJcuNOTl9kG",
+      "generation_id": null,
+      "status": "not generated: workspace quota exceeded (455 credits per still, 208 left)",
+      "graded": false
+    },
+    {
+      "file": "YP-06-segmented-mirror.png",
+      "model": "flux-2-pro",
+      "node_type": "image-generation",
+      "parameters": {
+        "aspect_ratio": "9:16",
+        "resolution": "2K",
+        "output_format": "png"
+      },
+      "storyboard_aspect": "9:16",
+      "prompt": "The primary mirror of a large telescope seen from inside its dome, a wide dish made of many hexagonal mirror segments fitted together, each segment reflecting faint blue-grey light from the open dome slit above, the steel truss structure rising around it, a mist of cold night air, photographed with a wide lens from the observing floor, the mirror in the upper two thirds of the frame and the lower third in deep shadow, no text, no letters, no watermark.",
+      "node_id": "Pz1XLXrIjmKzI7OW5tkW",
+      "generation_id": null,
+      "status": "not generated: workspace quota exceeded (455 credits per still, 208 left)",
+      "graded": false
+    }
+  ]
+}

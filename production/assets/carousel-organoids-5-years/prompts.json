@@ -1,0 +1,72 @@
+{
+  "flow_id": "jGECfRY3UlN9hkq1jUgg",
+  "flow_url": "https://elevenlabs.io/app/flows/jGECfRY3UlN9hkq1jUgg",
+  "grade": "grade.sh (originals kept in raw/)",
+  "note": "3:4 is used for the carousel because flux-2-pro does not offer 4:5; the renderer crops to 4:5.",
+  "files": [
+    {
+      "file": "OR-01-organoid-in-dish.png",
+      "model": "flux-2-pro",
+      "node_type": "image-generation",
+      "parameters": {
+        "aspect_ratio": "3:4",
+        "resolution": "2K",
+        "output_format": "png"
+      },
+      "storyboard_aspect": "4:5",
+      "prompt": "A single pale pink-white brain organoid, a lumpy sphere a few millimetres across with a faintly folded surface, resting in clear medium in a shallow glass dish, placed toward the upper right so its edge runs out of frame, lit by one warm lamp from the upper left with cool blue reflections off the glass rim, macro lens, shallow depth of field, the dark bench fading to black across the lower third, no text, no letters, no watermark.",
+      "node_id": "QqfY23Qj0mBNmU1lmuNw",
+      "generation_id": null,
+      "status": "not generated: workspace quota exceeded (455 credits per still, 208 left)",
+      "graded": false
+    },
+    {
+      "file": "OR-02-multiwell-plate-incubator.png",
+      "model": "flux-2-pro",
+      "node_type": "image-generation",
+      "parameters": {
+        "aspect_ratio": "3:4",
+        "resolution": "2K",
+        "output_format": "png"
+      },
+      "storyboard_aspect": "4:5",
+      "prompt": "A clear multi-well culture plate seen from a low angle inside a dim incubator, each round well holding a small pale organoid in pink-tinted medium, condensation beads on the lid, a soft amber indicator glow from the incubator wall and cool blue light from one side, macro lens with shallow depth of field so only the nearest wells are sharp, the plate crossing the upper half of the frame, the lower third dark, no text, no letters, no watermark.",
+      "node_id": "RXqltKdb6INW8hcJX6k6",
+      "generation_id": null,
+      "status": "not generated: workspace quota exceeded (455 credits per still, 208 left)",
+      "graded": false
+    },
+    {
+      "file": "OR-03-organoid-section-layers.png",
+      "model": "flux-2-pro",
+      "node_type": "image-generation",
+      "parameters": {
+        "aspect_ratio": "3:4",
+        "resolution": "2K",
+        "output_format": "png"
+      },
+      "storyboard_aspect": "4:5",
+      "prompt": "A thin stained cross-section of a brain organoid seen under a fluorescence microscope, concentric layers of cells glowing in cyan and a warm amber band around a central cavity, the tissue forming a rounded rosette shape, black background, fine cellular detail in the layers, shallow depth of field with a gentle bloom on the brightest cells, the section filling the upper two thirds of the frame and the lower third black, no text, no letters, no watermark.",
+      "node_id": "Zs6P2Vj3fx07Rzt7MVQ3",
+      "generation_id": null,
+      "status": "not generated: workspace quota exceeded (455 credits per still, 208 left)",
+      "graded": false
+    },
+    {
+      "file": "OR-04-dna-methyl-marks.png",
+      "model": "flux-2-pro",
+      "node_type": "image-generation",
+      "parameters": {
+        "aspect_ratio": "3:4",
+        "resolution": "2K",
+        "output_format": "png"
+      },
+      "storyboard_aspect": "4:5",
+      "prompt": "A DNA double helix rendered as a physical model in cool blue-grey glass, small warm amber beads attached at intervals along the strand, the helix running diagonally across the upper half of the frame and falling out of focus at both ends, lit by one warm lamp catching the beads and a cold rim light on the glass, black background, macro lens, shallow depth of field, the lower third dark, no text, no letters, no watermark.",
+      "node_id": "Vo1zhbzIi2x1YlQ6BcZf",
+      "generation_id": null,
+      "status": "not generated: workspace quota exceeded (455 credits per still, 208 left)",
+      "graded": false
+    }
+  ]
+}
