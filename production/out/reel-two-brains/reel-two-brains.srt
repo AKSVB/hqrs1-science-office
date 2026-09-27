@@ -1,0 +1,31 @@
+1
+00:00:00,000 --> 00:00:03,500
+You do not have one brain. You have two.
+
+2
+00:00:03,500 --> 00:00:08,000
+Two cell populations build it. They never mix.
+
+3
+00:00:08,000 --> 00:00:12,000
+Otx2 cells build the forebrain and midbrain
+
+4
+00:00:12,000 --> 00:00:16,000
+Gbx2 cells build the hindbrain
+
+5
+00:00:16,000 --> 00:00:20,000
+Different chromatin states from the earliest embryonic stages
+
+6
+00:00:20,000 --> 00:00:24,500
+The same split shows up across species
+
+7
+00:00:24,500 --> 00:00:29,000
+Two nervous systems evolved separately, then fused
+
+8
+00:00:29,000 --> 00:00:33,000
+The paper says two lineages. "Two organs" is press framing.

@@ -1,0 +1,35 @@
+{
+  "notes": {
+    "story": "Publications desk item 8: 250+ titanosaur eggshell fragments from southernmost Patagonia; high-latitude nesting; likely compost-heated mound nests.",
+    "sources": [
+      "https://www.cnn.com/2026/09/08/science/fossilized-eggs-titanosaur",
+      "https://phys.org/news/2026-09-giant-dinosaurs-incubated-eggs.html",
+      "https://www.earth.com/science/giant-dinosaur-eggs-found-in-a-place-no-one-expected/"
+    ],
+    "journal": "Unverified. Coverage Sept 8, 2026. Source slide says so.",
+    "caveats_on_screen": [
+      "Slide 6 separates solid (fragment count, location) from interpretation (compost-heated mounds) from unverified (journal).",
+      "No date for the eggs is given because the memo gives none.",
+      "The compost-heat explanation on slide 5 is a generic mechanism, not a claim about measured temperatures."
+    ],
+    "facts_from_secondary_coverage": true
+  },
+  "handle": "@hqrs_1",
+  "caption": "More than 250 titanosaur eggshell fragments have turned up in southernmost Patagonia, evidence of giant dinosaurs nesting at high latitude. The likely trick: mound nests heated by rotting plant matter, like compost. Coverage from 8 September 2026; the journal is not yet verified by our desk.\n\nSource on slide 7.\n\n#paleontology #dinosaurs #patagonia #science #fossils",
+  "slides": [
+    { "type": "cover", "kicker": "Paleontology", "title": "Giant dinosaur eggs, in a place they *should not* be", "sub": "250+ titanosaur eggshell fragments from the far south of Patagonia." },
+    { "type": "number", "kicker": "The find", "number": "250+", "title": "eggshell fragments", "body": "From titanosaurs, giant dinosaurs, found in southernmost Patagonia." },
+    { "type": "statement", "kicker": "The location", "title": "High-latitude nesting, near the bottom of the world", "body": "Far further south than anyone expected these animals to lay eggs." },
+    { "type": "compare", "kicker": "The assumption", "myth": "Giant dinosaurs only nested where it was warm", "fact": "Titanosaurs nested at high latitude in southernmost Patagonia", "body": "The eggshells put nesting much further south than expected." },
+    { "type": "statement", "kicker": "How the eggs stayed warm", "title": "Likely *compost-heated* mound nests", "body": "Rotting plant matter gives off heat. Piled over eggs, it can do the job a warm climate would." },
+    { "type": "list", "kicker": "What is solid, what is not", "title": "Read this with care", "items": [
+      "**Solid:** 250+ eggshell fragments, titanosaur, far southern Patagonia",
+      "**Interpretation:** compost-heated mound nests",
+      "**Unverified:** the journal. Our desk is still tracing it." ] },
+    { "type": "source", "items": [
+      "Coverage from 8 September 2026. Journal not yet verified by our desk.",
+      "https://www.cnn.com/2026/09/08/science/fossilized-eggs-titanosaur",
+      "https://phys.org/news/2026-09-giant-dinosaurs-incubated-eggs.html" ], "note": "Details from press coverage. We will update this post once the paper is confirmed." },
+    { "type": "cta", "title": "One verified science story a day", "body": "No hype, source on the last slide, every time.", "ask": "Save this. Send it to the friend who thinks dinosaurs were all about the tropics." }
+  ]
+}

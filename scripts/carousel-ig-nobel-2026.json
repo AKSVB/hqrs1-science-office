@@ -1,0 +1,30 @@
+{
+  "notes": {
+    "story": "Trend scout item 7: 2026 Ig Nobel Prizes, announced 3 Sept 2026 in Zurich. One prize per slide.",
+    "sources": [
+      "https://improbable.com/2026/09/03/the-2026-ig-nobel-prize-winners-are-announced/",
+      "https://www.nature.com/articles/d41586-026-02650-x",
+      "https://cen.acs.org/education/science-communication/2026-ig-nobel-prizes-improbable-research-zurich/104/web/2026/09"
+    ],
+    "journal": "Improbable Research announcement, 3 Sept 2026; Nature news d41586-026-02650-x",
+    "caveats_on_screen": [
+      "The memo lists five prizes by topic only (kissing definition; splash-free urinal; buried underpants; cockroach 'milk'; babies smell wonderful to parents, teenagers do not). No winners, institutions, prize categories or study details are given, so none appear on screen.",
+      "No compare slide: the memo records no myth for this story."
+    ],
+    "facts_from_secondary_coverage": true
+  },
+  "handle": "@hqrs_1",
+  "caption": "The 2026 Ig Nobel Prizes were announced on 3 September in Zurich. Five of the winning topics: defining a kiss, a splash-free urinal, buried underpants, cockroach 'milk', and why babies smell wonderful to their parents while teenagers do not. Details and full winner list at Improbable Research; Nature news coverage, 2026.\n\nSource on slide 7.\n\n#ignobel #science #funscience #research",
+  "slides": [
+    { "type": "cover", "kicker": "Ig Nobel Prizes 2026", "title": "Five real studies that won a prize for being *ridiculous*", "sub": "Announced 3 September 2026 in Zurich. All real research." },
+    { "type": "statement", "kicker": "Prize 1 of 5", "title": "What counts as a *kiss*?", "body": "A prize for research that set out to define kissing. Yes, someone had to." },
+    { "type": "statement", "kicker": "Prize 2 of 5", "title": "The *splash-free* urinal", "body": "A prize for work on a urinal designed to stop the splash." },
+    { "type": "statement", "kicker": "Prize 3 of 5", "title": "*Buried* underpants", "body": "A prize for research that involved burying underpants. Full details in the source." },
+    { "type": "statement", "kicker": "Prize 4 of 5", "title": "Cockroach *\"milk\"*", "body": "A prize for research on a milk-like substance from cockroaches. Quotation marks are doing a lot of work." },
+    { "type": "statement", "kicker": "Prize 5 of 5", "title": "Babies smell *wonderful* to their parents. Teenagers do not.", "body": "A prize for research on how parents perceive the smell of their own children at different ages." },
+    { "type": "source", "items": [
+      "Improbable Research, 2026 Ig Nobel Prize winners announced, 3 September 2026: https://improbable.com/2026/09/03/the-2026-ig-nobel-prize-winners-are-announced/",
+      "Nature news coverage, 2026: https://www.nature.com/articles/d41586-026-02650-x" ], "note": "Winner names, institutions and prize categories are in the announcement. We show topics only." },
+    { "type": "cta", "title": "One verified science story a day", "body": "No hype, source on the last slide, every time.", "ask": "Save this. Send it to the friend who needs a laugh and a citation." }
+  ]
+}
