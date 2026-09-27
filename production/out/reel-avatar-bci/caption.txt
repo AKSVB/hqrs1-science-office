@@ -1,3 +1,0 @@
-A UCSF team (Chang lab) used a high-density ECoG implant with machine-learning decoders so paralysed participants could speak and gesture, such as nodding and waving, through an avatar at the same time. Three participants, two in real time, restricted vocabulary, wired, in a lab. Brosler et al., Nature Neuroscience, 14 Sept 2026.
-
-#neuroscience #bci #science #neurotech
