@@ -53,6 +53,7 @@ intake -> score -> script -> fact-check gate -> render -> editor QC gate -> sche
 ### Editor QC checklist (all must pass)
 
 - Reel: 1080x1920, H.264, yuv420p, 30 fps, under 60 s unless the Director approved longer; no watermark from any other app; no black bars.
+- Style bible compliance (`strategy/STYLE_BIBLE.md`): subject in frame and moving at 0.0 s; photoreal or mechanism visual in every scene; no text-only scene over 2 s; at most two text elements at once; contact sheet reviewed.
 - Carousel: 1080x1350 PNGs, 6-10 slides, cover text sits in the vertical middle third so it survives the 3:4 grid crop.
 - Hook visible and readable in frame 1; skip risk judged by watching the first 3 seconds cold.
 - Captions burned in; SRT exported; voiceover and on-screen text promise the same thing.

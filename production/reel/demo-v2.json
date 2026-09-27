@@ -1,0 +1,106 @@
+{
+  "handle": "@hqrs_1",
+  "end": { "kicker": "Follow @hqrs_1", "title": "One verified science story a day", "body": "Source in the caption.", "seconds": 2.5 },
+  "caption": "DEMO SPEC for renderer v2. Exercises every v2 feature against the fire-amoeba voiceover. Not for publication.",
+  "voiceover_script": "Something is reproducing at one hundred and forty five degrees Fahrenheit. And it is not a bacterium. It is an amoeba, a complex cell like the ones in your body, found in a hot stream in Lassen Volcanic National Park. Meet Incendiamoeba cascadensis, the fire amoeba. It divides at one hundred and forty five degrees, and it survived a five-minute spike to one hundred and fifty eight in a protective state. The old limit for complex life was about one hundred and forty. The record moved by only a few degrees, but it moved. The study, from Syracuse University, is in the journal Cell this month. Source in the caption.",
+  "scenes": [
+    {
+      "start": 0, "end": 3.5,
+      "bg": { "image": "placeholder-bg.png", "move": "push-in", "from": 1.0, "to": 1.18, "focus": [0.35, 0.4] },
+      "kicker": "Cell, 22 Sept 2026",
+      "caption": "Something is *reproducing* at 145 F",
+      "big": { "text": "145 F", "at": 1.2 }
+    },
+    {
+      "start": 3.5, "end": 6.5,
+      "bg": { "image": "placeholder-bg.png", "move": "pan-left", "focus": [0.5, 0.5], "scrim": 0.7 },
+      "kicker": "And it is not a bacterium",
+      "caption": "A *complex* cell, like yours",
+      "visual": { "type": "compare", "mode": "circles", "items": [ { "label": "Bacterium", "size": 14 }, { "label": "Amoeba", "size": 100 } ] }
+    },
+    {
+      "start": 6.5, "end": 10,
+      "transition": "wipe-up",
+      "bg": { "image": "placeholder-bg.png", "move": "tilt-up", "focus": [0.5, 0.6] },
+      "kicker": "Lassen Volcanic National Park",
+      "caption": "A hot stream, a new *heat record*",
+      "visual": { "type": "thermometer", "min": 32, "max": 212, "unit": " F", "fill": 145,
+        "markers": [ { "value": 98.6, "label": "Your body" }, { "value": 140, "label": "Old limit, complex life" }, { "value": 145, "label": "Fire amoeba divides" }, { "value": 158, "label": "Survived, 5 min" } ] }
+    },
+    {
+      "start": 10, "end": 13,
+      "bg": { "image": "missing-on-purpose.png", "move": "push-in" },
+      "kicker": "Meet",
+      "caption": "*Incendiamoeba cascadensis*, the fire amoeba",
+      "visual": { "type": "lineage", "labels": ["At 104 F", "At 145 F"], "depth": 5 }
+    },
+    {
+      "start": 13, "end": 16.5,
+      "transition": "fade",
+      "bg": { "image": "placeholder-bg.png", "move": "push-out", "focus": [0.6, 0.3] },
+      "kicker": "Divides at 145 F",
+      "caption": "It keeps *dividing*",
+      "visual": { "type": "grid", "n": 60, "lit": 60, "cols": 12, "colour": "#ff4d6d", "label": "cells still dividing" }
+    },
+    {
+      "start": 16.5, "end": 20,
+      "bg": { "image": "placeholder-bg.png", "move": "drift", "focus": [0.4, 0.6] },
+      "kicker": "A five-minute spike",
+      "caption": "Survived *158 F* in a protective state",
+      "visual": { "type": "staircase", "levels": 4, "labels": ["Active", "Stressed", "Protective", "Recovered"], "jumps": [ { "t": 0.9, "from": 0, "to": 2 }, { "t": 2.6, "from": 2, "to": 3 } ] },
+      "big": { "text": "158 F", "at": 0.35 }
+    },
+    {
+      "start": 20, "end": 23.5,
+      "bg": { "image": "placeholder-bg.png", "move": "pan-right", "focus": [0.5, 0.35] },
+      "kicker": "The old limit",
+      "caption": "Complex life was thought to stop at *140 F*",
+      "visual": { "type": "timeline", "min": 100, "max": 170, "unit": " F", "cursor": { "from": 100, "to": 145 },
+        "ticks": [ { "value": 104, "label": "Hot tub" }, { "value": 140, "label": "Old limit" }, { "value": 145, "label": "Divides" }, { "value": 158, "label": "Spike" } ] }
+    },
+    {
+      "start": 23.5, "end": 27,
+      "bg": { "image": "placeholder-bg.png", "move": "push-in", "focus": [0.7, 0.5] },
+      "kicker": "How far it moved",
+      "caption": "Only a *few degrees*, but it moved",
+      "visual": { "type": "bars", "items": [ { "label": "Old limit", "value": "140 F", "pct": 88 }, { "label": "Fire amoeba divides", "value": "145 F", "pct": 92 }, { "label": "Survived (5 min)", "value": "158 F", "pct": 100 } ] }
+    },
+    {
+      "start": 27, "end": 30.5,
+      "transition": "wipe-up",
+      "bg": { "image": "placeholder-bg.png", "move": "tilt-up", "focus": [0.3, 0.7], "scrim": 0.8 },
+      "kicker": "One event",
+      "caption": "One flash, one cell, one *record*",
+      "visual": { "type": "flash", "at": 1.0, "x": 0.62, "y": 0.42, "readout": "1 event", "label": "recorded", "waiting": "listening" }
+    },
+    {
+      "start": 30.5, "end": 34,
+      "bg": { "image": "placeholder-bg.png", "move": "drift", "focus": [0.5, 0.5] },
+      "kicker": "Elsewhere in science",
+      "caption": "Limits keep *moving*",
+      "visual": { "type": "orbit", "tilt": 60, "starSpin": 6, "planets": [ { "r": 300, "size": 20, "period": 5, "label": "prograde" }, { "r": 190, "size": 15, "period": 3.5, "retrograde": true, "colour": "#ffb020", "label": "retrograde" } ] }
+    },
+    {
+      "start": 34, "end": 37.5,
+      "bg": { "image": "placeholder-bg.png", "move": "push-out", "focus": [0.5, 0.4] },
+      "kicker": "Who",
+      "caption": "Syracuse team, in *Cell*",
+      "visual": { "type": "list", "items": [ "**Rappaport, Oliverio** and colleagues", "**Cell**, 22 Sept 2026", "**Source** in the caption" ] }
+    },
+    {
+      "start": 37.5, "end": 41,
+      "transition": "fade",
+      "bg": { "image": "placeholder-bg.png", "move": "pan-left", "focus": [0.5, 0.5] },
+      "kicker": "Still dividing at",
+      "caption": "The record *moved*",
+      "visual": { "type": "counter", "from": 0, "to": 145, "suffix": " F", "label": "and it is a eukaryote" }
+    },
+    {
+      "start": 41, "end": 43.2,
+      "bg": { "image": "placeholder-bg.png", "move": "push-in", "focus": [0.5, 0.5] },
+      "caption": "Source in the *caption*",
+      "visual": { "type": "scale", "a": { "r": 260, "label": "Old limit 140 F" }, "b": { "r": 330, "label": "Fire amoeba 145 F" } }
+    }
+  ],
+  "notes": { "purpose": "Renderer v2 demo. Background is a Playwright-generated placeholder (placeholder-bg.png); scene 4 references a missing image on purpose to show the gradient fallback. Numbers come from scripts/reel-fire-amoeba.json; compare/orbit/flash/lineage/staircase are illustrative." }
+}

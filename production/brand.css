@@ -92,3 +92,16 @@ html, body { background: var(--bg); color: var(--ink); font-family: var(--font-b
 .caption .hl { color: var(--accent-2); }
 .progress { position: absolute; left: 72px; right: 72px; top: 212px; height: 8px; border-radius: 4px; background: rgba(255,255,255,0.15); }
 .progress > i { display: block; height: 100%; background: var(--accent); border-radius: 4px; }
+
+/* Reel v2 (additive): photo backgrounds, legibility scrim and the word-by-word caption band.
+   The band sits at y 1170-1400, between the scene content (which ends at 1160 when captions are on) and the bottom UI zone (1480+). */
+.bg { position: absolute; inset: 0; overflow: hidden; }
+.bg img { display: block; width: 1080px; height: 1920px; object-fit: cover; }
+.scrim { position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(180deg, rgba(6,9,19,0.60) 0%, rgba(6,9,19,0.22) 30%, rgba(6,9,19,0.30) 58%, rgba(6,9,19,0.94) 100%); }
+.cap-band { position: absolute; left: 72px; right: 72px; top: 1170px; height: 230px; display: flex; align-items: center; justify-content: center; text-align: center; }
+.cap-line { font: 700 60px/1.18 var(--font-display); letter-spacing: -0.01em; color: var(--ink); text-shadow: 0 4px 24px rgba(0,0,0,0.8); text-wrap: balance; padding: 14px 32px; border-radius: 24px; background: rgba(6,9,19,0.45); }
+.cap-line .w { display: inline-block; padding: 0 7px; transform-origin: center; color: var(--ink); } /* padding leaves room for the 1.08x pop */
+.cap-line .w.now { color: var(--accent-2); }
+.cap-line .w.past { color: var(--ink); }
+.cap-line .w.next { color: rgba(245,247,250,0.42); }
