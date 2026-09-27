@@ -11,21 +11,87 @@
       "Scene 8 states the paper claims two lineages; 'two organs' is press framing.",
       "Species list (mouse embryos, chick, zebrafish, acorn worms) is from the memo; the primary work is in mouse embryos."
     ],
-    "facts_from_secondary_coverage": true
+    "facts_from_secondary_coverage": true,
+    "fact_check": "2026-09-27 AMBER: say two cell lineages traced in mouse embryos; do not say two organs or never supposed to meet. Journal date Sept 18 confirmed. Senior author Kyle Loh; co-first authors Carolyn Dundes and Rayyan Jokhai."
   },
   "handle": "@hqrs_1",
   "duration": 36,
-  "end": { "kicker": "Follow @hqrs_1", "title": "One verified science story a day", "body": "Source in the caption.", "seconds": 3 },
-  "caption": "Two cell lineages, Otx2 and Gbx2, build the brain from the earliest embryonic stages and never mix. The same split shows in mouse, chick, zebrafish and acorn worms, hinting at two nervous systems that fused long ago. Stanford Medicine, Nature Neuroscience, 2026. 'Two organs' is press framing; the paper claims two lineages.\n\n#neuroscience #brain #evolution #science",
-  "voiceover_script": "You do not have one brain. You have two. That is the headline from Stanford this month. In the embryo, two separate populations of stem cells build the brain. One group, marked by a gene called Otx2, builds the forebrain and midbrain. The other, marked by Gbx2, builds the hindbrain. They never mix, and they carry different chromatin states from the earliest stages. The same split shows up in chicks, zebrafish and even acorn worms. That suggests two nervous systems that evolved separately and fused hundreds of millions of years ago. One caveat. The paper describes two cell lineages. Two organs is the press release talking. Source in the caption.",
+  "end": {
+    "kicker": "Follow @hqrs_1",
+    "title": "One verified science story a day",
+    "body": "Source in the caption.",
+    "seconds": 3
+  },
+  "caption": "Two cell lineages, Otx2 and Gbx2, build the brain from gastrulation onward and never mix, traced in mouse embryos. The same split appears in chick, zebrafish and acorn worms, lineages that diverged around 550 million years ago. Loh lab, Stanford Medicine. Nature Neuroscience, 18 Sept 2026. 'Two organs' is press framing; the paper shows two lineages.\n\n#neuroscience #brain #evolution #science",
+  "voiceover_script": "Your brain is built by two cell lineages that never mix. That is the finding from Stanford this month. In the mouse embryo, two separate populations of stem cells build the brain, and they are separate from gastrulation onward. One group, marked by a gene called Otx2, builds the forebrain and midbrain. The other, marked by Gbx2, builds the hindbrain. They carry different chromatin states from the earliest stages. The same split shows up in chicks, zebrafish and acorn worms, lineages that diverged around five hundred and fifty million years ago. One caveat. The paper describes two cell lineages, traced in mice. Two organs is the press release talking. Source in the caption.",
   "scenes": [
-    { "start": 0, "end": 3.5, "kicker": "Stanford, 2026", "caption": "You do not have one brain. You have *two*." },
-    { "start": 3.5, "end": 8, "kicker": "In the embryo", "caption": "Two cell populations build it. They *never mix*.", "visual": { "type": "scale", "a": { "r": 400, "label": "Otx2+ cells" }, "b": { "r": 400, "label": "Gbx2+ cells" } } },
-    { "start": 8, "end": 12, "kicker": "Lineage one", "caption": "*Otx2* cells build the forebrain and midbrain" },
-    { "start": 12, "end": 16, "kicker": "Lineage two", "caption": "*Gbx2* cells build the hindbrain" },
-    { "start": 16, "end": 20, "kicker": "Different from the start", "caption": "Different chromatin states from the earliest embryonic stages" },
-    { "start": 20, "end": 24.5, "kicker": "Not just mice", "caption": "The same split shows up across species", "visual": { "type": "list", "items": [ "**Mouse** embryos", "**Chick**", "**Zebrafish**", "**Acorn worms**" ] } },
-    { "start": 24.5, "end": 29, "kicker": "The implication", "caption": "Two nervous systems evolved separately, then *fused*" },
-    { "start": 29, "end": 33, "kicker": "The caveat", "caption": "The paper says two lineages. \"Two organs\" is press framing." }
+    {
+      "start": 0,
+      "end": 3.5,
+      "kicker": "Stanford, Nature Neuroscience, 18 Sept 2026",
+      "caption": "Your brain is built by *two* cell lineages that never mix"
+    },
+    {
+      "start": 3.5,
+      "end": 8,
+      "kicker": "In the mouse embryo",
+      "caption": "Two stem-cell populations, separate from *gastrulation* onward",
+      "visual": {
+        "type": "scale",
+        "a": {
+          "r": 400,
+          "label": "Otx2+ cells"
+        },
+        "b": {
+          "r": 400,
+          "label": "Gbx2+ cells"
+        }
+      }
+    },
+    {
+      "start": 8,
+      "end": 12,
+      "kicker": "Lineage one",
+      "caption": "*Otx2* cells build the forebrain and midbrain"
+    },
+    {
+      "start": 12,
+      "end": 16,
+      "kicker": "Lineage two",
+      "caption": "*Gbx2* cells build the hindbrain"
+    },
+    {
+      "start": 16,
+      "end": 20,
+      "kicker": "Different from the start",
+      "caption": "Different chromatin states from the earliest embryonic stages"
+    },
+    {
+      "start": 20,
+      "end": 24.5,
+      "kicker": "Not just mice",
+      "caption": "The same split shows up across species",
+      "visual": {
+        "type": "list",
+        "items": [
+          "**Mouse** embryos",
+          "**Chick**",
+          "**Zebrafish**",
+          "**Acorn worms**"
+        ]
+      }
+    },
+    {
+      "start": 24.5,
+      "end": 29,
+      "kicker": "One interpretation",
+      "caption": "Lineages that diverged around *550 million years* ago"
+    },
+    {
+      "start": 29,
+      "end": 33,
+      "kicker": "The caveat",
+      "caption": "Two lineages, shown in mice. \"Two organs\" is press framing."
+    }
   ]
 }

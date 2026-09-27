@@ -12,25 +12,75 @@
       "Source slide note: numbers as reported in coverage; paper not yet opened by the desk.",
       "The one-line explanation of methylation clocks (slide 4) is definitional, not a claim from the paper."
     ],
-    "facts_from_secondary_coverage": true
+    "facts_from_secondary_coverage": true,
+    "fact_check": "2026-09-27 GREEN with \"about 425,000 cells from about 110 organoids\"; tie \"aged on schedule\" to DNA-methylation clocks; \"knows how old it is\" only with \"in effect\". Nature, 19 Aug 2026, DOI 10.1038/s41586-026-10877-x. Senior author Paola Arlotta, first author Irene Faravelli. Some organoids kept to about seven years."
   },
   "handle": "@hqrs_1",
-  "caption": "Lab-grown cortical organoids kept alive for five years matured through fetal-, newborn- and early-childhood-like stages, and their DNA methylation clocks matched the time spent in the dish. 424,000+ cells profiled from 110 organoids. Arlotta lab, Harvard and the Broad Institute. Nature, August 2026. The resemblance is in gene expression, not function.\n\nSource on slide 8.\n\n#neuroscience #organoids #brain #science #stemcells",
+  "caption": "Lab-grown cortical organoids kept alive for five years matured through fetal-, newborn- and early-childhood-like stages, and their DNA methylation clocks matched the time spent in the dish. About 425,000 cells profiled from about 110 organoids. Arlotta lab, Harvard and the Broad Institute. Nature, August 2026. The resemblance is in gene expression, not function.\n\nSource on slide 8.\n\n#neuroscience #organoids #brain #science #stemcells",
   "slides": [
-    { "type": "cover", "kicker": "Neuroscience", "title": "This blob of brain has been alive for *5 years*", "sub": "And by its own molecular clock, it knows how old it is. Nature, August 2026." },
-    { "type": "number", "kicker": "Time in the dish", "number": "5 yr", "title": "cortical organoids, still growing", "body": "Lab-grown clusters of brain cells from the Arlotta lab at Harvard and the Broad Institute." },
-    { "type": "list", "kicker": "The stages", "title": "They matured *on schedule*", "items": [
-      "A **fetal-like** stage",
-      "A **newborn-like** stage",
-      "An **early-childhood-like** stage" ] },
-    { "type": "statement", "kicker": "The clock", "title": "Methylation clocks matched *dish time*", "body": "Methylation clocks read chemical marks on DNA that track age. Here they lined up with how long each organoid had been growing." },
-    { "type": "number", "kicker": "The dataset", "number": "424k+", "title": "cells profiled", "body": "From 110 organoids." },
-    { "type": "compare", "kicker": "Careful", "myth": "These are tiny thinking brains", "fact": "They resemble brain tissue in gene expression, not in function", "body": "The match is molecular. Function was not shown." },
-    { "type": "statement", "kicker": "Why people argue", "title": "The ethics question comes up *every time*", "body": "As organoids get older and more lifelike, the debate about how to treat them grows with them." },
-    { "type": "source", "items": [
-      "Arlotta lab, Harvard and Broad Institute. Nature, 19 August 2026. Article s41586-026-10877-x.",
-      "https://www.nature.com/articles/s41586-026-10877-x",
-      "NIH news release: https://www.nih.gov/news-events/news-releases/brain-organoid-maturation-driven-lifelike-developmental-clock" ], "note": "Numbers as reported in coverage. Our desk has not yet opened the paper." },
-    { "type": "cta", "title": "One verified science story a day", "body": "No hype, source on the last slide, every time.", "ask": "Save this. Send it to the friend who thinks mini-brains can think." }
+    {
+      "type": "cover",
+      "kicker": "Neuroscience",
+      "title": "This blob of brain has been alive for *5 years*",
+      "sub": "And by its DNA-methylation clock it knows, in effect, how old it is. Nature, August 2026."
+    },
+    {
+      "type": "number",
+      "kicker": "Time in the dish",
+      "number": "5 yr",
+      "title": "cortical organoids, still growing",
+      "body": "Lab-grown clusters of brain cells from the Arlotta lab at Harvard and the Broad Institute."
+    },
+    {
+      "type": "list",
+      "kicker": "The stages",
+      "title": "They matured *on schedule*",
+      "items": [
+        "A **fetal-like** stage",
+        "A **newborn-like** stage",
+        "An **early-childhood-like** stage"
+      ]
+    },
+    {
+      "type": "statement",
+      "kicker": "The clock",
+      "title": "Methylation clocks matched *dish time*",
+      "body": "Methylation clocks read chemical marks on DNA that track age. Here they lined up with how long each organoid had been growing."
+    },
+    {
+      "type": "number",
+      "kicker": "The dataset",
+      "number": "~425k",
+      "title": "cells profiled",
+      "body": "From about 110 organoids, combining new and earlier data. Faravelli, Arlotta and colleagues."
+    },
+    {
+      "type": "compare",
+      "kicker": "Careful",
+      "myth": "These are tiny thinking brains",
+      "fact": "They resemble brain tissue in gene expression, not in function",
+      "body": "The match is molecular. Function was not shown."
+    },
+    {
+      "type": "statement",
+      "kicker": "Why people argue",
+      "title": "The ethics question comes up *every time*",
+      "body": "As organoids get older and more lifelike, the debate about how to treat them grows with them."
+    },
+    {
+      "type": "source",
+      "items": [
+        "Arlotta lab, Harvard and Broad Institute. Nature, 19 August 2026. Article s41586-026-10877-x.",
+        "https://www.nature.com/articles/s41586-026-10877-x",
+        "NIH news release: https://www.nih.gov/news-events/news-releases/brain-organoid-maturation-driven-lifelike-developmental-clock"
+      ],
+      "note": "Numbers as reported in coverage. Our desk has not yet opened the paper."
+    },
+    {
+      "type": "cta",
+      "title": "One verified science story a day",
+      "body": "No hype, source on the last slide, every time.",
+      "ask": "Save this. Send it to the friend who thinks mini-brains can think."
+    }
   ]
 }

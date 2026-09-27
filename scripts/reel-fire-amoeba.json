@@ -2,9 +2,9 @@
   "notes": {
     "story": "Trend scout item 5: 'fire amoeba' Incendiamoeba cascadensis, heat record for complex (eukaryotic) life.",
     "sources": [
-      "https://www.npr.org/2026/09/22/nx-s1-5977044/fire-amoeba-extremophile-eukaryote-life",
       "https://www.sciencenews.org/article/fire-amoeba-record-breaking-heat",
-      "https://artsandsciences.syracuse.edu/as-in-the-news/biology-researchers-record-breaking-fire-amoeba-study-draws-international-media-attention/"
+      "https://artsandsciences.syracuse.edu/as-in-the-news/biology-researchers-record-breaking-fire-amoeba-study-draws-international-media-attention/",
+      "NPR, 22 Sept 2026 (URL slug uncertain: nx-s1-5977044 vs nx-s1-5120932; verify before linking)"
     ],
     "journal": "Cell, Sept 22, 2026, Syracuse-led",
     "caveats_on_screen": [
@@ -12,21 +12,108 @@
       "No previous record temperature is given because the memo does not give one.",
       "Temperatures are in Fahrenheit as reported; no Celsius conversion shown."
     ],
-    "facts_from_secondary_coverage": true
+    "facts_from_secondary_coverage": true,
+    "fact_check": "2026-09-27 GREEN with wording: reproduces at 145 F (63 C); stays active to 147 F; survived a five-minute spike to 158 F (70 C) in a protective state; 176 F (80 C) lethal; previous eukaryote limit 140 F (60 C) set by fungi and red algae. Cell, 22 Sept 2026. Syracuse: lead author Beryl Rappaport, senior author Angela Oliverio. Site: Lassen Volcanic National Park. Preprint public Nov 2025."
   },
   "handle": "@hqrs_1",
   "duration": 35,
-  "end": { "kicker": "Follow @hqrs_1", "title": "One verified science story a day", "body": "Source in the caption.", "seconds": 3 },
-  "caption": "Incendiamoeba cascadensis, the 'fire amoeba', reproduces at 145 F and survives 158 F, a heat record for complex (eukaryotic) life. Syracuse-led study published in Cell, 2026.\n\n#biology #extremophile #science #microbiology",
-  "voiceover_script": "Something is reproducing at one hundred and forty five degrees Fahrenheit. And it is not a bacterium. It is an amoeba, a complex cell like the ones in your body, and it has just set the heat record for complex life. Meet Incendiamoeba cascadensis, the fire amoeba. It reproduces at one hundred and forty five degrees and survives up to one hundred and fifty eight. Complex cells were thought to have a lower limit than that. The study is Syracuse led and appears in the journal Cell this month. One single cell, one very hot record. The limits of life keep moving. Source in the caption.",
+  "end": {
+    "kicker": "Follow @hqrs_1",
+    "title": "One verified science story a day",
+    "body": "Source in the caption.",
+    "seconds": 3
+  },
+  "caption": "Incendiamoeba cascadensis, the 'fire amoeba', divides at 145 F (63 C) and survived a five-minute spike to 158 F (70 C) in a protective state. The previous limit for complex (eukaryotic) life was about 140 F. Found in Lassen Volcanic National Park. Rappaport, Oliverio and colleagues, Syracuse University. Cell, 22 Sept 2026.\n\n#biology #extremophile #science #microbiology",
+  "voiceover_script": "Something is reproducing at one hundred and forty five degrees Fahrenheit. And it is not a bacterium. It is an amoeba, a complex cell like the ones in your body, found in a hot stream in Lassen Volcanic National Park. Meet Incendiamoeba cascadensis, the fire amoeba. It divides at one hundred and forty five degrees, and it survived a five-minute spike to one hundred and fifty eight in a protective state. The old limit for complex life was about one hundred and forty. The record moved by only a few degrees, but it moved. The study, from Syracuse University, is in the journal Cell this month. Source in the caption.",
   "scenes": [
-    { "start": 0, "end": 4, "kicker": "Cell, 2026", "caption": "Something is *reproducing* at 145 degrees Fahrenheit", "visual": { "type": "counter", "from": 0, "to": 145, "suffix": " F", "label": "and it is not a bacterium" } },
-    { "start": 4, "end": 8, "kicker": "Meet", "caption": "*Incendiamoeba cascadensis*, the fire amoeba" },
-    { "start": 8, "end": 12, "kicker": "What it is", "caption": "A complex cell, a eukaryote, like the cells in you" },
-    { "start": 12, "end": 16.5, "kicker": "Reproduces at", "caption": "A new heat record for *complex life*", "visual": { "type": "counter", "from": 0, "to": 145, "suffix": " F", "label": "still dividing" } },
-    { "start": 16.5, "end": 21, "kicker": "Survives up to", "caption": "And it survives even hotter", "visual": { "type": "counter", "from": 100, "to": 158, "suffix": " F", "label": "survival limit" } },
-    { "start": 21, "end": 25, "kicker": "Why it matters", "caption": "Complex life now has a higher known heat limit" },
-    { "start": 25, "end": 28.5, "kicker": "Who", "caption": "Syracuse-led team, published in *Cell*" },
-    { "start": 28.5, "end": 32, "kicker": "One cell", "caption": "The limits of life keep *moving*" }
+    {
+      "start": 0,
+      "end": 4,
+      "kicker": "Cell, 22 Sept 2026",
+      "caption": "Something is *reproducing* at 145 degrees Fahrenheit",
+      "visual": {
+        "type": "counter",
+        "from": 0,
+        "to": 145,
+        "suffix": " F",
+        "label": "and it is not a bacterium"
+      }
+    },
+    {
+      "start": 4,
+      "end": 8,
+      "kicker": "Found in Lassen Volcanic National Park",
+      "caption": "*Incendiamoeba cascadensis*, the fire amoeba"
+    },
+    {
+      "start": 8,
+      "end": 12,
+      "kicker": "What it is",
+      "caption": "A complex cell, a eukaryote, like the cells in you"
+    },
+    {
+      "start": 12,
+      "end": 16.5,
+      "kicker": "Reproduces at",
+      "caption": "A new heat record for *complex life*",
+      "visual": {
+        "type": "counter",
+        "from": 0,
+        "to": 145,
+        "suffix": " F",
+        "label": "still dividing"
+      }
+    },
+    {
+      "start": 16.5,
+      "end": 21,
+      "kicker": "A brief spike",
+      "caption": "Survived *158 F* for five minutes, in a protective state",
+      "visual": {
+        "type": "counter",
+        "from": 100,
+        "to": 158,
+        "suffix": " F",
+        "label": "five-minute spike, then recovered"
+      }
+    },
+    {
+      "start": 21,
+      "end": 25,
+      "kicker": "The old limit",
+      "caption": "Complex life was thought to stop at *140 F*",
+      "visual": {
+        "type": "bars",
+        "items": [
+          {
+            "label": "Old limit (fungi, red algae)",
+            "value": "140 F",
+            "pct": 88
+          },
+          {
+            "label": "Fire amoeba reproduces",
+            "value": "145 F",
+            "pct": 92
+          },
+          {
+            "label": "Fire amoeba survived (5 min)",
+            "value": "158 F",
+            "pct": 100
+          }
+        ]
+      }
+    },
+    {
+      "start": 25,
+      "end": 28.5,
+      "kicker": "Who",
+      "caption": "Syracuse team, Rappaport and Oliverio, published in *Cell*"
+    },
+    {
+      "start": 28.5,
+      "end": 32,
+      "kicker": "One cell",
+      "caption": "The limits of life keep *moving*"
+    }
   ]
 }

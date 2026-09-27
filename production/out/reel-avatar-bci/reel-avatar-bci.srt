@@ -1,0 +1,31 @@
+1
+00:00:00,000 --> 00:00:04,000
+Paralysed and unable to speak. Their avatar talks and waves.
+
+2
+00:00:04,000 --> 00:00:08,000
+An ECoG implant records signals from the brain
+
+3
+00:00:08,000 --> 00:00:12,000
+Machine learning turns those signals into words and gestures
+
+4
+00:00:12,000 --> 00:00:16,500
+Speech and gestures like nodding and waving, at once
+
+5
+00:00:16,500 --> 00:00:20,500
+UCSF, the Chang lab, a neuroprosthesis for paralysis
+
+6
+00:00:20,500 --> 00:00:25,000
+Three participants. Two drove the avatar in real time.
+
+7
+00:00:25,000 --> 00:00:30,000
+Wired, in a lab. A demonstration, not a treatment.
+
+8
+00:00:30,000 --> 00:00:34,000
+Talking and gesturing together, the way people communicate

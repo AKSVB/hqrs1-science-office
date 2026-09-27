@@ -1,0 +1,30 @@
+# Fact-check memo, filed 2026-09-27
+
+Role: Fact-Checker (Quality Monitor).
+
+Method and limits. The web-search budget was exhausted before this task and the egress proxy returned 403 for every publisher, press office and index tried (Stanford, CNN, Nature, NIH, NASA, NPR, LBL, EurekAlert, PubMed, arXiv, phys.org, ScienceDaily, doi.org, Crossref, OpenAlex). No primary paper or press release was opened directly. Verification used public GitHub repositories that mirror press-release text, journal table-of-contents feeds, RSS archives with timestamps, page snapshots and independent newsletters. "Two sources" means two separately authored mirrors or outlets; several derive from the same press release. To unblock proper verification next cycle: raise the web-search allowance and add nature.com, science.org, cell.com, arxiv.org, pubmed.ncbi.nlm.nih.gov and eurekalert.org to the environment's allowed domains.
+
+## Verdicts
+
+| # | Story | Verdict | Required copy |
+|---|---|---|---|
+| 1 | Stanford two neural lineages | AMBER | "Two cell lineages that never mix, traced in mouse embryos." Not "two organs", not "never supposed to meet". Nature Neuroscience, 18 Sept 2026, confirmed. Senior author Kyle Loh; co-first authors Carolyn Dundes, Rayyan Jokhai. Lineages diverged ~550 Myr ago (2 sources). |
+| 2 | Sulawesi betel nut | AMBER | Science Advances, 9 Sept 2026, DOI 10.1126/sciadv.aei1901. Griffith University, Adam Brumm; Roger Papke (U. Florida). n = 2; one ~7,000 yr, the other 16,000-25,000. Say "up to 25,000", "may be the earliest evidence". Betel: fourth most widely used psychoactive substance; "getting high" overstates a mild stimulant. |
+| 3 | Stanford quantum jumps of sound | GREEN | Science 393, 1217-1220, published 17 Sept 2026 (not 21 Sept), DOI 10.1126/science.aeh7535. Safavi-Naeini lab; co-first authors Makihara and Szakiel. T1 = 2.1 ms; jumps between first excited state and ground state; ions 1986, photons 2007. Say "first direct real-time observation". |
+| 4 | Kültepe sealed envelopes | RED | npj Heritage Science s40494-026-02568-7 was online by 25 June 2026; not a September paper. Authors, letter text, and 3,800 vs 4,000 years reached only one source. Hold until the article is opened. |
+| 5 | UCSF avatar BCI | GREEN (wording AMBER) | Nature Neuroscience, 14 Sept 2026, DOI 10.1038/s41593-026-02446-2, Brosler et al., Chang lab. Three participants, two in real time, restricted vocabularies. "Gestures such as nodding and waving", not "body language". Participant gender unconfirmed. |
+| 6 | Five-year brain organoids | GREEN | Nature, 19 Aug 2026, DOI 10.1038/s41586-026-10877-x. Arlotta (senior), Faravelli (first). "About 425,000 cells from about 110 organoids"; some organoids to ~7 years; tie "aged on schedule" to DNA-methylation clocks; "knows how old it is" only with "in effect". |
+| 7 | Elias 2-24 b | AMBER | ApJL, 16 Sept 2026. Bernardi (lead), Cieza; Universidad Diego Portales. <1 Myr, ~450 ly, ~55 au, Keck/NIRC2 archival 2018 and 2020, previous record holders PDS 70 and WISPIT 2 planets >5 Myr. Mass: NASA "roughly Jupiter-mass"; paper 1.9-4.0 Jupiter masses. Not "~2 Jupiter masses". |
+| 8 | Fire amoeba | GREEN | Cell, 22 Sept 2026. Syracuse: Rappaport (lead), Oliverio (senior). Divides at 145 F (63 C); active to 147 F; survived a five-minute spike to 158 F (70 C) in a protective state; 176 F lethal; previous eukaryote limit 140 F (60 C), fungi and red algae. Lassen Volcanic National Park. Preprint public Nov 2025. NPR URL slug uncertain. |
+| 9 | LZ dark matter event | GREEN if framed | Press releases 1 Sept 2026; paper to arXiv/PRL, not yet peer-reviewed. One event, 248 keV nuclear recoil, 2.84 tonne-year exposure, 3.4 sigma local, 2.6 sigma global, ~0.5% chance from known backgrounds; 220 live days; if a WIMP, mass >200 GeV. "Not a discovery." |
+| 10 | Swallowable rice-paper battery | RED | Journal is Nature Chemical Engineering (Nature News, 21 Sept 2026). "3 days in a pig stomach" appears nowhere in Nature's account (in vitro: began coming apart after two weeks, dissolved after months). Only the RFID capsule was swallowed; the stimulator was placed endoscopically. Hold until the paper is read. |
+| 11 | Uhackatik crater | AMBER | No peer-reviewed paper. NASA Earth Observatory 15 Sept 2026. Lapointe (discoverer), Gordon Osinski (Western University) field confirmation Oct 2025; shatter cones and impact melt; ~25 km; ~390 Myr (dating method not reported). "Confirmed in the field; formal registration pending." Drop any "largest since Hiawatha" line. |
+| 12 | Sender and Milo 2021 | GREEN (80 g AMBER) | Nat Med 27, 45-48 (2021), DOI 10.1038/s41591-020-01182-9. 330 billion cells/day (3 sources); ~1% by arithmetic; 86% blood and 12% gut are by number of cells (erythrocytes 65%, neutrophils 18%, GI epithelium 12%, per PMC8570842); by mass GI epithelium ~42%. 80 g/day: one secondary confirmation. 3.8 million cells/s; 24 s of video is ~90 million cells. |
+| A | Most cortical neurons last a lifetime | GREEN | Spalding et al., Cell 122, 133-143 (2005): occipital neurons as old as the individual. Adult hippocampal neurogenesis is contested (Sorrells et al., Nature 2018); do not say "no new neurons". |
+| B | Red blood cell lifespan ~120 days | GREEN | "About 100-120 days"; "~4 months" fine. |
+
+## Changes applied to the specs (2026-09-27)
+
+Reels two-brains, quantum-jump-sound, youngest-planet, fire-amoeba, betel-teeth and avatar-bci rewritten per the rows above; carousel organoids and the two cell-turnover samples corrected; sealed-letters marked RED and pulled from the calendar; battery and crater notes carried into the calendar backlog.
+
+Sources used were GitHub-mirrored copies: Science TOC mirror (liugroupcornell, 2026-09-17), NASA release texts (sgazagnes/FeelGoodNews), Nature News text (Chr0n0stasis/meowReader_server), Guardian and NPR snapshots (dipeshrayg/memoryhole), RSS timestamps (rumca-js/RSS-Link-Database-2026), Stanford release captures (flybfree/AI-Wiki; byte-pipe/tech-news), UCSF lab repository (ChangLabUcsf/Brosler2026_simultaneous_decoding), Spalding 2005 abstract mirror, Sender and Milo breakdown via PMC8570842.

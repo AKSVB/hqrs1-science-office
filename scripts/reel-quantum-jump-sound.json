@@ -6,26 +6,97 @@
       "https://humsci.stanford.edu/feature/researchers-observe-first-real-time-quantum-jump-sound",
       "https://www.sciencedaily.com/releases/2026/09/260921081054.htm"
     ],
-    "journal": "Science, ~Sept 21, 2026, Safavi-Naeini lab, Stanford",
+    "journal": "Science 393, 1217-1220, published 17 Sept 2026, DOI 10.1126/science.aeh7535 (fact-check confirmed; Sept 21 was the ScienceDaily repost date)",
     "caveats_on_screen": [
       "Scene 8 says device details are not yet verified; no device numbers are quoted anywhere in the reel.",
       "The energy staircase (scene 4) is a schematic, not data."
     ],
-    "facts_from_secondary_coverage": true
+    "facts_from_secondary_coverage": true,
+    "fact_check": "2026-09-27 GREEN with date corrected to Sept 17 and wording \"first direct real-time observation\". Confirmed: lifetime T1 = 2.1 ms; jumps observed between the first excited state and ground state; ions 1986, photons 2007."
   },
   "handle": "@hqrs_1",
   "duration": 36,
-  "end": { "kicker": "Follow @hqrs_1", "title": "One verified science story a day", "body": "Source in the caption.", "seconds": 3 },
-  "caption": "Stanford physicists (Safavi-Naeini lab) watched single phonons, the quantum packets of vibration, jump between energy levels in a mechanical resonator in real time. Published in Science, 2026. Device details come from press coverage and are not yet checked against the paper.\n\n#physics #quantum #science #stanford",
-  "voiceover_script": "Sound does not fade away smoothly. At the smallest scale, it jumps. Sound is vibration, and vibration is energy. At the quantum level that energy comes in packets called phonons. A phonon can only sit on fixed energy steps, never in between. Physicists at Stanford, in the Safavi-Naeini lab, built a tiny mechanical resonator and watched single phonons jump between those steps in real time. It is the first real-time observation of a quantum jump in sound. The result is in the journal Science this month. One note. We have not checked the device details against the paper yet, so treat the specifics as reported. Source in the caption.",
+  "end": {
+    "kicker": "Follow @hqrs_1",
+    "title": "One verified science story a day",
+    "body": "Source in the caption.",
+    "seconds": 3
+  },
+  "caption": "Stanford physicists (Safavi-Naeini lab) directly watched single phonons, the quantum packets of vibration, jump between energy levels in a mechanical resonator in real time. Quantum jumps: ions 1986, photons 2007, sound 2026. Science, 17 Sept 2026, DOI 10.1126/science.aeh7535.\n\n#physics #quantum #science #stanford",
+  "voiceover_script": "Sound does not fade away smoothly. At the smallest scale, it jumps. Sound is vibration, and vibration is energy. At the quantum level that energy comes in packets called phonons. A phonon can only sit on fixed energy steps, never in between. Physicists at Stanford, in the Safavi-Naeini lab, built a tiny mechanical resonator that rings for about two milliseconds, and watched single phonons jump between those steps in real time. It is the first direct real-time observation of a quantum jump in sound. Quantum jumps were seen in ions in 1986, in photons in 2007, and now in sound. The result is in the journal Science, published on the seventeenth of September. Source in the caption.",
   "scenes": [
-    { "start": 0, "end": 3.5, "kicker": "Stanford, Science 2026", "caption": "Sound does not fade. It *jumps*." },
-    { "start": 3.5, "end": 7.5, "kicker": "What sound is", "caption": "Sound is vibration. Vibration is energy." },
-    { "start": 7.5, "end": 12, "kicker": "At the quantum level", "caption": "That energy comes in packets called *phonons*" },
-    { "start": 12, "end": 17, "kicker": "The rule (schematic)", "caption": "Energy sits on steps. Nothing in between.", "visual": { "type": "bars", "items": [ { "label": "Step 3", "value": "allowed", "pct": 100 }, { "label": "Step 2", "value": "allowed", "pct": 75 }, { "label": "Step 1", "value": "allowed", "pct": 50 }, { "label": "Step 0", "value": "allowed", "pct": 25 } ] } },
-    { "start": 17, "end": 21.5, "kicker": "What Stanford did", "caption": "Watched single phonons jump between steps, *in real time*" },
-    { "start": 21.5, "end": 25.5, "kicker": "The device", "caption": "A tiny mechanical resonator, one vibration packet at a time" },
-    { "start": 25.5, "end": 29.5, "kicker": "A first", "caption": "The first real-time quantum jump of *sound*" },
-    { "start": 29.5, "end": 33, "kicker": "Caveat", "caption": "Device details are still being checked against the paper." }
+    {
+      "start": 0,
+      "end": 3.5,
+      "kicker": "Stanford, Science, 17 Sept 2026",
+      "caption": "Sound does not fade. It *jumps*."
+    },
+    {
+      "start": 3.5,
+      "end": 7.5,
+      "kicker": "What sound is",
+      "caption": "Sound is vibration. Vibration is energy."
+    },
+    {
+      "start": 7.5,
+      "end": 12,
+      "kicker": "At the quantum level",
+      "caption": "That energy comes in packets called *phonons*"
+    },
+    {
+      "start": 12,
+      "end": 17,
+      "kicker": "The rule (schematic)",
+      "caption": "Energy sits on steps. Nothing in between.",
+      "visual": {
+        "type": "bars",
+        "items": [
+          {
+            "label": "Step 3",
+            "value": "allowed",
+            "pct": 100
+          },
+          {
+            "label": "Step 2",
+            "value": "allowed",
+            "pct": 75
+          },
+          {
+            "label": "Step 1",
+            "value": "allowed",
+            "pct": 50
+          },
+          {
+            "label": "Step 0",
+            "value": "allowed",
+            "pct": 25
+          }
+        ]
+      }
+    },
+    {
+      "start": 17,
+      "end": 21.5,
+      "kicker": "What Stanford did",
+      "caption": "Watched single phonons jump between steps, *in real time*"
+    },
+    {
+      "start": 21.5,
+      "end": 25.5,
+      "kicker": "The device",
+      "caption": "A resonator that rings for about *2 milliseconds*"
+    },
+    {
+      "start": 25.5,
+      "end": 29.5,
+      "kicker": "A first",
+      "caption": "The first *direct* real-time observation of a phonon jump"
+    },
+    {
+      "start": 29.5,
+      "end": 33,
+      "kicker": "The lineage",
+      "caption": "Ions in 1986. Photons in 2007. *Sound* in 2026."
+    }
   ]
 }

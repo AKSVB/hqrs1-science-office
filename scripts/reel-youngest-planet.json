@@ -12,21 +12,94 @@
       "The brief asked for a 'previous record >5 million years' rung. That number is not in the publications memo, so the ladder has two rungs (Earth, Elias 2-24 b) and the previous record is mentioned without a number.",
       "Mass and distance are approximate (about 2 Jupiter masses, about 450 light-years)."
     ],
-    "facts_from_secondary_coverage": true
+    "facts_from_secondary_coverage": true,
+    "fact_check": "2026-09-27 AMBER: mass is model-dependent; NASA says roughly Jupiter-mass, the paper gives about 2-4 Jupiter masses. Do not say \"about 2 Jupiter masses\". Confirmed: under 1 Myr, ~450 ly, ~55 au separation, Keck/NIRC2 archival data (2018, 2020), previous record holders PDS 70 and WISPIT 2 planets all over 5 Myr. Lead Andrea Bernardi, Universidad Diego Portales; co-author Lucas Cieza."
   },
   "handle": "@hqrs_1",
   "duration": 38,
-  "end": { "kicker": "Follow @hqrs_1", "title": "One verified science story a day", "body": "Source in the caption.", "seconds": 3 },
-  "caption": "Elias 2-24 b is the youngest planet ever found: under 1 million years old, about 2 Jupiter masses, roughly 450 light-years away and still embedded in its disk. Found in archival Keck data by a Universidad Diego Portales team (Andrea Bernardi). Astrophysical Journal Letters, 2026.\n\n#space #astronomy #exoplanet #science",
-  "voiceover_script": "Earth is four and a half billion years old. This planet is not even one million. It is called Elias 2-24 b, and it is the youngest planet ever found. It beats the previous record holder by a wide margin. It weighs in at about two Jupiter masses, sits about four hundred and fifty light-years away, and it is still embedded in the disk of material it formed from. Nobody pointed a new telescope at it. The team, led by Andrea Bernardi at Universidad Diego Portales, found it in archival data from the Keck Observatory. The paper is in the Astrophysical Journal Letters. Source in the caption.",
+  "end": {
+    "kicker": "Follow @hqrs_1",
+    "title": "One verified science story a day",
+    "body": "Source in the caption.",
+    "seconds": 3
+  },
+  "caption": "Elias 2-24 b is the youngest planet ever found: under 1 million years old, roughly Jupiter's mass (models give about 2 to 4), about 450 light-years away and still embedded in its disk, about 55 au from its star. Found in archival Keck data by a Universidad Diego Portales team led by Andrea Bernardi. Astrophysical Journal Letters, 16 Sept 2026.\n\n#space #astronomy #exoplanet #science",
+  "voiceover_script": "Earth is four and a half billion years old. This planet is not even one million. It is called Elias 2-24 b, and it is the youngest planet ever found. The previous record holders are all over five million years old. It is roughly Jupiter's mass, though the models give anything from about two to four Jupiters. It sits about four hundred and fifty light-years away, still embedded in the disk of material it formed from, about fifty five astronomical units out from its star. Nobody pointed a new telescope at it. The team, led by Andrea Bernardi at Universidad Diego Portales, found it in archival data from the Keck Observatory. The paper is in the Astrophysical Journal Letters. Source in the caption.",
   "scenes": [
-    { "start": 0, "end": 4, "kicker": "Astrophysical Journal Letters, 2026", "caption": "Earth is 4.5 billion years old. This planet is under 1 million." },
-    { "start": 4, "end": 8, "kicker": "Meet", "caption": "*Elias 2-24 b*, the youngest planet ever found" },
-    { "start": 8, "end": 13.5, "kicker": "Age ladder (not to scale)", "caption": "Younger than any known world", "visual": { "type": "bars", "items": [ { "label": "Earth", "value": "4.5 billion yr", "pct": 100 }, { "label": "Elias 2-24 b", "value": "under 1 million yr", "pct": 1 } ] } },
-    { "start": 13.5, "end": 17.5, "kicker": "The record", "caption": "It beats the previous youngest planet by a wide margin" },
-    { "start": 17.5, "end": 21.5, "kicker": "Mass", "caption": "About *2 Jupiter masses*", "visual": { "type": "counter", "from": 0, "to": 2, "suffix": "x", "label": "the mass of Jupiter, approximately" } },
-    { "start": 21.5, "end": 25.5, "kicker": "Distance", "caption": "About *450 light-years* away", "visual": { "type": "counter", "from": 0, "to": 450, "suffix": " ly", "label": "approximate distance" } },
-    { "start": 25.5, "end": 29.5, "kicker": "Still forming", "caption": "Still embedded in the disk it formed from" },
-    { "start": 29.5, "end": 35, "kicker": "How it was found", "caption": "In *archival* Keck data, by a Universidad Diego Portales team" }
+    {
+      "start": 0,
+      "end": 4,
+      "kicker": "Astrophysical Journal Letters, 2026",
+      "caption": "Earth is 4.5 billion years old. This planet is under 1 million."
+    },
+    {
+      "start": 4,
+      "end": 8,
+      "kicker": "Meet",
+      "caption": "*Elias 2-24 b*, the youngest planet ever found"
+    },
+    {
+      "start": 8,
+      "end": 13.5,
+      "kicker": "Age ladder (not to scale)",
+      "caption": "Younger than any known world",
+      "visual": {
+        "type": "bars",
+        "items": [
+          {
+            "label": "Earth",
+            "value": "4.5 billion yr",
+            "pct": 100
+          },
+          {
+            "label": "Previous youngest (PDS 70, WISPIT 2)",
+            "value": "over 5 million yr",
+            "pct": 8
+          },
+          {
+            "label": "Elias 2-24 b",
+            "value": "under 1 million yr",
+            "pct": 1.5
+          }
+        ]
+      }
+    },
+    {
+      "start": 13.5,
+      "end": 17.5,
+      "kicker": "The record",
+      "caption": "The previous youngest planets are over *5 million* years old"
+    },
+    {
+      "start": 17.5,
+      "end": 21.5,
+      "kicker": "Mass (model-dependent)",
+      "caption": "Roughly *Jupiter's mass*; models give about 2 to 4"
+    },
+    {
+      "start": 21.5,
+      "end": 25.5,
+      "kicker": "Distance",
+      "caption": "About *450 light-years* away",
+      "visual": {
+        "type": "counter",
+        "from": 0,
+        "to": 450,
+        "suffix": " ly",
+        "label": "approximate distance"
+      }
+    },
+    {
+      "start": 25.5,
+      "end": 29.5,
+      "kicker": "Still forming",
+      "caption": "Still embedded in its disk, about *55 au* from its star"
+    },
+    {
+      "start": 29.5,
+      "end": 35,
+      "kicker": "How it was found",
+      "caption": "In *archival* Keck data, by a Universidad Diego Portales team"
+    }
   ]
 }

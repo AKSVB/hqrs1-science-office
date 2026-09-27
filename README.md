@@ -22,7 +22,7 @@ office/
     fonts/                  Inter and Space Grotesk, local woff2
     carousel/render.mjs     spec.json -> slide-01.png ... + caption.txt
     reel/render-reel.mjs    spec.json -> name.mp4 + name.srt + voiceover.txt + caption.txt
-    out/                    rendered assets (git-ignored except samples)
+    out/                    rendered assets (PNG, MP4, SRT, captions are committed; frames are not)
 ```
 
 ## Render something

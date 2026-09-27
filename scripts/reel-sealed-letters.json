@@ -11,21 +11,75 @@
       "No number of letters is given on screen because the memo does not give one.",
       "The three-step list in scene 5 is a generic description of CT reading, not a claim about the paper's workflow."
     ],
-    "facts_from_secondary_coverage": true
+    "facts_from_secondary_coverage": true,
+    "fact_check": "2026-09-27 RED: the npj Heritage Science article (s40494-026-02568-7) was online by 25 June 2026, not September; authors, letter text and the 3,800 vs 4,000 years figure reached only one source. Hold until the article is opened. Do not use \"new this month\" framing."
   },
   "handle": "@hqrs_1",
   "duration": 36,
-  "end": { "kicker": "Follow @hqrs_1", "title": "One verified science story a day", "body": "Source in the caption.", "seconds": 3 },
+  "end": {
+    "kicker": "Follow @hqrs_1",
+    "title": "One verified science story a day",
+    "body": "Source in the caption.",
+    "seconds": 3
+  },
   "caption": "Portable CT scanning let researchers read cuneiform letters still sealed inside their clay envelopes at Kültepe, ancient Kanesh in Anatolia, without breaking them. One is from a woman, Anna-anna, to her merchant husband. Published in npj Heritage Science, 2026.\n\n#archaeology #history #cuneiform #science",
   "voiceover_script": "Nobody has opened this letter in four thousand years. Researchers just read it anyway. The letters come from Kültepe, the ancient city of Kanesh, in Anatolia. They are cuneiform tablets, still sealed inside clay envelopes that have never been broken. Instead of cracking them open, the team used a portable CT scanner. It sees through the clay, picks out the tablet inside, and the signs can be read from the scan. One of the letters is from a woman named Anna-anna, written to her merchant husband. Her words were sealed four thousand years ago and read without a single crack. The study is in npj Heritage Science. Source in the caption.",
   "scenes": [
-    { "start": 0, "end": 3.5, "kicker": "npj Heritage Science, 2026", "caption": "Nobody opened this 4,000-year-old letter. We read it anyway." },
-    { "start": 3.5, "end": 7.5, "kicker": "Where", "caption": "Kültepe, the ancient city of *Kanesh*, in Anatolia" },
-    { "start": 7.5, "end": 11.5, "kicker": "The letters", "caption": "Cuneiform tablets, still sealed inside *clay envelopes*" },
-    { "start": 11.5, "end": 15.5, "kicker": "Still sealed", "caption": "The clay envelopes have never been broken open" },
-    { "start": 15.5, "end": 21, "kicker": "The tool", "caption": "A portable *CT scanner* sees through the clay", "visual": { "type": "list", "items": [ "**Scan** the sealed envelope", "**Find** the tablet inside", "**Read** the cuneiform signs" ] } },
-    { "start": 21, "end": 25, "kicker": "One letter", "caption": "From a woman named *Anna-anna*" },
-    { "start": 25, "end": 29, "kicker": "Addressed to", "caption": "Her husband, a merchant" },
-    { "start": 29, "end": 33, "kicker": "4,000 years", "caption": "Sealed for 4,000 years. Read without a single crack." }
+    {
+      "start": 0,
+      "end": 3.5,
+      "kicker": "npj Heritage Science, 2026",
+      "caption": "Nobody opened this 4,000-year-old letter. We read it anyway."
+    },
+    {
+      "start": 3.5,
+      "end": 7.5,
+      "kicker": "Where",
+      "caption": "Kültepe, the ancient city of *Kanesh*, in Anatolia"
+    },
+    {
+      "start": 7.5,
+      "end": 11.5,
+      "kicker": "The letters",
+      "caption": "Cuneiform tablets, still sealed inside *clay envelopes*"
+    },
+    {
+      "start": 11.5,
+      "end": 15.5,
+      "kicker": "Still sealed",
+      "caption": "The clay envelopes have never been broken open"
+    },
+    {
+      "start": 15.5,
+      "end": 21,
+      "kicker": "The tool",
+      "caption": "A portable *CT scanner* sees through the clay",
+      "visual": {
+        "type": "list",
+        "items": [
+          "**Scan** the sealed envelope",
+          "**Find** the tablet inside",
+          "**Read** the cuneiform signs"
+        ]
+      }
+    },
+    {
+      "start": 21,
+      "end": 25,
+      "kicker": "One letter",
+      "caption": "From a woman named *Anna-anna*"
+    },
+    {
+      "start": 25,
+      "end": 29,
+      "kicker": "Addressed to",
+      "caption": "Her husband, a merchant"
+    },
+    {
+      "start": 29,
+      "end": 33,
+      "kicker": "4,000 years",
+      "caption": "Sealed for 4,000 years. Read without a single crack."
+    }
   ]
 }

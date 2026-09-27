@@ -12,21 +12,82 @@
       "Scene 7 states: wired, lab setting, a demonstration and not a treatment people can get.",
       "No language promising a medical fix appears in the script, captions or voiceover."
     ],
-    "facts_from_secondary_coverage": true
+    "facts_from_secondary_coverage": true,
+    "fact_check": "2026-09-27 GREEN on journal/date/n, wording AMBER: Nature Neuroscience, 14 Sept 2026, DOI 10.1038/s41593-026-02446-2, Brosler et al., UCSF Chang lab. Three participants, two used real-time avatar control, restricted vocabularies. Say \"gestures such as nodding and waving\", not \"body language\". Participant gender not confirmed; do not gender the hook."
   },
   "handle": "@hqrs_1",
   "duration": 37,
-  "end": { "kicker": "Follow @hqrs_1", "title": "One verified science story a day", "body": "Source in the caption.", "seconds": 3 },
-  "caption": "A UCSF team used an ECoG brain-computer interface with machine-learning decoders so paralysed participants could speak and gesture through an avatar at the same time. Three participants, wired, in a lab setting. Nature Neuroscience, 2026.\n\n#neuroscience #bci #science #neurotech",
-  "voiceover_script": "She cannot move or speak. Her avatar can do both, straight from her brain. This is a brain-computer interface from UCSF. An implant called ECoG records signals from the brain. Machine-learning decoders turn those signals into speech and into body language, and an on-screen avatar performs both at the same time. Talking and gesturing together, the way people actually communicate. Now the honest part. Three participants. A wired connection. A lab setting. This is a demonstration, not a treatment you can go and get. But it is the first time speech and body language have been decoded together like this. Nature Neuroscience, this month. Source in the caption.",
+  "end": {
+    "kicker": "Follow @hqrs_1",
+    "title": "One verified science story a day",
+    "body": "Source in the caption.",
+    "seconds": 3
+  },
+  "caption": "A UCSF team (Chang lab) used a high-density ECoG implant with machine-learning decoders so paralysed participants could speak and gesture, such as nodding and waving, through an avatar at the same time. Three participants, two in real time, restricted vocabulary, wired, in a lab. Brosler et al., Nature Neuroscience, 14 Sept 2026.\n\n#neuroscience #bci #science #neurotech",
+  "voiceover_script": "Paralysed and unable to speak. Their avatar talks and waves, straight from their brain. This is a brain-computer interface from the Chang lab at UCSF. A high-density implant called ECoG records signals from the brain. Machine-learning decoders turn those signals into speech and into gestures, like nodding and waving, and an on-screen avatar performs both at the same time. Now the honest part. Three participants, two of them driving the avatar in real time, with a restricted vocabulary, over a wired connection, in a lab. This is a demonstration, not a treatment you can go and get. But it is the first time speech and gestures have been decoded together like this. Nature Neuroscience, fourteenth of September. Source in the caption.",
   "scenes": [
-    { "start": 0, "end": 4, "kicker": "Nature Neuroscience, 2026", "caption": "She cannot move or speak. Her avatar does *both*." },
-    { "start": 4, "end": 8, "kicker": "The implant", "caption": "An *ECoG* implant records signals from the brain" },
-    { "start": 8, "end": 12, "kicker": "The decoders", "caption": "Machine learning turns those signals into words and gestures" },
-    { "start": 12, "end": 16.5, "kicker": "At the same time", "caption": "Speech and body language, *simultaneously*, through an avatar" },
-    { "start": 16.5, "end": 20.5, "kicker": "Where", "caption": "UCSF, a neuroprosthesis for paralysis" },
-    { "start": 20.5, "end": 25, "kicker": "Sample size", "caption": "Three participants. That is the whole study.", "visual": { "type": "dots", "n": 3, "lit": 3, "cols": 3, "label": "n = 3" } },
-    { "start": 25, "end": 30, "kicker": "What it is not", "caption": "Wired, in a lab. A demonstration, not a treatment.", "visual": { "type": "list", "items": [ "**3** participants", "**Wired** connection", "**Lab** setting" ] } },
-    { "start": 30, "end": 34, "kicker": "Why it matters", "caption": "Talking and gesturing together, the way people communicate" }
+    {
+      "start": 0,
+      "end": 4,
+      "kicker": "Nature Neuroscience, 14 Sept 2026",
+      "caption": "Paralysed and unable to speak. Their avatar talks and *waves*."
+    },
+    {
+      "start": 4,
+      "end": 8,
+      "kicker": "The implant",
+      "caption": "An *ECoG* implant records signals from the brain"
+    },
+    {
+      "start": 8,
+      "end": 12,
+      "kicker": "The decoders",
+      "caption": "Machine learning turns those signals into words and *gestures*"
+    },
+    {
+      "start": 12,
+      "end": 16.5,
+      "kicker": "At the same time",
+      "caption": "Speech and gestures like nodding and waving, *at once*"
+    },
+    {
+      "start": 16.5,
+      "end": 20.5,
+      "kicker": "Where",
+      "caption": "UCSF, the Chang lab, a neuroprosthesis for paralysis"
+    },
+    {
+      "start": 20.5,
+      "end": 25,
+      "kicker": "Sample size",
+      "caption": "Three participants. Two drove the avatar in *real time*.",
+      "visual": {
+        "type": "dots",
+        "n": 3,
+        "lit": 2,
+        "cols": 3,
+        "label": "n = 3; real-time avatar control: 2"
+      }
+    },
+    {
+      "start": 25,
+      "end": 30,
+      "kicker": "What it is not",
+      "caption": "Wired, in a lab. A demonstration, not a treatment.",
+      "visual": {
+        "type": "list",
+        "items": [
+          "**3** participants, 2 in real time",
+          "**Restricted** vocabulary",
+          "**Wired**, in a lab"
+        ]
+      }
+    },
+    {
+      "start": 30,
+      "end": 34,
+      "kicker": "Why it matters",
+      "caption": "Talking and gesturing together, the way people communicate"
+    }
   ]
 }

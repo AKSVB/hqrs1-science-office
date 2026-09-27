@@ -1,16 +1,107 @@
 {
   "handle": "@hqrs_1",
   "duration": 24,
-  "end": { "kicker": "Follow @hqrs_1", "title": "One verified science story a day", "body": "Source in the caption.", "seconds": 2.5 },
-  "caption": "While you watched this, your body replaced about 80 million cells.\n\nSender & Milo modelled cell turnover across every tissue (Nature Medicine, 2021): ~330 billion cells a day, ~1% of you. Most of that is blood. The '7 years' claim is folklore; cortical neurons mostly last a lifetime.\n\nSource: Sender R, Milo R. Nat Med 27, 45-48 (2021).\n\n#science #biology #humanbody #sciencefacts #stem",
+  "end": {
+    "kicker": "Follow @hqrs_1",
+    "title": "One verified science story a day",
+    "body": "Source in the caption.",
+    "seconds": 2.5
+  },
+  "caption": "While you watched this, your body replaced about 90 million cells.\n\nSender & Milo modelled cell turnover across every tissue (Nature Medicine, 2021): ~330 billion cells a day, ~1% of you. Most of that is blood. The '7 years' claim is folklore; cortical neurons mostly last a lifetime.\n\nSource: Sender R, Milo R. Nat Med 27, 45-48 (2021).\n\n#science #biology #humanbody #sciencefacts #stem",
   "voiceover_script": "While you watch this, your body is replacing about four million cells every second. Three hundred and thirty billion a day. About one percent of you. Most of it is blood: red cells and neutrophils live short lives in huge numbers. You've probably heard that every cell is replaced every seven years. That's not true. Gut lining lasts days. Fat cells, about a decade. And most of the neurons in your cortex are as old as you are. So the body you had yesterday is mostly gone. The mind that remembers it is not.",
   "scenes": [
-    { "start": 0, "end": 3.2, "kicker": "Right now", "caption": "Your body is replacing *4 million* cells every second", "visual": { "type": "counter", "from": 0, "to": 4000000, "suffix": "", "label": "cells per second" } },
-    { "start": 3.2, "end": 6.4, "kicker": "Per day", "caption": "That is *330 billion* cells a day", "visual": { "type": "counter", "from": 0, "to": 330, "suffix": " bn", "label": "about 1% of all your cells" } },
-    { "start": 6.4, "end": 10, "kicker": "Where it happens", "caption": "Most of it is *blood*", "visual": { "type": "bars", "items": [ { "label": "Blood cells", "value": "~86%", "pct": 86 }, { "label": "Gut lining", "value": "~12%", "pct": 12 }, { "label": "Everything else", "value": "~2%", "pct": 2 } ] } },
-    { "start": 10, "end": 13.2, "kicker": "The famous claim", "caption": "\"Every cell is replaced every 7 years\"", "visual": { "type": "dots", "n": 100, "lit": 100, "cols": 10, "label": "This is a myth. There is no single number." } },
-    { "start": 13.2, "end": 17.4, "kicker": "Actual lifetimes", "caption": "It depends entirely on the *tissue*", "visual": { "type": "list", "items": [ "**Gut lining:** days", "**Red blood cells:** ~4 months", "**Fat cells:** ~10 years", "**Cortical neurons:** your whole life" ] } },
-    { "start": 17.4, "end": 19.5, "caption": "The body you had yesterday is mostly *gone*." },
-    { "start": 19.5, "end": 21.5, "caption": "The mind that remembers it is *not*." }
-  ]
+    {
+      "start": 0,
+      "end": 3.2,
+      "kicker": "Right now",
+      "caption": "Your body is replacing *4 million* cells every second",
+      "visual": {
+        "type": "counter",
+        "from": 0,
+        "to": 4000000,
+        "suffix": "",
+        "label": "cells per second"
+      }
+    },
+    {
+      "start": 3.2,
+      "end": 6.4,
+      "kicker": "Per day",
+      "caption": "That is *330 billion* cells a day",
+      "visual": {
+        "type": "counter",
+        "from": 0,
+        "to": 330,
+        "suffix": " bn",
+        "label": "about 1% of all your cells"
+      }
+    },
+    {
+      "start": 6.4,
+      "end": 10,
+      "kicker": "Where it happens",
+      "caption": "Most of it is *blood*",
+      "visual": {
+        "type": "bars",
+        "items": [
+          {
+            "label": "Blood cells",
+            "value": "~86%",
+            "pct": 86
+          },
+          {
+            "label": "Gut lining",
+            "value": "~12%",
+            "pct": 12
+          },
+          {
+            "label": "Everything else",
+            "value": "~2%",
+            "pct": 2
+          }
+        ]
+      }
+    },
+    {
+      "start": 10,
+      "end": 13.2,
+      "kicker": "The famous claim",
+      "caption": "\"Every cell is replaced every 7 years\"",
+      "visual": {
+        "type": "dots",
+        "n": 100,
+        "lit": 100,
+        "cols": 10,
+        "label": "This is a myth. There is no single number."
+      }
+    },
+    {
+      "start": 13.2,
+      "end": 17.4,
+      "kicker": "Actual lifetimes",
+      "caption": "It depends entirely on the *tissue*",
+      "visual": {
+        "type": "list",
+        "items": [
+          "**Gut lining:** days",
+          "**Red blood cells:** ~4 months",
+          "**Fat cells:** ~10 years",
+          "**Cortical neurons:** your whole life"
+        ]
+      }
+    },
+    {
+      "start": 17.4,
+      "end": 19.5,
+      "caption": "The body you had yesterday is mostly *gone*."
+    },
+    {
+      "start": 19.5,
+      "end": 21.5,
+      "caption": "The mind that remembers it is *not*."
+    }
+  ],
+  "notes": {
+    "fact_check": "2026-09-27 GREEN. 330e9 / 86,400 s = 3.8 million cells per second; 24 s of video is about 90 million cells."
+  }
 }

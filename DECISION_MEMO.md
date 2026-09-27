@@ -26,6 +26,12 @@ Calls.
 
 9. Analytics: weekly log and projection tool in use from the first post. The growth table is rebuilt from observed data after two weeks; until then the base assumption (9 follows per 1,000 non-follower views) stands and is labelled as such.
 
-Fact-check outcomes and story-level calls: see the section appended below once the Fact-Checker's memo is filed.
+Fact-check outcomes and story-level calls (memo filed as `research/05-fact-check.md`):
+
+- GREEN, ship as written: quantum jumps of sound (date corrected to 17 Sept), fire amoeba (spike wording applied), organoids (about 425,000 cells), avatar BCI (gesture wording applied), cell turnover (bars labelled "by number of cells"), LZ dark matter (only as "not a discovery").
+- AMBER, shipped with the caveat on screen: two brain lineages (no "two organs"), betel teeth (range and n = 2 on screen, "may be the earliest"), youngest planet (mass model-dependent), Uhackatik crater (field-confirmed, registration pending).
+- RED, pulled from the calendar: sealed cuneiform letters (June paper, single-source details), rice-paper battery (unsupported "3 days" figure, wrong journal). Both return only after someone opens the paper.
+- Standing rule confirmed by this cycle: the Fact-Checker found real errors in one third of the desk's top stories. No story ships without its row in a fact-check memo.
+- Environment call: the Fact-Checker could not open any publisher. Next cycle needs the web-search allowance raised and nature.com, science.org, cell.com, arxiv.org, pubmed.ncbi.nlm.nih.gov and eurekalert.org allowed through the proxy; the owner sets this in the environment's network settings.
 
 What the owner must supply for the next cycle: a screenshot or export of Insights (followers, last 10 posts' views, non-follower share, follows from posts, most active times), confirmation on the Hindi line, the posting time zone, and a yes or no on the bio and pinned-post changes in `strategy/ACCOUNT_STRATEGY.md` section 5.

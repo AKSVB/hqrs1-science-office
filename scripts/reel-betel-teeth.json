@@ -13,21 +13,94 @@
       "The date is shown as a range, 16,000 to 25,000 years (scene 6 bars), and scene 7 says headlines quote the top of the range.",
       "'4th most common addictive drug' comes from The Conversation headline in the memo."
     ],
-    "facts_from_secondary_coverage": true
+    "facts_from_secondary_coverage": true,
+    "fact_check": "2026-09-27 AMBER: Science Advances, 9 Sept 2026, DOI 10.1126/sciadv.aei1901. Griffith University (Adam Brumm) with Roger Papke (University of Florida). n = 2 skeletons; one ~7,000 years, the other 16,000-25,000. Say \"up to 25,000\", \"may be the earliest\". Betel: fourth most widely used psychoactive substance; \"getting high\" overstates a mild stimulant."
   },
   "handle": "@hqrs_1",
   "duration": 38,
-  "end": { "kicker": "Follow @hqrs_1", "title": "One verified science story a day", "body": "Source in the caption.", "seconds": 3 },
-  "caption": "Two forager skeletons from Sulawesi show a novel tooth-wear pattern and chemical traces of arecoline, from betel nut. Science Advances, 2026. Caveats: the sample is two individuals, and the older date is a range, 16,000 to 25,000 years. Headlines quote the top of that range.\n\n#archaeology #anthropology #science #history",
-  "voiceover_script": "Humans were getting high twenty five thousand years ago. That is the headline. Here is what is actually behind it. Two forager skeletons from Sulawesi, in Indonesia. Two. That is the whole sample. Their teeth show a wear pattern nobody had described before, plus chemical traces of arecoline, which comes from betel nut, today the world's fourth most common addictive drug. Now the date. It is a range, somewhere between sixteen thousand and twenty five thousand years. The headlines quote the top of that range. Even at the bottom, it is the earliest evidence of human drug use found so far. Science Advances, this month. Source in the caption.",
+  "end": {
+    "kicker": "Follow @hqrs_1",
+    "title": "One verified science story a day",
+    "body": "Source in the caption.",
+    "seconds": 3
+  },
+  "caption": "Two forager skeletons from Sulawesi show a novel tooth-wear pattern and traces of arecoline, from betel nut, today the fourth most used psychoactive substance. Griffith University (Adam Brumm). Science Advances, 9 Sept 2026. Caveats: n = 2; the older skeleton is dated 16,000 to 25,000 years, and headlines quote the top. The authors say it may be the earliest evidence of drug use.\n\n#archaeology #anthropology #science #history",
+  "voiceover_script": "The headline says humans got high twenty five thousand years ago. Here is what is actually behind it. Two forager skeletons from Sulawesi, in Indonesia. Two. That is the whole sample. Their teeth show a wear pattern nobody had described before, plus chemical traces of arecoline, which comes from betel nut, today the world's fourth most used psychoactive substance, a mild stimulant. Now the date. The older skeleton is dated somewhere between sixteen thousand and twenty five thousand years. The headlines quote the top of that range. Even so, the authors say it may be the earliest evidence of drug use found so far. Griffith University, Science Advances, ninth of September. Source in the caption.",
   "scenes": [
-    { "start": 0, "end": 3.5, "kicker": "Science Advances, 2026", "caption": "Humans were getting high *25,000 years ago*" },
-    { "start": 3.5, "end": 8, "kicker": "The evidence", "caption": "Two forager skeletons from Sulawesi, Indonesia", "visual": { "type": "dots", "n": 2, "lit": 2, "cols": 2, "label": "Two individuals. That is the whole sample." } },
-    { "start": 8, "end": 12, "kicker": "The teeth", "caption": "A dental wear pattern never described before" },
-    { "start": 12, "end": 16, "kicker": "The chemistry", "caption": "Traces of *arecoline*, from betel nut" },
-    { "start": 16, "end": 20, "kicker": "Betel today", "caption": "The world's 4th most common addictive drug" },
-    { "start": 20, "end": 25.5, "kicker": "The date is a range", "caption": "Between 16,000 and 25,000 years old", "visual": { "type": "bars", "items": [ { "label": "Top of range", "value": "25,000 yr", "pct": 100 }, { "label": "Bottom of range", "value": "16,000 yr", "pct": 64 } ] } },
-    { "start": 25.5, "end": 29.5, "kicker": "Honest framing", "caption": "Headlines quote the *top* of that range" },
-    { "start": 29.5, "end": 35, "kicker": "Still", "caption": "The earliest evidence of human drug use found so far" }
+    {
+      "start": 0,
+      "end": 3.5,
+      "kicker": "Science Advances, 9 Sept 2026",
+      "caption": "The headline: humans got high *25,000 years ago*"
+    },
+    {
+      "start": 3.5,
+      "end": 8,
+      "kicker": "The evidence",
+      "caption": "Two forager skeletons from Sulawesi, Indonesia",
+      "visual": {
+        "type": "dots",
+        "n": 2,
+        "lit": 2,
+        "cols": 2,
+        "label": "Two individuals. That is the whole sample."
+      }
+    },
+    {
+      "start": 8,
+      "end": 12,
+      "kicker": "The teeth",
+      "caption": "A dental wear pattern never described before"
+    },
+    {
+      "start": 12,
+      "end": 16,
+      "kicker": "The chemistry",
+      "caption": "Traces of *arecoline*, from betel nut"
+    },
+    {
+      "start": 16,
+      "end": 20,
+      "kicker": "Betel today",
+      "caption": "Today the world's 4th most used *psychoactive* substance"
+    },
+    {
+      "start": 20,
+      "end": 25.5,
+      "kicker": "The older skeleton",
+      "caption": "Dated between 16,000 and 25,000 years",
+      "visual": {
+        "type": "bars",
+        "items": [
+          {
+            "label": "Older skeleton, top of range",
+            "value": "25,000 yr",
+            "pct": 100
+          },
+          {
+            "label": "Older skeleton, bottom of range",
+            "value": "16,000 yr",
+            "pct": 64
+          },
+          {
+            "label": "Younger skeleton",
+            "value": "about 7,000 yr",
+            "pct": 28
+          }
+        ]
+      }
+    },
+    {
+      "start": 25.5,
+      "end": 29.5,
+      "kicker": "Honest framing",
+      "caption": "Headlines quote the *top* of that range"
+    },
+    {
+      "start": 29.5,
+      "end": 35,
+      "kicker": "The authors hedge",
+      "caption": "It *may* be the earliest evidence of drug use"
+    }
   ]
 }
