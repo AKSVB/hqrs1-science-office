@@ -1,0 +1,97 @@
+{
+  "notes": {
+    "story": "Publications desk item 17: Hurricane Helene raised microplastic deposition 3 to 22 times pre-storm levels across three western North Carolina mountain sites and delivered 18.8% of the year's deposition at Highlands Biological Station (Virginia Tech).",
+    "sources": [
+      "https://news.vt.edu/articles/2026/09/science-helene-microplastics.html",
+      "https://doi.org/10.1093/inteam/vjag130",
+      "https://phys.org/news/2026-09-hurricane-helene-deposited-annual-microplastics.html",
+      "PubMed 42554346"
+    ],
+    "journal": "Integrated Environmental Assessment and Management, 25 September 2026, doi 10.1093/inteam/vjag130",
+    "caveats_on_screen": [
+      "The '600 quadrillion' context line from the desk memo is deliberately NOT used; its date is unverified.",
+      "Cover says 'nearly one fifth', Virginia Tech's own wording.",
+      "Slide 6: three mountain sites in western North Carolina, one storm; 4.2% and 4.6% at the other two sites are shown so Highlands is not read as typical.",
+      "The per-site multipliers (22.7x, 8.1x, 3.4x) and the particle counts per square metre rest on a single outlet each and are not used.",
+      "Compare slide: the 'myth' is a common assumption, not a quote from anyone."
+    ],
+    "facts_from_secondary_coverage": true,
+    "fact_check": "2026-09-27 wave 2 GREEN: Integrated Environmental Assessment and Management, online 25 Sept 2026, DOI 10.1093/inteam/vjag130, PubMed 42554346. Lead author Austin Gray, Virginia Tech, with Western Carolina University, Highlands Biological Station and UNC. Deposition 3 to 22 times pre-storm levels across three western North Carolina sites; Helene = 18.8% of the year's deposition at Highlands, 4.2% Iron Duff, 4.6% Coweeta. Helene was Sept 2024; mountains, not the coast. Say 'nearly one-fifth'. Required wording applied."
+  },
+  "handle": "@hqrs_1",
+  "caption": "Hurricane Helene (September 2024) raised microplastic deposition to 3 to 22 times pre-storm levels at three mountain sites in western North Carolina. At Highlands Biological Station one storm delivered 18.8% of the year's microplastics, nearly one fifth; 4.2% and 4.6% at the other two sites. Austin Gray, Virginia Tech, with Western Carolina University and UNC. Integrated Environmental Assessment and Management, 25 September 2026. Where does mountain plastic come from?\n\n#microplastics #climate #pollution #science",
+  "slides": [
+    {
+      "type": "cover",
+      "kicker": "Environment",
+      "title": "One storm. *Nearly one fifth* of a year's microplastic fallout.",
+      "sub": "Hurricane Helene at three mountain sites in western North Carolina. Virginia Tech, September 2026."
+    },
+    {
+      "type": "statement",
+      "kicker": "The sites",
+      "title": "Three mountain sites, *western North Carolina*",
+      "body": "Including Highlands Biological Station, where researchers measure how much microplastic is deposited across the year. The study covers before, during and after Hurricane Helene in September 2024."
+    },
+    {
+      "type": "number",
+      "kicker": "During the storm",
+      "number": "3 to 22x",
+      "title": "pre-storm microplastic deposition",
+      "body": "Across the three sites, Helene raised the deposition rate to between three and twenty-two times its pre-storm level."
+    },
+    {
+      "type": "number",
+      "kicker": "The share",
+      "number": "18.8%",
+      "title": "of the year's microplastics, in one storm, at Highlands",
+      "body": "Nearly one fifth of the site's annual microplastic deposition arrived with Helene.",
+      "bars": [
+        {
+          "label": "Hurricane Helene",
+          "value": "18.8%",
+          "pct": 18.8
+        },
+        {
+          "label": "Rest of the year",
+          "value": "81.2%",
+          "pct": 81.2
+        }
+      ]
+    },
+    {
+      "type": "compare",
+      "kicker": "Careful",
+      "myth": "Microplastics are deposited slowly and evenly through the year",
+      "fact": "One storm delivered nearly one fifth of the year's total at Highlands",
+      "body": "At one site, a single hurricane did nearly a fifth of a year's work."
+    },
+    {
+      "type": "statement",
+      "kicker": "The other two sites",
+      "title": "*4.2%* and *4.6%* of the year, from the same storm",
+      "body": "Iron Duff and Coweeta saw a smaller share. Three sites, one storm: this is the first US study of microplastic deposition before, during and after a hurricane, not a national average."
+    },
+    {
+      "type": "statement",
+      "kicker": "Who",
+      "title": "Austin Gray, *Virginia Tech*",
+      "body": "With Western Carolina University, Highlands Biological Station and UNC. Integrated Environmental Assessment and Management, 25 September 2026. doi 10.1093/inteam/vjag130."
+    },
+    {
+      "type": "source",
+      "items": [
+        "Gray et al., Virginia Tech. Integrated Environmental Assessment and Management, 25 September 2026. doi 10.1093/inteam/vjag130.",
+        "https://doi.org/10.1093/inteam/vjag130",
+        "Virginia Tech news: https://news.vt.edu/articles/2026/09/science-helene-microplastics.html"
+      ],
+      "note": "Numbers as reported in coverage. Our desk has not yet opened the paper."
+    },
+    {
+      "type": "cta",
+      "title": "One verified science story a day",
+      "body": "No hype, source on the last slide, every time.",
+      "ask": "Save this. Send it to the friend who thinks plastic stays where you drop it."
+    }
+  ]
+}

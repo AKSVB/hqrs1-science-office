@@ -1,0 +1,133 @@
+{
+  "notes": {
+    "story": "Fact-check memo row 9: LZ dark matter experiment reports one candidate event. Calendar slot 11 Oct: 'One flash, and why 2.6 sigma is not a discovery'.",
+    "sources": [
+      "https://newscenter.lbl.gov/2026/09/01/lz-sees-surprising-result-in-search-for-dark-matter/",
+      "https://www.brown.edu/news/2026-09-01/lz-dark-matter-results",
+      "https://edition.cnn.com/2026/09/14/science/dark-matter-lz-experiment-potential-signal",
+      "arXiv theory paper citing the result: 2609.02608"
+    ],
+    "journal": "arXiv preprint, submitted to Physical Review Letters, 2026. Not yet peer-reviewed.",
+    "caveats_on_screen": [
+      "Scene 2 and scene 9: 'Not a discovery' on screen, in the Fact-Checker's required wording.",
+      "Scene 5 states the 0.5% correctly: the chance that known backgrounds produce such an event. The voiceover adds that this is not the chance dark matter is real.",
+      "Scene 6: 3.4 sigma local, 2.6 sigma global; no '5 sigma' threshold is quoted because the memo does not give one.",
+      "Scene 8: preprint, not yet peer-reviewed.",
+      "The calendar line '10 tonnes of xenon' is NOT used; the memo gives only the 2.84 tonne-year exposure. The word 'xenon' is also not used on screen for the same reason.",
+      "Only numbers from row 9 are used: 1 event, 248 keV, 2.84 tonne-years, 220 live days, 3.4 / 2.6 sigma, 0.5%, >200 GeV."
+    ],
+    "facts_from_secondary_coverage": true,
+    "fact_check": "2026-09-27 GREEN if framed (05-fact-check row 9; wave 2 carried it unchanged, not re-checked): one event, 248 keV nuclear recoil, 2.84 tonne-year exposure, 3.4 sigma local, 2.6 sigma global, ~0.5% chance from known backgrounds; 220 live days; if a WIMP, mass >200 GeV. Press releases 1 Sept 2026; paper to arXiv/PRL, not yet peer-reviewed. Required copy 'Not a discovery' is on screen (scenes 2 and 9). Wave 2 change: notes only, no on-screen change.",
+    "detector": "10 tonnes of liquid xenon, 220 live days, March 2023 to April 2024 (fact-check 05 row 9); not on screen."
+  },
+  "handle": "@hqrs_1",
+  "duration": 43,
+  "end": {
+    "kicker": "Follow @hqrs_1",
+    "title": "One verified science story a day",
+    "body": "Source in the caption.",
+    "seconds": 3
+  },
+  "caption": "The LZ dark matter experiment reported one nuclear recoil event at 248 keV in 2.84 tonne-years of exposure (220 live days). Known backgrounds produce such an event about 0.5% of the time: 2.6 sigma global. Not a discovery. Preprint on arXiv, submitted to Physical Review Letters, 2026, not yet peer-reviewed. What would convince you?\n\n#darkmatter #physics #particlephysics #science",
+  "voiceover_script": "Dark matter may have just hit a detector. Once. But this is not a discovery. Here is what the LZ experiment reported on the first of September. One event, a nuclear recoil at two hundred and forty eight kilo electron volts, over two hundred and twenty live days and a two point eight four tonne-year exposure. Known backgrounds produce an event like this about half a percent of the time. That is not the chance dark matter is real. It is the chance ordinary physics did this anyway. In sigma: three point four local, two point six global. Far short of a discovery. If it were a WIMP, its mass would be above two hundred G E V. The paper is a preprint, not yet peer-reviewed. Source in the caption.",
+  "scenes": [
+    {
+      "start": 0,
+      "end": 4.5,
+      "kicker": "LZ experiment, 1 Sept 2026",
+      "caption": "Dark matter may have just *hit* a detector. Once.",
+      "visual": {
+        "type": "counter",
+        "from": 0,
+        "to": 1,
+        "suffix": " event",
+        "label": "in 220 live days"
+      }
+    },
+    {
+      "start": 4.5,
+      "end": 9,
+      "kicker": "First things first",
+      "caption": "*Not a discovery.* Here is what was actually seen"
+    },
+    {
+      "start": 9,
+      "end": 13.5,
+      "kicker": "The event",
+      "caption": "One nuclear recoil at *248 keV*",
+      "visual": {
+        "type": "counter",
+        "from": 0,
+        "to": 248,
+        "suffix": " keV",
+        "label": "one nuclear recoil"
+      }
+    },
+    {
+      "start": 13.5,
+      "end": 18,
+      "kicker": "The exposure",
+      "caption": "*220 live days*, 2.84 tonne-years of exposure",
+      "visual": {
+        "type": "counter",
+        "from": 0,
+        "to": 220,
+        "suffix": " days",
+        "label": "2.84 tonne-year exposure"
+      }
+    },
+    {
+      "start": 18,
+      "end": 23,
+      "kicker": "The 0.5%, explained",
+      "caption": "Known backgrounds make such an event about *0.5%* of the time",
+      "visual": {
+        "type": "counter",
+        "from": 0,
+        "to": 0.5,
+        "decimals": 1,
+        "suffix": "%",
+        "label": "chance it came from known backgrounds"
+      }
+    },
+    {
+      "start": 23,
+      "end": 28,
+      "kicker": "In sigma",
+      "caption": "*2.6 sigma* global, 3.4 local. Far short of discovery",
+      "visual": {
+        "type": "bars",
+        "items": [
+          {
+            "label": "Global significance",
+            "value": "2.6 sigma",
+            "pct": 52
+          },
+          {
+            "label": "Local significance",
+            "value": "3.4 sigma",
+            "pct": 68
+          }
+        ]
+      }
+    },
+    {
+      "start": 28,
+      "end": 32.5,
+      "kicker": "If it is real",
+      "caption": "If a WIMP, its mass is above *200 GeV*"
+    },
+    {
+      "start": 32.5,
+      "end": 37,
+      "kicker": "Status",
+      "caption": "A preprint on arXiv. *Not yet peer-reviewed*"
+    },
+    {
+      "start": 37,
+      "end": 40,
+      "kicker": "Bottom line",
+      "caption": "One event. Interesting. *Not a discovery*"
+    }
+  ]
+}

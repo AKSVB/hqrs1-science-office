@@ -1,0 +1,31 @@
+1
+00:00:00,000 --> 00:00:04,500
+Your gamble is readable 0.5 s before the choice is made
+
+2
+00:00:04,500 --> 00:00:09,000
+Six patients, already implanted for surgical monitoring
+
+3
+00:00:09,000 --> 00:00:13,500
+A video game: hallways, bombs and treasure chests
+
+4
+00:00:13,500 --> 00:00:18,000
+Two patches in the orbitofrontal cortex, about 2 cm apart
+
+5
+00:00:18,000 --> 00:00:22,500
+One fires before take the risk, the other before avoid
+
+6
+00:00:22,500 --> 00:00:27,000
+Together they predicted the choice about 0.5 s before it was made
+
+7
+00:00:27,000 --> 00:00:31,000
+Six patients, one video game. Not a free-will claim
+
+8
+00:00:31,000 --> 00:00:35,000
+Starkweather, Chang, Knight. UCSF and UC Berkeley

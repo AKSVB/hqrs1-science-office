@@ -1,0 +1,127 @@
+{
+  "notes": {
+    "story": "Publications desk item 16: GJ 3090 b, a sub-Neptune 73 light-years away, orbits its red dwarf backwards and tilted (obliquity about 136 degrees). University of Geneva, NIRPS at La Silla.",
+    "sources": [
+      "https://phys.org/news/2026-09-rebellious-exoplanet-orbits-star.html",
+      "https://www.space.com/astronomy/exoplanets/scientists-find-weird-exoplanet-that-orbits-its-star-in-the-wrong-direction",
+      "https://www.universetoday.com/articles/astronomers-find-a-sub-neptune-orbiting-completely-backward-around-a-red-dwarf",
+      "A&A 2026/09/aa61989-26; arXiv 2609.24870"
+    ],
+    "journal": "Astronomy & Astrophysics, September 2026; arXiv 2609.24870",
+    "caveats_on_screen": [
+      "Scene 1 says 'backwards. And tilted.' and scene 6 gives the 136-degree tilt; 'completely backward' is not used.",
+      "Scene 7 says 'first retrograde planet found around a red dwarf', not 'first backwards planet ever'.",
+      "Scene 8: no known companion to explain the orbit; no mechanism is claimed.",
+      "Numbers on screen: 73 light-years, 2.2 x Earth's radius, 4.5 x Earth's mass, 2.9-day year, 136-degree tilt.",
+      "The solar-system line (all our planets orbit the way the Sun spins) is the memo's hook wording."
+    ],
+    "facts_from_secondary_coverage": true,
+    "fact_check": "2026-09-27 wave 2 GREEN (hook AMBER): Astronomy & Astrophysics, Sept 2026 issue (aa61989-26); arXiv 2609.24870. Lead author Yann Carteret, University of Geneva; NIRPS at La Silla. Radius 2.18 Earth radii, mass 4.52 Earth masses, period about 2.9 days, 73 light-years, 3D obliquity 136 deg (+24/-18). First retrograde planet around an M dwarf. Say 'tilted about 136 degrees, past sideways, into backwards', not 'completely backward'. No massive companion known. Required wording applied."
+  },
+  "handle": "@hqrs_1",
+  "duration": 41,
+  "end": {
+    "kicker": "Follow @hqrs_1",
+    "title": "One verified science story a day",
+    "body": "Source in the caption.",
+    "seconds": 3
+  },
+  "caption": "GJ 3090 b, 73 light-years away, orbits its red dwarf backwards and tilted: obliquity about 136 degrees. 2.2 Earth radii, 4.5 Earth masses, a 2.9-day year. The first retrograde planet found around a red dwarf. Carteret et al., University of Geneva, NIRPS at La Silla. Astronomy & Astrophysics, September 2026; arXiv 2609.24870. What flipped it?\n\n#exoplanet #astronomy #space #science",
+  "voiceover_script": "There is a planet orbiting its star backwards, and tilted. Every planet in our solar system goes round in the same direction the Sun spins. This one does not. G J three zero nine zero b sits seventy three light-years away, around a red dwarf star. It is about two point two times Earth's radius, four and a half times its mass, and its year lasts two point nine days. Its orbit is tilted about one hundred and thirty six degrees: past sideways, into backwards. It is the first retrograde planet found around a red dwarf, and no known companion explains how it got there. Yann Carteret and colleagues, University of Geneva, with the NIRPS spectrograph in Chile. Astronomy and Astrophysics, September twenty twenty six. Source in the caption.",
+  "scenes": [
+    {
+      "start": 0,
+      "end": 4.5,
+      "kicker": "Astronomy & Astrophysics, Sept 2026",
+      "caption": "A planet is orbiting its star *backwards*. And tilted.",
+      "visual": {
+        "type": "counter",
+        "from": 0,
+        "to": 136,
+        "suffix": " degrees",
+        "label": "orbit tilt"
+      }
+    },
+    {
+      "start": 4.5,
+      "end": 9,
+      "kicker": "The rule",
+      "caption": "Our planets all orbit the way the *Sun spins*"
+    },
+    {
+      "start": 9,
+      "end": 13.5,
+      "kicker": "The exception",
+      "caption": "*GJ 3090 b*, 73 light-years away, around a red dwarf",
+      "visual": {
+        "type": "counter",
+        "from": 0,
+        "to": 73,
+        "suffix": " ly",
+        "label": "light-years from Earth"
+      }
+    },
+    {
+      "start": 13.5,
+      "end": 18,
+      "kicker": "The planet",
+      "caption": "About *2.2 times* Earth's radius, 4.5 times its mass",
+      "visual": {
+        "type": "scale",
+        "a": {
+          "r": 200,
+          "label": "Earth"
+        },
+        "b": {
+          "r": 440,
+          "label": "GJ 3090 b"
+        }
+      }
+    },
+    {
+      "start": 18,
+      "end": 22.5,
+      "kicker": "The year",
+      "caption": "One orbit takes *2.9 days*",
+      "visual": {
+        "type": "counter",
+        "from": 0,
+        "to": 2.9,
+        "decimals": 1,
+        "suffix": " days",
+        "label": "one year on GJ 3090 b"
+      }
+    },
+    {
+      "start": 22.5,
+      "end": 27,
+      "kicker": "The tilt",
+      "caption": "Orbit tilted about *136 degrees*: past sideways, into backwards",
+      "visual": {
+        "type": "counter",
+        "from": 0,
+        "to": 136,
+        "suffix": " degrees",
+        "label": "past sideways, into backwards"
+      }
+    },
+    {
+      "start": 27,
+      "end": 31,
+      "kicker": "A first",
+      "caption": "The first *retrograde* planet found around a red dwarf"
+    },
+    {
+      "start": 31,
+      "end": 35,
+      "kicker": "Open question",
+      "caption": "No known companion to explain it. *Why* comes next"
+    },
+    {
+      "start": 35,
+      "end": 38,
+      "kicker": "Who",
+      "caption": "Yann Carteret, University of Geneva. *NIRPS*, La Silla, Chile"
+    }
+  ]
+}

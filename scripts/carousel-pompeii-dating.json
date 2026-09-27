@@ -1,0 +1,82 @@
+{
+  "notes": {
+    "story": "Publications desk item 18: recalibrated argon-argon dating on eight sanidine samples from Oplontis gives 1,938 +/- 13 years against 1,946 years from Pliny the Younger's account (Berkeley Geochronology Center, UC Berkeley, University of Padua; Paul Renne).",
+    "sources": [
+      "https://www.eurekalert.org/news-releases/1144991",
+      "http://news.berkeley.edu/2026/09/25/the-eruption-that-destroyed-pompeii-is-helping-scientists-date-earths-history/",
+      "https://phys.org/news/2026-09-pompeii-destruction-calibrate-volcanic-dating.html"
+    ],
+    "journal": "Science Advances, 25 September 2026",
+    "caveats_on_screen": [
+      "Slide 2: the eyewitness is Pliny the Younger, who was 17 at the time and wrote his account as an adult; 'a Roman teenager's letter' is not used.",
+      "Slide 3: the samples are from Oplontis, not Pompeii itself.",
+      "Slide 6: the exact day of the eruption is debated; it is not put on screen. The year is given as AD 79. The day debate shifts the benchmark by weeks, negligible against +/- 13 years.",
+      "Compare slide: the 'myth' is a common assumption, not a quote from anyone."
+    ],
+    "facts_from_secondary_coverage": true,
+    "fact_check": "2026-09-27 wave 2 GREEN (hook AMBER): Science Advances, 25 Sept 2026. Berkeley Geochronology Center, UC Berkeley, University of Padua; Paul Renne leads. Eight sanidine samples from pumice at Oplontis; 1,938 +/- 13 years before the 2025 analysis vs 1,946 years from Pliny the Younger's account; precision 0.7%, accuracy 0.4%; potassium-40 half-life 12.044 +/- 0.088 billion years, twice as precise as before. Say 'an eyewitness account by Pliny the Younger, who was 17 at the time'; say 'AD 79', not a day. Required wording applied."
+  },
+  "handle": "@hqrs_1",
+  "caption": "Eight sanidine samples from the AD 79 Vesuvius eruption, collected at Oplontis, were dated with a recalibrated argon-argon method: 1,938 plus or minus 13 years, against 1,946 years from Pliny the Younger's eyewitness account. Precision 0.7%, accuracy 0.4%. The exact day of the eruption is debated; the year is not. Paul Renne, Berkeley Geochronology Center, UC Berkeley, University of Padua. Science Advances, 25 September 2026. Which ancient event would you calibrate against?\n\n#geology #pompeii #archaeology #science",
+  "slides": [
+    {
+      "type": "cover",
+      "kicker": "Geochronology",
+      "title": "The eruption that buried Pompeii just *recalibrated* Earth's clock",
+      "sub": "Argon-argon dating tested against a date we already know: AD 79. Science Advances, September 2026."
+    },
+    {
+      "type": "statement",
+      "kicker": "The trick",
+      "title": "A date we already *know*",
+      "body": "Pliny the Younger, 17 at the time, left an eyewitness account of the AD 79 eruption. That fixes its age at 1,946 years and gives geologists a benchmark to test their method against."
+    },
+    {
+      "type": "statement",
+      "kicker": "The mineral",
+      "title": "*Sanidine* from the eruption's pumice",
+      "body": "Eight samples, collected at Oplontis rather than Pompeii itself, dated with the argon-argon method."
+    },
+    {
+      "type": "number",
+      "kicker": "The result",
+      "number": "1,938 ± 13",
+      "title": "years, by recalibrated argon-argon dating",
+      "body": "The known age is 1,946 years. The measurement lands within its own error bar: precision 0.7%, accuracy 0.4%."
+    },
+    {
+      "type": "compare",
+      "kicker": "Careful",
+      "myth": "A radiometric date is either exactly right or wrong",
+      "fact": "Measured 1,938 ± 13 years, against a known 1,946",
+      "body": "A known date lets the method be checked and its calibration tightened. The potassium-40 half-life is now 12.044 ± 0.088 billion years, twice as precise as before."
+    },
+    {
+      "type": "statement",
+      "kicker": "Caveat",
+      "title": "The exact *day* is debated",
+      "body": "Scholars disagree about which day in AD 79 Vesuvius erupted. A shift of weeks is negligible against a 13-year error bar, so the benchmark holds."
+    },
+    {
+      "type": "statement",
+      "kicker": "Who",
+      "title": "Paul Renne, *Berkeley Geochronology Center*",
+      "body": "With UC Berkeley and the University of Padua. Science Advances, 25 September 2026."
+    },
+    {
+      "type": "source",
+      "items": [
+        "Renne et al., Berkeley Geochronology Center, UC Berkeley and University of Padua. Science Advances, 25 September 2026.",
+        "http://news.berkeley.edu/2026/09/25/the-eruption-that-destroyed-pompeii-is-helping-scientists-date-earths-history/",
+        "EurekAlert: https://www.eurekalert.org/news-releases/1144991"
+      ],
+      "note": "Numbers as reported in coverage. Our desk has not yet opened the paper."
+    },
+    {
+      "type": "cta",
+      "title": "One verified science story a day",
+      "body": "No hype, source on the last slide, every time.",
+      "ask": "Save this. Send it to the friend who thinks rock dates are guesses."
+    }
+  ]
+}

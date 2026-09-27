@@ -1,0 +1,115 @@
+{
+  "notes": {
+    "story": "Publications desk item 11: intracranial OFC recordings; two neighbouring patches about 2 cm apart predict a risky choice about 0.5 s before it is made (UCSF and UC Berkeley).",
+    "sources": [
+      "https://www.ucsf.edu/news/2026/09/432606/brain-activity-can-predict-risky-decision-its-made",
+      "https://www.eurekalert.org/news-releases/1143749",
+      "https://neurosciencenews.com/brain-activity-decision-timing-31212/",
+      "Nature news d41586-026-02911-9"
+    ],
+    "journal": "Nature Neuroscience, 15 September 2026",
+    "caveats_on_screen": [
+      "Scene 2: six patients, already implanted for surgical monitoring.",
+      "Scene 3: the task was a video game (hallways, bombs, treasure chests), stated on screen.",
+      "Scene 7: six patients, one video game, not a free-will claim.",
+      "Nowhere does the copy say 'before you do' or 'before you know it'; the wording is 'before the choice is made', per the Fact-Checker.",
+      "Numbers on screen: 6 patients, 2 patches about 2 cm apart, about 0.5 s."
+    ],
+    "facts_from_secondary_coverage": true,
+    "fact_check": "2026-09-27 wave 2 AMBER: Nature Neuroscience, 15 Sept 2026. UCSF and UC Berkeley; first author Clara Starkweather, co-senior authors Edward Chang and Robert Knight. Six patients already implanted for surgical monitoring; two OFC patches about 2 cm apart, one active before 'take the risk', the other before 'avoid'; prediction about half a second before the choice is made; task was a video game. Do not say 'before you do' or 'before you know it'; no free-will claim. Required wording applied."
+  },
+  "handle": "@hqrs_1",
+  "duration": 38,
+  "end": {
+    "kicker": "Follow @hqrs_1",
+    "title": "One verified science story a day",
+    "body": "Source in the caption.",
+    "seconds": 3
+  },
+  "caption": "Two patches of the orbitofrontal cortex, about 2 cm apart, predicted a risky choice about 0.5 s before it was made. Six patients implanted for surgical monitoring played a video game with bombs and treasure chests. Starkweather, Chang, Knight; UCSF and UC Berkeley. Nature Neuroscience, 15 September 2026. Would you want to see your signal?\n\n#neuroscience #brain #decisions #science",
+  "voiceover_script": "A brain signal can predict your gamble about half a second before the choice is made. That is the finding from a study in Nature Neuroscience, published on the fifteenth of September. Six patients, already fitted with electrodes for surgical monitoring, played a video game with hallways, bombs and treasure chests. Take the risk, or avoid it. In the orbitofrontal cortex, two patches about two centimetres apart did opposite jobs. One became active before a risky choice, the other before a safe one. Together, they predicted the decision roughly half a second before it was made. Six patients, one video game, and no claim about free will. Starkweather, Chang and Knight, at UCSF and UC Berkeley. Source in the caption.",
+  "scenes": [
+    {
+      "start": 0,
+      "end": 4.5,
+      "kicker": "Nature Neuroscience, 15 Sept 2026",
+      "caption": "Your gamble is readable *0.5 s* before the choice is made",
+      "visual": {
+        "type": "counter",
+        "from": 0,
+        "to": 0.5,
+        "decimals": 1,
+        "suffix": " s",
+        "label": "before the choice is made"
+      }
+    },
+    {
+      "start": 4.5,
+      "end": 9,
+      "kicker": "The setting",
+      "caption": "Six patients, already implanted for *surgical monitoring*",
+      "visual": {
+        "type": "counter",
+        "from": 0,
+        "to": 6,
+        "suffix": " patients",
+        "label": "electrodes already in place"
+      }
+    },
+    {
+      "start": 9,
+      "end": 13.5,
+      "kicker": "The task",
+      "caption": "A *video game*: hallways, bombs and treasure chests"
+    },
+    {
+      "start": 13.5,
+      "end": 18,
+      "kicker": "Where",
+      "caption": "Two patches in the *orbitofrontal cortex*, about 2 cm apart",
+      "visual": {
+        "type": "scale",
+        "a": {
+          "r": 320,
+          "label": "Take the risk"
+        },
+        "b": {
+          "r": 320,
+          "label": "Avoid"
+        }
+      }
+    },
+    {
+      "start": 18,
+      "end": 22.5,
+      "kicker": "Opposite jobs",
+      "caption": "One fires before *take the risk*, the other before *avoid*"
+    },
+    {
+      "start": 22.5,
+      "end": 27,
+      "kicker": "The prediction",
+      "caption": "Together they predicted the choice about *0.5 s* before it was made",
+      "visual": {
+        "type": "counter",
+        "from": 0,
+        "to": 0.5,
+        "decimals": 1,
+        "suffix": " s",
+        "label": "ahead of the decision"
+      }
+    },
+    {
+      "start": 27,
+      "end": 31,
+      "kicker": "Caveats",
+      "caption": "Six patients, one video game. *Not* a free-will claim"
+    },
+    {
+      "start": 31,
+      "end": 35,
+      "kicker": "Who",
+      "caption": "Starkweather, Chang, Knight. UCSF and *UC Berkeley*"
+    }
+  ]
+}

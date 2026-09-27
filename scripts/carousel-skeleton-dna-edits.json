@@ -1,0 +1,87 @@
+{
+  "notes": {
+    "story": "Publications desk item 15: MPRA in chondrocytes tested 561,410 human-derived substitutions; 15,077 loci with human-specific regulatory activity; human joint cartilage GAG content about one-quarter to one-third of great apes (Kyoto ASHBi and Weizmann).",
+    "sources": [
+      "https://www.nature.com/articles/s41586-026-11053-x",
+      "https://www.nature.com/articles/d41586-026-02775-z",
+      "https://phys.org/news/2026-09-evolution-human-skeleton-clues-cartilage.html"
+    ],
+    "journal": "Nature, 23 September 2026, s41586-026-11053-x",
+    "caveats_on_screen": [
+      "Cover and compare slide: the hook is '15,077 work differently in human cartilage', not 'built the human skeleton', per the Fact-Checker.",
+      "GAG slide: GAGs are 'dialled down', not deleted; measured in elbow and knee tissue.",
+      "Slide 7: the osteoarthritis link is the authors' suggestion and is labelled 'may'.",
+      "Source slide note: numbers as reported in coverage; paper not yet opened by the desk."
+    ],
+    "facts_from_secondary_coverage": true,
+    "fact_check": "2026-09-27 wave 2 GREEN (hook AMBER): Nature, 23 Sept 2026, DOI 10.1038/s41586-026-11053-x. Kyoto University WPI-ASHBi (Fumitaka Inoue senior, Yizhi Yan) and Weizmann Institute (David Gokhman senior, Nadav Mishol). 561,410 human-derived substitutions tested by MPRA in chondrocytes; 15,077 loci with human-specific regulatory activity; human joint cartilage GAG content about one-quarter to one-third of great apes, elbow and knee tissue. Hook changed to '15,000 work differently in human cartilage'; GAGs dialled down, not deleted; osteoarthritis labelled 'may'. Required wording applied."
+  },
+  "handle": "@hqrs_1",
+  "caption": "561,410 human-derived DNA substitutions were tested in cartilage cells with a massively parallel reporter assay. 15,077 behave differently in human cartilage cells, including at GAG genes. Human joint cartilage has about a quarter to a third the GAG content of great apes. Kyoto University ASHBi (Inoue, Yan) and Weizmann Institute (Gokhman, Mishol). Nature, 23 September 2026. Which part of your skeleton would you trade back to an ape?\n\nSource on slide 8.\n\n#evolution #genetics #anatomy #science #humanorigins",
+  "slides": [
+    {
+      "type": "cover",
+      "kicker": "Evolution",
+      "title": "Half a million DNA edits were tested. *15,077* work differently in human cartilage.",
+      "sub": "The gene-regulatory evolution of the human skeleton. Nature, 23 September 2026."
+    },
+    {
+      "type": "number",
+      "kicker": "The test",
+      "number": "561,410",
+      "title": "human-derived DNA substitutions tested",
+      "body": "Single-letter changes found in the human genome and not in other great apes, tested together in a massively parallel reporter assay."
+    },
+    {
+      "type": "statement",
+      "kicker": "The cells",
+      "title": "Tested in *cartilage cells*",
+      "body": "The assay ran in chondrocytes, the cells that make cartilage, to ask how the human skeleton came to differ."
+    },
+    {
+      "type": "number",
+      "kicker": "The result",
+      "number": "15,077",
+      "title": "behave differently in human cartilage cells",
+      "body": "At these sites the human version of the DNA changed gene activity in a way the ape version did not."
+    },
+    {
+      "type": "list",
+      "kicker": "What stood out",
+      "title": "The *GAG* genes, dialled down",
+      "items": [
+        "**GAG genes** were among those affected: dialled down, not deleted",
+        "GAG is a **component of joint cartilage**",
+        "Human joint cartilage has about **a quarter to a third** the GAG of great apes, measured in elbow and knee tissue"
+      ]
+    },
+    {
+      "type": "compare",
+      "kicker": "Careful",
+      "myth": "15,000 DNA edits built the human skeleton",
+      "fact": "15,077 behave differently in human cartilage cells, in a reporter assay",
+      "body": "Regulatory activity in a dish is a lead about which edits matter, not a finished skeleton."
+    },
+    {
+      "type": "statement",
+      "kicker": "What it may mean",
+      "title": "A lead on *joint problems*",
+      "body": "The authors suggest the lower GAG content may help explain osteoarthritis in humans. That is a suggestion, not a result of this study."
+    },
+    {
+      "type": "source",
+      "items": [
+        "Kyoto University ASHBi (Inoue, Yan) and Weizmann Institute (Gokhman, Mishol). Nature, 23 September 2026. Article s41586-026-11053-x.",
+        "https://www.nature.com/articles/s41586-026-11053-x",
+        "Nature news: https://www.nature.com/articles/d41586-026-02775-z"
+      ],
+      "note": "Numbers as reported in coverage. Our desk has not yet opened the paper."
+    },
+    {
+      "type": "cta",
+      "title": "One verified science story a day",
+      "body": "No hype, source on the last slide, every time.",
+      "ask": "Save this. Send it to the friend who thinks one gene made us human."
+    }
+  ]
+}

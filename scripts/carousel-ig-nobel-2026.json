@@ -1,6 +1,6 @@
 {
   "notes": {
-    "story": "Trend scout item 7: 2026 Ig Nobel Prizes, announced 3 Sept 2026 in Zurich. One prize per slide.",
+    "story": "Trend scout item 7: 2026 Ig Nobel Prizes, 36th ceremony, 3 Sept 2026 in Zurich, the first held outside the US. Ten prizes; five on the carousel, one per slide.",
     "sources": [
       "https://improbable.com/2026/09/03/the-2026-ig-nobel-prize-winners-are-announced/",
       "https://www.nature.com/articles/d41586-026-02650-x",
@@ -8,23 +8,66 @@
     ],
     "journal": "Improbable Research announcement, 3 Sept 2026; Nature news d41586-026-02650-x",
     "caveats_on_screen": [
-      "The memo lists five prizes by topic only (kissing definition; splash-free urinal; buried underpants; cockroach 'milk'; babies smell wonderful to parents, teenagers do not). No winners, institutions, prize categories or study details are given, so none appear on screen.",
-      "No compare slide: the memo records no myth for this story."
+      "Cover says 'Five of the ten', since ten prizes were awarded.",
+      "Cockroach slide says 'about three times the energy of cow's milk protein', not 'three times as nutritious'.",
+      "Winner names and institutions are as given in the wave 2 fact-check; the cockroach co-author list is abbreviated with 'and colleagues' where the memo says 'and eight co-authors'.",
+      "No compare slide: no myth is recorded for this story."
     ],
-    "facts_from_secondary_coverage": true
+    "facts_from_secondary_coverage": true,
+    "fact_check": "2026-09-27 wave 2 GREEN: 36th ceremony, 3 Sept 2026, Zurich, first held outside the US. Ten prizes. Biomechanics: Brindle, Talbot, West (Oxford), kissing definition. Physics: Zhao Pan (Waterloo), Nautilus urinal. Soil Science: Bender, van der Heijden (Agroscope, UZH), Bieri, Viviani; 1,000 pairs, 25+ countries, two months. Chemistry: Ramaswamy (Purdue), Chavas (DECTRIS Japan), Coussens (Frederick National Laboratory) and eight co-authors; Diploptera punctata milk protein, about three times the energy of cow's milk protein. Olfaction: Croy, Hummel (Jena), Sorokowska, Frackowiak (Wroclaw). Other five: Medicine, Biology, Technology, Peace, Economics. Names and numbers applied."
   },
   "handle": "@hqrs_1",
-  "caption": "The 2026 Ig Nobel Prizes were announced on 3 September in Zurich. Five of the winning topics: defining a kiss, a splash-free urinal, buried underpants, cockroach 'milk', and why babies smell wonderful to their parents while teenagers do not. Details and full winner list at Improbable Research; Nature news coverage, 2026.\n\nSource on slide 7.\n\n#ignobel #science #funscience #research",
+  "caption": "Five of the ten 2026 Ig Nobel Prizes, awarded 3 September in Zurich, the first ceremony outside the US. Biomechanics: Brindle, Talbot, West (Oxford), defining a kiss. Physics: Zhao Pan (Waterloo), the splash-free Nautilus urinal. Soil Science: Bender, van der Heijden (Agroscope, UZH), 1,000 buried underpants. Chemistry: Ramaswamy, Chavas, Coussens, cockroach milk protein. Olfaction: Croy, Sorokowska, Frackowiak, Hummel, how babies and teenagers smell to parents. Improbable Research; Nature news, 2026. Which one deserved it most?\n\n#ignobel #science #funscience #research",
   "slides": [
-    { "type": "cover", "kicker": "Ig Nobel Prizes 2026", "title": "Five real studies that won a prize for being *ridiculous*", "sub": "Announced 3 September 2026 in Zurich. All real research." },
-    { "type": "statement", "kicker": "Prize 1 of 5", "title": "What counts as a *kiss*?", "body": "A prize for research that set out to define kissing. Yes, someone had to." },
-    { "type": "statement", "kicker": "Prize 2 of 5", "title": "The *splash-free* urinal", "body": "A prize for work on a urinal designed to stop the splash." },
-    { "type": "statement", "kicker": "Prize 3 of 5", "title": "*Buried* underpants", "body": "A prize for research that involved burying underpants. Full details in the source." },
-    { "type": "statement", "kicker": "Prize 4 of 5", "title": "Cockroach *\"milk\"*", "body": "A prize for research on a milk-like substance from cockroaches. Quotation marks are doing a lot of work." },
-    { "type": "statement", "kicker": "Prize 5 of 5", "title": "Babies smell *wonderful* to their parents. Teenagers do not.", "body": "A prize for research on how parents perceive the smell of their own children at different ages." },
-    { "type": "source", "items": [
-      "Improbable Research, 2026 Ig Nobel Prize winners announced, 3 September 2026: https://improbable.com/2026/09/03/the-2026-ig-nobel-prize-winners-are-announced/",
-      "Nature news coverage, 2026: https://www.nature.com/articles/d41586-026-02650-x" ], "note": "Winner names, institutions and prize categories are in the announcement. We show topics only." },
-    { "type": "cta", "title": "One verified science story a day", "body": "No hype, source on the last slide, every time.", "ask": "Save this. Send it to the friend who needs a laugh and a citation." }
+    {
+      "type": "cover",
+      "kicker": "Ig Nobel Prizes 2026",
+      "title": "Five of the ten 2026 *Ig Nobel* Prizes",
+      "sub": "Awarded 3 September 2026 in Zurich, the first ceremony outside the US. All real research."
+    },
+    {
+      "type": "statement",
+      "kicker": "Prize 1 of 5: Biomechanics",
+      "title": "What counts as a *kiss*?",
+      "body": "Matilda Brindle, Catherine Talbot and Stuart West, University of Oxford, defined it: non-agonistic oral-oral contact with some movement of the lips or mouthparts and no food transfer. Studied in ants, birds, polar bears and humans."
+    },
+    {
+      "type": "statement",
+      "kicker": "Prize 2 of 5: Physics",
+      "title": "The *splash-free* urinal",
+      "body": "A team led by Zhao Pan at the University of Waterloo designed the Nautilus, a urinal shaped to stop the splash."
+    },
+    {
+      "type": "statement",
+      "kicker": "Prize 3 of 5: Soil Science",
+      "title": "*Buried* underpants",
+      "body": "Franz Bender and Marcel van der Heijden (Agroscope, University of Zurich), Atlant Bieri and Pia Viviani buried 1,000 identical pairs in more than 25 countries and dug them up after two months. How far the cotton had broken down is a sign of healthy soil."
+    },
+    {
+      "type": "statement",
+      "kicker": "Prize 4 of 5: Chemistry",
+      "title": "Cockroach *\"milk\"*",
+      "body": "Subramanian Ramaswamy (Purdue), Leonard Chavas (DECTRIS Japan), Nathan Coussens (Frederick National Laboratory) and colleagues used X-ray crystallography on the milk protein of the cockroach Diploptera punctata. It carries about three times the energy of cow's milk protein."
+    },
+    {
+      "type": "statement",
+      "kicker": "Prize 5 of 5: Olfaction",
+      "title": "Babies smell *wonderful* to their parents. Teenagers do not.",
+      "body": "Ilona Croy and Thomas Hummel (University of Jena), Agnieszka Sorokowska and Tomasz Frackowiak (University of Wroclaw), on how parents perceive the smell of their own children at different ages."
+    },
+    {
+      "type": "source",
+      "items": [
+        "Improbable Research, 2026 Ig Nobel Prize winners announced, 3 September 2026: https://improbable.com/2026/09/03/the-2026-ig-nobel-prize-winners-are-announced/",
+        "Nature news coverage, 2026: https://www.nature.com/articles/d41586-026-02650-x"
+      ],
+      "note": "The other five prizes (Medicine, Biology, Technology, Peace, Economics) are in the announcement."
+    },
+    {
+      "type": "cta",
+      "title": "One verified science story a day",
+      "body": "No hype, source on the last slide, every time.",
+      "ask": "Save this. Send it to the friend who needs a laugh and a citation."
+    }
   ]
 }

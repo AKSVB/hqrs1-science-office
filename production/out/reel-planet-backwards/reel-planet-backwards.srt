@@ -1,0 +1,35 @@
+1
+00:00:00,000 --> 00:00:04,500
+A planet is orbiting its star backwards. And tilted.
+
+2
+00:00:04,500 --> 00:00:09,000
+Our planets all orbit the way the Sun spins
+
+3
+00:00:09,000 --> 00:00:13,500
+GJ 3090 b, 73 light-years away, around a red dwarf
+
+4
+00:00:13,500 --> 00:00:18,000
+About 2.2 times Earth's radius, 4.5 times its mass
+
+5
+00:00:18,000 --> 00:00:22,500
+One orbit takes 2.9 days
+
+6
+00:00:22,500 --> 00:00:27,000
+Orbit tilted about 136 degrees: past sideways, into backwards
+
+7
+00:00:27,000 --> 00:00:31,000
+The first retrograde planet found around a red dwarf
+
+8
+00:00:31,000 --> 00:00:35,000
+No known companion to explain it. Why comes next
+
+9
+00:00:35,000 --> 00:00:38,000
+Yann Carteret, University of Geneva. NIRPS, La Silla, Chile

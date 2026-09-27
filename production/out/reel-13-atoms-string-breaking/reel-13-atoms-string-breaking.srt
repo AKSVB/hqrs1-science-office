@@ -1,0 +1,31 @@
+1
+00:00:00,000 --> 00:00:04,500
+Thirteen atoms just simulated particles snapping into new pairs
+
+2
+00:00:04,500 --> 00:00:09,000
+Pull confined particles apart and they make new pairs
+
+3
+00:00:09,000 --> 00:00:13,500
+Physicists call it string breaking. Think quarks, as an analogy
+
+4
+00:00:13,500 --> 00:00:18,000
+13 ytterbium ions, held in a line
+
+5
+00:00:18,000 --> 00:00:22,500
+Pairs formed at the ends of the string
+
+6
+00:00:22,500 --> 00:00:27,000
+And spread inward, not evenly along the string
+
+7
+00:00:27,000 --> 00:00:31,500
+A simulation of a lattice model. No real quarks, no real vacuum
+
+8
+00:00:31,500 --> 00:00:35,000
+De and Monroe, Duke Quantum Center

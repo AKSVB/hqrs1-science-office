@@ -1,0 +1,90 @@
+{
+  "notes": {
+    "story": "Behind-the-scenes deck about this office's verification process, for the 18 Oct calendar slot (trust post, to be pinned).",
+    "sources": [
+      "OPERATING_MANUAL.md, section 3 (The daily pipeline): intake, V/S scoring with threshold V+S >= 14 and S >= 6, two independent sources per number, GREEN/AMBER/RED gate, source slide on the last slide.",
+      "OPERATING_MANUAL.md, section on escalation: a warranted correction goes into a pinned comment on the post within 24 hours.",
+      "research/05-fact-check.md, filed 2026-09-27: twelve numbered story rows, two returned RED (row 4, sealed letters; row 10, rice-paper battery)."
+    ],
+    "journal": "Not applicable. This is our own process document.",
+    "caveats_on_screen": [
+      "Slide 6 example: 'two of twelve' counts the twelve numbered story rows in the 27 Sept fact-check memo; the two lettered background rows (A, B) are not counted.",
+      "The two RED reasons on slide 6 are paraphrased from the memo: row 4 (paper online since June, not September) and row 10 (a claim that appears nowhere in the journal's account). Neither story is named on screen.",
+      "Compare slide: the 'myth' is a common assumption about science accounts, not a quote from anyone."
+    ],
+    "facts_from_secondary_coverage": false,
+    "fact_check": "Not a science story. Numbers are from our own manual and this week's fact-check memo; the Fact-Checker should confirm the 'two of twelve' count before posting."
+  },
+  "handle": "@hqrs_1",
+  "caption": "How a story gets from a journal to this feed. Every candidate is scored for reach and for solidity; it ships only if the scores add to 14 or more and solidity is at least 6. Every number on screen needs two independent sources. GREEN ships, AMBER ships with the caveat on screen, RED does not. This week the fact-check pulled two of twelve stories. Corrections pinned within 24 hours. What should we check harder?\n\n#science #factcheck #behindthescenes #scicomm",
+  "slides": [
+    {
+      "type": "cover",
+      "kicker": "Behind the scenes",
+      "title": "How we check a story *before* you see it",
+      "sub": "Our pipeline, from intake to a pinned correction."
+    },
+    {
+      "type": "list",
+      "kicker": "Step 1",
+      "title": "Intake",
+      "items": [
+        "Two research desks file candidate stories every **Monday**",
+        "Each one carries the finding, the **venue and date**, a URL, and its caveats",
+        "No link, no story"
+      ]
+    },
+    {
+      "type": "statement",
+      "kicker": "Step 2",
+      "title": "Two scores: *V* and *S*",
+      "body": "V is virality potential, S is scientific solidity, each from 1 to 10. A story ships only if V + S is at least 14 and S is at least 6. An S of 5 or less runs only as an explicit 'contested' piece, never as a finding."
+    },
+    {
+      "type": "compare",
+      "kicker": "Step 3",
+      "myth": "One link in the caption means it is verified",
+      "fact": "Every number on screen needs two independent sources",
+      "body": "One source is a claim. Two that do not copy each other is a check."
+    },
+    {
+      "type": "list",
+      "kicker": "Step 4",
+      "title": "The gate",
+      "items": [
+        "[[GREEN]] ships as written",
+        "_AMBER_ ships with the caveat written on screen, not only in the caption",
+        "{{RED}} does not ship"
+      ]
+    },
+    {
+      "type": "number",
+      "kicker": "This week, for real",
+      "number": "2 of 12",
+      "title": "stories pulled by the fact-check",
+      "body": "One paper turned out to be from June, not September. One headline claim appeared nowhere in the journal's own account. Both are on hold until the papers are opened."
+    },
+    {
+      "type": "statement",
+      "kicker": "Step 5",
+      "title": "Source on the last slide, *every time*",
+      "body": "And if we get something wrong, the correction goes into a pinned comment on the post within 24 hours."
+    },
+    {
+      "type": "source",
+      "title": "Where this comes from",
+      "items": [
+        "Our operating manual, section 3: the daily pipeline.",
+        "Our fact-check memo of 27 September 2026: twelve stories reviewed, two returned RED.",
+        "Every post carries its own source slide or source line."
+      ],
+      "note": "This deck describes our own process. It is not a science story."
+    },
+    {
+      "type": "cta",
+      "title": "One verified science story a day",
+      "body": "No hype, source on the last slide, every time.",
+      "ask": "Save this, and hold us to it."
+    }
+  ]
+}

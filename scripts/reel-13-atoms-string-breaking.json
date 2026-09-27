@@ -1,0 +1,95 @@
+{
+  "notes": {
+    "story": "Publications desk item 14: 13 trapped ytterbium ions simulate string breaking; pairs form at the ends of the string and spread inward (Duke Quantum Center).",
+    "sources": [
+      "https://pratt.duke.edu/news/quantum-simulation-string-breaking/",
+      "https://www.sciencedaily.com/releases/2026/09/260925005416.htm",
+      "https://phys.org/news/2026-09-quantum-device-simulates.html",
+      "Nature Physics s41567-026-03422-0"
+    ],
+    "journal": "Nature Physics, 23 September 2026, s41567-026-03422-0",
+    "caveats_on_screen": [
+      "Scene 3: quarks are named as an analogy only.",
+      "Scene 7: a simulation of a lattice model; no real quarks, no real vacuum.",
+      "No 'first' anywhere: other groups reported string-breaking dynamics in 2024-25; the Duke novelty is the edge-driven pattern (scenes 5 and 6).",
+      "The phrases 'the universe makes new ones' and 'matter popping out of the vacuum' are not used.",
+      "Numbers on screen: 13 ytterbium ions; pairs formed at the ends and spread inward."
+    ],
+    "facts_from_secondary_coverage": true,
+    "fact_check": "2026-09-27 wave 2 AMBER: Nature Physics, 23 Sept 2026, DOI 10.1038/s41567-026-03422-0. Duke Quantum Center; senior author Christopher Monroe, first author Arinjoy De. 13 trapped ytterbium-171 ions; charge pairs formed at the ends of the string and spread inward, an edge-driven mechanism instead of uniform pair creation. Hype risk high: say 'simulated' or 'an analogue of', keep quarks as an analogy, do not say 'first'. Required wording applied."
+  },
+  "handle": "@hqrs_1",
+  "duration": 38,
+  "end": {
+    "kicker": "Follow @hqrs_1",
+    "title": "One verified science story a day",
+    "body": "Source in the caption.",
+    "seconds": 3
+  },
+  "caption": "Thirteen ytterbium ions, Duke Quantum Center, simulated string breaking, an analogue of how confined particles snap apart and make new pairs. The pairs formed at the ends and spread inward. A simulation of a lattice model, not real quarks. De, Monroe. Nature Physics, 23 September 2026, s41567-026-03422-0. Which physics idea should atoms act out next?\n\n#physics #quantum #particlephysics #science",
+  "voiceover_script": "Thirteen atoms just simulated one of the strangest ideas in particle physics. Pull confined particles apart hard enough, and instead of separating, they snap into new pairs. Physicists call it string breaking. Quarks are the classic example, and that is an analogy here, not the experiment. A team at the Duke Quantum Center held thirteen ytterbium ions in a line and used them to simulate the string. When it broke, the new pairs formed at the ends first and spread inward, rather than appearing evenly along the string. That edge-driven pattern is the result. To be clear, this is a quantum simulation of a lattice model. No real quarks, no real vacuum. De and Monroe, Nature Physics, September twenty twenty six. Source in the caption.",
+  "scenes": [
+    {
+      "start": 0,
+      "end": 4.5,
+      "kicker": "Nature Physics, 23 Sept 2026",
+      "caption": "Thirteen atoms just simulated particles *snapping* into new pairs",
+      "visual": {
+        "type": "counter",
+        "from": 0,
+        "to": 13,
+        "suffix": " ions",
+        "label": "ytterbium ions in a trap"
+      }
+    },
+    {
+      "start": 4.5,
+      "end": 9,
+      "kicker": "The idea",
+      "caption": "Pull confined particles apart and they make *new pairs*"
+    },
+    {
+      "start": 9,
+      "end": 13.5,
+      "kicker": "The name",
+      "caption": "Physicists call it *string breaking*. Think quarks, as an analogy"
+    },
+    {
+      "start": 13.5,
+      "end": 18,
+      "kicker": "The setup",
+      "caption": "13 ytterbium ions, held in a *line*",
+      "visual": {
+        "type": "dots",
+        "n": 13,
+        "lit": 13,
+        "cols": 7,
+        "label": "13 ions, one quantum simulator"
+      }
+    },
+    {
+      "start": 18,
+      "end": 22.5,
+      "kicker": "What they saw",
+      "caption": "Pairs formed at the *ends* of the string"
+    },
+    {
+      "start": 22.5,
+      "end": 27,
+      "kicker": "Then",
+      "caption": "And *spread inward*, not evenly along the string"
+    },
+    {
+      "start": 27,
+      "end": 31.5,
+      "kicker": "Careful",
+      "caption": "A *simulation* of a lattice model. No real quarks, no real vacuum"
+    },
+    {
+      "start": 31.5,
+      "end": 35,
+      "kicker": "Who",
+      "caption": "De and Monroe, *Duke Quantum Center*"
+    }
+  ]
+}
