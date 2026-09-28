@@ -4,7 +4,8 @@
     "timing": "Editor A, 2026-09-28. Scene times are authored directly against the cut deep-voice track (39.18 s), so fit_audio scales x1.000 and every cut sits on a word boundary of the words JSON: scene 1 on '0.5 s' (2.51), scene 2 on '6 patients' (5.50), scene 3 on 'played' (9.50), scene 4 on 'Take the risk' (13.62), the wipe on 'In the orbitofrontal' (15.80), the first return on 'One became active' (21.78), the countdown return on 'Together' (26.10), scene 8 on '6 patients, one video game' (30.50), scene 9 on 'Starkweather' (34.74). Big number '0.5 s' slams on '0.5 s' (scene 1 local 0.01), flips to '500 ms' at 1.4, exits at 2.2 (the end of 'made.'). Dual-trace: the amber patch lights on '2 patches' (scene 5 local 1.82), the cyan on '2 cm' (2.92) with the '~2 cm apart' bracket; in scene 6 (enter 0) the amber trace steps on 'risky' (1.47) and the cyan on 'safe' (3.33); in scene 7 (enter 0) the countdown runs 1.0 s to 0.0 s from local 0.66 over 3.24 s so the readout reads 0.5 s on '0.5 s' (2.28, where the amber trace lifts) and 0.0 s on 'made.' (3.9, the thud), ticks at each 0.1 s (ten). Words JSON: scripts/v2/reel-brain-gamble.words.json, the renderer's auto word timing applied per speech block from the track's RMS envelope (gaps over 0.25 s at -38 dB); 'half a second' merged to '0.5 s', 'Six patients' to '6 patients', 'two patches' to '2 patches', 'two centimetres' to '2 cm' for the band.",
     "audio": "Narration: production/assets/voice/reel-brain-gamble-voice-cut-m.mp3: the deep-voice track with 5.1 to 11.4 s removed ('That is the finding from a study in Nature Neuroscience, published on the fifteenth of September.', cut in the silences either side with 0.15 s fades) and cut at 45.45 s (the silence before 'Source in the caption'), then trimmed 1.0 dB with ffmpeg so it peaks at -5.9 dBFS; the untouched file is reel-brain-gamble-voice.mp3. Bed: production/assets/sound/bed-a-synth.mp3. Motif at 0.0 and at the payoff ('6 patients, one video game', scene 8). Thud on the slam and on the wipe, and one at the choice line; ticks on the flip, on each patch lighting, on each trace step and on the countdown. No ambience (the storyboard asks for none).",
     "numbers": "0.5 s is the one big number (flips to '500 ms', a conversion by definition). On the plate: '~2 cm apart' (bracket label), the countdown readout 1.0 s to 0.0 s (its 0.5 s reading is the finding; the 1.0 s start is the axis scale, unlabelled otherwise), the axis from -1.0 to +0.3 s with unlabelled ticks. Labels: '6 patients, implanted for monitoring', '6 patients. One video game.' All from the fact-check row.",
-    "plates": "Editor A, 2026-09-28. Every plate is code-rendered (cortex-array and decoder-screen scenes, production/visuals/render-plate.mjs, no paid generation) as the storyboard lists: BG-01 = production/assets/reel-brain-gamble/BG-01-seq (view=patches lit=2, seed 7, 3 s loop, the patches breathe; hook scenes 0 and 1 with the parallax plate, scene 4, under the dual-trace plate in scene 5, scene 9 and the end card so the loop closes on the hook still); BG-02 = BG-02-array-on-surface.png (view=array; scene 2 and, push-in, under the countdown in scene 7); BG-03 = BG-03-corridor-monitor.png (decoder-screen view=hallway; scenes 3 and 8); BG-04 = BG-04-two-patches-close.png (patches close=1; under the 'opposite jobs' return in scene 6). No substitutions. Deviations from the storyboard: the storyboard's single 10.3 s plate window (16.1 to 26.4) is split at 'One became active' into two windows (6.0 s and 4.3 s) so no window runs over 8 s, the second on a hard cut to BG-04 with the plate continuing at enter 0 (the renderer's dual-trace redraws its axis over 0.4 s on every entry; that redraw sits on the cut); the countdown return (scene 7) therefore sits over BG-02 rather than BG-04; both returns use scrim 0.8 (the close patches and the gold grid are bright under the plate lines); 'Take the risk, or avoid' sits on BG-01 (the two patches, the two choices) rather than continuing the corridor, so the corridor shot stays under 5 s and the wipe keeps the same still. The event line is unlabelled in scenes 5 and 6 and labelled 'Choice' in scene 7, and the 'Signal' label is left empty, so the plate never carries more than three labels."
+    "plates": "Editor A, 2026-09-28. Every plate is code-rendered (cortex-array and decoder-screen scenes, production/visuals/render-plate.mjs, no paid generation) as the storyboard lists: BG-01 = production/assets/reel-brain-gamble/BG-01-seq (view=patches lit=2, seed 7, 3 s loop, the patches breathe; hook scenes 0 and 1 with the parallax plate, scene 4, under the dual-trace plate in scene 5, scene 9 and the end card so the loop closes on the hook still); BG-02 = BG-02-array-on-surface.png (view=array; scene 2 and, push-in, under the countdown in scene 7); BG-03 = BG-03-corridor-monitor.png (decoder-screen view=hallway; scenes 3 and 8); BG-04 = BG-04-two-patches-close.png (patches close=1; under the 'opposite jobs' return in scene 6). No substitutions. Deviations from the storyboard: the storyboard's single 10.3 s plate window (16.1 to 26.4) is split at 'One became active' into two windows (6.0 s and 4.3 s) so no window runs over 8 s, the second on a hard cut to BG-04 with the plate continuing at enter 0 (the renderer's dual-trace redraws its axis over 0.4 s on every entry; that redraw sits on the cut); the countdown return (scene 7) therefore sits over BG-02 rather than BG-04; both returns use scrim 0.8 (the close patches and the gold grid are bright under the plate lines); 'Take the risk, or avoid' sits on BG-01 (the two patches, the two choices) rather than continuing the corridor, so the corridor shot stays under 5 s and the wipe keeps the same still. The event line is unlabelled in scenes 5 and 6 and labelled 'Choice' in scene 7, and the 'Signal' label is left empty, so the plate never carries more than three labels.",
+    "qc": "Editor fix desk, 2026-09-28. The dual-trace windows (scenes 5, 6, 7, the countdown return included) sat over the bright cortex plates with the patch labels, the '~2 cm apart' bracket and 'Choice' hard to read although bg.scrim was already 0.75 and 0.8: the renderer's .scrim (production/brand.css) is a top-and-bottom gradient that darkens the middle of the frame by only 0.22 to 0.30 of its opacity, so no scrim value fixes a plate behind the mechanism (renderer limitation, not edited). Workaround: the three windows now use dimmed copies of their plates, BG-01-seq-dim (90 frames), BG-04-two-patches-close-dim.png and BG-02-array-on-surface-dim.png, each blended 60 percent towards the frame ink #060913 with ffmpeg; scrims unchanged. The hook, scene 4 and scene 9 keep the undimmed BG-01-seq so the loop still closes on the hook still. Verified on extracted frames at 17, 18.5, 24 and 28 s and the contact sheet. Re-rendered with the same command (--jpeg --words); audio, timing and words JSON untouched."
   },
   "handle": "@hqrs_1",
   "style": "bible",
@@ -12,30 +13,123 @@
   "fit_audio": true,
   "music": "production/assets/sound/bed-a-synth.mp3",
   "sfx": [
-    { "path": "production/assets/sound/motif.mp3", "scene": 0, "at": 0, "db": -8 },
-    { "path": "production/assets/sound/thud.mp3", "scene": 1, "at": 0.01 },
-    { "path": "production/assets/sound/tick.mp3", "scene": 1, "at": 1.4 },
-    { "path": "production/assets/sound/thud.mp3", "scene": 5, "at": 0 },
-    { "path": "production/assets/sound/tick.mp3", "scene": 5, "at": 1.82 },
-    { "path": "production/assets/sound/tick.mp3", "scene": 5, "at": 2.92 },
-    { "path": "production/assets/sound/tick.mp3", "scene": 6, "at": 1.47 },
-    { "path": "production/assets/sound/tick.mp3", "scene": 6, "at": 3.33 },
-    { "path": "production/assets/sound/tick.mp3", "scene": 7, "at": 0.984 },
-    { "path": "production/assets/sound/tick.mp3", "scene": 7, "at": 1.308 },
-    { "path": "production/assets/sound/tick.mp3", "scene": 7, "at": 1.632 },
-    { "path": "production/assets/sound/tick.mp3", "scene": 7, "at": 1.956 },
-    { "path": "production/assets/sound/tick.mp3", "scene": 7, "at": 2.28 },
-    { "path": "production/assets/sound/tick.mp3", "scene": 7, "at": 2.604 },
-    { "path": "production/assets/sound/tick.mp3", "scene": 7, "at": 2.928 },
-    { "path": "production/assets/sound/tick.mp3", "scene": 7, "at": 3.252 },
-    { "path": "production/assets/sound/tick.mp3", "scene": 7, "at": 3.576 },
-    { "path": "production/assets/sound/thud.mp3", "scene": 7, "at": 3.9 },
-    { "path": "production/assets/sound/motif.mp3", "scene": 8, "at": 0, "db": -8 },
-    { "path": "production/assets/sound/settle.mp3", "scene": "end", "at": 0 }
+    {
+      "path": "production/assets/sound/motif.mp3",
+      "scene": 0,
+      "at": 0,
+      "db": -8
+    },
+    {
+      "path": "production/assets/sound/thud.mp3",
+      "scene": 1,
+      "at": 0.01
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 1,
+      "at": 1.4
+    },
+    {
+      "path": "production/assets/sound/thud.mp3",
+      "scene": 5,
+      "at": 0
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 5,
+      "at": 1.82
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 5,
+      "at": 2.92
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 6,
+      "at": 1.47
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 6,
+      "at": 3.33
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 7,
+      "at": 0.984
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 7,
+      "at": 1.308
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 7,
+      "at": 1.632
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 7,
+      "at": 1.956
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 7,
+      "at": 2.28
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 7,
+      "at": 2.604
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 7,
+      "at": 2.928
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 7,
+      "at": 3.252
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 7,
+      "at": 3.576
+    },
+    {
+      "path": "production/assets/sound/thud.mp3",
+      "scene": 7,
+      "at": 3.9
+    },
+    {
+      "path": "production/assets/sound/motif.mp3",
+      "scene": 8,
+      "at": 0,
+      "db": -8
+    },
+    {
+      "path": "production/assets/sound/settle.mp3",
+      "scene": "end",
+      "at": 0
+    }
   ],
   "end": {
     "short": true,
-    "bg": { "sequence": "production/assets/reel-brain-gamble/BG-01-seq", "fps": 30, "move": "push-in", "from": 1.12, "to": 1.14, "focus": [0.5, 0.4], "scrim": 0.7 },
+    "bg": {
+      "sequence": "production/assets/reel-brain-gamble/BG-01-seq",
+      "fps": 30,
+      "move": "push-in",
+      "from": 1.12,
+      "to": 1.14,
+      "focus": [
+        0.5,
+        0.4
+      ],
+      "scrim": 0.7
+    },
     "source": "Nature Neuroscience, 15 Sept 2026. Starkweather, Chang, Knight; UCSF and UC Berkeley.",
     "note": "Images: generated illustrations."
   },
@@ -43,73 +137,278 @@
   "voiceover_script": "A brain signal can predict your gamble about half a second before the choice is made. Six patients, already fitted with electrodes for surgical monitoring, played a video game with hallways, bombs and treasure chests. Take the risk, or avoid it. In the orbitofrontal cortex, two patches about two centimetres apart did opposite jobs. One became active before a risky choice, the other before a safe one. Together, they predicted the decision roughly half a second before it was made. Six patients, one video game, and no claim about free will. Starkweather, Chang and Knight, at UCSF and UC Berkeley.",
   "scenes": [
     {
-      "start": 0, "end": 2.51,
-      "bg": { "sequence": "production/assets/reel-brain-gamble/BG-01-seq", "fps": 30, "move": "push-in", "from": 1.0, "to": 1.05, "focus": [0.5, 0.4], "scrim": 0.45, "parallax": true },
-      "caption": "Your gamble, readable 0.5 s early", "label_out": 1.5
+      "start": 0,
+      "end": 2.51,
+      "bg": {
+        "sequence": "production/assets/reel-brain-gamble/BG-01-seq",
+        "fps": 30,
+        "move": "push-in",
+        "from": 1.0,
+        "to": 1.05,
+        "focus": [
+          0.5,
+          0.4
+        ],
+        "scrim": 0.45,
+        "parallax": true
+      },
+      "caption": "Your gamble, readable 0.5 s early",
+      "label_out": 1.5
     },
     {
-      "start": 2.51, "end": 5.5,
-      "bg": { "sequence": "production/assets/reel-brain-gamble/BG-01-seq", "fps": 30, "move": "push-in", "from": 1.05, "to": 1.08, "focus": [0.5, 0.4], "scrim": 0.45 },
-      "big": { "text": "0.5 s", "at": 0.01, "flip": { "at": 1.4, "text": "500 ms" }, "exit": 2.2 }
+      "start": 2.51,
+      "end": 5.5,
+      "bg": {
+        "sequence": "production/assets/reel-brain-gamble/BG-01-seq",
+        "fps": 30,
+        "move": "push-in",
+        "from": 1.05,
+        "to": 1.08,
+        "focus": [
+          0.5,
+          0.4
+        ],
+        "scrim": 0.45
+      },
+      "big": {
+        "text": "0.5 s",
+        "at": 0.01,
+        "flip": {
+          "at": 1.4,
+          "text": "500 ms"
+        },
+        "exit": 2.2
+      }
     },
     {
-      "start": 5.5, "end": 9.5,
-      "bg": { "image": "production/assets/reel-brain-gamble/BG-02-array-on-surface.png", "move": "pan-right", "amount": 0.05, "focus": [0.5, 0.4], "scrim": 0.45 },
+      "start": 5.5,
+      "end": 9.5,
+      "bg": {
+        "image": "production/assets/reel-brain-gamble/BG-02-array-on-surface.png",
+        "move": "pan-right",
+        "amount": 0.05,
+        "focus": [
+          0.5,
+          0.4
+        ],
+        "scrim": 0.45
+      },
       "caption": "6 patients, implanted for monitoring"
     },
     {
-      "start": 9.5, "end": 13.62,
-      "bg": { "image": "production/assets/reel-brain-gamble/BG-03-corridor-monitor.png", "move": "push-in", "from": 1.0, "to": 1.08, "focus": [0.45, 0.35], "scrim": 0.45 },
+      "start": 9.5,
+      "end": 13.62,
+      "bg": {
+        "image": "production/assets/reel-brain-gamble/BG-03-corridor-monitor.png",
+        "move": "push-in",
+        "from": 1.0,
+        "to": 1.08,
+        "focus": [
+          0.45,
+          0.35
+        ],
+        "scrim": 0.45
+      },
       "caption": "A video game"
     },
     {
-      "start": 13.62, "end": 15.8,
-      "bg": { "sequence": "production/assets/reel-brain-gamble/BG-01-seq", "fps": 30, "move": "push-in", "from": 1.0, "to": 1.04, "focus": [0.5, 0.4], "scrim": 0.45 },
+      "start": 13.62,
+      "end": 15.8,
+      "bg": {
+        "sequence": "production/assets/reel-brain-gamble/BG-01-seq",
+        "fps": 30,
+        "move": "push-in",
+        "from": 1.0,
+        "to": 1.04,
+        "focus": [
+          0.5,
+          0.4
+        ],
+        "scrim": 0.45
+      },
       "caption": "Take the risk, or avoid"
     },
     {
-      "start": 15.8, "end": 21.78,
+      "start": 15.8,
+      "end": 21.78,
       "transition": "wipe-up",
-      "bg": { "sequence": "production/assets/reel-brain-gamble/BG-01-seq", "fps": 30, "move": "push-in", "from": 1.04, "to": 1.1, "focus": [0.5, 0.4], "scrim": 0.75 },
-      "visual": { "type": "dual-trace", "min": -1.0, "max": 0.3, "tick": 0.25, "rate": 220, "enter": 0.4,
-        "event": { "value": 0, "label": "" },
-        "traces": [
-          { "label": "Take the risk", "colour": "amber", "lit": 1.82 },
-          { "label": "Avoid", "colour": "cyan", "lit": 2.92 }
+      "bg": {
+        "sequence": "production/assets/reel-brain-gamble/BG-01-seq-dim",
+        "fps": 30,
+        "move": "push-in",
+        "from": 1.04,
+        "to": 1.1,
+        "focus": [
+          0.5,
+          0.4
         ],
-        "bracket": { "label": "~2 cm apart", "show": 2.92, "hide": 99 } }
+        "scrim": 0.75
+      },
+      "visual": {
+        "type": "dual-trace",
+        "min": -1.0,
+        "max": 0.3,
+        "tick": 0.25,
+        "rate": 220,
+        "enter": 0.4,
+        "event": {
+          "value": 0,
+          "label": ""
+        },
+        "traces": [
+          {
+            "label": "Take the risk",
+            "colour": "amber",
+            "lit": 1.82
+          },
+          {
+            "label": "Avoid",
+            "colour": "cyan",
+            "lit": 2.92
+          }
+        ],
+        "bracket": {
+          "label": "~2 cm apart",
+          "show": 2.92,
+          "hide": 99
+        }
+      }
     },
     {
-      "start": 21.78, "end": 26.1,
-      "bg": { "image": "production/assets/reel-brain-gamble/BG-04-two-patches-close.png", "move": "push-in", "from": 1.0, "to": 1.06, "focus": [0.5, 0.4], "scrim": 0.8 },
-      "visual": { "type": "dual-trace", "min": -1.0, "max": 0.3, "tick": 0.25, "rate": 220, "enter": 0,
-        "event": { "value": 0, "label": "" },
-        "traces": [
-          { "label": "Take the risk", "colour": "amber", "lit": 0, "step": { "at": 1.47, "height": 60 } },
-          { "label": "Avoid", "colour": "cyan", "lit": 0, "step": { "at": 3.33, "height": 60 } }
+      "start": 21.78,
+      "end": 26.1,
+      "bg": {
+        "image": "production/assets/reel-brain-gamble/BG-04-two-patches-close-dim.png",
+        "move": "push-in",
+        "from": 1.0,
+        "to": 1.06,
+        "focus": [
+          0.5,
+          0.4
         ],
-        "bracket": { "label": "~2 cm apart", "show": 0, "hide": 99 } }
+        "scrim": 0.8
+      },
+      "visual": {
+        "type": "dual-trace",
+        "min": -1.0,
+        "max": 0.3,
+        "tick": 0.25,
+        "rate": 220,
+        "enter": 0,
+        "event": {
+          "value": 0,
+          "label": ""
+        },
+        "traces": [
+          {
+            "label": "Take the risk",
+            "colour": "amber",
+            "lit": 0,
+            "step": {
+              "at": 1.47,
+              "height": 60
+            }
+          },
+          {
+            "label": "Avoid",
+            "colour": "cyan",
+            "lit": 0,
+            "step": {
+              "at": 3.33,
+              "height": 60
+            }
+          }
+        ],
+        "bracket": {
+          "label": "~2 cm apart",
+          "show": 0,
+          "hide": 99
+        }
+      }
     },
     {
-      "start": 26.1, "end": 30.5,
-      "bg": { "image": "production/assets/reel-brain-gamble/BG-02-array-on-surface.png", "move": "push-in", "from": 1.0, "to": 1.06, "focus": [0.5, 0.4], "scrim": 0.8 },
-      "visual": { "type": "dual-trace", "min": -1.0, "max": 0.3, "tick": 0.25, "rate": 220, "enter": 0,
-        "event": { "value": 0, "label": "Choice" },
-        "traces": [
-          { "label": "Take the risk", "colour": "amber", "lit": 0 },
-          { "label": "Avoid", "colour": "cyan", "lit": 0 }
+      "start": 26.1,
+      "end": 30.5,
+      "bg": {
+        "image": "production/assets/reel-brain-gamble/BG-02-array-on-surface-dim.png",
+        "move": "push-in",
+        "from": 1.0,
+        "to": 1.06,
+        "focus": [
+          0.5,
+          0.4
         ],
-        "countdown": { "at": 0.66, "from": 1.0, "to": 0.0, "dur": 3.24, "decimals": 1, "unit": " s" },
-        "signalLabel": { "at": 2.28, "text": "", "trace": 0 } }
+        "scrim": 0.8
+      },
+      "visual": {
+        "type": "dual-trace",
+        "min": -1.0,
+        "max": 0.3,
+        "tick": 0.25,
+        "rate": 220,
+        "enter": 0,
+        "event": {
+          "value": 0,
+          "label": "Choice"
+        },
+        "traces": [
+          {
+            "label": "Take the risk",
+            "colour": "amber",
+            "lit": 0
+          },
+          {
+            "label": "Avoid",
+            "colour": "cyan",
+            "lit": 0
+          }
+        ],
+        "countdown": {
+          "at": 0.66,
+          "from": 1.0,
+          "to": 0.0,
+          "dur": 3.24,
+          "decimals": 1,
+          "unit": " s"
+        },
+        "signalLabel": {
+          "at": 2.28,
+          "text": "",
+          "trace": 0
+        }
+      }
     },
     {
-      "start": 30.5, "end": 34.74,
-      "bg": { "image": "production/assets/reel-brain-gamble/BG-03-corridor-monitor.png", "move": "push-out", "from": 1.1, "to": 1.0, "focus": [0.45, 0.35], "scrim": 0.45 },
+      "start": 30.5,
+      "end": 34.74,
+      "bg": {
+        "image": "production/assets/reel-brain-gamble/BG-03-corridor-monitor.png",
+        "move": "push-out",
+        "from": 1.1,
+        "to": 1.0,
+        "focus": [
+          0.45,
+          0.35
+        ],
+        "scrim": 0.45
+      },
       "caption": "6 patients. One video game."
     },
     {
-      "start": 34.74, "end": 39.18,
-      "bg": { "sequence": "production/assets/reel-brain-gamble/BG-01-seq", "fps": 30, "move": "push-in", "from": 1.08, "to": 1.12, "focus": [0.5, 0.4], "scrim": 0.45 },
+      "start": 34.74,
+      "end": 39.18,
+      "bg": {
+        "sequence": "production/assets/reel-brain-gamble/BG-01-seq",
+        "fps": 30,
+        "move": "push-in",
+        "from": 1.08,
+        "to": 1.12,
+        "focus": [
+          0.5,
+          0.4
+        ],
+        "scrim": 0.45
+      },
       "caption": "UCSF and UC Berkeley"
     }
   ]

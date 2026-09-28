@@ -6,7 +6,8 @@
     "numbers": "On screen: $1M (hook line), ~10,000 agents, ~88 h, +17 h, 88 + 17 h (arithmetic on two of OpenAI's figures), Announced 8 Sept, 25 (the one big number, flipping to '25 Fields Medallists at launch'), 11 Sept and 8 Sept 2026 on the end card. All from fact-check row 12. The 120 h rail end is the scale, unlabelled; the readout steps at 10 h.",
     "plates": "Editor 2026-09-28. All four plates are the storyboard's own code-rendered sequences (turbulent-flow, production/assets/reel-ai-navier-stokes/NS-01-seq to NS-04-seq, 90 JPEG frames each at 30 fps, looping), no substitutions: NS-01 ink plume (hook, scene 2, scene 11, end card so the loop closes on the hook still), NS-02 vortex (scene 1, under both timeline windows, scene 9), NS-03 forced flow (scenes 3, 5, 7), NS-04 free flow (scenes 8, 10). No parallax plate (the subject has no clean edge).",
     "deviations": "Labels over six words: the declaration's title '\"A Severe Misalignment of AI in Mathematics\"' (7 words, required verbatim by the fact-check row; shown without the date so it is the only text besides the band) and 'Cases C and D, not A and B' (7 words, the row's own wording). Scene 9 runs 7.1 s on one plate (big number then the title label, as the storyboard has it at 6.9 s). Scene 3 runs 4.5 s. The end card source line is three lines at 36 px because the storyboard wants it verbatim. Window 2 readout is stepped, not live (see timing). The timeline's 'Announced 8 Sept' sits as the plate's bottom label, centred under the rail and off its scale, not at the right end.",
-    "alt": "Cover frame (0.8 s): a plume of amber-lit ink curling into two spirals in dark water, with the hook line An AI \"solved\" a $1M problem."
+    "alt": "Cover frame (0.8 s): a plume of amber-lit ink curling into two spirals in dark water, with the hook line An AI \"solved\" a $1M problem.",
+    "qc": "Editor fix desk, 2026-09-28. The hook frame (0.0 s) showed a compact ink puff because the spec still pointed at NS-01-seq (released at t = 0) although the README said the -seq-b dirs were in use: every scene and the end card now use NS-01-seq-b to NS-04-seq-b (150 frames, 5 s loop, rendered with --t0 1.0, so frame 1 already shows the folded plume; no new plate rendered). The hours-timeline windows (scenes 4 and 6, scrim 0.75 and 0.8) sit on NS-02-seq-b-dim, the vortex blended 60 percent towards the frame ink #060913 with ffmpeg per frame, because the renderer's .scrim is a gradient that darkens the middle of the frame by only 0.22 to 0.30 of its opacity (renderer limitation, not edited). Loops longer than a scene (4: 6.1 s, 9: 7.1 s) restart mid-scene as the README notes. Verified on extracted frames at 0.0, 15, 21.5, 24 and 30 s and the contact sheet. Re-rendered with the same command (--jpeg --words); audio, timing and words JSON untouched."
   },
   "handle": "@hqrs_1",
   "style": "bible",
@@ -140,7 +141,7 @@
   "end": {
     "short": true,
     "bg": {
-      "sequence": "production/assets/reel-ai-navier-stokes/NS-01-seq",
+      "sequence": "production/assets/reel-ai-navier-stokes/NS-01-seq-b",
       "fps": 30,
       "move": "push-in",
       "from": 1.12,
@@ -161,7 +162,7 @@
       "start": 0,
       "end": 2.39,
       "bg": {
-        "sequence": "production/assets/reel-ai-navier-stokes/NS-01-seq",
+        "sequence": "production/assets/reel-ai-navier-stokes/NS-01-seq-b",
         "fps": 30,
         "move": "push-in",
         "from": 1.0,
@@ -179,7 +180,7 @@
       "start": 2.39,
       "end": 5.77,
       "bg": {
-        "sequence": "production/assets/reel-ai-navier-stokes/NS-02-seq",
+        "sequence": "production/assets/reel-ai-navier-stokes/NS-02-seq-b",
         "fps": 30,
         "move": "pan-right",
         "amount": 0.05,
@@ -195,7 +196,7 @@
       "start": 5.77,
       "end": 7.75,
       "bg": {
-        "sequence": "production/assets/reel-ai-navier-stokes/NS-01-seq",
+        "sequence": "production/assets/reel-ai-navier-stokes/NS-01-seq-b",
         "fps": 30,
         "move": "push-in",
         "from": 1.04,
@@ -212,7 +213,7 @@
       "start": 7.75,
       "end": 12.28,
       "bg": {
-        "sequence": "production/assets/reel-ai-navier-stokes/NS-03-seq",
+        "sequence": "production/assets/reel-ai-navier-stokes/NS-03-seq-b",
         "fps": 30,
         "move": "push-in",
         "from": 1.0,
@@ -230,7 +231,7 @@
       "end": 18.41,
       "transition": "wipe-up",
       "bg": {
-        "sequence": "production/assets/reel-ai-navier-stokes/NS-02-seq",
+        "sequence": "production/assets/reel-ai-navier-stokes/NS-02-seq-b-dim",
         "fps": 30,
         "move": "pan-left",
         "amount": 0.04,
@@ -321,7 +322,7 @@
       "start": 18.41,
       "end": 20.52,
       "bg": {
-        "sequence": "production/assets/reel-ai-navier-stokes/NS-03-seq",
+        "sequence": "production/assets/reel-ai-navier-stokes/NS-03-seq-b",
         "fps": 30,
         "move": "push-in",
         "from": 1.06,
@@ -338,7 +339,7 @@
       "start": 20.52,
       "end": 23.07,
       "bg": {
-        "sequence": "production/assets/reel-ai-navier-stokes/NS-02-seq",
+        "sequence": "production/assets/reel-ai-navier-stokes/NS-02-seq-b-dim",
         "fps": 30,
         "move": "pan-right",
         "amount": 0.03,
@@ -455,7 +456,7 @@
       "start": 23.07,
       "end": 25.22,
       "bg": {
-        "sequence": "production/assets/reel-ai-navier-stokes/NS-03-seq",
+        "sequence": "production/assets/reel-ai-navier-stokes/NS-03-seq-b",
         "fps": 30,
         "move": "pan-left",
         "amount": 0.04,
@@ -481,7 +482,7 @@
       "start": 25.22,
       "end": 28.4,
       "bg": {
-        "sequence": "production/assets/reel-ai-navier-stokes/NS-04-seq",
+        "sequence": "production/assets/reel-ai-navier-stokes/NS-04-seq-b",
         "fps": 30,
         "move": "push-out",
         "from": 1.06,
@@ -498,7 +499,7 @@
       "start": 28.4,
       "end": 35.52,
       "bg": {
-        "sequence": "production/assets/reel-ai-navier-stokes/NS-02-seq",
+        "sequence": "production/assets/reel-ai-navier-stokes/NS-02-seq-b",
         "fps": 30,
         "move": "push-in",
         "from": 1.0,
@@ -533,7 +534,7 @@
       "start": 35.52,
       "end": 39.89,
       "bg": {
-        "sequence": "production/assets/reel-ai-navier-stokes/NS-04-seq",
+        "sequence": "production/assets/reel-ai-navier-stokes/NS-04-seq-b",
         "fps": 30,
         "move": "pan-right",
         "amount": 0.05,
@@ -549,7 +550,7 @@
       "start": 39.89,
       "end": 42.0,
       "bg": {
-        "sequence": "production/assets/reel-ai-navier-stokes/NS-01-seq",
+        "sequence": "production/assets/reel-ai-navier-stokes/NS-01-seq-b",
         "fps": 30,
         "move": "push-in",
         "from": 1.08,
