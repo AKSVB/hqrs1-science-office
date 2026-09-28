@@ -1,0 +1,15 @@
+{
+  "handle": "@hqrs_1",
+  "end": { "seconds": 0 },
+  "notes": "Animator test: telegraph.marks (carousel-project-anchor-debunk). A flat trace with no drop, no staircase, the 14:33 tick with a 24 px bracket and a note.",
+  "scenes": [
+    {
+      "start": 0, "end": 6,
+      "bg": { "image": "../placeholder-bg.png", "move": "drift", "scrim": 0.8 },
+      "kicker": "Test: telegraph marks",
+      "caption": "Gravity has no *off switch*",
+      "visual": { "type": "telegraph", "stairs": false, "start": 1, "rate": 160, "traceLabel": "Earth's gravity, 12 Aug", "axisLabels": ["00:00", "24:00 UTC"],
+        "marks": [ { "frac": 0.606, "label": "14:33 UTC, the claim", "colour": "amber", "bracketPx": 24, "note": "not to scale" } ] }
+    }
+  ]
+}

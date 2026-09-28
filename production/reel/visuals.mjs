@@ -161,17 +161,18 @@ const buildTimeline = (v) => {
   const H = 380, min = v.min ?? 0, max = v.max ?? 100, x0 = 70, x1 = VW - 70, ay = 200;
   const xOf = (val) => x0 + (x1 - x0) * (val - min) / (max - min);
   const ticks = (v.ticks || []).map((tk, i) => ({ ...tk, x: xOf(tk.value), up: tk.row ? tk.row === "up" : i % 2 === 0 }));
-  const grouping = v.grouping ?? !(min >= 1000 && max <= 3000); // years are not grouped
+  const grouping = v.grouping ?? !(min >= 1000 && max <= 3000 && min < max); // calendar years are not grouped (a reversed years-ago rail is)
   const noCursor = v.cursor === false, C = noCursor ? null : (v.cursor || {});
   const br = v.bracket ? { x0: xOf(v.bracket.from), x1: xOf(v.bracket.to), at: v.bracket.at ?? 0, c: col(v.bracket.colour, "var(--sim-dim, rgba(79,227,240,0.35))") } : null;
   const P = { min, max, x0, x1, from: C ? C.from ?? min : min, to: C ? C.to ?? max : min, dur: C ? C.dur ?? null : null, at: C ? C.at ?? 0 : 0, unit: v.unit || "", decimals: v.decimals ?? 0, grouping,
-    noCursor, readout: v.readout || null, band: !!v.band, draw: v.draw ?? 0, brAt: br ? br.at : null, ticks: ticks.map(t => ({ v: t.value, at: t.at ?? null, readout: t.readout ?? null })) };
+    noCursor, readout: v.readout || null, band: !!v.band, draw: v.draw ?? 0, brAt: br ? br.at : null, ticks: ticks.map(t => ({ v: t.value, at: t.at ?? null, readout: t.readout ?? null, pulse: !!t.pulse })) };
+  const cy = v.cursorText === false ? 36 : 54; // a shorter cursor line when there is no pill, so it clears the down-row labels
   return `${svgOpen("timeline", H, P, v)}
     <line class="rail" x1="${x0}" x2="${x1}" y1="${ay}" y2="${ay}" stroke="var(--line)" stroke-width="8" stroke-linecap="round"/>
     <line class="done" x1="${x0}" x2="${x0}" y1="${ay}" y2="${ay}" stroke="var(--accent)" stroke-width="8" stroke-linecap="round"/>
     ${br ? `<g class="br" opacity="${br.at > 0 ? 0 : 1}"><path d="M ${Math.min(br.x0, br.x1).toFixed(1)} ${ay - 22} v -12 H ${Math.max(br.x0, br.x1).toFixed(1)} v 12" fill="none" stroke="${br.c}" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>${v.bracket.label ? `<text class="lab-s" x="${((br.x0 + br.x1) / 2).toFixed(1)}" y="${ay - 48}" style="fill:${col(v.bracket.colour, "var(--muted)")}">${esc(v.bracket.label)}</text>` : ""}</g>` : ""}
     ${ticks.map((tk, i) => `<g class="tk" data-i="${i}" data-v="${tk.value}" style="--tk:${col(tk.colour, "var(--accent)")}"><line x1="${tk.x.toFixed(1)}" x2="${tk.x.toFixed(1)}" y1="${ay - 22}" y2="${ay + 22}" stroke="var(--muted)" stroke-width="5" stroke-linecap="round"/><text class="lab-s tk-t" x="${tk.x.toFixed(1)}" y="${tk.up ? ay - 44 : ay + 62}">${esc(tk.label)}</text></g>`).join("")}
-    ${noCursor ? "" : `<g class="cur"><line x1="0" x2="0" y1="${ay - 54}" y2="${ay + 54}" stroke="var(--accent-2)" stroke-width="8" stroke-linecap="round"/>${v.cursorText === false ? "" : `<rect x="-110" y="${ay - 150}" width="220" height="72" rx="36" fill="var(--accent-2)"/>`}<text class="cur-t" x="0" y="${ay - 102}"${v.cursorText === false ? ' opacity="0"' : ""}></text></g>`}
+    ${noCursor ? "" : `<g class="cur"><line x1="0" x2="0" y1="${ay - cy}" y2="${ay + cy}" stroke="var(--accent-2)" stroke-width="8" stroke-linecap="round"/>${v.cursorText === false ? "" : `<rect x="-110" y="${ay - 150}" width="220" height="72" rx="36" fill="var(--accent-2)"/>`}<text class="cur-t" x="0" y="${ay - 102}"${v.cursorText === false ? ' opacity="0"' : ""}></text></g>`}
     ${v.readout ? `<g class="ro"><text class="readout ro-a" x="${x1}" y="86" text-anchor="end" opacity="0"></text><text class="readout ro-b" x="${x1}" y="86" text-anchor="end" opacity="0"></text></g>` : ""}
     ${v.label ? `<text class="lab" x="468" y="${H - 14}">${esc(v.label)}</text>` : ""}
   </svg>`;
@@ -213,17 +214,22 @@ const buildTelegraph = (v) => {
   const H = 560;
   if (v.text) return `${svgOpen("telegraph", H, { text: v.text, rate: v.rate ?? 20 }, v)}<text class="readout ty" x="40" y="${H / 2 + 20}" text-anchor="start"></text></svg>`;
   const labels = v.stairs?.labels || ["ground state", "first excited state"];
-  const yHi = 150, yLo = H - 120, sx0 = 150, sx1 = 300, tx0 = 340, tx1 = VW - 30, ay = yLo + 40;
+  const flat = v.stairs === false;
+  const yHi = 150, yLo = H - 120, sx0 = 150, sx1 = 300, tx0 = flat ? 40 : 340, tx1 = VW - 30, ay = yLo + 40;
   const start = v.start ?? 1;
   const R = v.readout || null;
-  return `${svgOpen("telegraph", H, { yHi, yLo, tx0, tx1, start, drop: v.drop || null, rate: v.rate ?? 160, readout: R, jumpLabel: v.jumpLabel || "" }, v)}
+  const marks = (v.marks || []).map(m => ({ ...m, x: tx0 + (tx1 - tx0) * (m.frac ?? 0.5), c: col(m.colour, "var(--accent-2)") }));
+  return `${svgOpen("telegraph", H, { yHi, yLo, tx0, tx1, start, drop: v.drop || null, rate: v.rate ?? 160, readout: R, jumpLabel: v.jumpLabel || "", flat }, v)}
     <defs><radialGradient id="ballg2"><stop offset="0" stop-color="#fff"/><stop offset="0.35" stop-color="#ffb020"/><stop offset="1" stop-color="#ffb020" stop-opacity="0"/></radialGradient></defs>
-    <g class="lvl" data-k="0"><line x1="${sx0}" x2="${sx1}" y1="${yLo}" y2="${yLo}" stroke="var(--line)" stroke-width="6" stroke-linecap="round"/><text class="lab-l" x="${sx0 - 110}" y="${yLo + 44}">${esc(labels[0])}</text></g>
+    ${flat ? "" : `<g class="lvl" data-k="0"><line x1="${sx0}" x2="${sx1}" y1="${yLo}" y2="${yLo}" stroke="var(--line)" stroke-width="6" stroke-linecap="round"/><text class="lab-l" x="${sx0 - 110}" y="${yLo + 44}">${esc(labels[0])}</text></g>
     <g class="lvl" data-k="1"><line x1="${sx0}" x2="${sx1}" y1="${yHi}" y2="${yHi}" stroke="var(--line)" stroke-width="6" stroke-linecap="round"/><text class="lab-l" x="${sx0 - 110}" y="${yHi - 18}">${esc(labels[1])}</text></g>
     <circle class="ring" cx="${(sx0 + sx1) / 2}" cy="${yHi}" r="0" fill="none" stroke="var(--accent-2)" stroke-width="4" opacity="0"/>
     <circle class="glow" cx="${(sx0 + sx1) / 2}" cy="${yHi}" r="70" fill="url(#ballg2)" opacity="0.7"/>
-    <circle class="ball" cx="${(sx0 + sx1) / 2}" cy="${yHi}" r="22" fill="#fff"/>
+    <circle class="ball" cx="${(sx0 + sx1) / 2}" cy="${yHi}" r="22" fill="#fff"/>`}
     <line x1="${tx0}" x2="${tx1}" y1="${ay}" y2="${ay}" stroke="var(--line)" stroke-width="6" stroke-linecap="round"/>
+    ${v.axisLabels ? `<text class="lab-s" x="${tx0}" y="${ay + 50}" style="text-anchor:start">${esc(v.axisLabels[0] ?? "")}</text><text class="lab-s" x="${tx1}" y="${ay + 50}" style="text-anchor:end">${esc(v.axisLabels[1] ?? "")}</text>` : ""}
+    ${v.traceLabel ? `<text class="lab-s" x="${tx0}" y="${(start ? yHi : yLo) - 22}" style="text-anchor:start;fill:var(--accent)">${esc(v.traceLabel)}</text>` : ""}
+    ${marks.map(m => `<g class="mark"><line x1="${m.x.toFixed(1)}" x2="${m.x.toFixed(1)}" y1="${ay + 4}" y2="${ay + 26}" stroke="${m.c}" stroke-width="6" stroke-linecap="round"/>${m.label ? `<text class="lab-s" x="${m.x.toFixed(1)}" y="${ay + 62}" style="fill:${m.c}">${esc(m.label)}</text>` : ""}${m.bracketPx ? `<path d="M ${(m.x - m.bracketPx / 2).toFixed(1)} ${ay - 30} v 14 H ${(m.x + m.bracketPx / 2).toFixed(1)} v -14" fill="none" stroke="var(--sim-dim, rgba(79,227,240,0.35))" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>` : ""}${m.note ? `<text class="lab-s" x="${m.x.toFixed(1)}" y="${ay - 44}">${esc(m.note)}</text>` : ""}</g>`).join("")}
     <line x1="${tx0}" x2="${tx1}" y1="${yHi}" y2="${yHi}" stroke="var(--sim-dim, rgba(79,227,240,0.35))" stroke-width="2" stroke-dasharray="6 10"/>
     <line x1="${tx0}" x2="${tx1}" y1="${yLo}" y2="${yLo}" stroke="var(--sim-dim, rgba(79,227,240,0.35))" stroke-width="2" stroke-dasharray="6 10"/>
     <polyline class="trace" points="" fill="none" stroke="var(--accent)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -268,9 +274,59 @@ const buildMethylClock = (v) => {
   </svg>`;
 };
 
+// Dual trace: two traces (amber above, cyan below) on a shared time-to-event axis. Each trace starts at a patch circle on the
+// left; a trace "steps" (draws forward at `rate` and lifts to a plateau) at step.at and resets flat when the next trace steps.
+// From countdown.at both traces redraw flat and their heads follow the 64 px countdown readout to the event line.
+const buildDualTrace = (v) => {
+  const H = 560, min = v.min ?? -1, max = v.max ?? 0.3, x0 = 70, x1 = VW - 70, ay = 490;
+  const xOf = (val) => x0 + (x1 - x0) * (val - min) / (max - min);
+  const ev = { value: v.event?.value ?? 0, label: v.event?.label ?? "" }, ex = xOf(ev.value);
+  const tick = v.tick ?? 0.25, ticks = []; for (let t = Math.ceil(min / tick) * tick; t <= max + 1e-9; t += tick) ticks.push(xOf(t));
+  const defs = [{ colour: "amber", y: 250 }, { colour: "cyan", y: 420 }];
+  const traces = defs.map((d, i) => { const t = (v.traces || [])[i] || {}; return { label: t.label ?? "", c: col(t.colour, col(d.colour)), y: d.y, lit: t.lit ?? 0, step: t.step ? { at: t.step.at, height: t.step.height ?? 60 } : null, glow: (t.colour || d.colour) === "amber" }; });
+  const cd = v.countdown ? { at: v.countdown.at ?? 0, from: v.countdown.from ?? 1, to: v.countdown.to ?? 0, dur: Math.max(1e-6, v.countdown.dur ?? 1), decimals: v.countdown.decimals ?? 1, unit: v.countdown.unit ?? " s" } : null;
+  const br = v.bracket ? { show: v.bracket.show ?? 0, hide: v.bracket.hide ?? (cd ? cd.at : Infinity) } : null;
+  const sl = v.signalLabel ? { at: v.signalLabel.at, trace: v.signalLabel.trace ?? 0 } : null;
+  const P = { min, max, x0, x1, ex, ev: ev.value, traces: traces.map(t => ({ y: t.y, lit: t.lit, step: t.step })), cd, br, sl, rate: v.rate ?? 220 };
+  return `${svgOpen("dual-trace", H, P, v)}
+    <defs><radialGradient id="dtg"><stop offset="0" stop-color="#fff"/><stop offset="0.35" stop-color="#ffb020"/><stop offset="1" stop-color="#ffb020" stop-opacity="0"/></radialGradient></defs>
+    <line class="axis" x1="${x0}" x2="${x0}" y1="${ay}" y2="${ay}" stroke="var(--line)" stroke-width="6" stroke-linecap="round"/>
+    ${ticks.map(x => `<line class="atk" data-x="${x.toFixed(1)}" x1="${x.toFixed(1)}" x2="${x.toFixed(1)}" y1="${ay - 10}" y2="${ay + 10}" stroke="var(--muted)" stroke-width="3" opacity="0"/>`).join("")}
+    <line class="evl" x1="${ex.toFixed(1)}" x2="${ex.toFixed(1)}" y1="${ay}" y2="${ay}" stroke="var(--accent)" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+    <text class="lab-s evt" x="${ex.toFixed(1)}" y="${ay + 46}" opacity="0">${esc(ev.label)}</text>
+    ${br ? `<line class="brl" x1="${x0}" x2="${x0}" y1="${traces[0].y + 26}" y2="${traces[0].y + 26}" stroke="var(--sim-dim, rgba(79,227,240,0.35))" stroke-width="3" stroke-linecap="round"/><text class="lab-s brt" x="${x0 + 30}" y="${(traces[0].y + traces[1].y) / 2 + 10}" style="text-anchor:start" opacity="0">${esc(v.bracket.label || "")}</text>` : ""}
+    ${traces.map((t, i) => `<g class="tr" data-i="${i}"><line class="guide" x1="${x0}" x2="${x0}" y1="${t.y}" y2="${t.y}" stroke="var(--sim-dim, rgba(79,227,240,0.35))" stroke-width="2" stroke-dasharray="6 10"/><path class="line" fill="none" stroke="${t.c}" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>${t.glow ? `<circle class="pglow" cx="${x0}" cy="${t.y}" r="54" fill="url(#dtg)" opacity="0"/>` : ""}<circle class="patch" cx="${x0}" cy="${t.y}" r="0" fill="none" stroke="${t.c}" stroke-width="4"/><circle class="head" r="7" fill="${t.c}" opacity="0"/><text class="lab-s" x="${x0 + 30}" y="${t.y + 40}" style="text-anchor:start;fill:${t.c}" opacity="0">${esc(t.label)}</text></g>`).join("")}
+    ${sl ? `<text class="lab-s sig" x="0" y="0" opacity="0">${esc(v.signalLabel.text || "")}</text>` : ""}
+    ${cd ? `<text class="readout ro" x="${x1}" y="70" text-anchor="end" opacity="0"></text>` : ""}
+  </svg>`;
+};
+
+// String breaking: a row of lattice sites, two end charges pulled apart, a string that brightens and then breaks into pairs
+// (uniform: everywhere at once; edge: at the ends first, spreading inward with an optional wavefront). Pairs are explicit.
+const buildStringBreak = (v) => {
+  const H = 380, n = Math.max(3, v.sites ?? 13), xa = 96, xb = 840, sp = (xb - xa) / (n - 1), ry = 200;
+  const xs = Array.from({ length: n }, (_, k) => xa + k * sp);
+  const pairs = (v.pairs || []).map(p => { const s = (p.sites || [1]).map(k => Math.min(n, Math.max(1, k))); const x = s.reduce((a, b) => a + b, 0) / s.length; return { t: p.t ?? 0, x: xa + (x - 1) * sp }; });
+  const labels = (v.labels || []).slice(0, 3).map(l => typeof l === "string" ? { text: l, at: 0 } : { text: l.text ?? "", at: l.at ?? 0 });
+  const pos = [{ x: xa, y: 70, a: "start" }, { x: xb, y: 70, a: "end" }, { x: 468, y: H - 20, a: "middle" }];
+  const P = { n, xa, xb, sp, ry, mode: v.mode === "edge" ? "edge" : "uniform", pull: v.pull ? { t0: v.pull.t0 ?? 0, dur: Math.max(1e-6, v.pull.dur ?? 1), px: v.pull.px ?? 30 } : null, breakAt: v.breakAt ?? Infinity, pairs, wavefront: !!v.wavefront, labels: labels.map(l => l.at) };
+  return `${svgOpen("string-break", H, P, v)}
+    <defs><radialGradient id="sbg"><stop offset="0" stop-color="#fff"/><stop offset="0.35" stop-color="#ffb020"/><stop offset="1" stop-color="#ffb020" stop-opacity="0"/></radialGradient></defs>
+    ${xs.map(x => `<circle class="site" cx="${x.toFixed(1)}" cy="${ry}" r="14" fill="none" stroke="var(--line)" stroke-width="4" opacity="0"/>`).join("")}
+    <line class="str-glow" x1="${xa}" x2="${xa}" y1="${ry}" y2="${ry}" stroke="var(--accent-2)" stroke-width="22" stroke-linecap="round" opacity="0"/>
+    <line class="str-dim" x1="${xa}" x2="${xa}" y1="${ry}" y2="${ry}" stroke="var(--accent-2)" stroke-width="8" stroke-linecap="round" opacity="0"/>
+    <line class="str" x1="${xa}" x2="${xa}" y1="${ry}" y2="${ry}" stroke="var(--accent-2)" stroke-width="8" stroke-linecap="round" opacity="0"/>
+    ${[0, 1].map(k => `<g class="chg" data-k="${k}"><circle class="cglow" cy="${ry}" r="60" fill="url(#sbg)" opacity="0.7"/><circle class="cbody" cy="${ry}" r="20" fill="var(--accent-2)"/></g>`).join("")}
+    ${pairs.map((p, i) => `<g class="pair" data-i="${i}" opacity="0"><circle class="pring" cx="${p.x.toFixed(1)}" cy="${ry}" r="0" fill="none" stroke="var(--accent-2)" stroke-width="4" opacity="0"/><line x1="${(p.x - 14).toFixed(1)}" x2="${(p.x + 14).toFixed(1)}" y1="${ry}" y2="${ry}" stroke="var(--accent-2)" stroke-width="5" stroke-linecap="round"/><circle class="pa" cx="${(p.x - 14).toFixed(1)}" cy="${ry}" r="12" fill="var(--accent-2)"/><circle class="pb" cx="${(p.x + 14).toFixed(1)}" cy="${ry}" r="12" fill="var(--accent)"/></g>`).join("")}
+    ${P.wavefront ? [0, 1].map(k => `<line class="wf" data-k="${k}" y1="${ry - 48}" y2="${ry + 48}" stroke="var(--accent-2)" stroke-width="3" stroke-linecap="round" opacity="0"/>`).join("") : ""}
+    ${labels.map((l, i) => `<text class="lab-s sbl" data-i="${i}" x="${pos[i].x}" y="${pos[i].y}" style="text-anchor:${pos[i].a}" opacity="0">${esc(l.text)}</text>`).join("")}
+  </svg>`;
+};
+
 export const builders = {
   lineage: buildLineage, staircase: buildStaircase, orbit: buildOrbit, thermometer: buildThermometer, flash: buildFlash,
   timeline: buildTimeline, compare: buildCompare, "ruler-log": buildRulerLog, telegraph: buildTelegraph, trace: buildTrace, "methyl-clock": buildMethylClock,
+  "dual-trace": buildDualTrace, "string-break": buildStringBreak,
 };
 export const buildVisual = (v) => (v && builders[v.type]) ? builders[v.type](v) : "";
 export const isOverlay = (v) => v?.type === "trace";
@@ -347,15 +403,23 @@ export function visualRuntime() {
       const ae = a0 + Math.PI / 2, ax = cx + sr * Math.cos(ae), ay = cy + sr * sk * Math.sin(ae), tang = Math.atan2(sr * sk * Math.cos(ae), -sr * Math.sin(ae)) * 180 / Math.PI;
       v.querySelector(".spin-arrow").setAttribute("transform", "translate(" + ax.toFixed(1) + " " + ay.toFixed(1) + ") rotate(" + tang.toFixed(1) + ")");
       let px = cx, py = cy;
+      // Obliquity sweep: the ellipse, trail and body rotate about the star; the label follows the rotated body upright.
+      const ob = P.ob ? lerp(P.ob.from, P.ob.to, easeInOut(clamp((local - P.ob.at) / P.ob.dur, 0, 1))) : 0;
+      const rot = ob ? "rotate(" + ob.toFixed(2) + " " + cx + " " + cy + ")" : "";
+      const orad = ob * Math.PI / 180, rotP = (x, y) => [cx + (x - cx) * Math.cos(orad) - (y - cy) * Math.sin(orad), cy + (x - cx) * Math.sin(orad) + (y - cy) * Math.cos(orad)];
+      v.querySelectorAll(".orb").forEach(e => {
+        const pl = P.planets[+e.dataset.i], flipped = Math.abs(((ob % 360) + 360) % 360 - 180) < 90; // past 90 degrees the sense on the near side reverses
+        if (P.ob) { e.setAttribute("stroke-dasharray", (!!pl.retrograde !== flipped) ? "14 10" : "none"); if (rot) e.setAttribute("transform", rot); else e.removeAttribute("transform"); }
+      });
       v.querySelectorAll(".pl").forEach(g => {
         const pl = P.planets[+g.dataset.i], dir = pl.retrograde ? -1 : 1, rx = pl.r, ry = pl.r * sk;
         const th = dir * 2 * Math.PI * local / (pl.period || 6) - Math.PI / 2;
-        const x = cx + rx * Math.cos(th), y = cy + ry * Math.sin(th);
+        const x0 = cx + rx * Math.cos(th), y0 = cy + ry * Math.sin(th), [x, y] = ob ? rotP(x0, y0) : [x0, y0];
         if (+g.dataset.i === 0) { px = x; py = y; }
         const b = g.querySelector(".body"); b.setAttribute("cx", x); b.setAttribute("cy", y);
         const lab = g.querySelector(".lab-s"); lab.setAttribute("x", x); lab.setAttribute("y", y - (pl.size || 22) - 14);
         let tr = ""; for (let k = 0; k <= 12; k++) { const a = th - dir * (k / 12) * 0.9; tr += (k ? " L " : "M ") + (cx + rx * Math.cos(a)).toFixed(1) + " " + (cy + ry * Math.sin(a)).toFixed(1); }
-        g.querySelector(".trail").setAttribute("d", tr);
+        const trail = g.querySelector(".trail"); trail.setAttribute("d", tr); if (P.ob) { if (rot) trail.setAttribute("transform", rot); else trail.removeAttribute("transform"); }
       });
       if (P.ruler) {
         const R = P.ruler, q = clamp((local - R.at) / R.dur, 0, 1), ln = v.querySelector(".ruler");
@@ -389,19 +453,38 @@ export function visualRuntime() {
     flash(v, local, len, P) {
       const q = local - P.at, core = v.querySelector(".core"), ring = v.querySelector(".ring");
       v.querySelector(".waiting").setAttribute("opacity", q < 0 ? 0.6 + 0.3 * Math.sin(local * 6) : 0);
-      if (q < 0) { core.setAttribute("opacity", 0); ring.setAttribute("opacity", 0); v.querySelector(".readout-s").setAttribute("opacity", 0); v.querySelectorAll(".pmt").forEach(c => c.setAttribute("fill", "rgba(79,227,240,0.14)")); return; }
+      v.querySelectorAll(".corner").forEach(c => c.setAttribute("opacity", easeOut(clamp((local - P.labels[+c.dataset.i]) / 0.3, 0, 1))));
+      const roOn = P.readoutAt !== null && P.readoutAt !== undefined ? clamp((local - P.readoutAt) / 0.3, 0, 1) : clamp((q - 0.5) / 0.3, 0, 1);
+      if (q < 0) { core.setAttribute("opacity", 0); ring.setAttribute("opacity", 0); v.querySelector(".readout-s").setAttribute("opacity", roOn); v.querySelectorAll(".pmt").forEach(c => c.setAttribute("fill", "rgba(79,227,240,0.14)")); return; }
       const cq = clamp(q / 0.12, 0, 1); core.setAttribute("r", 8 + 70 * easeOut(cq)); core.setAttribute("opacity", q < 0.12 ? 1 : Math.max(0.35, 1 - (q - 0.12) / 0.8));
       const rq = clamp(q / 0.6, 0, 1); ring.setAttribute("r", 300 * easeOut(rq)); ring.setAttribute("opacity", 1 - rq);
       v.querySelectorAll(".pmt").forEach(c => { const dd = +c.dataset.d, lit = clamp(1 - dd / 320, 0, 1) * clamp(1 - (q - 0.1) / 1.2, 0.25, 1); c.setAttribute("fill", "rgba(255,176,32," + (0.14 + 0.86 * lit).toFixed(3) + ")"); });
-      v.querySelector(".readout-s").setAttribute("opacity", clamp((q - 0.5) / 0.3, 0, 1));
+      v.querySelector(".readout-s").setAttribute("opacity", roOn);
     },
     timeline(v, local, len, P) {
-      const val = lerp(P.from, P.to, easeInOut(clamp(local / (P.dur ?? len * 0.85), 0, 1)));
-      const x = P.x0 + (P.x1 - P.x0) * (val - P.min) / (P.max - P.min);
-      v.querySelector(".cur").setAttribute("transform", "translate(" + x.toFixed(1) + " 0)");
-      v.querySelector(".cur-t").textContent = (P.grouping ? num(val, P.decimals) : val.toFixed(P.decimals)) + P.unit;
-      v.querySelector(".done").setAttribute("x2", Math.max(P.x0, x));
-      v.querySelectorAll(".tk").forEach(k => k.classList.toggle("hit", val >= +k.dataset.v - 1e-9));
+      const val = lerp(P.from, P.to, easeInOut(clamp((local - (P.at || 0)) / (P.dur ?? len * 0.85), 0, 1)));
+      const xOf = (u) => P.x0 + (P.x1 - P.x0) * (u - P.min) / (P.max - P.min), x = xOf(val), rev = P.min > P.max;
+      const fmt = (u) => (P.grouping ? num(u, P.decimals) : u.toFixed(P.decimals)) + P.unit;
+      if (P.draw) { const dq = easeOut(clamp(local / P.draw, 0, 1)); v.querySelector(".rail").setAttribute("x2", lerp(P.x0, P.x1, dq)); }
+      const cur = v.querySelector(".cur");
+      if (cur) { cur.setAttribute("transform", "translate(" + x.toFixed(1) + " 0)"); cur.setAttribute("opacity", local >= (P.at || 0) ? 1 : 0); v.querySelector(".cur-t").textContent = fmt(val); }
+      const done = v.querySelector(".done");
+      if (P.noCursor) done.setAttribute("x2", P.x0);
+      else if (P.band) { const xa = xOf(P.from); done.setAttribute("x1", Math.min(xa, x)); done.setAttribute("x2", Math.max(xa, x)); done.setAttribute("opacity", local >= (P.at || 0) ? 1 : 0); }
+      else done.setAttribute("x2", Math.max(P.x0, x));
+      const cursorOn = !P.noCursor && local >= (P.at || 0);
+      const hitTick = (t) => t.at !== null && t.at !== undefined ? local >= t.at : cursorOn && (rev ? val <= t.v + 1e-9 : val >= t.v - 1e-9);
+      v.querySelectorAll(".tk").forEach(k => { const t = P.ticks ? P.ticks[+k.dataset.i] : null, hit = t ? hitTick(t) : val >= +k.dataset.v - 1e-9; k.classList.toggle("hit", hit); if (t && t.pulse) k.style.opacity = hit && t.at !== null ? 0.75 + 0.25 * Math.cos(2 * Math.PI * (local - t.at)) : 1; });
+      const br = v.querySelector(".br"); if (br) br.setAttribute("opacity", easeOut(clamp((local - P.brAt) / 0.3, 0, 1)));
+      if (P.readout) {
+        const a = v.querySelector(".ro-a"), b = v.querySelector(".ro-b");
+        if (P.readout === "cursor") { a.textContent = fmt(val); a.setAttribute("opacity", cursorOn ? 1 : 0); b.setAttribute("opacity", 0); }
+        else { // "ticks": the readout text of the most recently lit tick, rolling from the previous one
+          const lit = P.ticks.filter(t => t.readout !== null && t.at !== null && local >= t.at).sort((p, q) => p.at - q.at);
+          if (!lit.length) { a.setAttribute("opacity", 0); b.setAttribute("opacity", 0); }
+          else { const last = lit[lit.length - 1], prev = lit[lit.length - 2]; a.textContent = prev ? prev.readout : ""; b.textContent = last.readout; roll(a, b, prev ? clamp((local - last.at) / 0.2, 0, 1) : 1); if (!prev) a.setAttribute("opacity", 0); }
+        }
+      }
     },
     compare(v, local, len, P) {
       const p = easeOut(clamp(local / Math.min(1.6, len * 0.7), 0, 1));
@@ -430,9 +513,11 @@ export function visualRuntime() {
       v.querySelector(".trace").setAttribute("points", pts);
       const hd = v.querySelector(".head"); hd.setAttribute("cx", xNow); hd.setAttribute("cy", dropped ? yBot : yTop); hd.setAttribute("opacity", local > 0 ? 1 : 0);
       const sq = clamp((local - dropT) / 0.13, 0, 1), by = dropped ? lerp(yTop, yBot, easeOut(sq)) : yTop;
-      v.querySelector(".ball").setAttribute("cy", by); v.querySelector(".glow").setAttribute("cy", by);
-      const rq = clamp((local - dropT) / 0.5, 0, 1), ring = v.querySelector(".ring"); ring.setAttribute("cy", yBot); ring.setAttribute("r", dropped ? 26 + 90 * easeOut(rq) : 0); ring.setAttribute("opacity", dropped ? 1 - rq : 0);
-      v.querySelectorAll(".lvl").forEach(l => l.classList.toggle("now", (+l.dataset.k === 1) === (P.start ? !dropped : dropped)));
+      if (!P.flat) {
+        v.querySelector(".ball").setAttribute("cy", by); v.querySelector(".glow").setAttribute("cy", by);
+        const rq = clamp((local - dropT) / 0.5, 0, 1), ring = v.querySelector(".ring"); ring.setAttribute("cy", yBot); ring.setAttribute("r", dropped ? 26 + 90 * easeOut(rq) : 0); ring.setAttribute("opacity", dropped ? 1 - rq : 0);
+        v.querySelectorAll(".lvl").forEach(l => l.classList.toggle("now", (+l.dataset.k === 1) === (P.start ? !dropped : dropped)));
+      }
       if (P.readout) { const R = P.readout, q = clamp(local / R.dur, 0, 1); v.querySelector(".ro").textContent = num((R.from ?? 0) + (R.to - (R.from ?? 0)) * q, R.decimals ?? 1) + (R.unit || ""); }
       const jl = v.querySelector(".jl"); jl.setAttribute("x", xDrop + 16); jl.setAttribute("opacity", dropped ? clamp((local - dropT - 0.2) / 0.3, 0, 1) : 0);
     },
@@ -445,6 +530,84 @@ export function visualRuntime() {
       v.querySelectorAll(".dot").forEach(d => d.setAttribute("opacity", +d.dataset.x <= xe ? 1 : 0));
       v.querySelectorAll(".join").forEach(j => j.setAttribute("opacity", q * P.years >= +j.dataset.yr - 1e-9 ? 0.8 : 0));
       v.querySelector(".ro").textContent = num(P.years * q, 1) + P.unit;
+    },
+    "dual-trace"(v, local, len, P) {
+      const ay = 490, xOf = (u) => P.x0 + (P.x1 - P.x0) * (u - P.min) / (P.max - P.min);
+      const draw = easeOut(clamp(local / 0.4, 0, 1)), xe = lerp(P.x0, P.x1, draw);
+      v.querySelector(".axis").setAttribute("x2", xe);
+      v.querySelectorAll(".atk").forEach(t => t.setAttribute("opacity", +t.dataset.x <= xe ? 1 : 0));
+      v.querySelectorAll(".guide").forEach(g => g.setAttribute("x2", xe));
+      const cd = P.cd, counting = !!cd && local >= cd.at, cq = counting ? clamp((local - cd.at) / cd.dur, 0, 1) : 0, cval = counting ? lerp(cd.from, cd.to, cq) : cd ? cd.from : 0;
+      const speed = cd ? (P.x1 - P.x0) / (P.max - P.min) * Math.abs(cd.from - cd.to) / cd.dur : P.rate; // px per second of the countdown heads
+      // Event line and label; the label pulses cyan once when the countdown lands.
+      const evl = v.querySelector(".evl"); evl.setAttribute("y1", ay - 340 * draw);
+      const pq = counting ? (local - cd.at - cd.dur) / 0.6 : -1, pulsing = pq >= 0 && pq <= 1;
+      evl.setAttribute("stroke-width", pulsing ? 4 + 6 * Math.sin(Math.PI * pq) : 4); evl.setAttribute("opacity", pulsing ? 1 : 0.8);
+      const evt = v.querySelector(".evt"); evt.setAttribute("opacity", draw); evt.style.fill = pulsing ? "var(--accent)" : "";
+      // Bracket between the patches.
+      if (P.br) {
+        const on = local >= P.br.show && local < P.br.hide, bq = easeOut(clamp((local - P.br.show) / 0.3, 0, 1));
+        const l = v.querySelector(".brl"), y1 = P.traces[0].y + 26, y2 = P.traces[1].y - 26;
+        l.setAttribute("y2", lerp(y1, y2, bq)); l.setAttribute("opacity", on ? 1 : 0); v.querySelector(".brt").setAttribute("opacity", on ? bq : 0);
+      }
+      // Which trace is stepping before the countdown: the one with the latest step.at reached so far.
+      let active = -1, actAt = -Infinity;
+      P.traces.forEach((t, i) => { if (t.step && local >= t.step.at && (!cd || t.step.at < cd.at) && t.step.at > actAt) { active = i; actAt = t.step.at; } });
+      const sig = v.querySelector(".sig"); let sigOn = 0;
+      v.querySelectorAll(".tr").forEach(g => {
+        const i = +g.dataset.i, T = P.traces[i], y0 = T.y;
+        const lit = local >= T.lit, lq = easeOut(clamp((local - T.lit) / 0.3, 0, 1));
+        const patch = g.querySelector(".patch"); patch.setAttribute("r", 16 * draw); patch.setAttribute("fill", lit ? patch.getAttribute("stroke") : "none"); patch.setAttribute("fill-opacity", lq);
+        const pg = g.querySelector(".pglow"); if (pg) pg.setAttribute("opacity", lit ? 0.7 * lq : 0);
+        g.querySelector(".lab-s").setAttribute("opacity", lit ? lq : 0);
+        let head = null, stepX = 0, h = 0, w = 60;
+        if (counting) {
+          head = xOf(P.ev - cval);
+          if (P.sl && P.sl.trace === i && local >= P.sl.at) { stepX = xOf(P.ev - lerp(cd.from, cd.to, clamp((P.sl.at - cd.at) / cd.dur, 0, 1))); h = T.step ? T.step.height : 60; w = Math.max(40, speed * 0.4); }
+        } else if (!cd || local < cd.at) {
+          if (active === i) { head = Math.min(P.x1, P.x0 + P.rate * (local - actAt)); stepX = P.x0 + 40; h = T.step.height; w = Math.max(40, P.rate * 0.4); }
+        }
+        const line = g.querySelector(".line"), hd = g.querySelector(".head");
+        if (head === null || head <= P.x0) { line.setAttribute("d", ""); hd.setAttribute("opacity", 0); return; }
+        const yAt = (x) => y0 - h * easeInOut(clamp((x - stepX) / w, 0, 1));
+        let d = "M " + P.x0 + " " + y0; for (let x = P.x0 + 6; x < head; x += 6) d += " L " + x.toFixed(1) + " " + yAt(x).toFixed(1); d += " L " + head.toFixed(1) + " " + yAt(head).toFixed(1);
+        line.setAttribute("d", d); hd.setAttribute("cx", head); hd.setAttribute("cy", yAt(head)); hd.setAttribute("opacity", 1);
+        if (h && counting && P.sl && P.sl.trace === i) { sig.setAttribute("x", Math.min(stepX + w + 12, P.x1 - 120)); sig.setAttribute("y", y0 - h - 18); sig.style.textAnchor = "start"; sigOn = easeOut(clamp((local - P.sl.at) / 0.25, 0, 1)); }
+      });
+      if (sig) sig.setAttribute("opacity", sigOn);
+      if (cd) { const ro = v.querySelector(".ro"); ro.textContent = num(cval, cd.decimals) + cd.unit; ro.setAttribute("opacity", counting ? 1 : 0); }
+    },
+    "string-break"(v, local, len, P) {
+      const draw = easeOut(clamp(local / 0.4, 0, 1));
+      v.querySelectorAll(".site").forEach(s => s.setAttribute("opacity", draw));
+      const pq = P.pull ? easeInOut(clamp((local - P.pull.t0) / P.pull.dur, 0, 1)) : 0, px = P.pull ? P.pull.px * pq : 0;
+      const xl = P.xa - px, xr = P.xb + px, mid = (P.xa + P.xb) / 2;
+      v.querySelectorAll(".chg").forEach(g => { const x = +g.dataset.k ? xr : xl; g.querySelector(".cbody").setAttribute("cx", x); g.querySelector(".cbody").setAttribute("r", 20 * draw); g.querySelector(".cglow").setAttribute("cx", x); g.querySelector(".cglow").setAttribute("opacity", (0.5 + 0.3 * pq) * draw); });
+      const broken = local >= P.breakAt;
+      const shown = P.pairs.map((p, i) => ({ x: p.x, i, tp: Math.max(p.t, P.breakAt) })).filter(p => local >= p.tp);
+      let bl = xl, br = xr; // the bright remaining string: the interval around the centre with no pair inside it
+      shown.forEach(p => { if (p.x <= mid + 1e-6) bl = Math.max(bl, p.x); if (p.x >= mid - 1e-6) br = Math.min(br, p.x); });
+      const b0 = bl > xl ? bl + 22 : xl, b1 = br < xr ? br - 22 : xr, bright = b1 - b0 > 8;
+      const str = v.querySelector(".str"), glow = v.querySelector(".str-glow"), dim = v.querySelector(".str-dim");
+      const xe = lerp(xl, xr, draw), op = broken ? 1 : 0.4 + 0.6 * pq;
+      str.setAttribute("x1", broken ? b0 : xl); str.setAttribute("x2", broken ? b1 : xe); str.setAttribute("opacity", broken ? (bright ? 1 : 0) : op * draw);
+      glow.setAttribute("x1", broken ? b0 : xl); glow.setAttribute("x2", broken ? b1 : xe); glow.setAttribute("stroke-width", 22 + 20 * (broken ? 1 : pq)); glow.setAttribute("opacity", broken ? (bright ? 0.4 : 0) : (0.12 + 0.3 * pq) * draw);
+      dim.setAttribute("x1", xl); dim.setAttribute("x2", xr); dim.setAttribute("opacity", broken ? 0.22 : 0);
+      v.querySelectorAll(".pair").forEach(g => {
+        const p = shown.find(s => s.i === +g.dataset.i); if (!p) { g.setAttribute("opacity", 0); return; }
+        const q = local - p.tp, r = 12 + 1.5 * Math.sin(2 * Math.PI * (q - 0.3) / 1.4);
+        g.setAttribute("opacity", easeOut(clamp(q / 0.15, 0, 1)));
+        const ring = g.querySelector(".pring"); ring.setAttribute("r", 14 + 40 * easeOut(clamp(q / 0.3, 0, 1))); ring.setAttribute("opacity", q < 0.3 ? 1 - q / 0.3 : 0);
+        g.querySelector(".pa").setAttribute("r", r); g.querySelector(".pb").setAttribute("r", r);
+      });
+      v.querySelectorAll(".wf").forEach(w => {
+        const left = +w.dataset.k === 0, side = shown.filter(p => left ? p.x < mid : p.x > mid).sort((a, b) => a.tp - b.tp);
+        if (!side.length || P.mode !== "edge") { w.setAttribute("opacity", 0); return; }
+        const last = side[side.length - 1], prev = side[side.length - 2], step = left ? P.sp : -P.sp;
+        const x = lerp(prev ? prev.x + step : (left ? xl : xr), last.x + step, easeOut(clamp((local - last.tp) / 0.4, 0, 1)));
+        w.setAttribute("x1", x); w.setAttribute("x2", x); w.setAttribute("opacity", 0.9 * easeOut(clamp((local - side[0].tp) / 0.3, 0, 1)));
+      });
+      v.querySelectorAll(".sbl").forEach(l => l.setAttribute("opacity", easeOut(clamp((local - P.labels[+l.dataset.i]) / 0.3, 0, 1))));
     },
   };
   window.updateVisual = (svg, local, len) => {

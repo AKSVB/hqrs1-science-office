@@ -1,0 +1,26 @@
+{
+  "handle": "@hqrs_1",
+  "end": { "seconds": 0 },
+  "notes": "Animator test: string-break (reel-13-atoms-string-breaking). Scene 1 uniform mode, scene 2 edge mode with the wavefront. No audio.",
+  "scenes": [
+    {
+      "start": 0, "end": 6,
+      "bg": { "image": "../placeholder-bg.png", "move": "push-in", "scrim": 0.75 },
+      "kicker": "Test: string-break, uniform",
+      "caption": "The *textbook* picture",
+      "visual": { "type": "string-break", "sites": 13, "mode": "uniform",
+        "pull": { "t0": 0.5, "dur": 2.0, "px": 30 }, "breakAt": 2.8,
+        "pairs": [ { "sites": [3] }, { "sites": [5] }, { "sites": [7] }, { "sites": [9] }, { "sites": [11] } ],
+        "labels": [ "String", { "text": "New pairs", "at": 2.8 }, { "text": "Textbook picture", "at": 2.8 } ] }
+    },
+    {
+      "start": 6, "end": 12,
+      "bg": { "image": "../placeholder-bg.png", "move": "drift", "scrim": 0.8 },
+      "kicker": "Test: string-break, edge",
+      "caption": "Ends *first*, spread inward",
+      "visual": { "type": "string-break", "sites": 13, "mode": "edge", "enter": 0, "breakAt": 0.6, "wavefront": true,
+        "pairs": [ { "t": 0.6, "sites": [2] }, { "t": 0.6, "sites": [12] }, { "t": 1.8, "sites": [3] }, { "t": 1.8, "sites": [11] }, { "t": 3.0, "sites": [4] }, { "t": 3.0, "sites": [10] } ],
+        "labels": [ "Ends first", "Spread inward", "13 ions" ] }
+    }
+  ]
+}

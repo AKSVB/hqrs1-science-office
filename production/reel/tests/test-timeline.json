@@ -1,0 +1,34 @@
+{
+  "handle": "@hqrs_1",
+  "end": { "seconds": 0 },
+  "notes": "Animator test: timeline additions (reel-betel-teeth). Scene 1: no cursor, ticks light by `at`, readout as text, bracket. Scene 2: cursor band 16,000 to 25,000 with the cursor readout and the amber headline mark by `at`.",
+  "scenes": [
+    {
+      "start": 0, "end": 6,
+      "bg": { "image": "../placeholder-bg.png", "move": "push-in", "scrim": 0.75 },
+      "kicker": "Test: timeline, first visit",
+      "caption": "Two. That is the *whole sample*",
+      "visual": { "type": "timeline", "min": 30000, "max": 0, "unit": " yr", "draw": 0.4, "cursor": false, "readout": "ticks",
+        "ticks": [
+          { "value": 7000, "label": "Younger, about 7,000 yr", "colour": "cyan", "at": 1.0, "readout": "1 individual", "row": "down" },
+          { "value": 16000, "label": "", "colour": "cyan", "at": 3.0 },
+          { "value": 25000, "label": "", "colour": "cyan", "at": 3.0, "readout": "2 individuals" }
+        ],
+        "bracket": { "from": 16000, "to": 25000, "label": "Older, 16,000 to 25,000 yr", "colour": "cyan", "at": 3.0 } }
+    },
+    {
+      "start": 6, "end": 12,
+      "bg": { "image": "../placeholder-bg.png", "move": "drift", "scrim": 0.8 },
+      "kicker": "Test: timeline, return",
+      "caption": "The headlines quote the *top*",
+      "visual": { "type": "timeline", "min": 30000, "max": 0, "unit": " yr", "enter": 0, "cursorText": false, "readout": "cursor", "band": true,
+        "cursor": { "from": 16000, "to": 25000, "at": 0.3, "dur": 2.5 },
+        "ticks": [
+          { "value": 7000, "label": "Younger, about 7,000 yr", "colour": "cyan", "at": 0, "row": "down" },
+          { "value": 16000, "label": "16,000 yr", "colour": "cyan", "at": 0, "row": "up" },
+          { "value": 25000, "label": "The headline", "colour": "amber", "at": 4.0, "row": "down", "pulse": true }
+        ],
+        "bracket": { "from": 16000, "to": 25000, "label": "", "colour": "cyan" } }
+    }
+  ]
+}

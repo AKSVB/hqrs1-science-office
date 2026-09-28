@@ -1,0 +1,16 @@
+{
+  "handle": "@hqrs_1",
+  "end": { "seconds": 0 },
+  "notes": "Animator test: orbit.obliquity (reel-planet-backwards). Prograde for 1.5 s, then the sweep 0 to 136 degrees over 3 s; the dash flips at 90.",
+  "scenes": [
+    {
+      "start": 0, "end": 6,
+      "bg": { "image": "../placeholder-bg.png", "move": "drift", "scrim": 0.75 },
+      "kicker": "Test: orbit obliquity",
+      "caption": "Against the *spin*",
+      "visual": { "type": "orbit", "tilt": 71.3, "starSpin": 8, "starColour": "#ff9a4a", "equator": true, "spinLabel": "Star spin", "orbitLabel": "Orbit",
+        "planets": [ { "r": 300, "size": 22, "period": 6, "colour": "amber", "label": "GJ 3090 b" } ],
+        "obliquity": { "from": 0, "to": 136, "at": 1.5, "dur": 3.0 } }
+    }
+  ]
+}

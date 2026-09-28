@@ -1,0 +1,15 @@
+{
+  "handle": "@hqrs_1",
+  "end": { "seconds": 0 },
+  "notes": "Animator test: flash.readoutAt and corner labels (reel-lz-dark-matter). Flash at 0.5, readout at 2.5, labels at 3.5 and 4.8.",
+  "scenes": [
+    {
+      "start": 0, "end": 6,
+      "bg": { "image": "../placeholder-bg.png", "move": "drift", "scrim": 0.75 },
+      "kicker": "Test: flash readoutAt",
+      "caption": "One *event*",
+      "visual": { "type": "flash", "at": 0.5, "x": 0.62, "y": 0.45, "readout": "248 keV", "label": "one nuclear recoil", "readoutAt": 2.5, "waiting": "listening",
+        "labels": [ { "text": "220 live days", "at": 3.5, "corner": "bl" }, { "text": "2.84 tonne-years", "at": 4.8, "corner": "br" } ] }
+    }
+  ]
+}

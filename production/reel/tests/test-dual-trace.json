@@ -1,0 +1,22 @@
+{
+  "handle": "@hqrs_1",
+  "end": { "seconds": 0 },
+  "notes": "Animator test: dual-trace (reel-brain-gamble). One scene, no audio. Phase A: patches light, bracket, amber steps at 1.6, cyan at 2.6; countdown from 3.4 over 2.2 s, signal at 0.5 s.",
+  "scenes": [
+    {
+      "start": 0, "end": 6,
+      "bg": { "image": "../placeholder-bg.png", "move": "drift", "scrim": 0.75 },
+      "kicker": "Test: dual-trace",
+      "caption": "Two patches, *opposite* jobs",
+      "visual": { "type": "dual-trace", "min": -1.0, "max": 0.3, "tick": 0.25, "rate": 220,
+        "event": { "value": 0, "label": "Choice" },
+        "traces": [
+          { "label": "Take the risk", "colour": "amber", "lit": 0.5, "step": { "at": 1.6, "height": 60 } },
+          { "label": "Avoid", "colour": "cyan", "lit": 0.9, "step": { "at": 2.6, "height": 60 } }
+        ],
+        "bracket": { "label": "~2 cm apart", "show": 1.0 },
+        "countdown": { "at": 3.4, "from": 1.0, "to": 0.0, "dur": 2.2, "decimals": 1, "unit": " s" },
+        "signalLabel": { "at": 4.5, "text": "Signal", "trace": 0 } }
+    }
+  ]
+}
