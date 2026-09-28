@@ -1,40 +1,44 @@
 {
   "notes": {
-    "story": "Trend scout item 1: 'Project Anchor' hoax claiming Earth would lose gravity for 7 seconds at 14:33 UTC on 12 Aug 2026, citing a fake leaked '$89 billion NASA document'.",
+    "story": "Trend scout item 1: 'Project Anchor' hoax claiming Earth would lose gravity for 7 seconds at 14:33 UTC on 12 Aug 2026, citing a fake leaked '$89 billion NASA document'. It spread from January 2026 and was debunked in January and again around the date.",
+    "fact_check": "research/08-fact-check-wave3.md row 13, GREEN (framing AMBER), filed 2026-09-28. Applied.",
     "sources": [
-      "https://www.geo.tv/latest/677342-nasa-debunks-viral-project-anchor-claim-that-earth-will-lose-gravity-on-aug-12",
+      "https://www.snopes.com/fact-check/nasa-project-anchor-earth-gravity/",
+      "Newsweek, NASA senior science communicator Karen Fox: the hoax 'comes around every year' (URL to be added by the Fact-Checker; not given in row 13)",
       "https://www.yahoo.com/news/science/articles/fact-check-posts-claim-earth-130000466.html",
-      "https://www.newswest9.com/article/news/local/7-seconds-of-zero-gravity-not-so-fast-local-astronomy-official-debunks-social-media-rumors-of-earth-losing-gravity/513-ed199e59-29d9-4514-b724-542de5417c94",
-      "https://factually.co/fact-checks/science/project-anchor-gravity-hoax-spread-who-debunked-33cb0c"
+      "https://www.geo.tv/latest/677342-nasa-debunks-viral-project-anchor-claim-that-earth-will-lose-gravity-on-aug-12",
+      "https://www.newswest9.com/article/news/local/7-seconds-of-zero-gravity-not-so-fast-local-astronomy-official-debunks-social-media-rumors-of-earth-losing-gravity/513-ed199e59-29d9-4514-b724-542de5417c94"
     ],
-    "journal": "Not a paper. NASA and local-observatory debunks, fact checks, August 2026.",
+    "journal": "Not a paper. NASA and fact-checker debunks, January and August 2026.",
     "caveats_on_screen": [
-      "Physics claims kept generic: gravity is a property of mass, cannot be switched off, has no schedule.",
-      "States that no such NASA document existed and that NASA and observatory officials debunked it.",
-      "The real 12 August total solar eclipse is mentioned as the coincidence that helped the hoax spread; visibility (Spain, Iceland, Greenland) is from the trend memo."
+      "Physics claims kept generic: gravity is a property of mass, cannot be switched off, has no schedule. NASA's own line is quoted once.",
+      "States that no such NASA document has ever been produced and that NASA called it false and fact-checkers found no trace of it in NASA's records. No 'observatory officials' (unverified).",
+      "The hoax's own figures ($89 billion, 7 seconds, 14:33 UTC, November 2024 leak, colliding black holes) appear only inside the quoted claim.",
+      "The real 12 August total solar eclipse is the coincidence that helped the hoax spread; visibility (Spain, Iceland, Greenland, a corner of Portugal) and totality 16:58 to 18:34 UTC, up to 2 min 18 s, are from fact-check row 13."
     ],
     "facts_from_secondary_coverage": true
   },
   "handle": "@hqrs_1",
-  "caption": "Earth did not lose gravity for 7 seconds on 12 August 2026. The 'Project Anchor' posts cited a leaked '$89 billion NASA document' that never existed. Gravity is a property of mass; it has no off switch. NASA and observatory officials debunked it. The real event that day was a total solar eclipse. Sources on slide 8.\n\n#debunk #physics #gravity #science #factcheck",
+  "caption": "Earth did not lose gravity for 7 seconds on 12 August 2026. The 'Project Anchor' posts cited a leaked '$89 billion NASA document' that no one has ever produced. Gravity is a property of mass; it has no off switch. NASA and fact-checkers debunked it. The real event that day was a total solar eclipse. Sources on slide 8.\n\n#debunk #physics #gravity #science #factcheck",
   "slides": [
-    { "type": "cover", "kicker": "Debunk", "title": "No, Earth did not lose gravity for *7 seconds*", "sub": "The 'Project Anchor' hoax of 12 August 2026, and what physics actually says." },
-    { "type": "statement", "kicker": "The claim", "title": "A leaked \"$89 billion NASA document\" predicted a 7-second gravity loss", "body": "At 14:33 UTC on 12 August 2026. It spread across TikTok, Facebook and Instagram." },
-    { "type": "compare", "kicker": "Myth vs physics", "myth": "Gravity can switch off for 7 seconds", "fact": "Gravity is a property of mass. It cannot be switched off.", "body": "As long as Earth has mass, Earth has gravity. There is no off switch and no schedule." },
-    { "type": "statement", "kicker": "The document", "title": "No such NASA document *existed*", "body": "NASA and local observatory officials publicly debunked the claim." },
+    { "type": "cover", "kicker": "Debunk", "title": "No, Earth did not lose gravity for *7 seconds*", "sub": "The 'Project Anchor' hoax about 12 August 2026, and what physics actually says." },
+    { "type": "statement", "kicker": "The claim", "title": "A leaked \"$89 billion NASA document\" predicted a 7-second gravity loss", "body": "At 14:33 UTC on 12 August 2026, blamed on \"intersecting gravitational waves from colliding black holes\". It spread across TikTok, Facebook, Instagram, X and Reddit." },
+    { "type": "compare", "kicker": "Myth vs physics", "myth": "Gravity can switch off for 7 seconds", "fact": "Gravity is a property of mass. It cannot be switched off.", "body": "As long as Earth has mass, Earth has gravity. There is no off switch and no schedule. NASA spokesperson, January 2026: \"Earth's gravity, or total gravitational force, is determined by its mass.\"" },
+    { "type": "statement", "kicker": "The document", "title": "No such NASA document has ever been *produced*", "body": "NASA called it false; fact-checkers found no trace of it in NASA's records." },
     { "type": "list", "kicker": "Why it spread", "title": "Three ingredients of a viral hoax", "items": [
       "A **specific date and time**: 14:33 UTC, 12 August",
       "A fake **leaked document** with a huge price tag for credibility",
       "A **real event** the same day: a total solar eclipse" ] },
-    { "type": "statement", "kicker": "The real science that day", "title": "There *was* a total solar eclipse on 12 August", "body": "Seen from Spain, Iceland and Greenland. Real, spectacular, and not a gravity switch." },
+    { "type": "statement", "kicker": "The real science that day", "title": "There *was* a total solar eclipse on 12 August", "body": "Seen from Spain, Iceland, Greenland and a corner of Portugal. Totality 16:58 to 18:34 UTC, up to 2 min 18 s. The hoax's 14:33 UTC was two hours before the eclipse even began. Real, spectacular, and not a gravity switch." },
     { "type": "list", "kicker": "Next time", "title": "How to spot the next one", "items": [
       "Exact date, exact time, huge dollar figure: **be suspicious**",
       "Check the agency's own website for the document",
       "Ask what law of physics would have to break" ] },
     { "type": "source", "items": [
-      "NASA debunk, reported by Geo.tv: https://www.geo.tv/latest/677342-nasa-debunks-viral-project-anchor-claim-that-earth-will-lose-gravity-on-aug-12",
-      "Fact check: https://www.yahoo.com/news/science/articles/fact-check-posts-claim-earth-130000466.html",
-      "How it spread and who debunked it: https://factually.co/fact-checks/science/project-anchor-gravity-hoax-spread-who-debunked-33cb0c" ], "note": "Not a research paper. A dated hoax and its debunks, August 2026." },
+      "Snopes fact check (rating: False; NASA's statement by email): https://www.snopes.com/fact-check/nasa-project-anchor-earth-gravity/",
+      "Newsweek, NASA's Karen Fox: the hoax 'comes around every year'",
+      "Fact check (Snopes, via Yahoo): https://www.yahoo.com/news/science/articles/fact-check-posts-claim-earth-130000466.html",
+      "NASA's statement, as reported by Geo.tv: https://www.geo.tv/latest/677342-nasa-debunks-viral-project-anchor-claim-that-earth-will-lose-gravity-on-aug-12" ], "note": "Not a research paper. A dated hoax and its debunks, January and August 2026." },
     { "type": "cta", "title": "One verified science story a day", "body": "No hype, source on the last slide, every time.", "ask": "Save this for the next dated doom post. Send it to the friend who shared it." }
   ]
 }
