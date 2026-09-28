@@ -286,3 +286,7 @@ Whole post (once)
 24. Total length inside the pacing table band; under 60 s.
 25. Caption text: hook line 1, source line 2, one specific question, 3 to 5 hashtags, under 60 words for Reels and 80 for carousels.
 26. Alt text written for the cover frame and every carousel slide.
+
+## Addendum, 28 Sept 2026: the pop-out carousel is the carousel standard
+
+Every carousel is built with the pop-out system (`production/carousel/render.mjs`, slide types `popout-cover` and `popout`): a full-bleed graded plate, an inset window panel with a 2 px edge, and a 3D subject rendered as a transparent layer (`render-plate.mjs --alpha --var view=hero`, then `crop-alpha.mjs`) composited above the panel edge so it breaks the frame, with a contact shadow. Text sits in the panel's lower area and never under the subject: kicker, one claim of at most seven words, at most one big number per carousel, a source line on the last content slide. Cover: subject cut by the frame edge, five-word claim. Backgrounds vary per slide (different scene view, t and seed); subjects vary per slide (different t and seed, rotation between -35 and 40 degrees). Reference decks: `production/out/carousel-organoids-popout`, `production/out/carousel-youngest-planet-popout`. Text-card slides are not used.
