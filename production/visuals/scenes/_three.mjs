@@ -74,10 +74,9 @@ export class Post {
             }
             c = acc / wsum;
           } else c = texture2D(tex, vUv);
-          vec3 col = c.rgb * exposure;
-          col = aces(col);
+          vec3 col = aces(c.rgb * exposure);
           float alpha = 1.0;
-          if (keepAlpha > 0.5) { alpha = c.a; }
+          if (keepAlpha > 0.5) { alpha = clamp(c.a, 0.0, 1.0); col = c.rgb * exposure / max(alpha, 0.002); col = aces(min(col, vec3(16.0))); } // the target is premultiplied; the canvas is straight alpha
           else {
             float v = 1.0 - vUv.y; // 0 top .. 1 bottom
             float f = smoothstep(fadeFrom, fadeTo, v) * fadeStrength;
@@ -85,7 +84,7 @@ export class Post {
           }
           gl_FragColor = vec4(toSRGB(col), alpha);
         }`,
-      depthTest: false, depthWrite: false, transparent: true, toneMapped: false
+      depthTest: false, depthWrite: false, transparent: true, blending: T.NoBlending, toneMapped: false
     });
     this.quad = new T.Mesh(new T.PlaneGeometry(2, 2), this.mat);
     this.qscene = new T.Scene(); this.qscene.add(this.quad);

@@ -26,7 +26,7 @@ const args = process.argv.slice(2);
 const opt = (f) => { const i = args.indexOf(f); return i > -1 ? args[i + 1] : null; };
 const has = (f) => args.includes(f);
 const scenesDir = resolve(here, "scenes");
-const listScenes = () => readdirSync(scenesDir).filter(f => f.endsWith(".mjs")).map(f => basename(f, ".mjs"));
+const listScenes = () => readdirSync(scenesDir).filter(f => f.endsWith(".mjs") && !f.startsWith("_")).map(f => basename(f, ".mjs"));
 if (has("--list") || !args[0]) { console.log(listScenes().join("\n")); process.exit(0); }
 
 const scene = args[0];
@@ -136,7 +136,7 @@ const browser = await chromium.launch({ args: [...(gl ? ["--use-gl=angle", "--us
 const page = await browser.newPage({ viewport: { width: W, height: H }, deviceScaleFactor: 1 });
 page.on("pageerror", e => console.error("page error:", e.message));
 page.on("console", m => { if (m.type() === "error" || m.type() === "warning") console.error("console:", m.text()); });
-const tmpHtml = resolve(here, ".plate.html");
+const tmpHtml = resolve(here, `.plate-${process.pid}.html`); // per-process, so parallel renders do not race
 const { writeFileSync, unlinkSync } = await import("node:fs");
 writeFileSync(tmpHtml, html);
 await page.goto(pathToFileURL(tmpHtml).href, { waitUntil: "load" });
