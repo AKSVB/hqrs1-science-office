@@ -1,0 +1,497 @@
+[
+ {
+  "word": "Earth",
+  "start": 0.25,
+  "end": 0.588
+ },
+ {
+  "word": "is",
+  "start": 0.588,
+  "end": 0.763
+ },
+ {
+  "word": "4.5 billion",
+  "start": 0.763,
+  "end": 2.127
+ },
+ {
+  "word": "years",
+  "start": 2.127,
+  "end": 2.465
+ },
+ {
+  "word": "old.",
+  "start": 2.465,
+  "end": 2.694
+ },
+ {
+  "word": "This",
+  "start": 2.967,
+  "end": 3.251
+ },
+ {
+  "word": "planet",
+  "start": 3.251,
+  "end": 3.644
+ },
+ {
+  "word": "is",
+  "start": 3.644,
+  "end": 3.818
+ },
+ {
+  "word": "not",
+  "start": 3.818,
+  "end": 4.047
+ },
+ {
+  "word": "even",
+  "start": 4.047,
+  "end": 4.331
+ },
+ {
+  "word": "1 million.",
+  "start": 4.331,
+  "end": 5.008
+ },
+ {
+  "word": "It",
+  "start": 5.281,
+  "end": 5.455
+ },
+ {
+  "word": "is",
+  "start": 5.455,
+  "end": 5.63
+ },
+ {
+  "word": "called",
+  "start": 5.63,
+  "end": 6.023
+ },
+ {
+  "word": "Elias",
+  "start": 6.023,
+  "end": 6.361
+ },
+ {
+  "word": "2-24",
+  "start": 6.361,
+  "end": 6.59
+ },
+ {
+  "word": "b,",
+  "start": 6.59,
+  "end": 6.71
+ },
+ {
+  "word": "and",
+  "start": 6.83,
+  "end": 7.059
+ },
+ {
+  "word": "it",
+  "start": 7.059,
+  "end": 7.234
+ },
+ {
+  "word": "is",
+  "start": 7.234,
+  "end": 7.408
+ },
+ {
+  "word": "the",
+  "start": 7.408,
+  "end": 7.638
+ },
+ {
+  "word": "youngest",
+  "start": 7.638,
+  "end": 8.14
+ },
+ {
+  "word": "planet",
+  "start": 8.14,
+  "end": 8.532
+ },
+ {
+  "word": "ever",
+  "start": 8.532,
+  "end": 8.816
+ },
+ {
+  "word": "found.",
+  "start": 8.816,
+  "end": 9.154
+ },
+ {
+  "word": "The",
+  "start": 9.427,
+  "end": 9.656
+ },
+ {
+  "word": "previous",
+  "start": 9.656,
+  "end": 10.158
+ },
+ {
+  "word": "record",
+  "start": 10.158,
+  "end": 10.551
+ },
+ {
+  "word": "holders",
+  "start": 10.551,
+  "end": 10.999
+ },
+ {
+  "word": "are",
+  "start": 10.999,
+  "end": 11.228
+ },
+ {
+  "word": "all",
+  "start": 11.228,
+  "end": 11.457
+ },
+ {
+  "word": "over",
+  "start": 11.457,
+  "end": 11.741
+ },
+ {
+  "word": "5 million",
+  "start": 11.741,
+  "end": 12.472
+ },
+ {
+  "word": "years",
+  "start": 12.472,
+  "end": 12.81
+ },
+ {
+  "word": "old.",
+  "start": 12.81,
+  "end": 13.039
+ },
+ {
+  "word": "It",
+  "start": 13.312,
+  "end": 13.487
+ },
+ {
+  "word": "is",
+  "start": 13.487,
+  "end": 13.661
+ },
+ {
+  "word": "roughly",
+  "start": 13.661,
+  "end": 14.109
+ },
+ {
+  "word": "Jupiter's",
+  "start": 14.109,
+  "end": 14.611
+ },
+ {
+  "word": "mass,",
+  "start": 14.611,
+  "end": 14.894
+ },
+ {
+  "word": "though",
+  "start": 15.014,
+  "end": 15.407
+ },
+ {
+  "word": "the",
+  "start": 15.407,
+  "end": 15.636
+ },
+ {
+  "word": "models",
+  "start": 15.636,
+  "end": 16.029
+ },
+ {
+  "word": "give",
+  "start": 16.029,
+  "end": 16.313
+ },
+ {
+  "word": "anything",
+  "start": 16.313,
+  "end": 16.815
+ },
+ {
+  "word": "from",
+  "start": 16.815,
+  "end": 17.099
+ },
+ {
+  "word": "about",
+  "start": 17.099,
+  "end": 17.437
+ },
+ {
+  "word": "2 to 4",
+  "start": 17.437,
+  "end": 18.124
+ },
+ {
+  "word": "Jupiters.",
+  "start": 18.124,
+  "end": 18.626
+ },
+ {
+  "word": "It",
+  "start": 18.899,
+  "end": 19.074
+ },
+ {
+  "word": "sits",
+  "start": 19.074,
+  "end": 19.357
+ },
+ {
+  "word": "about",
+  "start": 19.357,
+  "end": 19.696
+ },
+ {
+  "word": "450",
+  "start": 19.696,
+  "end": 20.994
+ },
+ {
+  "word": "light-years",
+  "start": 20.994,
+  "end": 21.605
+ },
+ {
+  "word": "away,",
+  "start": 21.605,
+  "end": 21.889
+ },
+ {
+  "word": "still",
+  "start": 22.009,
+  "end": 22.347
+ },
+ {
+  "word": "embedded",
+  "start": 22.347,
+  "end": 22.849
+ },
+ {
+  "word": "in",
+  "start": 22.849,
+  "end": 23.024
+ },
+ {
+  "word": "the",
+  "start": 23.024,
+  "end": 23.253
+ },
+ {
+  "word": "disk",
+  "start": 23.253,
+  "end": 23.537
+ },
+ {
+  "word": "of",
+  "start": 23.537,
+  "end": 23.711
+ },
+ {
+  "word": "material",
+  "start": 23.711,
+  "end": 24.213
+ },
+ {
+  "word": "it",
+  "start": 24.213,
+  "end": 24.388
+ },
+ {
+  "word": "formed",
+  "start": 24.388,
+  "end": 24.781
+ },
+ {
+  "word": "from,",
+  "start": 24.781,
+  "end": 25.064
+ },
+ {
+  "word": "about",
+  "start": 25.185,
+  "end": 25.523
+ },
+ {
+  "word": "55",
+  "start": 25.523,
+  "end": 26.145
+ },
+ {
+  "word": "astronomical",
+  "start": 26.145,
+  "end": 26.865
+ },
+ {
+  "word": "units",
+  "start": 26.865,
+  "end": 27.203
+ },
+ {
+  "word": "out",
+  "start": 27.203,
+  "end": 27.432
+ },
+ {
+  "word": "from",
+  "start": 27.432,
+  "end": 27.716
+ },
+ {
+  "word": "its",
+  "start": 27.716,
+  "end": 27.945
+ },
+ {
+  "word": "star.",
+  "start": 27.945,
+  "end": 28.229
+ },
+ {
+  "word": "Nobody",
+  "start": 28.502,
+  "end": 28.895
+ },
+ {
+  "word": "pointed",
+  "start": 28.895,
+  "end": 29.342
+ },
+ {
+  "word": "a",
+  "start": 29.342,
+  "end": 29.462
+ },
+ {
+  "word": "new",
+  "start": 29.462,
+  "end": 29.691
+ },
+ {
+  "word": "telescope",
+  "start": 29.691,
+  "end": 30.248
+ },
+ {
+  "word": "at",
+  "start": 30.248,
+  "end": 30.422
+ },
+ {
+  "word": "it.",
+  "start": 30.422,
+  "end": 30.597
+ },
+ {
+  "word": "The",
+  "start": 30.87,
+  "end": 31.099
+ },
+ {
+  "word": "team,",
+  "start": 31.099,
+  "end": 31.383
+ },
+ {
+  "word": "led",
+  "start": 31.503,
+  "end": 31.732
+ },
+ {
+  "word": "by",
+  "start": 31.732,
+  "end": 31.906
+ },
+ {
+  "word": "Andrea",
+  "start": 31.906,
+  "end": 32.299
+ },
+ {
+  "word": "Bernardi",
+  "start": 32.299,
+  "end": 32.801
+ },
+ {
+  "word": "at",
+  "start": 32.801,
+  "end": 32.976
+ },
+ {
+  "word": "Universidad",
+  "start": 32.976,
+  "end": 33.642
+ },
+ {
+  "word": "Diego",
+  "start": 33.642,
+  "end": 33.98
+ },
+ {
+  "word": "Portales,",
+  "start": 33.98,
+  "end": 34.482
+ },
+ {
+  "word": "found",
+  "start": 34.602,
+  "end": 34.94
+ },
+ {
+  "word": "it",
+  "start": 34.94,
+  "end": 35.115
+ },
+ {
+  "word": "in",
+  "start": 35.115,
+  "end": 35.289
+ },
+ {
+  "word": "archival",
+  "start": 35.289,
+  "end": 35.791
+ },
+ {
+  "word": "data",
+  "start": 35.791,
+  "end": 36.075
+ },
+ {
+  "word": "from",
+  "start": 36.075,
+  "end": 36.359
+ },
+ {
+  "word": "the",
+  "start": 36.359,
+  "end": 36.588
+ },
+ {
+  "word": "Keck",
+  "start": 36.588,
+  "end": 36.872
+ },
+ {
+  "word": "Observatory.",
+  "start": 36.872,
+  "end": 37.537
+ }
+]

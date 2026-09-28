@@ -1,0 +1,99 @@
+1
+00:00:00,250 --> 00:00:01,528
+Sound does not fade
+
+2
+00:00:01,528 --> 00:00:03,174
+away smoothly. At the
+
+3
+00:00:03,174 --> 00:00:04,833
+smallest scale, it jumps.
+
+4
+00:00:05,140 --> 00:00:06,738
+Sound is vibration, and
+
+5
+00:00:06,738 --> 00:00:08,003
+vibration is energy.
+
+6
+00:00:08,311 --> 00:00:09,650
+At the quantum level
+
+7
+00:00:09,650 --> 00:00:10,989
+that energy comes in
+
+8
+00:00:10,989 --> 00:00:12,439
+packets called phonons.
+
+9
+00:00:12,746 --> 00:00:13,902
+A phonon can only
+
+10
+00:00:13,902 --> 00:00:15,179
+sit on fixed energy
+
+11
+00:00:15,179 --> 00:00:16,777
+steps, never in between.
+
+12
+00:00:17,084 --> 00:00:18,866
+Physicists at Stanford, in
+
+13
+00:00:18,866 --> 00:00:20,709
+the Safavi-Naeini lab, built
+
+14
+00:00:20,709 --> 00:00:22,478
+a tiny mechanical resonator
+
+15
+00:00:22,478 --> 00:00:23,818
+that rings for about
+
+16
+00:00:23,818 --> 00:00:26,226
+2 ms, and watched single
+
+17
+00:00:26,226 --> 00:00:27,934
+phonons jump between those
+
+18
+00:00:27,934 --> 00:00:29,150
+steps in real time.
+
+19
+00:00:29,458 --> 00:00:30,490
+It is the first
+
+20
+00:00:30,490 --> 00:00:32,443
+direct real-time observation of
+
+21
+00:00:32,443 --> 00:00:33,598
+a quantum jump in
+
+22
+00:00:33,598 --> 00:00:35,491
+sound. Quantum jumps were
+
+23
+00:00:35,491 --> 00:00:36,523
+seen in ions in
+
+24
+00:00:36,523 --> 00:00:37,875
+1986, in photons in
+
+25
+00:00:37,875 --> 00:00:39,423
+2007, and now in sound.

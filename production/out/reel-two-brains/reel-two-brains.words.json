@@ -1,0 +1,482 @@
+[
+ {
+  "word": "Your",
+  "start": 0.25,
+  "end": 0.543
+ },
+ {
+  "word": "brain",
+  "start": 0.543,
+  "end": 0.893
+ },
+ {
+  "word": "is",
+  "start": 0.893,
+  "end": 1.073
+ },
+ {
+  "word": "built",
+  "start": 1.073,
+  "end": 1.422
+ },
+ {
+  "word": "by",
+  "start": 1.422,
+  "end": 1.603
+ },
+ {
+  "word": "two",
+  "start": 1.603,
+  "end": 1.84
+ },
+ {
+  "word": "cell",
+  "start": 1.84,
+  "end": 2.133
+ },
+ {
+  "word": "lineages",
+  "start": 2.133,
+  "end": 2.651
+ },
+ {
+  "word": "that",
+  "start": 2.651,
+  "end": 2.944
+ },
+ {
+  "word": "never",
+  "start": 2.944,
+  "end": 3.294
+ },
+ {
+  "word": "mix.",
+  "start": 3.294,
+  "end": 3.531
+ },
+ {
+  "word": "In",
+  "start": 3.812,
+  "end": 3.993
+ },
+ {
+  "word": "the",
+  "start": 3.993,
+  "end": 4.23
+ },
+ {
+  "word": "mouse",
+  "start": 4.23,
+  "end": 4.579
+ },
+ {
+  "word": "embryo,",
+  "start": 4.579,
+  "end": 4.985
+ },
+ {
+  "word": "two",
+  "start": 5.109,
+  "end": 5.346
+ },
+ {
+  "word": "separate",
+  "start": 5.346,
+  "end": 5.864
+ },
+ {
+  "word": "populations",
+  "start": 5.864,
+  "end": 6.552
+ },
+ {
+  "word": "of",
+  "start": 6.552,
+  "end": 6.732
+ },
+ {
+  "word": "stem",
+  "start": 6.732,
+  "end": 7.025
+ },
+ {
+  "word": "cells",
+  "start": 7.025,
+  "end": 7.375
+ },
+ {
+  "word": "build",
+  "start": 7.375,
+  "end": 7.724
+ },
+ {
+  "word": "the",
+  "start": 7.724,
+  "end": 7.961
+ },
+ {
+  "word": "brain,",
+  "start": 7.961,
+  "end": 8.311
+ },
+ {
+  "word": "and",
+  "start": 8.435,
+  "end": 8.671
+ },
+ {
+  "word": "they",
+  "start": 8.671,
+  "end": 8.964
+ },
+ {
+  "word": "are",
+  "start": 8.964,
+  "end": 9.201
+ },
+ {
+  "word": "separate",
+  "start": 9.201,
+  "end": 9.72
+ },
+ {
+  "word": "from",
+  "start": 9.72,
+  "end": 10.013
+ },
+ {
+  "word": "gastrulation",
+  "start": 10.013,
+  "end": 10.757
+ },
+ {
+  "word": "onward.",
+  "start": 10.757,
+  "end": 11.163
+ },
+ {
+  "word": "One",
+  "start": 11.445,
+  "end": 11.681
+ },
+ {
+  "word": "group,",
+  "start": 11.681,
+  "end": 12.031
+ },
+ {
+  "word": "marked",
+  "start": 12.155,
+  "end": 12.561
+ },
+ {
+  "word": "by",
+  "start": 12.561,
+  "end": 12.741
+ },
+ {
+  "word": "a",
+  "start": 12.741,
+  "end": 12.865
+ },
+ {
+  "word": "gene",
+  "start": 12.865,
+  "end": 13.158
+ },
+ {
+  "word": "called",
+  "start": 13.158,
+  "end": 13.564
+ },
+ {
+  "word": "Otx2,",
+  "start": 13.564,
+  "end": 13.857
+ },
+ {
+  "word": "builds",
+  "start": 13.981,
+  "end": 14.387
+ },
+ {
+  "word": "the",
+  "start": 14.387,
+  "end": 14.624
+ },
+ {
+  "word": "forebrain",
+  "start": 14.624,
+  "end": 15.199
+ },
+ {
+  "word": "and",
+  "start": 15.199,
+  "end": 15.435
+ },
+ {
+  "word": "midbrain.",
+  "start": 15.435,
+  "end": 15.954
+ },
+ {
+  "word": "The",
+  "start": 16.236,
+  "end": 16.473
+ },
+ {
+  "word": "other,",
+  "start": 16.473,
+  "end": 16.822
+ },
+ {
+  "word": "marked",
+  "start": 16.946,
+  "end": 17.352
+ },
+ {
+  "word": "by",
+  "start": 17.352,
+  "end": 17.532
+ },
+ {
+  "word": "Gbx2,",
+  "start": 17.532,
+  "end": 17.825
+ },
+ {
+  "word": "builds",
+  "start": 17.949,
+  "end": 18.355
+ },
+ {
+  "word": "the",
+  "start": 18.355,
+  "end": 18.592
+ },
+ {
+  "word": "hindbrain.",
+  "start": 18.592,
+  "end": 19.167
+ },
+ {
+  "word": "They",
+  "start": 19.449,
+  "end": 19.742
+ },
+ {
+  "word": "carry",
+  "start": 19.742,
+  "end": 20.091
+ },
+ {
+  "word": "different",
+  "start": 20.091,
+  "end": 20.666
+ },
+ {
+  "word": "chromatin",
+  "start": 20.666,
+  "end": 21.241
+ },
+ {
+  "word": "states",
+  "start": 21.241,
+  "end": 21.647
+ },
+ {
+  "word": "from",
+  "start": 21.647,
+  "end": 21.94
+ },
+ {
+  "word": "the",
+  "start": 21.94,
+  "end": 22.177
+ },
+ {
+  "word": "earliest",
+  "start": 22.177,
+  "end": 22.696
+ },
+ {
+  "word": "stages.",
+  "start": 22.696,
+  "end": 23.101
+ },
+ {
+  "word": "The",
+  "start": 23.383,
+  "end": 23.62
+ },
+ {
+  "word": "same",
+  "start": 23.62,
+  "end": 23.913
+ },
+ {
+  "word": "split",
+  "start": 23.913,
+  "end": 24.263
+ },
+ {
+  "word": "shows",
+  "start": 24.263,
+  "end": 24.612
+ },
+ {
+  "word": "up",
+  "start": 24.612,
+  "end": 24.792
+ },
+ {
+  "word": "in",
+  "start": 24.792,
+  "end": 24.973
+ },
+ {
+  "word": "chicks,",
+  "start": 24.973,
+  "end": 25.379
+ },
+ {
+  "word": "zebrafish",
+  "start": 25.503,
+  "end": 26.078
+ },
+ {
+  "word": "and",
+  "start": 26.078,
+  "end": 26.314
+ },
+ {
+  "word": "acorn",
+  "start": 26.314,
+  "end": 26.664
+ },
+ {
+  "word": "worms,",
+  "start": 26.664,
+  "end": 27.013
+ },
+ {
+  "word": "lineages",
+  "start": 27.137,
+  "end": 27.656
+ },
+ {
+  "word": "that",
+  "start": 27.656,
+  "end": 27.949
+ },
+ {
+  "word": "diverged",
+  "start": 27.949,
+  "end": 28.468
+ },
+ {
+  "word": "around",
+  "start": 28.468,
+  "end": 28.873
+ },
+ {
+  "word": "550 million years",
+  "start": 28.873,
+  "end": 31.027
+ },
+ {
+  "word": "ago.",
+  "start": 31.027,
+  "end": 31.263
+ },
+ {
+  "word": "One",
+  "start": 31.545,
+  "end": 31.782
+ },
+ {
+  "word": "caveat.",
+  "start": 31.782,
+  "end": 32.188
+ },
+ {
+  "word": "The",
+  "start": 32.47,
+  "end": 32.706
+ },
+ {
+  "word": "paper",
+  "start": 32.706,
+  "end": 33.056
+ },
+ {
+  "word": "describes",
+  "start": 33.056,
+  "end": 33.631
+ },
+ {
+  "word": "two",
+  "start": 33.631,
+  "end": 33.868
+ },
+ {
+  "word": "cell",
+  "start": 33.868,
+  "end": 34.161
+ },
+ {
+  "word": "lineages,",
+  "start": 34.161,
+  "end": 34.679
+ },
+ {
+  "word": "traced",
+  "start": 34.803,
+  "end": 35.209
+ },
+ {
+  "word": "in",
+  "start": 35.209,
+  "end": 35.39
+ },
+ {
+  "word": "mice.",
+  "start": 35.39,
+  "end": 35.683
+ },
+ {
+  "word": "Two",
+  "start": 35.965,
+  "end": 36.201
+ },
+ {
+  "word": "organs",
+  "start": 36.201,
+  "end": 36.607
+ },
+ {
+  "word": "is",
+  "start": 36.607,
+  "end": 36.788
+ },
+ {
+  "word": "the",
+  "start": 36.788,
+  "end": 37.024
+ },
+ {
+  "word": "press",
+  "start": 37.024,
+  "end": 37.374
+ },
+ {
+  "word": "release",
+  "start": 37.374,
+  "end": 37.836
+ },
+ {
+  "word": "talking.",
+  "start": 37.836,
+  "end": 38.298
+ }
+]

@@ -1,13 +1,14 @@
 {
   "notes": {
     "storyboard": "storyboards/reel-two-brains.md, converted scene by scene. Science unchanged from scripts/reel-two-brains.json (fact-check row 1, AMBER: two cell lineages traced in mouse embryos; the caveat is spoken and on screen).",
-    "timing": "Scene times are the storyboard estimates against the cut Rhea track (42.2 s, sentence 2 and the last sentence removed). fit_audio scales them to the actual narration; sfx cues are scene-relative. The trace line in scene 1 sits on a guessed boundary position until TB-01 exists; the Animator re-places its points on the real still.",
-    "audio": "Narration: production/assets/voice/reel-two-brains-piper.mp3 (generated from the cut text, so no mid-track join). Bed: production/assets/sound/bed-a-synth.mp3. Motif cues skipped until motif.mp3 exists.",
-    "numbers": "550,000,000 (550 million years) is the one big number, from the fact-check row. The lineage plate draws a topology, no quantity."
+    "timing": "Scene times are the storyboard estimates against the cut Rhea track (42.2 s). fit_audio scales them to the actual narration; sfx cues are scene-relative. Editor 2026-09-28: against the Piper track (38.93 s, scale x0.923) every cut was moved to a word boundary: scene 1 on 'that never mix', scene 2 on 'In the mouse embryo', the wipe on 'and they are separate', scene 4 on 'One group', scene 5 on 'The other', the plate return on 'They carry', scene 7 on 'The same split', scene 8 on 'lineages that diverged' with the count-up starting on '550 million years' (local 1.95, flip 3.4, exit 4.6), scene 9 on 'One caveat' (label swap on 'The paper'), scene 10 on 'Two organs'. Words JSON: scripts/v2/reel-two-brains.words.json (the renderer's auto timings ported to Python, 'five hundred and fifty million years' merged to '550 million years' for the band). The trace in scene 1 follows the real seam of TB-01.",
+    "audio": "Narration: production/assets/voice/reel-two-brains-piper-m.mp3 (the Piper track trimmed by 4.5 dB with ffmpeg so it peaks at -5.9 dBFS; the untrimmed file is reel-two-brains-piper.mp3). Bed: production/assets/sound/bed-a-synth.mp3. Motif at 0.0 and at the payoff (scene 9).",
+    "numbers": "550,000,000 (550 million years) is the one big number, from the fact-check row. The lineage plate draws a topology, no quantity.",
+    "plates": "Editor, 2026-09-28. Every plate is code-rendered with production/visuals/render-plate.mjs (no paid generation), a different plate per scene. TB-01 = embryo-lineage --t 4.0 --seed 1 (scenes 0, 1, 10 and the end card, so the loop closes on the hook still); TB-01-b = --t 7.0 --seed 2 (scene 6, under the returned lineage plate); TB-01-c = --t 5.5 --seed 3 (scene 9). TB-02 = stage=early --t 3.0 --seed 1 (scenes 2 and 3: the wipe keeps the same still). TB-03 = stage=cyan --t 3.0 --seed 1. TB-04 = stage=amber --t 3.0 --seed 2. SUBSTITUTIONS (no zebrafish or acorn-worm scene exists): TB-05-zebrafish-embryo is replaced by TB-05-sub-embryo-split = embryo-lineage stage=two --t 2.5 --seed 5 (the two-colour split itself, which is what the sentence is about); its label 'Chick, zebrafish, acorn worm' is rewritten to 'The same split, other animals' so no on-screen text names an animal that is not in frame. TB-06-acorn-worm is replaced by TB-06-sub-early-embryo = stage=early --t 6.0 --seed 6 (a generic early embryo cluster under the big number; no label). The storyboard's zebrafish and acorn-worm stills should be generated when paid generation is allowed."
   },
   "handle": "@hqrs_1",
   "style": "bible",
-  "audio": "production/assets/voice/reel-two-brains-piper.mp3",
+  "audio": "production/assets/voice/reel-two-brains-piper-m.mp3",
   "fit_audio": true,
   "music": "production/assets/sound/bed-a-synth.mp3",
   "sfx": [
@@ -18,16 +19,16 @@
     { "path": "production/assets/sound/tick.mp3", "scene": 3, "at": 0.5 },
     { "path": "production/assets/sound/tick.mp3", "scene": 6, "at": 0.6 },
     { "path": "production/assets/sound/tick.mp3", "scene": 6, "at": 1.8 },
-    { "path": "production/assets/sound/tick.mp3", "scene": 8, "at": 0.9 },
-    { "path": "production/assets/sound/tick.mp3", "scene": 8, "at": 1.03 },
-    { "path": "production/assets/sound/tick.mp3", "scene": 8, "at": 1.17 },
-    { "path": "production/assets/sound/tick.mp3", "scene": 8, "at": 1.3 },
-    { "path": "production/assets/sound/tick.mp3", "scene": 8, "at": 1.43 },
-    { "path": "production/assets/sound/tick.mp3", "scene": 8, "at": 1.57 },
-    { "path": "production/assets/sound/tick.mp3", "scene": 8, "at": 1.7 },
-    { "path": "production/assets/sound/tick.mp3", "scene": 8, "at": 1.83 },
-    { "path": "production/assets/sound/tick.mp3", "scene": 8, "at": 1.97 },
-    { "path": "production/assets/sound/tick.mp3", "scene": 8, "at": 2.5 },
+    { "path": "production/assets/sound/tick.mp3", "scene": 8, "at": 1.95 },
+    { "path": "production/assets/sound/tick.mp3", "scene": 8, "at": 2.08 },
+    { "path": "production/assets/sound/tick.mp3", "scene": 8, "at": 2.22 },
+    { "path": "production/assets/sound/tick.mp3", "scene": 8, "at": 2.35 },
+    { "path": "production/assets/sound/tick.mp3", "scene": 8, "at": 2.48 },
+    { "path": "production/assets/sound/tick.mp3", "scene": 8, "at": 2.62 },
+    { "path": "production/assets/sound/tick.mp3", "scene": 8, "at": 2.75 },
+    { "path": "production/assets/sound/tick.mp3", "scene": 8, "at": 2.88 },
+    { "path": "production/assets/sound/tick.mp3", "scene": 8, "at": 3.02 },
+    { "path": "production/assets/sound/tick.mp3", "scene": 8, "at": 3.4 },
     { "path": "production/assets/sound/motif.mp3", "scene": 9, "at": 0, "db": -8 },
     { "path": "production/assets/sound/settle.mp3", "scene": "end", "at": 0 }
   ],
@@ -41,59 +42,59 @@
   "voiceover_script": "Your brain is built by two cell lineages that never mix. In the mouse embryo, two separate populations of stem cells build the brain, and they are separate from gastrulation onward. One group, marked by a gene called Otx2, builds the forebrain and midbrain. The other, marked by Gbx2, builds the hindbrain. They carry different chromatin states from the earliest stages. The same split shows up in chicks, zebrafish and acorn worms, lineages that diverged around five hundred and fifty million years ago. One caveat. The paper describes two cell lineages, traced in mice. Two organs is the press release talking.",
   "scenes": [
     {
-      "start": 0, "end": 2.8,
+      "start": 0, "end": 2.9,
       "bg": { "image": "production/assets/reel-two-brains/TB-01-embryo-two-colours.png", "move": "push-in", "from": 1.0, "to": 1.06, "focus": [0.5, 0.4], "scrim": 0.45, "parallax": true },
       "caption": "Two lineages build your brain", "label_out": 1.5
     },
     {
-      "start": 2.8, "end": 4.6,
+      "start": 2.9, "end": 4.2,
       "bg": { "image": "production/assets/reel-two-brains/TB-01-embryo-two-colours.png", "move": "push-in", "from": 1.06, "to": 1.09, "focus": [0.5, 0.4], "scrim": 0.45 },
       "caption": "They never mix",
-      "visual": { "type": "trace", "points": [[0.52, 0.22], [0.5, 0.3], [0.47, 0.38], [0.48, 0.46], [0.51, 0.54]], "at": 0, "dur": 0.4, "colour": "cyan" }
+      "visual": { "type": "trace", "points": [[0.60, 0.30], [0.57, 0.36], [0.54, 0.42], [0.50, 0.48], [0.46, 0.54]], "at": 0, "dur": 0.4, "colour": "cyan" }
     },
     {
-      "start": 4.6, "end": 8.5,
+      "start": 4.2, "end": 9.15,
       "bg": { "image": "production/assets/reel-two-brains/TB-02-embryo-gastrulation.png", "move": "push-in", "from": 1.0, "to": 1.1, "focus": [0.5, 0.38], "scrim": 0.45 },
       "caption": "Mouse embryo, at gastrulation"
     },
     {
-      "start": 8.5, "end": 12.8,
+      "start": 9.15, "end": 12.4,
       "transition": "wipe-up",
       "bg": { "image": "production/assets/reel-two-brains/TB-02-embryo-gastrulation.png", "move": "pan-right", "amount": 0.04, "focus": [0.5, 0.38], "scrim": 0.8 },
-      "visual": { "type": "lineage", "labels": ["Otx2", "Gbx2"], "colours": ["cyan", "amber"], "depth": 5, "baseline": "gastrulation", "growStart": 0.4, "growDur": 3.5, "lag": 0.06, "enter": 0.4 }
+      "visual": { "type": "lineage", "labels": ["Otx2", "Gbx2"], "colours": ["cyan", "amber"], "depth": 5, "baseline": "gastrulation", "growStart": 0.4, "growDur": 2.4, "lag": 0.06, "enter": 0.4 }
     },
     {
-      "start": 12.8, "end": 18.1,
+      "start": 12.4, "end": 17.6,
       "bg": { "image": "production/assets/reel-two-brains/TB-03-forebrain-midbrain-cyan.png", "move": "pan-left", "amount": 0.05, "focus": [0.5, 0.4], "scrim": 0.45 },
       "caption": "Otx2: forebrain and midbrain"
     },
     {
-      "start": 18.1, "end": 21.6,
+      "start": 17.6, "end": 21.1,
       "bg": { "image": "production/assets/reel-two-brains/TB-04-hindbrain-amber.png", "move": "pan-right", "amount": 0.05, "focus": [0.5, 0.4], "scrim": 0.45 },
       "caption": "Gbx2: hindbrain"
     },
     {
-      "start": 21.6, "end": 25.4,
-      "bg": { "image": "production/assets/reel-two-brains/TB-01-embryo-two-colours.png", "move": "push-in", "from": 1.0, "to": 1.06, "focus": [0.5, 0.4], "scrim": 0.8 },
+      "start": 21.1, "end": 25.35,
+      "bg": { "image": "production/assets/reel-two-brains/TB-01-embryo-two-colours-b.png", "move": "push-in", "from": 1.0, "to": 1.06, "focus": [0.5, 0.4], "scrim": 0.8 },
       "visual": { "type": "lineage", "labels": ["Otx2", "Gbx2"], "colours": ["cyan", "amber"], "depth": 5, "baseline": "gastrulation", "grown": true, "enter": 0, "pulses": [ { "t": 0.6, "side": 0 }, { "t": 1.8, "side": 1 } ] }
     },
     {
-      "start": 25.4, "end": 29.5,
-      "bg": { "image": "production/assets/reel-two-brains/TB-05-zebrafish-embryo.png", "move": "push-in", "from": 1.0, "to": 1.1, "focus": [0.5, 0.4], "scrim": 0.45 },
-      "caption": "Chick, zebrafish, acorn worm"
+      "start": 25.35, "end": 29.4,
+      "bg": { "image": "production/assets/reel-two-brains/TB-05-sub-embryo-split.png", "move": "push-in", "from": 1.0, "to": 1.1, "focus": [0.5, 0.4], "scrim": 0.45 },
+      "caption": "The same split, other animals"
     },
     {
-      "start": 29.5, "end": 34.3,
-      "bg": { "image": "production/assets/reel-two-brains/TB-06-acorn-worm.png", "move": "pan-left", "amount": 0.04, "focus": [0.5, 0.4], "scrim": 0.45 },
-      "big": { "count": { "from": 0, "to": 550000000 }, "at": 0.9, "dur": 1.2, "flip": { "at": 2.5, "text": "550 million years", "size": 120 }, "exit": 4.1 }
+      "start": 29.4, "end": 34.2,
+      "bg": { "image": "production/assets/reel-two-brains/TB-06-sub-early-embryo.png", "move": "pan-left", "amount": 0.04, "focus": [0.5, 0.4], "scrim": 0.45 },
+      "big": { "count": { "from": 0, "to": 550000000 }, "at": 1.95, "dur": 1.2, "flip": { "at": 3.4, "text": "550 million years", "size": 120 }, "exit": 4.6 }
     },
     {
-      "start": 34.3, "end": 39.2,
-      "bg": { "image": "production/assets/reel-two-brains/TB-01-embryo-two-colours.png", "move": "push-in", "from": 1.09, "to": 1.13, "focus": [0.5, 0.4], "scrim": 0.45 },
-      "captions": [ { "text": "One caveat", "in": 0, "out": 1.3 }, { "text": "Two lineages, traced in mice", "in": 1.3 } ]
+      "start": 34.2, "end": 39.0,
+      "bg": { "image": "production/assets/reel-two-brains/TB-01-embryo-two-colours-c.png", "move": "push-in", "from": 1.09, "to": 1.13, "focus": [0.5, 0.4], "scrim": 0.45 },
+      "captions": [ { "text": "One caveat", "in": 0, "out": 1.0 }, { "text": "Two lineages, traced in mice", "in": 1.0 } ]
     },
     {
-      "start": 39.2, "end": 42.2,
+      "start": 39.0, "end": 42.2,
       "bg": { "image": "production/assets/reel-two-brains/TB-01-embryo-two-colours.png", "move": "push-in", "from": 1.13, "to": 1.15, "focus": [0.5, 0.4], "scrim": 0.45 },
       "caption": "\"Two organs\" is press framing"
     }

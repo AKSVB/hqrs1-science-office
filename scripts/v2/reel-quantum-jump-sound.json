@@ -1,39 +1,40 @@
 {
   "notes": {
     "storyboard": "storyboards/reel-quantum-jump-sound.md, converted scene by scene. Science unchanged from scripts/reel-quantum-jump-sound.json (fact-check row 3, GREEN). The spec's four-step schematic is dropped for two steps (jumps confirmed between the first excited state and the ground state only).",
-    "timing": "Scene times are the storyboard estimates against the cut Rhea track (44.2 s). fit_audio scales them to the actual narration; sfx cues are scene-relative so they follow. The Editor replaces --auto-words with the aligned words JSON.",
-    "audio": "Narration: production/assets/voice/reel-quantum-jump-sound-piper.mp3. Bed: production/assets/sound/bed-a-synth.mp3. Bell strike at the hook (-20 dB) and at 41.0 (-24 dB). The motif file does not exist yet; its cues are skipped with a warning until it does.",
-    "numbers": "2 ms (0.002 s by definition), 2.1 ms (T1, simulation readout, labelled 'slowed'), 1986, 2007, 2026: all from the fact-check row. No device numbers."
+    "timing": "Scene times are the storyboard estimates against the cut Rhea track (44.2 s). fit_audio scales them to the actual narration; sfx cues are scene-relative so they follow. Editor 2026-09-28: against the Piper track (40.08 s, scale x0.907) every cut sits on a word: scene 1 on 'At the smallest scale', scene 2 on 'Sound is vibration', the wipe on 'At the quantum level' with the phonon appearing on 'phonons' (local 4.0), scene 4 on 'A phonon can only sit' with the snaps on 'fixed energy steps' (2.6) and 'never in between' (3.8), scene 5 on 'Physicists at Stanford', scene 6 on 'resonator' with the big number slamming on '2 ms' (local 2.15, flip 2.95, exit 3.75), the telegraph return on 'and watched' with the drop on 'jump' (local 1.58, the readout counting 0 to 2.1 ms up to it), scene 8 on 'It is the first', the timeline on 'Quantum jumps were seen' (cursor 1980 to 2026 over 7.72 so 'ions 1986' lights on 'ions' and 'photons 2007' on '2007'; the amber mark is the cut to the bell scene), scene 10 on 'and now in sound'. Words JSON: scripts/v2/reel-quantum-jump-sound.words.json (auto timings ported to Python, 'two milliseconds' merged to '2 ms').",
+    "audio": "Narration: production/assets/voice/reel-quantum-jump-sound-piper-m.mp3 (the Piper track trimmed by 4.5 dB with ffmpeg so it peaks at -6.0 dBFS; the untrimmed file is reel-quantum-jump-sound-piper.mp3). Bed: production/assets/sound/bed-a-synth.mp3. Bell strike at the hook (-20 dB) and at the last scene (-24 dB). Motif at 0.0 and at the payoff (scene 8).",
+    "numbers": "2 ms (0.002 s by definition), 2.1 ms (T1, simulation readout, labelled 'slowed'), 1986, 2007, 2026: all from the fact-check row. No device numbers.",
+    "plates": "Editor, 2026-09-28. Every plate is code-rendered with production/visuals/render-plate.mjs (no paid generation; the resonator scene gained a --var exposure= option because its mount view was too dark at 1.0). SUBSTITUTIONS: no bell scene exists, so QJ-01-bell-rim-struck is replaced by QJ-01-sub-resonator-beam = resonator view=beam --t 1.0 --seed 1, the resonator that actually rings in the story (hook scene 0, scene 10 and the end card, so the loop closes on the hook still); the hook line and the 'Sound, 2026' label do not describe the bell, so they stand. No dilution-fridge scene exists, so QJ-04-dilution-fridge-stages is replaced by QJ-04-sub-chip-mount = resonator view=mount exposure=3 --t 2.0 --seed 4 (scene 5; its label 'Stanford, Safavi-Naeini lab' names the lab, not the fridge) and QJ-04-sub-chip-mount-b = --t 4.0 --seed 5 (scene 9, under the timeline). Storyboard plates: QJ-02-chip-suspended-beam = view=beam --t 1.7 --seed 3 (scenes 2, 3 and 4: the wipe keeps the same still), QJ-02-b = --t 2.5 --seed 2 (scene 7, the telegraph return); QJ-03-chip-on-gold-mount = view=mount exposure=3 --t 1.0 --seed 1 (scene 1, 'At the smallest scale', swapped with the storyboard's macro so the hook-to-scene-1 cut is not two near-identical beam frames), QJ-03-b = --t 3.0 --seed 2 (scene 6, under the big number), QJ-03-c = --t 5.0 --seed 7 (scene 8). The bell and the cryostat stills should be generated when paid generation is allowed."
   },
   "handle": "@hqrs_1",
   "style": "bible",
-  "audio": "production/assets/voice/reel-quantum-jump-sound-piper.mp3",
+  "audio": "production/assets/voice/reel-quantum-jump-sound-piper-m.mp3",
   "fit_audio": true,
   "music": "production/assets/sound/bed-a-synth.mp3",
   "sfx": [
     { "path": "production/assets/sound/motif.mp3", "scene": 0, "at": 0, "db": -8 },
     { "path": "production/assets/sound/bell-strike.mp3", "scene": 0, "at": 0, "db": -20 },
     { "path": "production/assets/sound/thud.mp3", "scene": 3, "at": 0 },
-    { "path": "production/assets/sound/tick.mp3", "scene": 3, "at": 1.3 },
+    { "path": "production/assets/sound/tick.mp3", "scene": 3, "at": 4.0 },
     { "path": "production/assets/sound/tick.mp3", "scene": 4, "at": 2.6 },
-    { "path": "production/assets/sound/tick.mp3", "scene": 4, "at": 4.6 },
-    { "path": "production/assets/sound/thud.mp3", "scene": 6, "at": 1.6 },
-    { "path": "production/assets/sound/tick.mp3", "scene": 6, "at": 2.6 },
-    { "path": "production/assets/sound/tick.mp3", "scene": 7, "at": 0.57 },
-    { "path": "production/assets/sound/tick.mp3", "scene": 7, "at": 1.14 },
-    { "path": "production/assets/sound/tick.mp3", "scene": 7, "at": 1.71 },
-    { "path": "production/assets/sound/tick.mp3", "scene": 7, "at": 2.29 },
-    { "path": "production/assets/sound/thud.mp3", "scene": 7, "at": 2.4 },
+    { "path": "production/assets/sound/tick.mp3", "scene": 4, "at": 3.8 },
+    { "path": "production/assets/sound/thud.mp3", "scene": 6, "at": 2.15 },
+    { "path": "production/assets/sound/tick.mp3", "scene": 6, "at": 2.95 },
+    { "path": "production/assets/sound/tick.mp3", "scene": 7, "at": 0.38 },
+    { "path": "production/assets/sound/tick.mp3", "scene": 7, "at": 0.75 },
+    { "path": "production/assets/sound/tick.mp3", "scene": 7, "at": 1.13 },
+    { "path": "production/assets/sound/tick.mp3", "scene": 7, "at": 1.5 },
+    { "path": "production/assets/sound/thud.mp3", "scene": 7, "at": 1.58 },
     { "path": "production/assets/sound/motif.mp3", "scene": 8, "at": 0, "db": -8 },
-    { "path": "production/assets/sound/tick.mp3", "scene": 9, "at": 0 },
-    { "path": "production/assets/sound/tick.mp3", "scene": 9, "at": 1.9 },
+    { "path": "production/assets/sound/tick.mp3", "scene": 9, "at": 1.97 },
+    { "path": "production/assets/sound/tick.mp3", "scene": 9, "at": 4.21 },
     { "path": "production/assets/sound/tick.mp3", "scene": 10, "at": 0 },
     { "path": "production/assets/sound/bell-strike.mp3", "scene": 10, "at": 0, "db": -24 },
     { "path": "production/assets/sound/settle.mp3", "scene": "end", "at": 0 }
   ],
   "end": {
     "short": true,
-    "bg": { "image": "production/assets/reel-quantum-jump-sound/QJ-01-bell-rim-struck.png", "move": "push-in", "from": 1.12, "to": 1.14, "focus": [0.5, 0.4], "scrim": 0.7 },
+    "bg": { "image": "production/assets/reel-quantum-jump-sound/QJ-01-sub-resonator-beam.png", "move": "push-in", "from": 1.12, "to": 1.14, "focus": [0.5, 0.4], "scrim": 0.7 },
     "source": "Science 393, 1217. 17 Sept 2026. Makihara, Szakiel, Safavi-Naeini; Stanford.",
     "note": "Images: generated illustrations."
   },
@@ -41,62 +42,62 @@
   "voiceover_script": "Sound does not fade away smoothly. At the smallest scale, it jumps. Sound is vibration, and vibration is energy. At the quantum level that energy comes in packets called phonons. A phonon can only sit on fixed energy steps, never in between. Physicists at Stanford, in the Safavi-Naeini lab, built a tiny mechanical resonator that rings for about two milliseconds, and watched single phonons jump between those steps in real time. It is the first direct real-time observation of a quantum jump in sound. Quantum jumps were seen in ions in 1986, in photons in 2007, and now in sound.",
   "scenes": [
     {
-      "start": 0, "end": 2.8,
-      "bg": { "image": "production/assets/reel-quantum-jump-sound/QJ-01-bell-rim-struck.png", "move": "push-in", "from": 1.0, "to": 1.08, "focus": [0.5, 0.4], "scrim": 0.45, "parallax": true },
+      "start": 0, "end": 3.0,
+      "bg": { "image": "production/assets/reel-quantum-jump-sound/QJ-01-sub-resonator-beam.png", "move": "push-in", "from": 1.0, "to": 1.08, "focus": [0.5, 0.4], "scrim": 0.45, "parallax": true },
       "caption": "Sound does not fade. It jumps.", "label_out": 1.5
     },
     {
-      "start": 2.8, "end": 5.6,
-      "bg": { "image": "production/assets/reel-quantum-jump-sound/QJ-02-chip-suspended-beam.png", "move": "push-in", "from": 1.0, "to": 1.1, "focus": [0.5, 0.4], "scrim": 0.45 },
+      "start": 3.0, "end": 5.67,
+      "bg": { "image": "production/assets/reel-quantum-jump-sound/QJ-03-chip-on-gold-mount.png", "move": "push-in", "from": 1.0, "to": 1.1, "focus": [0.5, 0.4], "scrim": 0.45 },
       "caption": "At the smallest scale"
     },
     {
-      "start": 5.6, "end": 8.9,
-      "bg": { "image": "production/assets/reel-quantum-jump-sound/QJ-01-bell-rim-struck.png", "move": "pan-right", "amount": 0.05, "focus": [0.45, 0.4], "scrim": 0.45 },
+      "start": 5.67, "end": 9.15,
+      "bg": { "image": "production/assets/reel-quantum-jump-sound/QJ-02-chip-suspended-beam.png", "move": "pan-right", "amount": 0.05, "focus": [0.45, 0.4], "scrim": 0.45 },
       "caption": "Vibration is energy"
     },
     {
-      "start": 8.9, "end": 13.8,
+      "start": 9.15, "end": 14.05,
       "transition": "wipe-up",
       "bg": { "image": "production/assets/reel-quantum-jump-sound/QJ-02-chip-suspended-beam.png", "move": "pan-left", "amount": 0.04, "focus": [0.5, 0.4], "scrim": 0.75 },
-      "visual": { "type": "staircase", "levels": 2, "labels": ["ground state", "first excited state"], "start": 0, "appear": 1.3, "ballLabel": "phonon", "enter": 0.4, "jumps": [] }
+      "visual": { "type": "staircase", "levels": 2, "labels": ["ground state", "first excited state"], "start": 0, "appear": 4.0, "ballLabel": "phonon", "enter": 0.4, "jumps": [] }
     },
     {
-      "start": 13.8, "end": 19.1,
+      "start": 14.05, "end": 18.85,
       "bg": { "image": "production/assets/reel-quantum-jump-sound/QJ-02-chip-suspended-beam.png", "move": "pan-left", "amount": 0.04, "focus": [0.5, 0.4], "scrim": 0.75 },
       "visual": { "type": "staircase", "levels": 2, "labels": ["ground state", "first excited state"], "start": 0, "appear": 0, "enter": 0,
-        "jumps": [ { "t": 2.6, "from": 0, "to": 1, "drift": { "t0": 0, "frac": 0.4 } }, { "t": 4.6, "from": 1, "to": 0, "drift": { "t0": 2.6, "frac": 0.4 } } ] }
+        "jumps": [ { "t": 2.6, "from": 0, "to": 1, "drift": { "t0": 0, "frac": 0.4 } }, { "t": 3.8, "from": 1, "to": 0, "drift": { "t0": 2.6, "frac": 0.4 } } ] }
     },
     {
-      "start": 19.1, "end": 24.0,
-      "bg": { "image": "production/assets/reel-quantum-jump-sound/QJ-04-dilution-fridge-stages.png", "move": "tilt-up", "amount": 0.1, "focus": [0.5, 0.48], "scrim": 0.45 },
+      "start": 18.85, "end": 24.1,
+      "bg": { "image": "production/assets/reel-quantum-jump-sound/QJ-04-sub-chip-mount.png", "move": "tilt-up", "amount": 0.1, "focus": [0.5, 0.48], "scrim": 0.45 },
       "caption": "Stanford, Safavi-Naeini lab"
     },
     {
-      "start": 24.0, "end": 27.5,
-      "bg": { "image": "production/assets/reel-quantum-jump-sound/QJ-03-chip-on-gold-mount.png", "move": "push-in", "from": 1.0, "to": 1.1, "focus": [0.5, 0.4], "scrim": 0.45 },
-      "big": { "text": "2 ms", "at": 1.6, "flip": { "at": 2.6, "text": "0.002 s" }, "exit": 3.5 }
+      "start": 24.1, "end": 27.9,
+      "bg": { "image": "production/assets/reel-quantum-jump-sound/QJ-03-chip-on-gold-mount-b.png", "move": "push-in", "from": 1.0, "to": 1.1, "focus": [0.5, 0.4], "scrim": 0.45 },
+      "big": { "text": "2 ms", "at": 2.15, "flip": { "at": 2.95, "text": "0.002 s" }, "exit": 3.75 }
     },
     {
-      "start": 27.5, "end": 33.0,
-      "bg": { "image": "production/assets/reel-quantum-jump-sound/QJ-02-chip-suspended-beam.png", "move": "push-in", "from": 1.0, "to": 1.06, "focus": [0.5, 0.4], "scrim": 0.8 },
-      "visual": { "type": "telegraph", "stairs": { "labels": ["ground state", "first excited state"] }, "start": 1, "drop": { "at": 2.4 }, "rate": 160, "enter": 0,
-        "readout": { "from": 0, "to": 2.1, "dur": 2.4, "unit": " ms", "decimals": 1, "label": "slowed" }, "jumpLabel": "one jump" }
+      "start": 27.9, "end": 32.5,
+      "bg": { "image": "production/assets/reel-quantum-jump-sound/QJ-02-chip-suspended-beam-b.png", "move": "push-in", "from": 1.0, "to": 1.06, "focus": [0.5, 0.4], "scrim": 0.8 },
+      "visual": { "type": "telegraph", "stairs": { "labels": ["ground state", "first excited state"] }, "start": 1, "drop": { "at": 1.58 }, "rate": 160, "enter": 0,
+        "readout": { "from": 0, "to": 2.1, "dur": 1.58, "unit": " ms", "decimals": 1, "label": "slowed" }, "jumpLabel": "one jump" }
     },
     {
-      "start": 33.0, "end": 37.3,
-      "bg": { "image": "production/assets/reel-quantum-jump-sound/QJ-03-chip-on-gold-mount.png", "move": "push-out", "from": 1.1, "to": 1.0, "focus": [0.5, 0.4], "scrim": 0.45 },
+      "start": 32.5, "end": 37.8,
+      "bg": { "image": "production/assets/reel-quantum-jump-sound/QJ-03-chip-on-gold-mount-c.png", "move": "push-out", "from": 1.1, "to": 1.0, "focus": [0.5, 0.4], "scrim": 0.45 },
       "caption": "First direct real-time observation"
     },
     {
-      "start": 37.3, "end": 41.0,
-      "bg": { "image": "production/assets/reel-quantum-jump-sound/QJ-04-dilution-fridge-stages.png", "move": "pan-right", "amount": 0.03, "focus": [0.5, 0.45], "scrim": 0.8 },
-      "visual": { "type": "timeline", "min": 1980, "max": 2030, "cursor": { "from": 1986, "to": 2026, "dur": 3.7 },
+      "start": 37.8, "end": 42.27,
+      "bg": { "image": "production/assets/reel-quantum-jump-sound/QJ-04-sub-chip-mount-b.png", "move": "pan-right", "amount": 0.03, "focus": [0.5, 0.45], "scrim": 0.8 },
+      "visual": { "type": "timeline", "min": 1980, "max": 2030, "cursor": { "from": 1980, "to": 2026, "dur": 7.72 }, "cursorText": false,
         "ticks": [ { "value": 1986, "label": "ions 1986" }, { "value": 2007, "label": "photons 2007" }, { "value": 2026, "label": "sound 2026", "colour": "amber" } ] }
     },
     {
-      "start": 41.0, "end": 44.2,
-      "bg": { "image": "production/assets/reel-quantum-jump-sound/QJ-01-bell-rim-struck.png", "move": "push-in", "from": 1.08, "to": 1.12, "focus": [0.5, 0.4], "scrim": 0.45 },
+      "start": 42.27, "end": 44.2,
+      "bg": { "image": "production/assets/reel-quantum-jump-sound/QJ-01-sub-resonator-beam.png", "move": "push-in", "from": 1.08, "to": 1.12, "focus": [0.5, 0.4], "scrim": 0.45 },
       "caption": "Sound, 2026"
     }
   ]

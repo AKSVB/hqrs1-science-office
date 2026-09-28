@@ -5,7 +5,7 @@
 // visualRuntime() is serialised into the page and installs window.updateVisual(svg, local, len): a pure
 // function of local scene time that sets every attribute for that frame. Nothing is randomised at render time.
 //
-// Types: lineage | staircase | orbit | thermometer | flash | timeline | compare | ruler-log | telegraph | trace | methyl-clock
+// Types: lineage | staircase | orbit | thermometer | flash | timeline | compare | ruler-log | telegraph | trace | methyl-clock | dual-trace | string-break
 // Common fields: enter (seconds the plate fades in over, default 0.6; 0 for a plate that continues on a hard cut).
 // Colours: "cyan" | "amber" | any CSS colour. Times are local scene seconds.
 //
@@ -15,14 +15,33 @@
 //  staircase    levels, labels, start, appear, ballLabel, jumps:[{t,from,to,drift:{t0,frac}}]
 //  lineage      labels, colours, depth, baseline, grown, growStart, growDur, pulses:[{t,side}]
 //  orbit        tilt, starSpin, planets:[{r,size,period,retrograde,colour,label}], disk:{inner,outer,gap,gapWidth},
-//               starLabel, diskLabel, ruler:{at,dur,to,unit,decimals,flip:{at,text}}
-//  timeline     min, max, unit, decimals, cursor:{from,to,dur}, ticks:[{value,label,colour}], label
+//               starLabel, diskLabel, ruler:{at,dur,to,unit,decimals,flip:{at,text}},
+//               obliquity:{from,to,at,dur} (degrees: the orbit ellipse and the planet's path rotate in the plate plane about the
+//               star, ease-in-out; the dash pattern flips to the retrograde dash the frame the sweep crosses 90),
+//               equator (true: a faint --sim-dim band through the star), spinLabel, orbitLabel, starColour
+//  timeline     min, max (min > max reverses the rail), unit, decimals, cursor:{from,to,dur,at} | cursor:false (no cursor; ticks light by
+//               their own `at`), ticks:[{value,label,colour,at,readout,row:up|down}], label, cursorText:false (no live value pill),
+//               readout:"cursor" (64 px amber readout of the cursor value) | "ticks" (the `readout` text of the last lit tick),
+//               bracket:{from,to,label,colour,at} (a --sim-dim line above the rail between two values), band:true (`.done` fills from
+//               cursor.from instead of from min), draw (seconds the rail draws on over, from the min end)
 //  ruler-log    min, max (years), draw, marks:[{value,label,colour,at,bracket:left|right,anchor,row,pulse,readout}]
-//  telegraph    stairs:{labels}, start, drop:{at}, rate (px/s), readout:{from,to,dur,unit,decimals,label}, jumpLabel,
+//  telegraph    stairs:{labels} | stairs:false (flat-line diagram: no staircase, the trace runs the full width), start, drop:{at}, rate (px/s),
+//               readout:{from,to,dur,unit,decimals,label}, jumpLabel, traceLabel, axisLabels:[left,right],
+//               marks:[{frac,label,colour,bracketPx,note}] (a tick under the axis at frac of its length, a --sim-dim bracket above it),
 //               or text (a line of text that types on at `rate` characters per second)
 //  trace        points:[[x,y],...] in canvas fractions (full 1080x1920 frame overlay), at, dur, colour
 //  methyl-clock years, dur, dots, labels:{top,bottom,strand}, unit
-//  flash, compare: unchanged from v2.
+//  flash        at, x, y, readout, label, waiting, readoutAt (the readout lands here instead of 0.5 s after the flash),
+//               labels:[{text,at,corner:bl|br}] (max two, the lower corners)
+//  dual-trace   min, max (seconds relative to the event), event:{value,label}, tick (unlabelled axis ticks, default 0.25),
+//               traces:[{label,colour,lit,step:{at,height}}] (two; `lit` lights the patch, `step` draws the trace forward and lifts it;
+//               the previous trace resets flat when the next steps), bracket:{label,show,hide} (between the two patches; hidden from
+//               countdown.at), countdown:{at,from,to,dur,decimals,unit} (64 px readout; both traces redraw flat and their heads follow
+//               the readout to the event line), rate (px/s for the pre-countdown draws), signalLabel:{at,text,trace} (the trace lifts here)
+//  string-break sites (13), mode:"uniform"|"edge", pull:{t0,dur,px}, breakAt, pairs:[{t,sites:[a] | [a,b]}] (1-based, explicit),
+//               labels:[text | {text,at}] (max three: above left, above right, below centre), wavefront (edge mode: a thin amber line
+//               moving inward from each end one site ahead of the latest pair)
+//  compare: unchanged from v2.
 export const VW = 936;
 export const esc = (s) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 export const attr = (o) => esc(JSON.stringify(o)).replace(/"/g, "&quot;");
@@ -82,13 +101,17 @@ const buildOrbit = (v) => {
   const k = Math.max(0.12, Math.cos(tilt * Math.PI / 180));
   const d = v.disk;
   const ell = (r) => `M ${cx - r} ${cy} A ${r} ${(r * k).toFixed(1)} 0 1 0 ${cx + r} ${cy} A ${r} ${(r * k).toFixed(1)} 0 1 0 ${cx - r} ${cy} Z`;
-  return `${svgOpen("orbit", H, { tilt: k, planets, starSpin: v.starSpin ?? 8, ruler: v.ruler || null, H }, v)}
+  const ob = v.obliquity ? { from: v.obliquity.from ?? 0, to: v.obliquity.to ?? 0, at: v.obliquity.at ?? 0, dur: Math.max(1e-6, v.obliquity.dur ?? 1) } : null;
+  return `${svgOpen("orbit", H, { tilt: k, planets, starSpin: v.starSpin ?? 8, ruler: v.ruler || null, H, ob }, v)}
     <defs><radialGradient id="starg"><stop offset="0" stop-color="#fff"/><stop offset="0.3" stop-color="#ffd27a"/><stop offset="1" stop-color="#ffb020" stop-opacity="0"/></radialGradient></defs>
     ${d ? `<path d="${ell(d.outer)} ${ell(d.inner)}" fill="rgba(79,227,240,0.2)" fill-rule="evenodd"/><ellipse cx="${cx}" cy="${cy}" rx="${d.gap}" ry="${(d.gap * k).toFixed(1)}" fill="none" stroke="rgba(6,9,19,0.75)" stroke-width="${d.gapWidth ?? 40}"/>` : ""}
-    ${planets.map(p => `<ellipse cx="${cx}" cy="${cy}" rx="${p.r}" ry="${(p.r * k).toFixed(1)}" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="3" stroke-dasharray="${p.retrograde ? "14 10" : "none"}"/>`).join("")}
+    ${planets.map((p, i) => `<ellipse class="orb" data-i="${i}" cx="${cx}" cy="${cy}" rx="${p.r}" ry="${(p.r * k).toFixed(1)}" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="3" stroke-dasharray="${p.retrograde ? "14 10" : "none"}"/>`).join("")}
+    ${v.equator ? `<line x1="${cx - 100}" x2="${cx + 100}" y1="${cy}" y2="${cy}" stroke="var(--sim-dim, rgba(79,227,240,0.35))" stroke-width="4" stroke-linecap="round"/>` : ""}
     <circle cx="${cx}" cy="${cy}" r="110" fill="url(#starg)" opacity="0.8"/>
-    <circle cx="${cx}" cy="${cy}" r="52" fill="#ffe4a8"/>
+    <circle cx="${cx}" cy="${cy}" r="52" fill="${esc(v.starColour || "#ffe4a8")}"/>
     <g class="spin"><path class="spin-arc" fill="none" stroke="var(--accent-2)" stroke-width="5" stroke-linecap="round"/><polygon class="spin-arrow" points="0,0 -20,-11 -20,11" fill="var(--accent-2)"/></g>
+    ${v.spinLabel ? `<text class="lab-s" x="${cx}" y="${cy - 100}" style="fill:var(--accent-2)">${esc(v.spinLabel)}</text>` : ""}
+    ${v.orbitLabel ? `<text class="lab-s" x="${cx - (planets[0].r ?? 300) - 18}" y="${cy + 10}" style="text-anchor:end">${esc(v.orbitLabel)}</text>` : ""}
     ${v.ruler ? `<line class="ruler" x1="${cx}" y1="${cy}" x2="${cx}" y2="${cy}" stroke="var(--accent-2)" stroke-width="5" stroke-linecap="round" opacity="0"/>` : ""}
     ${planets.map((p, i) => `<g class="pl" data-i="${i}"><path class="trail" fill="none" stroke="${col(p.colour, "var(--accent)")}" stroke-width="6" stroke-linecap="round" opacity="0.55"/><circle class="body" r="${p.size ?? 22}" fill="${col(p.colour, "var(--accent)")}"/><text class="lab-s" style="fill:${col(p.colour, "var(--accent)")}">${esc(p.label || "")}</text></g>`).join("")}
     ${v.starLabel ? `<text class="lab-s" x="${cx}" y="${cy + 96}">${esc(v.starLabel)}</text>` : ""}
@@ -122,26 +145,34 @@ const buildFlash = (v) => {
   const fx = 60 + (v.x ?? 0.62) * 816, fy = 30 + (v.y ?? 0.45) * (H - 130);
   const pmts = [];
   for (let r = 0; r < rows; r++) for (let c = 0; c < cols; c++) pmts.push({ x: pad + c * ((VW - 2 * pad) / (cols - 1)), y: 60 + r * ((H - 200) / (rows - 1)) });
-  return `${svgOpen("flash", H, { at: v.at ?? 1.2, fx, fy }, v)}
+  const labels = (v.labels || []).slice(0, 2).map((l, i) => ({ text: l.text ?? "", at: l.at ?? 0, corner: l.corner || (i === 0 ? "bl" : "br") }));
+  return `${svgOpen("flash", H, { at: v.at ?? 1.2, fx, fy, readoutAt: v.readoutAt ?? null, labels: labels.map(l => l.at) }, v)}
     <rect x="30" y="10" width="${VW - 60}" height="${H - 90}" rx="34" fill="#03050c" stroke="var(--line)" stroke-width="4"/>
     ${pmts.map(p => `<circle class="pmt" cx="${p.x.toFixed(1)}" cy="${p.y.toFixed(1)}" r="14" fill="rgba(79,227,240,0.14)" data-d="${Math.hypot(p.x - fx, p.y - fy).toFixed(1)}"/>`).join("")}
     <circle class="ring" cx="${fx}" cy="${fy}" r="0" fill="none" stroke="var(--accent-2)" stroke-width="5" opacity="0"/>
     <circle class="core" cx="${fx}" cy="${fy}" r="0" fill="#fff" opacity="0"/>
     <text class="lab readout-s" x="468" y="${H - 22}" opacity="0"><tspan style="fill:var(--accent-2)">${esc(v.readout || "")}</tspan>${v.label ? `<tspan> ${esc(v.label)}</tspan>` : ""}</text>
     <text class="lab waiting" x="468" y="${H - 22}">${esc(v.waiting || "listening")}</text>
+    ${labels.map((l, i) => `<text class="lab-s corner" data-i="${i}" x="${l.corner === "br" ? VW - 40 : 40}" y="${H - 22}" style="text-anchor:${l.corner === "br" ? "end" : "start"}" opacity="0">${esc(l.text)}</text>`).join("")}
   </svg>`;
 };
 
 const buildTimeline = (v) => {
   const H = 380, min = v.min ?? 0, max = v.max ?? 100, x0 = 70, x1 = VW - 70, ay = 200;
   const xOf = (val) => x0 + (x1 - x0) * (val - min) / (max - min);
-  const ticks = (v.ticks || []).map((tk, i) => ({ ...tk, x: xOf(tk.value), up: i % 2 === 0 }));
+  const ticks = (v.ticks || []).map((tk, i) => ({ ...tk, x: xOf(tk.value), up: tk.row ? tk.row === "up" : i % 2 === 0 }));
   const grouping = v.grouping ?? !(min >= 1000 && max <= 3000); // years are not grouped
-  return `${svgOpen("timeline", H, { min, max, x0, x1, from: v.cursor?.from ?? min, to: v.cursor?.to ?? max, dur: v.cursor?.dur ?? null, unit: v.unit || "", decimals: v.decimals ?? 0, grouping }, v)}
-    <line x1="${x0}" x2="${x1}" y1="${ay}" y2="${ay}" stroke="var(--line)" stroke-width="8" stroke-linecap="round"/>
+  const noCursor = v.cursor === false, C = noCursor ? null : (v.cursor || {});
+  const br = v.bracket ? { x0: xOf(v.bracket.from), x1: xOf(v.bracket.to), at: v.bracket.at ?? 0, c: col(v.bracket.colour, "var(--sim-dim, rgba(79,227,240,0.35))") } : null;
+  const P = { min, max, x0, x1, from: C ? C.from ?? min : min, to: C ? C.to ?? max : min, dur: C ? C.dur ?? null : null, at: C ? C.at ?? 0 : 0, unit: v.unit || "", decimals: v.decimals ?? 0, grouping,
+    noCursor, readout: v.readout || null, band: !!v.band, draw: v.draw ?? 0, brAt: br ? br.at : null, ticks: ticks.map(t => ({ v: t.value, at: t.at ?? null, readout: t.readout ?? null })) };
+  return `${svgOpen("timeline", H, P, v)}
+    <line class="rail" x1="${x0}" x2="${x1}" y1="${ay}" y2="${ay}" stroke="var(--line)" stroke-width="8" stroke-linecap="round"/>
     <line class="done" x1="${x0}" x2="${x0}" y1="${ay}" y2="${ay}" stroke="var(--accent)" stroke-width="8" stroke-linecap="round"/>
-    ${ticks.map(tk => `<g class="tk" data-v="${tk.value}" style="--tk:${col(tk.colour, "var(--accent)")}"><line x1="${tk.x.toFixed(1)}" x2="${tk.x.toFixed(1)}" y1="${ay - 22}" y2="${ay + 22}" stroke="var(--muted)" stroke-width="5" stroke-linecap="round"/><text class="lab-s tk-t" x="${tk.x.toFixed(1)}" y="${tk.up ? ay - 44 : ay + 62}">${esc(tk.label)}</text></g>`).join("")}
-    <g class="cur"><line x1="0" x2="0" y1="${ay - 54}" y2="${ay + 54}" stroke="var(--accent-2)" stroke-width="8" stroke-linecap="round"/><rect x="-110" y="${ay - 150}" width="220" height="72" rx="36" fill="var(--accent-2)"/><text class="cur-t" x="0" y="${ay - 102}"></text></g>
+    ${br ? `<g class="br" opacity="${br.at > 0 ? 0 : 1}"><path d="M ${Math.min(br.x0, br.x1).toFixed(1)} ${ay - 22} v -12 H ${Math.max(br.x0, br.x1).toFixed(1)} v 12" fill="none" stroke="${br.c}" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>${v.bracket.label ? `<text class="lab-s" x="${((br.x0 + br.x1) / 2).toFixed(1)}" y="${ay - 48}" style="fill:${col(v.bracket.colour, "var(--muted)")}">${esc(v.bracket.label)}</text>` : ""}</g>` : ""}
+    ${ticks.map((tk, i) => `<g class="tk" data-i="${i}" data-v="${tk.value}" style="--tk:${col(tk.colour, "var(--accent)")}"><line x1="${tk.x.toFixed(1)}" x2="${tk.x.toFixed(1)}" y1="${ay - 22}" y2="${ay + 22}" stroke="var(--muted)" stroke-width="5" stroke-linecap="round"/><text class="lab-s tk-t" x="${tk.x.toFixed(1)}" y="${tk.up ? ay - 44 : ay + 62}">${esc(tk.label)}</text></g>`).join("")}
+    ${noCursor ? "" : `<g class="cur"><line x1="0" x2="0" y1="${ay - 54}" y2="${ay + 54}" stroke="var(--accent-2)" stroke-width="8" stroke-linecap="round"/>${v.cursorText === false ? "" : `<rect x="-110" y="${ay - 150}" width="220" height="72" rx="36" fill="var(--accent-2)"/>`}<text class="cur-t" x="0" y="${ay - 102}"${v.cursorText === false ? ' opacity="0"' : ""}></text></g>`}
+    ${v.readout ? `<g class="ro"><text class="readout ro-a" x="${x1}" y="86" text-anchor="end" opacity="0"></text><text class="readout ro-b" x="${x1}" y="86" text-anchor="end" opacity="0"></text></g>` : ""}
     ${v.label ? `<text class="lab" x="468" y="${H - 14}">${esc(v.label)}</text>` : ""}
   </svg>`;
 };

@@ -1,0 +1,99 @@
+1
+00:00:00,250 --> 00:00:01,422
+Your brain is built
+
+2
+00:00:01,422 --> 00:00:02,651
+by two cell lineages
+
+3
+00:00:02,651 --> 00:00:03,531
+that never mix.
+
+4
+00:00:03,812 --> 00:00:04,985
+In the mouse embryo,
+
+5
+00:00:05,109 --> 00:00:06,732
+two separate populations of
+
+6
+00:00:06,732 --> 00:00:07,961
+stem cells build the
+
+7
+00:00:07,961 --> 00:00:09,201
+brain, and they are
+
+8
+00:00:09,201 --> 00:00:11,163
+separate from gastrulation onward.
+
+9
+00:00:11,445 --> 00:00:12,741
+One group, marked by
+
+10
+00:00:12,741 --> 00:00:13,857
+a gene called Otx2,
+
+11
+00:00:13,981 --> 00:00:15,435
+builds the forebrain and
+
+12
+00:00:15,435 --> 00:00:17,352
+midbrain. The other, marked
+
+13
+00:00:17,352 --> 00:00:18,592
+by Gbx2, builds the
+
+14
+00:00:18,592 --> 00:00:20,666
+hindbrain. They carry different
+
+15
+00:00:20,666 --> 00:00:22,177
+chromatin states from the
+
+16
+00:00:22,177 --> 00:00:23,913
+earliest stages. The same
+
+17
+00:00:23,913 --> 00:00:24,973
+split shows up in
+
+18
+00:00:24,973 --> 00:00:26,664
+chicks, zebrafish and acorn
+
+19
+00:00:26,664 --> 00:00:28,468
+worms, lineages that diverged
+
+20
+00:00:28,468 --> 00:00:31,263
+around 550 million years ago.
+
+21
+00:00:31,545 --> 00:00:33,056
+One caveat. The paper
+
+22
+00:00:33,056 --> 00:00:34,679
+describes two cell lineages,
+
+23
+00:00:34,803 --> 00:00:35,683
+traced in mice.
+
+24
+00:00:35,965 --> 00:00:37,024
+Two organs is the
+
+25
+00:00:37,024 --> 00:00:38,298
+press release talking.

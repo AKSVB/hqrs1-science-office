@@ -1,0 +1,497 @@
+[
+ {
+  "word": "Sound",
+  "start": 0.25,
+  "end": 0.631
+ },
+ {
+  "word": "does",
+  "start": 0.631,
+  "end": 0.95
+ },
+ {
+  "word": "not",
+  "start": 0.95,
+  "end": 1.208
+ },
+ {
+  "word": "fade",
+  "start": 1.208,
+  "end": 1.528
+ },
+ {
+  "word": "away",
+  "start": 1.528,
+  "end": 1.847
+ },
+ {
+  "word": "smoothly.",
+  "start": 1.847,
+  "end": 2.413
+ },
+ {
+  "word": "At",
+  "start": 2.72,
+  "end": 2.916
+ },
+ {
+  "word": "the",
+  "start": 2.916,
+  "end": 3.174
+ },
+ {
+  "word": "smallest",
+  "start": 3.174,
+  "end": 3.74
+ },
+ {
+  "word": "scale,",
+  "start": 3.74,
+  "end": 4.121
+ },
+ {
+  "word": "it",
+  "start": 4.256,
+  "end": 4.452
+ },
+ {
+  "word": "jumps.",
+  "start": 4.452,
+  "end": 4.833
+ },
+ {
+  "word": "Sound",
+  "start": 5.14,
+  "end": 5.521
+ },
+ {
+  "word": "is",
+  "start": 5.521,
+  "end": 5.718
+ },
+ {
+  "word": "vibration,",
+  "start": 5.718,
+  "end": 6.345
+ },
+ {
+  "word": "and",
+  "start": 6.48,
+  "end": 6.738
+ },
+ {
+  "word": "vibration",
+  "start": 6.738,
+  "end": 7.365
+ },
+ {
+  "word": "is",
+  "start": 7.365,
+  "end": 7.561
+ },
+ {
+  "word": "energy.",
+  "start": 7.561,
+  "end": 8.003
+ },
+ {
+  "word": "At",
+  "start": 8.311,
+  "end": 8.507
+ },
+ {
+  "word": "the",
+  "start": 8.507,
+  "end": 8.765
+ },
+ {
+  "word": "quantum",
+  "start": 8.765,
+  "end": 9.269
+ },
+ {
+  "word": "level",
+  "start": 9.269,
+  "end": 9.65
+ },
+ {
+  "word": "that",
+  "start": 9.65,
+  "end": 9.969
+ },
+ {
+  "word": "energy",
+  "start": 9.969,
+  "end": 10.412
+ },
+ {
+  "word": "comes",
+  "start": 10.412,
+  "end": 10.793
+ },
+ {
+  "word": "in",
+  "start": 10.793,
+  "end": 10.989
+ },
+ {
+  "word": "packets",
+  "start": 10.989,
+  "end": 11.493
+ },
+ {
+  "word": "called",
+  "start": 11.493,
+  "end": 11.935
+ },
+ {
+  "word": "phonons.",
+  "start": 11.935,
+  "end": 12.439
+ },
+ {
+  "word": "A",
+  "start": 12.746,
+  "end": 12.882
+ },
+ {
+  "word": "phonon",
+  "start": 12.882,
+  "end": 13.324
+ },
+ {
+  "word": "can",
+  "start": 13.324,
+  "end": 13.582
+ },
+ {
+  "word": "only",
+  "start": 13.582,
+  "end": 13.902
+ },
+ {
+  "word": "sit",
+  "start": 13.902,
+  "end": 14.16
+ },
+ {
+  "word": "on",
+  "start": 14.16,
+  "end": 14.356
+ },
+ {
+  "word": "fixed",
+  "start": 14.356,
+  "end": 14.737
+ },
+ {
+  "word": "energy",
+  "start": 14.737,
+  "end": 15.179
+ },
+ {
+  "word": "steps,",
+  "start": 15.179,
+  "end": 15.56
+ },
+ {
+  "word": "never",
+  "start": 15.695,
+  "end": 16.076
+ },
+ {
+  "word": "in",
+  "start": 16.076,
+  "end": 16.273
+ },
+ {
+  "word": "between.",
+  "start": 16.273,
+  "end": 16.777
+ },
+ {
+  "word": "Physicists",
+  "start": 17.084,
+  "end": 17.772
+ },
+ {
+  "word": "at",
+  "start": 17.772,
+  "end": 17.969
+ },
+ {
+  "word": "Stanford,",
+  "start": 17.969,
+  "end": 18.534
+ },
+ {
+  "word": "in",
+  "start": 18.669,
+  "end": 18.866
+ },
+ {
+  "word": "the",
+  "start": 18.866,
+  "end": 19.124
+ },
+ {
+  "word": "Safavi-Naeini",
+  "start": 19.124,
+  "end": 19.935
+ },
+ {
+  "word": "lab,",
+  "start": 19.935,
+  "end": 20.193
+ },
+ {
+  "word": "built",
+  "start": 20.328,
+  "end": 20.709
+ },
+ {
+  "word": "a",
+  "start": 20.709,
+  "end": 20.844
+ },
+ {
+  "word": "tiny",
+  "start": 20.844,
+  "end": 21.163
+ },
+ {
+  "word": "mechanical",
+  "start": 21.163,
+  "end": 21.852
+ },
+ {
+  "word": "resonator",
+  "start": 21.852,
+  "end": 22.478
+ },
+ {
+  "word": "that",
+  "start": 22.478,
+  "end": 22.798
+ },
+ {
+  "word": "rings",
+  "start": 22.798,
+  "end": 23.179
+ },
+ {
+  "word": "for",
+  "start": 23.179,
+  "end": 23.437
+ },
+ {
+  "word": "about",
+  "start": 23.437,
+  "end": 23.818
+ },
+ {
+  "word": "2 ms,",
+  "start": 23.818,
+  "end": 24.887
+ },
+ {
+  "word": "and",
+  "start": 25.022,
+  "end": 25.28
+ },
+ {
+  "word": "watched",
+  "start": 25.28,
+  "end": 25.784
+ },
+ {
+  "word": "single",
+  "start": 25.784,
+  "end": 26.226
+ },
+ {
+  "word": "phonons",
+  "start": 26.226,
+  "end": 26.73
+ },
+ {
+  "word": "jump",
+  "start": 26.73,
+  "end": 27.049
+ },
+ {
+  "word": "between",
+  "start": 27.049,
+  "end": 27.553
+ },
+ {
+  "word": "those",
+  "start": 27.553,
+  "end": 27.934
+ },
+ {
+  "word": "steps",
+  "start": 27.934,
+  "end": 28.315
+ },
+ {
+  "word": "in",
+  "start": 28.315,
+  "end": 28.511
+ },
+ {
+  "word": "real",
+  "start": 28.511,
+  "end": 28.831
+ },
+ {
+  "word": "time.",
+  "start": 28.831,
+  "end": 29.15
+ },
+ {
+  "word": "It",
+  "start": 29.458,
+  "end": 29.654
+ },
+ {
+  "word": "is",
+  "start": 29.654,
+  "end": 29.851
+ },
+ {
+  "word": "the",
+  "start": 29.851,
+  "end": 30.109
+ },
+ {
+  "word": "first",
+  "start": 30.109,
+  "end": 30.49
+ },
+ {
+  "word": "direct",
+  "start": 30.49,
+  "end": 30.932
+ },
+ {
+  "word": "real-time",
+  "start": 30.932,
+  "end": 31.497
+ },
+ {
+  "word": "observation",
+  "start": 31.497,
+  "end": 32.247
+ },
+ {
+  "word": "of",
+  "start": 32.247,
+  "end": 32.443
+ },
+ {
+  "word": "a",
+  "start": 32.443,
+  "end": 32.579
+ },
+ {
+  "word": "quantum",
+  "start": 32.579,
+  "end": 33.082
+ },
+ {
+  "word": "jump",
+  "start": 33.082,
+  "end": 33.402
+ },
+ {
+  "word": "in",
+  "start": 33.402,
+  "end": 33.598
+ },
+ {
+  "word": "sound.",
+  "start": 33.598,
+  "end": 33.979
+ },
+ {
+  "word": "Quantum",
+  "start": 34.287,
+  "end": 34.79
+ },
+ {
+  "word": "jumps",
+  "start": 34.79,
+  "end": 35.171
+ },
+ {
+  "word": "were",
+  "start": 35.171,
+  "end": 35.491
+ },
+ {
+  "word": "seen",
+  "start": 35.491,
+  "end": 35.81
+ },
+ {
+  "word": "in",
+  "start": 35.81,
+  "end": 36.007
+ },
+ {
+  "word": "ions",
+  "start": 36.007,
+  "end": 36.326
+ },
+ {
+  "word": "in",
+  "start": 36.326,
+  "end": 36.523
+ },
+ {
+  "word": "1986,",
+  "start": 36.523,
+  "end": 36.842
+ },
+ {
+  "word": "in",
+  "start": 36.978,
+  "end": 37.174
+ },
+ {
+  "word": "photons",
+  "start": 37.174,
+  "end": 37.678
+ },
+ {
+  "word": "in",
+  "start": 37.678,
+  "end": 37.875
+ },
+ {
+  "word": "2007,",
+  "start": 37.875,
+  "end": 38.194
+ },
+ {
+  "word": "and",
+  "start": 38.329,
+  "end": 38.587
+ },
+ {
+  "word": "now",
+  "start": 38.587,
+  "end": 38.845
+ },
+ {
+  "word": "in",
+  "start": 38.845,
+  "end": 39.042
+ },
+ {
+  "word": "sound.",
+  "start": 39.042,
+  "end": 39.423
+ }
+]
