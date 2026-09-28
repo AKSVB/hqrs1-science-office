@@ -1,0 +1,87 @@
+1
+00:00:00,000 --> 00:00:00,895
+There is a planet
+
+2
+00:00:01,024 --> 00:00:02,588
+orbiting its star backwards,
+
+3
+00:00:02,750 --> 00:00:04,698
+and tilted. Every planet
+
+4
+00:00:04,698 --> 00:00:05,729
+in our solar system
+
+5
+00:00:05,729 --> 00:00:06,662
+goes round in the
+
+6
+00:00:06,662 --> 00:00:07,842
+same direction the Sun
+
+7
+00:00:07,842 --> 00:00:09,337
+spins. This one does
+
+8
+00:00:09,337 --> 00:00:13,454
+not. GJ 3090 b sits 73
+
+9
+00:00:13,454 --> 00:00:15,739
+light-years away, around a
+
+10
+00:00:15,739 --> 00:00:16,756
+red dwarf star.
+
+11
+00:00:17,163 --> 00:00:18,529
+It is about 2.2
+
+12
+00:00:18,529 --> 00:00:21,020
+times Earth's radius, 4.5
+
+13
+00:00:21,020 --> 00:00:22,100
+times its mass, and
+
+14
+00:00:22,100 --> 00:00:23,675
+its year lasts 2.9
+
+15
+00:00:23,675 --> 00:00:25,360
+days. Its orbit is
+
+16
+00:00:25,360 --> 00:00:28,156
+tilted about 136 degrees:
+
+17
+00:00:28,315 --> 00:00:30,758
+past sideways, into backwards.
+
+18
+00:00:31,072 --> 00:00:31,904
+It is the first
+
+19
+00:00:31,904 --> 00:00:33,481
+retrograde planet found around
+
+20
+00:00:33,481 --> 00:00:34,671
+a red dwarf, and
+
+21
+00:00:34,671 --> 00:00:36,088
+no known companion explains
+
+22
+00:00:36,088 --> 00:00:36,995
+how it got there.

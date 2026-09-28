@@ -1,0 +1,512 @@
+[
+ {
+  "word": "An",
+  "start": 0.25,
+  "end": 0.426
+ },
+ {
+  "word": "AI,",
+  "start": 0.426,
+  "end": 0.601
+ },
+ {
+  "word": "quote,",
+  "start": 0.722,
+  "end": 1.062
+ },
+ {
+  "word": "solved,",
+  "start": 1.183,
+  "end": 1.578
+ },
+ {
+  "word": "unquote,",
+  "start": 1.699,
+  "end": 2.149
+ },
+ {
+  "word": "a",
+  "start": 2.269,
+  "end": 2.39
+ },
+ {
+  "word": "$1M",
+  "start": 2.39,
+  "end": 3.235
+ },
+ {
+  "word": "maths",
+  "start": 3.235,
+  "end": 3.575
+ },
+ {
+  "word": "problem.",
+  "start": 3.575,
+  "end": 4.025
+ },
+ {
+  "word": "That",
+  "start": 4.299,
+  "end": 4.585
+ },
+ {
+  "word": "is",
+  "start": 4.585,
+  "end": 4.76
+ },
+ {
+  "word": "the",
+  "start": 4.76,
+  "end": 4.991
+ },
+ {
+  "word": "headline.",
+  "start": 4.991,
+  "end": 5.496
+ },
+ {
+  "word": "Here",
+  "start": 5.77,
+  "end": 6.055
+ },
+ {
+  "word": "is",
+  "start": 6.055,
+  "end": 6.231
+ },
+ {
+  "word": "the",
+  "start": 6.231,
+  "end": 6.461
+ },
+ {
+  "word": "contested",
+  "start": 6.461,
+  "end": 7.021
+ },
+ {
+  "word": "version.",
+  "start": 7.021,
+  "end": 7.471
+ },
+ {
+  "word": "OpenAI",
+  "start": 7.745,
+  "end": 8.14
+ },
+ {
+  "word": "says",
+  "start": 8.14,
+  "end": 8.426
+ },
+ {
+  "word": "its",
+  "start": 8.426,
+  "end": 8.656
+ },
+ {
+  "word": "agents",
+  "start": 8.656,
+  "end": 9.051
+ },
+ {
+  "word": "proved",
+  "start": 9.051,
+  "end": 9.446
+ },
+ {
+  "word": "that",
+  "start": 9.446,
+  "end": 9.732
+ },
+ {
+  "word": "a",
+  "start": 9.732,
+  "end": 9.852
+ },
+ {
+  "word": "forced",
+  "start": 9.852,
+  "end": 10.248
+ },
+ {
+  "word": "Navier-Stokes",
+  "start": 10.248,
+  "end": 10.972
+ },
+ {
+  "word": "fluid",
+  "start": 10.972,
+  "end": 11.312
+ },
+ {
+  "word": "can",
+  "start": 11.312,
+  "end": 11.543
+ },
+ {
+  "word": "blow",
+  "start": 11.543,
+  "end": 11.828
+ },
+ {
+  "word": "up.",
+  "start": 11.828,
+  "end": 12.003
+ },
+ {
+  "word": "On",
+  "start": 12.278,
+  "end": 12.453
+ },
+ {
+  "word": "8 September,",
+  "start": 12.453,
+  "end": 13.408
+ },
+ {
+  "word": "it",
+  "start": 13.529,
+  "end": 13.704
+ },
+ {
+  "word": "announced",
+  "start": 13.704,
+  "end": 14.264
+ },
+ {
+  "word": "that",
+  "start": 14.264,
+  "end": 14.549
+ },
+ {
+  "word": "around",
+  "start": 14.549,
+  "end": 14.945
+ },
+ {
+  "word": "10,000",
+  "start": 14.945,
+  "end": 15.68
+ },
+ {
+  "word": "agents,",
+  "start": 15.68,
+  "end": 16.075
+ },
+ {
+  "word": "running",
+  "start": 16.196,
+  "end": 16.646
+ },
+ {
+  "word": "for",
+  "start": 16.646,
+  "end": 16.876
+ },
+ {
+  "word": "about",
+  "start": 16.876,
+  "end": 17.216
+ },
+ {
+  "word": "88 hours,",
+  "start": 17.216,
+  "end": 18.292
+ },
+ {
+  "word": "produced",
+  "start": 18.412,
+  "end": 18.917
+ },
+ {
+  "word": "that",
+  "start": 18.917,
+  "end": 19.203
+ },
+ {
+  "word": "proof,",
+  "start": 19.203,
+  "end": 19.543
+ },
+ {
+  "word": "with",
+  "start": 19.663,
+  "end": 19.949
+ },
+ {
+  "word": "a",
+  "start": 19.949,
+  "end": 20.069
+ },
+ {
+  "word": "further",
+  "start": 20.069,
+  "end": 20.519
+ },
+ {
+  "word": "17 hours",
+  "start": 20.519,
+  "end": 21.419
+ },
+ {
+  "word": "to",
+  "start": 21.419,
+  "end": 21.595
+ },
+ {
+  "word": "formalise",
+  "start": 21.595,
+  "end": 22.155
+ },
+ {
+  "word": "it",
+  "start": 22.155,
+  "end": 22.33
+ },
+ {
+  "word": "in",
+  "start": 22.33,
+  "end": 22.506
+ },
+ {
+  "word": "Lean.",
+  "start": 22.506,
+  "end": 22.791
+ },
+ {
+  "word": "Forced",
+  "start": 23.065,
+  "end": 23.461
+ },
+ {
+  "word": "versus",
+  "start": 23.461,
+  "end": 23.856
+ },
+ {
+  "word": "unforced",
+  "start": 23.856,
+  "end": 24.36
+ },
+ {
+  "word": "matters",
+  "start": 24.36,
+  "end": 24.81
+ },
+ {
+  "word": "here,",
+  "start": 24.81,
+  "end": 25.096
+ },
+ {
+  "word": "and",
+  "start": 25.216,
+  "end": 25.447
+ },
+ {
+  "word": "OpenAI",
+  "start": 25.447,
+  "end": 25.842
+ },
+ {
+  "word": "itself",
+  "start": 25.842,
+  "end": 26.237
+ },
+ {
+  "word": "says",
+  "start": 26.237,
+  "end": 26.522
+ },
+ {
+  "word": "it",
+  "start": 26.522,
+  "end": 26.698
+ },
+ {
+  "word": "will",
+  "start": 26.698,
+  "end": 26.983
+ },
+ {
+  "word": "not",
+  "start": 26.983,
+  "end": 27.214
+ },
+ {
+  "word": "claim",
+  "start": 27.214,
+  "end": 27.554
+ },
+ {
+  "word": "the",
+  "start": 27.554,
+  "end": 27.784
+ },
+ {
+  "word": "prize.",
+  "start": 27.784,
+  "end": 28.125
+ },
+ {
+  "word": "3 days",
+  "start": 28.399,
+  "end": 29.024
+ },
+ {
+  "word": "later,",
+  "start": 29.024,
+  "end": 29.365
+ },
+ {
+  "word": "25",
+  "start": 29.485,
+  "end": 30.166
+ },
+ {
+  "word": "Fields",
+  "start": 30.166,
+  "end": 30.561
+ },
+ {
+  "word": "Medallists",
+  "start": 30.561,
+  "end": 31.175
+ },
+ {
+  "word": "published",
+  "start": 31.175,
+  "end": 31.735
+ },
+ {
+  "word": "a",
+  "start": 31.735,
+  "end": 31.856
+ },
+ {
+  "word": "statement",
+  "start": 31.856,
+  "end": 32.416
+ },
+ {
+  "word": "titled",
+  "start": 32.416,
+  "end": 32.811
+ },
+ {
+  "word": "A",
+  "start": 32.811,
+  "end": 32.931
+ },
+ {
+  "word": "Severe",
+  "start": 32.931,
+  "end": 33.326
+ },
+ {
+  "word": "Misalignment",
+  "start": 33.326,
+  "end": 34.051
+ },
+ {
+  "word": "of",
+  "start": 34.051,
+  "end": 34.226
+ },
+ {
+  "word": "AI",
+  "start": 34.226,
+  "end": 34.402
+ },
+ {
+  "word": "in",
+  "start": 34.402,
+  "end": 34.577
+ },
+ {
+  "word": "Mathematics.",
+  "start": 34.577,
+  "end": 35.247
+ },
+ {
+  "word": "The",
+  "start": 35.521,
+  "end": 35.752
+ },
+ {
+  "word": "work",
+  "start": 35.752,
+  "end": 36.037
+ },
+ {
+  "word": "is",
+  "start": 36.037,
+  "end": 36.213
+ },
+ {
+  "word": "not",
+  "start": 36.213,
+  "end": 36.443
+ },
+ {
+  "word": "peer-reviewed,",
+  "start": 36.443,
+  "end": 37.167
+ },
+ {
+  "word": "and",
+  "start": 37.288,
+  "end": 37.519
+ },
+ {
+  "word": "a",
+  "start": 37.519,
+  "end": 37.639
+ },
+ {
+  "word": "priority",
+  "start": 37.639,
+  "end": 38.144
+ },
+ {
+  "word": "dispute",
+  "start": 38.144,
+  "end": 38.594
+ },
+ {
+  "word": "has",
+  "start": 38.594,
+  "end": 38.824
+ },
+ {
+  "word": "been",
+  "start": 38.824,
+  "end": 39.11
+ },
+ {
+  "word": "reported.",
+  "start": 39.11,
+  "end": 39.615
+ },
+ {
+  "word": "Big",
+  "start": 39.889,
+  "end": 40.119
+ },
+ {
+  "word": "claim,",
+  "start": 40.119,
+  "end": 40.46
+ },
+ {
+  "word": "big",
+  "start": 40.58,
+  "end": 40.811
+ },
+ {
+  "word": "pushback.",
+  "start": 40.811,
+  "end": 41.316
+ }
+]

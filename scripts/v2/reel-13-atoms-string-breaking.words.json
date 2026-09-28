@@ -1,0 +1,492 @@
+[
+ {
+  "word": "13",
+  "start": 0.0,
+  "end": 0.577
+ },
+ {
+  "word": "atoms",
+  "start": 0.577,
+  "end": 0.965
+ },
+ {
+  "word": "just",
+  "start": 0.965,
+  "end": 1.291
+ },
+ {
+  "word": "simulated",
+  "start": 1.291,
+  "end": 1.93
+ },
+ {
+  "word": "one",
+  "start": 1.93,
+  "end": 2.194
+ },
+ {
+  "word": "of",
+  "start": 2.194,
+  "end": 2.394
+ },
+ {
+  "word": "the",
+  "start": 2.394,
+  "end": 2.658
+ },
+ {
+  "word": "strangest",
+  "start": 2.658,
+  "end": 3.297
+ },
+ {
+  "word": "ideas",
+  "start": 3.297,
+  "end": 3.685
+ },
+ {
+  "word": "in",
+  "start": 3.685,
+  "end": 3.886
+ },
+ {
+  "word": "particle",
+  "start": 3.886,
+  "end": 4.463
+ },
+ {
+  "word": "physics.",
+  "start": 4.463,
+  "end": 4.977
+ },
+ {
+  "word": "Pull",
+  "start": 5.777,
+  "end": 6.077
+ },
+ {
+  "word": "confined",
+  "start": 6.077,
+  "end": 6.606
+ },
+ {
+  "word": "particles",
+  "start": 6.606,
+  "end": 7.194
+ },
+ {
+  "word": "apart",
+  "start": 7.194,
+  "end": 7.55
+ },
+ {
+  "word": "hard",
+  "start": 7.55,
+  "end": 7.85
+ },
+ {
+  "word": "enough,",
+  "start": 7.85,
+  "end": 8.264
+ },
+ {
+  "word": "and",
+  "start": 8.264,
+  "end": 8.543
+ },
+ {
+  "word": "instead",
+  "start": 8.7,
+  "end": 9.197
+ },
+ {
+  "word": "of",
+  "start": 9.197,
+  "end": 9.391
+ },
+ {
+  "word": "separating,",
+  "start": 9.391,
+  "end": 10.07
+ },
+ {
+  "word": "they",
+  "start": 10.07,
+  "end": 10.399
+ },
+ {
+  "word": "snap",
+  "start": 10.399,
+  "end": 10.728
+ },
+ {
+  "word": "into",
+  "start": 10.728,
+  "end": 11.058
+ },
+ {
+  "word": "new",
+  "start": 11.058,
+  "end": 11.324
+ },
+ {
+  "word": "pairs.",
+  "start": 11.324,
+  "end": 11.717
+ },
+ {
+  "word": "Physicists",
+  "start": 12.587,
+  "end": 13.199
+ },
+ {
+  "word": "call",
+  "start": 13.199,
+  "end": 13.483
+ },
+ {
+  "word": "it",
+  "start": 13.483,
+  "end": 13.658
+ },
+ {
+  "word": "string",
+  "start": 13.658,
+  "end": 14.051
+ },
+ {
+  "word": "breaking.",
+  "start": 14.051,
+  "end": 14.553
+ },
+ {
+  "word": "A",
+  "start": 15.455,
+  "end": 15.582
+ },
+ {
+  "word": "team",
+  "start": 15.582,
+  "end": 15.881
+ },
+ {
+  "word": "at",
+  "start": 15.881,
+  "end": 16.066
+ },
+ {
+  "word": "the",
+  "start": 16.066,
+  "end": 16.308
+ },
+ {
+  "word": "Duke",
+  "start": 16.308,
+  "end": 16.608
+ },
+ {
+  "word": "Quantum",
+  "start": 16.608,
+  "end": 17.081
+ },
+ {
+  "word": "Center",
+  "start": 17.081,
+  "end": 17.497
+ },
+ {
+  "word": "held",
+  "start": 17.497,
+  "end": 17.797
+ },
+ {
+  "word": "13",
+  "start": 17.918,
+  "end": 18.461
+ },
+ {
+  "word": "ytterbium",
+  "start": 18.461,
+  "end": 19.063
+ },
+ {
+  "word": "ions",
+  "start": 19.063,
+  "end": 19.37
+ },
+ {
+  "word": "in",
+  "start": 19.37,
+  "end": 19.558
+ },
+ {
+  "word": "a",
+  "start": 19.558,
+  "end": 19.688
+ },
+ {
+  "word": "line",
+  "start": 19.688,
+  "end": 19.995
+ },
+ {
+  "word": "and",
+  "start": 19.995,
+  "end": 20.243
+ },
+ {
+  "word": "used",
+  "start": 20.243,
+  "end": 20.55
+ },
+ {
+  "word": "them",
+  "start": 20.55,
+  "end": 20.856
+ },
+ {
+  "word": "to",
+  "start": 20.856,
+  "end": 21.045
+ },
+ {
+  "word": "simulate",
+  "start": 21.045,
+  "end": 21.588
+ },
+ {
+  "word": "the",
+  "start": 21.588,
+  "end": 21.836
+ },
+ {
+  "word": "string.",
+  "start": 21.836,
+  "end": 22.261
+ },
+ {
+  "word": "When",
+  "start": 22.68,
+  "end": 23.003
+ },
+ {
+  "word": "it",
+  "start": 23.003,
+  "end": 23.202
+ },
+ {
+  "word": "broke,",
+  "start": 23.202,
+  "end": 23.587
+ },
+ {
+  "word": "the",
+  "start": 23.587,
+  "end": 23.86
+ },
+ {
+  "word": "new",
+  "start": 23.86,
+  "end": 24.133
+ },
+ {
+  "word": "pairs",
+  "start": 24.133,
+  "end": 24.536
+ },
+ {
+  "word": "formed",
+  "start": 24.536,
+  "end": 25.003
+ },
+ {
+  "word": "at",
+  "start": 25.003,
+  "end": 25.211
+ },
+ {
+  "word": "the",
+  "start": 25.211,
+  "end": 25.484
+ },
+ {
+  "word": "ends",
+  "start": 25.484,
+  "end": 25.822
+ },
+ {
+  "word": "first",
+  "start": 25.822,
+  "end": 26.224
+ },
+ {
+  "word": "and",
+  "start": 26.224,
+  "end": 26.497
+ },
+ {
+  "word": "spread",
+  "start": 26.497,
+  "end": 26.965
+ },
+ {
+  "word": "inward,",
+  "start": 26.965,
+  "end": 27.433
+ },
+ {
+  "word": "rather",
+  "start": 28.137,
+  "end": 28.526
+ },
+ {
+  "word": "than",
+  "start": 28.526,
+  "end": 28.807
+ },
+ {
+  "word": "appearing",
+  "start": 28.807,
+  "end": 29.358
+ },
+ {
+  "word": "evenly",
+  "start": 29.358,
+  "end": 29.747
+ },
+ {
+  "word": "along",
+  "start": 29.747,
+  "end": 30.082
+ },
+ {
+  "word": "the",
+  "start": 30.082,
+  "end": 30.309
+ },
+ {
+  "word": "string.",
+  "start": 30.309,
+  "end": 30.697
+ },
+ {
+  "word": "That",
+  "start": 31.198,
+  "end": 31.561
+ },
+ {
+  "word": "edge-driven",
+  "start": 31.561,
+  "end": 32.342
+ },
+ {
+  "word": "pattern",
+  "start": 32.342,
+  "end": 32.914
+ },
+ {
+  "word": "is",
+  "start": 33.043,
+  "end": 33.23
+ },
+ {
+  "word": "the",
+  "start": 33.23,
+  "end": 33.476
+ },
+ {
+  "word": "result.",
+  "start": 33.476,
+  "end": 33.896
+ },
+ {
+  "word": "To",
+  "start": 34.433,
+  "end": 34.62
+ },
+ {
+  "word": "be",
+  "start": 34.62,
+  "end": 34.808
+ },
+ {
+  "word": "clear,",
+  "start": 34.808,
+  "end": 35.171
+ },
+ {
+  "word": "this",
+  "start": 35.583,
+  "end": 35.863
+ },
+ {
+  "word": "is",
+  "start": 35.863,
+  "end": 36.035
+ },
+ {
+  "word": "a",
+  "start": 36.035,
+  "end": 36.153
+ },
+ {
+  "word": "quantum",
+  "start": 36.153,
+  "end": 36.593
+ },
+ {
+  "word": "simulation",
+  "start": 36.593,
+  "end": 37.195
+ },
+ {
+  "word": "of",
+  "start": 37.195,
+  "end": 37.367
+ },
+ {
+  "word": "a",
+  "start": 37.367,
+  "end": 37.485
+ },
+ {
+  "word": "lattice",
+  "start": 37.485,
+  "end": 37.925
+ },
+ {
+  "word": "model.",
+  "start": 37.925,
+  "end": 38.259
+ },
+ {
+  "word": "No",
+  "start": 38.829,
+  "end": 39.034
+ },
+ {
+  "word": "real",
+  "start": 39.034,
+  "end": 39.368
+ },
+ {
+  "word": "quarks,",
+  "start": 39.368,
+  "end": 39.83
+ },
+ {
+  "word": "no",
+  "start": 40.054,
+  "end": 40.254
+ },
+ {
+  "word": "real",
+  "start": 40.254,
+  "end": 40.578
+ },
+ {
+  "word": "vacuum.",
+  "start": 40.578,
+  "end": 41.027
+ }
+]

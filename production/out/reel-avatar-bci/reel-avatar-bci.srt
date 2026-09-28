@@ -1,0 +1,95 @@
+1
+00:00:00,100 --> 00:00:01,508
+Paralysed and unable to
+
+2
+00:00:01,508 --> 00:00:03,664
+speak. Their avatar talks
+
+3
+00:00:03,664 --> 00:00:05,154
+and waves, straight from
+
+4
+00:00:05,154 --> 00:00:06,930
+their brain. This is
+
+5
+00:00:06,930 --> 00:00:09,164
+a brain-computer interface from
+
+6
+00:00:09,164 --> 00:00:10,415
+the Chang lab at
+
+7
+00:00:10,415 --> 00:00:13,494
+UCSF. A high-density implant
+
+8
+00:00:13,494 --> 00:00:15,703
+called ECoG records signals
+
+9
+00:00:15,703 --> 00:00:16,900
+from the brain.
+
+10
+00:00:17,820 --> 00:00:19,957
+Machine-learning decoders turn those
+
+11
+00:00:19,957 --> 00:00:21,396
+signals into speech and
+
+12
+00:00:21,396 --> 00:00:23,138
+into gestures, like nodding
+
+13
+00:00:23,138 --> 00:00:24,933
+and waving, and an
+
+14
+00:00:24,933 --> 00:00:27,067
+on-screen avatar performs both
+
+15
+00:00:27,067 --> 00:00:28,300
+at the same time.
+
+16
+00:00:29,220 --> 00:00:30,260
+Now the honest part.
+
+17
+00:00:30,560 --> 00:00:33,187
+3 participants, 2 of them driving the
+
+18
+00:00:33,187 --> 00:00:34,360
+avatar in real time,
+
+19
+00:00:34,980 --> 00:00:36,674
+with a restricted vocabulary,
+
+20
+00:00:36,799 --> 00:00:38,209
+over a wired connection,
+
+21
+00:00:38,334 --> 00:00:38,880
+in a lab.
+
+22
+00:00:39,560 --> 00:00:40,878
+This is a demonstration,
+
+23
+00:00:40,995 --> 00:00:42,100
+not a treatment you
+
+24
+00:00:42,100 --> 00:00:42,940
+can go and get.

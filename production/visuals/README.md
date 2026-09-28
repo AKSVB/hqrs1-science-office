@@ -83,28 +83,31 @@ Scene modules live in `scenes/<name>.mjs` and export `{ kind: "2d" | "three", in
 | `carousel-organoids-5-years/OR-02-multiwell-plate-incubator.png` | `organoid-dish --var view=wells --w 1080 --h 1350 --t 1.0` | |
 | `carousel-organoids-5-years/OR-03-organoid-section-layers.png` | none | Not built |
 | `carousel-organoids-5-years/OR-04-dna-methyl-marks.png` | none | Not built |
-| `reel-betel-teeth/BT-01-seq/` | `tooth-macro --var view=crown --seed 3 --frames 90 --fps 30` | 3 s loop; cover check `--t 1.0` |
+| `reel-betel-teeth/BT-01-seq/` | `tooth-macro --var view=crown --seed 3 --frames 90 --fps 30` | 3 s loop; cover check `--t 1.0`. Editor A: used as rendered in `scripts/v2/reel-betel-teeth.json`, no substitutions (BT-01 hook, scene 5, last scene and end card; BT-02 four shots; BT-03 under both timeline windows and one push-out) |
 | `reel-betel-teeth/BT-02-worn-facet.png` | `tooth-macro --var view=groove --seed 3 --t 1.0` | The striations read faintly; the facet is a flat band crossing the upper half |
 | `reel-betel-teeth/BT-03-two-teeth.png` | `tooth-macro --var view=pair --seed 5 --t 2.0` | |
 | `reel-avatar-bci/AB-01-seq/` | `cortex-array --var view=array --seed 2 --frames 90 --fps 30` | 3 s loop |
 | `reel-avatar-bci/AB-02-avatar-hand.png` | `decoder-screen --var view=hand --seed 2 --t 1.0` | |
 | `reel-avatar-bci/AB-03-array-close.png` | `cortex-array --var view=close --seed 2 --t 1.0` | |
 | `reel-avatar-bci/AB-04-seq/` | `decoder-screen --var view=traces --seed 4 --frames 90 --fps 30` | The traces scroll |
-| `reel-avatar-bci/AB-05-cable-connector.png` | `cortex-array --var view=cable --seed 2 --t 1.0` | |
+| `reel-avatar-bci/AB-05-cable-connector.png` | `cortex-array --var view=cable --seed 2 --t 1.0` | Editor A: all five AB plates used as rendered in `scripts/v2/reel-avatar-bci.json`, no substitutions; AB-04-seq also carries the 'Chang lab, UCSF' shot and the big number |
 | `reel-brain-gamble/BG-01-seq/` | `cortex-array --var view=patches --var lit=2 --seed 7 --frames 90 --fps 30` | The patches breathe |
 | `reel-brain-gamble/BG-02-array-on-surface.png` | `cortex-array --var view=array --seed 7 --t 1.0` | |
 | `reel-brain-gamble/BG-03-corridor-monitor.png` | `decoder-screen --var view=hallway --seed 7 --t 1.0` | |
-| `reel-brain-gamble/BG-04-two-patches-close.png` | `cortex-array --var view=patches --var lit=2 --var close=1 --seed 7 --t 2.0` | |
+| `reel-brain-gamble/BG-04-two-patches-close.png` | `cortex-array --var view=patches --var lit=2 --var close=1 --seed 7 --t 2.0` | Editor A: all four BG plates used as rendered in `scripts/v2/reel-brain-gamble.json`, no substitutions; BG-04 sits under the 'opposite jobs' window and BG-02 under the countdown (the storyboard had BG-04 under the countdown) |
 | `reel-ai-navier-stokes/NS-01-seq/` to `NS-04-seq/` | `turbulent-flow --var view=ink|vortex --seed 11`, `--var view=forced|free --seed 13`, each `--frames 90 --fps 30` | Gated on a fact-check row; the flow advances in every frame |
+| `reel-ai-navier-stokes/NS-01-seq-b/` to `NS-04-seq-b/` | the same four, `render-seq.sh <dir> 150 turbulent-flow ... --t0 1.0` (5 s from t = 1.0) | Editor 2026-09-28: the Reel uses these; from t = 0 the ink is a bare blob for the first second and the 3 s loop restarted mid-scene, so the plume is released 1 s before the loop starts and the loop is longer than every scene but two |
 | `reel-13-atoms-string-breaking/SB-01-seq/` | `ion-chain --var view=chain --var n=13 --seed 17 --frames 90 --fps 30` | The ions shimmer |
 | `reel-13-atoms-string-breaking/SB-02-single-ion.png` | `ion-chain --var view=single --var n=13 --seed 17 --t 1.0` | |
 | `reel-13-atoms-string-breaking/SB-03-trap-wide.png`, `SB-04-trap-empty.png` | `ion-chain --var view=trap --var n=13 --seed 17 --t 1.0`; `--var n=0` for SB-04 | |
 | `reel-planet-backwards/PB-01-seq/` | `tilted-orbit --var view=wide --var tilt=136 --seed 21 --frames 90 --fps 30` | Graded with `--space` |
+| `reel-planet-backwards/PB-02-earth-globe.png` | none usable | `earth-limb --var view=globe` renders a back-lit night side with a hairline crescent at every `t` (the globe view puts the sun behind the Earth from the camera). Editor B substitute: `PB-02-sub-earth-limb.png` = `earth-limb --t 2.0 --seed 3`, space grade (Earth's limb at sunrise; the label 'Our planets: one direction' stands) |
 | `reel-planet-backwards/PB-03-planet-close.png`, `PB-04-equator-crossing.png` | `tilted-orbit --var view=planet --var tilt=136 --seed 21 --t 1.0`; `--var view=equator --t 2.0` | Graded with `--space` |
 | `reel-lz-dark-matter/LZ-01-seq/` | `xenon-vessel --var view=interior --seed 31 --frames 90 --fps 30` | No flash |
 | `reel-lz-dark-matter/LZ-02-seq/` | `xenon-vessel --var view=pmt --var flash=0.3 --seed 31 --frames 105 --fps 30` | 3.5 s; the flash lands at 0.3 s and is gone by 1.5 s; the lower third exceeds 12 percent only while the flash lights the near faces |
 | `reel-lz-dark-matter/LZ-02b-pmt-faces.png`, `LZ-03-vessel-exterior.png` | `xenon-vessel --var view=pmt --seed 31 --t 0.1`; `--var view=exterior --t 1.0` | |
 | `carousel-project-anchor-debunk/PA-03-eclipse-totality.png` | `eclipse-corona --var view=totality --w 1080 --h 1350 --t 1.0 --seed 41` | Gated on a fact-check row |
+| `popout/anchor-bg-1..8.png`, `popout/anchor-eclipse-*-subject-crop.png`, `popout/anchor-earth-globe-*-keyed-crop.png` | pop-out carousel `carousel-project-anchor-popout`: `earth-limb` (limb, globe) and `eclipse-corona` (totality, diamond) at `--w 1080 --h 1350` for the backgrounds; `eclipse-corona --alpha` (totality seed 41, diamond seeds 43 and 47, hero seeds 45 and 49) then `crop-alpha.mjs` for the subjects | Editor 2026-09-28. `earth-limb` has no `layer=subject` option, so `--alpha` returns an opaque frame; its two globe subjects were keyed to a circle fitted to the atmosphere rim (scratchpad `earth-key.mjs`), which gives a dark disc with a lit rim. A hero view with a subject layer is wanted for `earth-limb` |
 
 `render-new-scenes.sh stills` renders and grades every still above; `render-seq.sh <out-dir> <frames> <scene> [args]`
 renders a sequence and grades it to JPEG frames (the `FA-01-seq` convention); `--alpha --var view=hero` on any of

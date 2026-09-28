@@ -1,0 +1,437 @@
+[
+ {
+  "word": "There",
+  "start": 0.0,
+  "end": 0.295
+ },
+ {
+  "word": "is",
+  "start": 0.295,
+  "end": 0.448
+ },
+ {
+  "word": "a",
+  "start": 0.448,
+  "end": 0.552
+ },
+ {
+  "word": "planet",
+  "start": 0.552,
+  "end": 0.895
+ },
+ {
+  "word": "orbiting",
+  "start": 1.024,
+  "end": 1.524
+ },
+ {
+  "word": "its",
+  "start": 1.524,
+  "end": 1.752
+ },
+ {
+  "word": "star",
+  "start": 1.752,
+  "end": 2.034
+ },
+ {
+  "word": "backwards,",
+  "start": 2.034,
+  "end": 2.588
+ },
+ {
+  "word": "and",
+  "start": 2.75,
+  "end": 3.004
+ },
+ {
+  "word": "tilted.",
+  "start": 3.004,
+  "end": 3.44
+ },
+ {
+  "word": "Every",
+  "start": 4.034,
+  "end": 4.341
+ },
+ {
+  "word": "planet",
+  "start": 4.341,
+  "end": 4.698
+ },
+ {
+  "word": "in",
+  "start": 4.698,
+  "end": 4.857
+ },
+ {
+  "word": "our",
+  "start": 4.857,
+  "end": 5.065
+ },
+ {
+  "word": "solar",
+  "start": 5.065,
+  "end": 5.372
+ },
+ {
+  "word": "system",
+  "start": 5.372,
+  "end": 5.729
+ },
+ {
+  "word": "goes",
+  "start": 5.729,
+  "end": 5.987
+ },
+ {
+  "word": "round",
+  "start": 5.987,
+  "end": 6.295
+ },
+ {
+  "word": "in",
+  "start": 6.295,
+  "end": 6.453
+ },
+ {
+  "word": "the",
+  "start": 6.453,
+  "end": 6.662
+ },
+ {
+  "word": "same",
+  "start": 6.662,
+  "end": 6.919
+ },
+ {
+  "word": "direction",
+  "start": 6.919,
+  "end": 7.425
+ },
+ {
+  "word": "the",
+  "start": 7.425,
+  "end": 7.633
+ },
+ {
+  "word": "Sun",
+  "start": 7.633,
+  "end": 7.842
+ },
+ {
+  "word": "spins.",
+  "start": 7.842,
+  "end": 8.149
+ },
+ {
+  "word": "This",
+  "start": 8.714,
+  "end": 8.936
+ },
+ {
+  "word": "one",
+  "start": 8.936,
+  "end": 9.115
+ },
+ {
+  "word": "does",
+  "start": 9.115,
+  "end": 9.337
+ },
+ {
+  "word": "not.",
+  "start": 9.337,
+  "end": 9.517
+ },
+ {
+  "word": "GJ 3090 b",
+  "start": 10.036,
+  "end": 11.874
+ },
+ {
+  "word": "sits",
+  "start": 11.874,
+  "end": 12.211
+ },
+ {
+  "word": "73",
+  "start": 12.211,
+  "end": 13.454
+ },
+ {
+  "word": "light-years",
+  "start": 13.454,
+  "end": 14.364
+ },
+ {
+  "word": "away,",
+  "start": 14.364,
+  "end": 14.787
+ },
+ {
+  "word": "around",
+  "start": 15.126,
+  "end": 15.596
+ },
+ {
+  "word": "a",
+  "start": 15.596,
+  "end": 15.739
+ },
+ {
+  "word": "red",
+  "start": 15.739,
+  "end": 16.013
+ },
+ {
+  "word": "dwarf",
+  "start": 16.013,
+  "end": 16.417
+ },
+ {
+  "word": "star.",
+  "start": 16.417,
+  "end": 16.756
+ },
+ {
+  "word": "It",
+  "start": 17.163,
+  "end": 17.324
+ },
+ {
+  "word": "is",
+  "start": 17.324,
+  "end": 17.484
+ },
+ {
+  "word": "about",
+  "start": 17.484,
+  "end": 17.796
+ },
+ {
+  "word": "2.2",
+  "start": 17.796,
+  "end": 18.529
+ },
+ {
+  "word": "times",
+  "start": 18.529,
+  "end": 18.84
+ },
+ {
+  "word": "Earth's",
+  "start": 18.84,
+  "end": 19.202
+ },
+ {
+  "word": "radius,",
+  "start": 19.202,
+  "end": 19.564
+ },
+ {
+  "word": "4.5",
+  "start": 20.086,
+  "end": 21.02
+ },
+ {
+  "word": "times",
+  "start": 21.02,
+  "end": 21.365
+ },
+ {
+  "word": "its",
+  "start": 21.365,
+  "end": 21.599
+ },
+ {
+  "word": "mass,",
+  "start": 21.599,
+  "end": 21.888
+ },
+ {
+  "word": "and",
+  "start": 21.888,
+  "end": 22.1
+ },
+ {
+  "word": "its",
+  "start": 22.1,
+  "end": 22.312
+ },
+ {
+  "word": "year",
+  "start": 22.312,
+  "end": 22.574
+ },
+ {
+  "word": "lasts",
+  "start": 22.574,
+  "end": 22.887
+ },
+ {
+  "word": "2.9",
+  "start": 22.887,
+  "end": 23.675
+ },
+ {
+  "word": "days.",
+  "start": 23.675,
+  "end": 23.937
+ },
+ {
+  "word": "Its",
+  "start": 24.593,
+  "end": 24.83
+ },
+ {
+  "word": "orbit",
+  "start": 24.83,
+  "end": 25.18
+ },
+ {
+  "word": "is",
+  "start": 25.18,
+  "end": 25.36
+ },
+ {
+  "word": "tilted",
+  "start": 25.36,
+  "end": 25.766
+ },
+ {
+  "word": "about",
+  "start": 25.766,
+  "end": 26.115
+ },
+ {
+  "word": "136",
+  "start": 26.115,
+  "end": 27.694
+ },
+ {
+  "word": "degrees:",
+  "start": 27.694,
+  "end": 28.156
+ },
+ {
+  "word": "past",
+  "start": 28.315,
+  "end": 28.513
+ },
+ {
+  "word": "sideways,",
+  "start": 28.698,
+  "end": 29.603
+ },
+ {
+  "word": "into",
+  "start": 29.603,
+  "end": 29.993
+ },
+ {
+  "word": "backwards.",
+  "start": 29.993,
+  "end": 30.758
+ },
+ {
+  "word": "It",
+  "start": 31.072,
+  "end": 31.23
+ },
+ {
+  "word": "is",
+  "start": 31.23,
+  "end": 31.389
+ },
+ {
+  "word": "the",
+  "start": 31.389,
+  "end": 31.597
+ },
+ {
+  "word": "first",
+  "start": 31.597,
+  "end": 31.904
+ },
+ {
+  "word": "retrograde",
+  "start": 31.904,
+  "end": 32.46
+ },
+ {
+  "word": "planet",
+  "start": 32.46,
+  "end": 32.816
+ },
+ {
+  "word": "found",
+  "start": 32.816,
+  "end": 33.124
+ },
+ {
+  "word": "around",
+  "start": 33.124,
+  "end": 33.481
+ },
+ {
+  "word": "a",
+  "start": 33.481,
+  "end": 33.59
+ },
+ {
+  "word": "red",
+  "start": 33.59,
+  "end": 33.798
+ },
+ {
+  "word": "dwarf,",
+  "start": 33.798,
+  "end": 34.105
+ },
+ {
+  "word": "and",
+  "start": 34.464,
+  "end": 34.671
+ },
+ {
+  "word": "no",
+  "start": 34.671,
+  "end": 34.828
+ },
+ {
+  "word": "known",
+  "start": 34.828,
+  "end": 35.133
+ },
+ {
+  "word": "companion",
+  "start": 35.133,
+  "end": 35.635
+ },
+ {
+  "word": "explains",
+  "start": 35.635,
+  "end": 36.088
+ },
+ {
+  "word": "how",
+  "start": 36.088,
+  "end": 36.294
+ },
+ {
+  "word": "it",
+  "start": 36.294,
+  "end": 36.452
+ },
+ {
+  "word": "got",
+  "start": 36.452,
+  "end": 36.658
+ },
+ {
+  "word": "there.",
+  "start": 36.783,
+  "end": 36.995
+ }
+]

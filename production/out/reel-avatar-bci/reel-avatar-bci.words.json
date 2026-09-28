@@ -1,0 +1,472 @@
+[
+ {
+  "word": "Paralysed",
+  "start": 0.1,
+  "end": 0.679
+ },
+ {
+  "word": "and",
+  "start": 0.679,
+  "end": 0.918
+ },
+ {
+  "word": "unable",
+  "start": 0.918,
+  "end": 1.326
+ },
+ {
+  "word": "to",
+  "start": 1.326,
+  "end": 1.508
+ },
+ {
+  "word": "speak.",
+  "start": 1.508,
+  "end": 1.86
+ },
+ {
+  "word": "Their",
+  "start": 2.54,
+  "end": 2.895
+ },
+ {
+  "word": "avatar",
+  "start": 2.895,
+  "end": 3.308
+ },
+ {
+  "word": "talks",
+  "start": 3.308,
+  "end": 3.664
+ },
+ {
+  "word": "and",
+  "start": 3.664,
+  "end": 3.905
+ },
+ {
+  "word": "waves,",
+  "start": 3.905,
+  "end": 4.26
+ },
+ {
+  "word": "straight",
+  "start": 4.52,
+  "end": 4.925
+ },
+ {
+  "word": "from",
+  "start": 4.925,
+  "end": 5.154
+ },
+ {
+  "word": "their",
+  "start": 5.154,
+  "end": 5.427
+ },
+ {
+  "word": "brain.",
+  "start": 5.427,
+  "end": 5.7
+ },
+ {
+  "word": "This",
+  "start": 6.34,
+  "end": 6.705
+ },
+ {
+  "word": "is",
+  "start": 6.705,
+  "end": 6.93
+ },
+ {
+  "word": "a",
+  "start": 6.93,
+  "end": 7.085
+ },
+ {
+  "word": "brain-computer",
+  "start": 7.085,
+  "end": 8.082
+ },
+ {
+  "word": "interface",
+  "start": 8.082,
+  "end": 8.799
+ },
+ {
+  "word": "from",
+  "start": 8.799,
+  "end": 9.164
+ },
+ {
+  "word": "the",
+  "start": 9.164,
+  "end": 9.459
+ },
+ {
+  "word": "Chang",
+  "start": 9.459,
+  "end": 9.895
+ },
+ {
+  "word": "lab",
+  "start": 9.895,
+  "end": 10.19
+ },
+ {
+  "word": "at",
+  "start": 10.19,
+  "end": 10.415
+ },
+ {
+  "word": "UCSF.",
+  "start": 10.415,
+  "end": 10.78
+ },
+ {
+  "word": "A",
+  "start": 11.76,
+  "end": 11.929
+ },
+ {
+  "word": "high-density",
+  "start": 11.929,
+  "end": 12.865
+ },
+ {
+  "word": "implant",
+  "start": 12.865,
+  "end": 13.494
+ },
+ {
+  "word": "called",
+  "start": 13.494,
+  "end": 14.046
+ },
+ {
+  "word": "ECoG",
+  "start": 14.046,
+  "end": 14.445
+ },
+ {
+  "word": "records",
+  "start": 14.445,
+  "end": 15.074
+ },
+ {
+  "word": "signals",
+  "start": 15.074,
+  "end": 15.703
+ },
+ {
+  "word": "from",
+  "start": 15.703,
+  "end": 16.102
+ },
+ {
+  "word": "the",
+  "start": 16.102,
+  "end": 16.424
+ },
+ {
+  "word": "brain.",
+  "start": 16.424,
+  "end": 16.9
+ },
+ {
+  "word": "Machine-learning",
+  "start": 17.82,
+  "end": 18.761
+ },
+ {
+  "word": "decoders",
+  "start": 18.761,
+  "end": 19.295
+ },
+ {
+  "word": "turn",
+  "start": 19.295,
+  "end": 19.597
+ },
+ {
+  "word": "those",
+  "start": 19.597,
+  "end": 19.957
+ },
+ {
+  "word": "signals",
+  "start": 19.957,
+  "end": 20.433
+ },
+ {
+  "word": "into",
+  "start": 20.433,
+  "end": 20.735
+ },
+ {
+  "word": "speech",
+  "start": 20.735,
+  "end": 21.153
+ },
+ {
+  "word": "and",
+  "start": 21.153,
+  "end": 21.396
+ },
+ {
+  "word": "into",
+  "start": 21.396,
+  "end": 21.698
+ },
+ {
+  "word": "gestures,",
+  "start": 21.698,
+  "end": 22.232
+ },
+ {
+  "word": "like",
+  "start": 22.36,
+  "end": 22.662
+ },
+ {
+  "word": "nodding",
+  "start": 22.662,
+  "end": 23.138
+ },
+ {
+  "word": "and",
+  "start": 23.138,
+  "end": 23.382
+ },
+ {
+  "word": "waving,",
+  "start": 23.382,
+  "end": 23.8
+ },
+ {
+  "word": "and",
+  "start": 24.42,
+  "end": 24.711
+ },
+ {
+  "word": "an",
+  "start": 24.711,
+  "end": 24.933
+ },
+ {
+  "word": "on-screen",
+  "start": 24.933,
+  "end": 25.57
+ },
+ {
+  "word": "avatar",
+  "start": 25.57,
+  "end": 26.069
+ },
+ {
+  "word": "performs",
+  "start": 26.069,
+  "end": 26.706
+ },
+ {
+  "word": "both",
+  "start": 26.706,
+  "end": 27.067
+ },
+ {
+  "word": "at",
+  "start": 27.067,
+  "end": 27.288
+ },
+ {
+  "word": "the",
+  "start": 27.288,
+  "end": 27.579
+ },
+ {
+  "word": "same",
+  "start": 27.579,
+  "end": 27.94
+ },
+ {
+  "word": "time.",
+  "start": 27.94,
+  "end": 28.3
+ },
+ {
+  "word": "Now",
+  "start": 29.22,
+  "end": 29.43
+ },
+ {
+  "word": "the",
+  "start": 29.43,
+  "end": 29.64
+ },
+ {
+  "word": "honest",
+  "start": 29.64,
+  "end": 30
+ },
+ {
+  "word": "part.",
+  "start": 30,
+  "end": 30.26
+ },
+ {
+  "word": "3 participants,",
+  "start": 30.56,
+  "end": 31.654
+ },
+ {
+  "word": "2 of them",
+  "start": 31.778,
+  "end": 32.488
+ },
+ {
+  "word": "driving",
+  "start": 32.488,
+  "end": 32.951
+ },
+ {
+  "word": "the",
+  "start": 32.951,
+  "end": 33.187
+ },
+ {
+  "word": "avatar",
+  "start": 33.187,
+  "end": 33.593
+ },
+ {
+  "word": "in",
+  "start": 33.593,
+  "end": 33.774
+ },
+ {
+  "word": "real",
+  "start": 33.774,
+  "end": 34.067
+ },
+ {
+  "word": "time,",
+  "start": 34.067,
+  "end": 34.36
+ },
+ {
+  "word": "with",
+  "start": 34.98,
+  "end": 35.276
+ },
+ {
+  "word": "a",
+  "start": 35.276,
+  "end": 35.401
+ },
+ {
+  "word": "restricted",
+  "start": 35.401,
+  "end": 36.037
+ },
+ {
+  "word": "vocabulary,",
+  "start": 36.037,
+  "end": 36.674
+ },
+ {
+  "word": "over",
+  "start": 36.799,
+  "end": 37.095
+ },
+ {
+  "word": "a",
+  "start": 37.095,
+  "end": 37.22
+ },
+ {
+  "word": "wired",
+  "start": 37.22,
+  "end": 37.572
+ },
+ {
+  "word": "connection,",
+  "start": 37.572,
+  "end": 38.209
+ },
+ {
+  "word": "in",
+  "start": 38.334,
+  "end": 38.516
+ },
+ {
+  "word": "a",
+  "start": 38.516,
+  "end": 38.641
+ },
+ {
+  "word": "lab.",
+  "start": 38.641,
+  "end": 38.88
+ },
+ {
+  "word": "This",
+  "start": 39.56,
+  "end": 39.836
+ },
+ {
+  "word": "is",
+  "start": 39.836,
+  "end": 40.006
+ },
+ {
+  "word": "a",
+  "start": 40.006,
+  "end": 40.123
+ },
+ {
+  "word": "demonstration,",
+  "start": 40.123,
+  "end": 40.878
+ },
+ {
+  "word": "not",
+  "start": 40.995,
+  "end": 41.218
+ },
+ {
+  "word": "a",
+  "start": 41.218,
+  "end": 41.335
+ },
+ {
+  "word": "treatment",
+  "start": 41.335,
+  "end": 41.877
+ },
+ {
+  "word": "you",
+  "start": 41.877,
+  "end": 42.1
+ },
+ {
+  "word": "can",
+  "start": 42.1,
+  "end": 42.324
+ },
+ {
+  "word": "go",
+  "start": 42.324,
+  "end": 42.494
+ },
+ {
+  "word": "and",
+  "start": 42.494,
+  "end": 42.717
+ },
+ {
+  "word": "get.",
+  "start": 42.717,
+  "end": 42.94
+ }
+]

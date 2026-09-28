@@ -1,0 +1,95 @@
+{
+  "notes": {
+    "storyboard": "storyboards/reel-avatar-bci.md, converted scene by scene. Science unchanged from scripts/reel-avatar-bci.json (fact-check row 5, GREEN on journal, date and n; wording AMBER: 'gestures such as nodding and waving', no gender in the hook, the 'first time' sentence cut).",
+    "timing": "Editor A, 2026-09-28. Scene times are authored directly against the cut deep-voice track (43.23 s), so fit_audio scales x1.000 and every cut sits on a word boundary of the words JSON: scene 1 on 'Their avatar' (2.54), scene 2 on 'This is' (6.34), scene 3 on 'from the Chang lab' (8.80), scene 4 on 'called ECoG' (13.49), the wipe on 'Machine-learning' (17.82), scene 6 on 'avatar' (25.57: the window is capped at 7.75 s and closes while the voice finishes the sentence, as the storyboard says), scene 7 on 'Now the honest part' (29.22), scene 8 on 'driving' (32.49), scene 9 on 'with a restricted' (34.98), scene 10 on 'This is a demonstration' (39.56). Lineage plate: trunk and branches grow from local 0.4 over 2.8 s with ticks as the tips land (2.9, 3.2: 'speech', 'gestures'); pulses on the amber Gestures branch on 'nodding' (4.84) and 'waving' (5.56) and on the cyan Speech branch on 'an' (6.9), so both outputs have fired before 'both'. Big number '3' slams on '3 participants' (scene 7 local 1.34), flips to 'n = 3' on 'driving' minus 0.4 (2.74), exits on 'driving' (3.27): 1.93 s on screen; the label '2 in real time' rises at the next cut. Words JSON: scripts/v2/reel-avatar-bci.words.json, the renderer's auto word timing applied per speech block from the track's RMS envelope (gaps over 0.25 s at -38 dB); 'Three participants' merged to '3 participants' and 'two of them' to '2 of them' for the band.",
+    "audio": "Narration: production/assets/voice/reel-avatar-bci-voice-cut-m.mp3: the deep-voice track cut at 43.2 s (the silence before 'But it is the first time...', removing that sentence, the journal sentence and 'Source in the caption', 0.2 s fade) and trimmed 0.4 dB with ffmpeg so it peaks at -6.0 dBFS; the untouched file is reel-avatar-bci-voice.mp3. Bed: production/assets/sound/bed-a-synth.mp3. Motif at 0.0 and at the payoff ('This is a demonstration', scene 10). No room-tone ambience: no such asset exists in production/assets/sound and generation is not allowed, so the hook sits on the bed alone.",
+    "numbers": "3 (the big number; flips to 'n = 3', a format change) and the label '2 in real time', both from the fact-check row. The lineage plate carries no number (the ECoG grid count is schematic and never shown).",
+    "plates": "Editor A, 2026-09-28. Every plate is code-rendered (cortex-array and decoder-screen scenes, production/visuals/render-plate.mjs, no paid generation) as the storyboard lists: AB-01 = production/assets/reel-avatar-bci/AB-01-seq (view=array, seed 2, 3 s loop; hook scenes 0 with the parallax plate, scene 2, scene 10 and the end card so the loop closes on the hook still); AB-02 = AB-02-avatar-hand.png (decoder-screen view=hand; scenes 1, 6 and 8); AB-03 = AB-03-array-close.png (view=close; scene 4); AB-04 = AB-04-seq (decoder-screen view=traces, the traces scroll; scene 3, under the lineage plate in scene 5, and scene 7 under the big number); AB-05 = AB-05-cable-connector.png (view=cable; scene 9). No substitutions. Deviations from the storyboard: the 'Chang lab at UCSF' clause gets its own shot on AB-04 (the storyboard's 4.9 s AB-01 shot ran 5.4 s against the real track), 'The honest part' shares the AB-04 shot with the big number (its storyboard shot would be 1.3 s), and '2 in real time' sits on AB-02 (the avatar hand, the thing being driven) so no shot repeats its plate across a cut. The renderer's lineage type draws two trees from two roots rather than one trunk splitting; the storyboard's 'Brain signals' root is carried as the plate's baseline label."
+  },
+  "handle": "@hqrs_1",
+  "style": "bible",
+  "audio": "production/assets/voice/reel-avatar-bci-voice-cut-m.mp3",
+  "fit_audio": true,
+  "music": "production/assets/sound/bed-a-synth.mp3",
+  "sfx": [
+    { "path": "production/assets/sound/motif.mp3", "scene": 0, "at": 0, "db": -8 },
+    { "path": "production/assets/sound/thud.mp3", "scene": 5, "at": 0 },
+    { "path": "production/assets/sound/tick.mp3", "scene": 5, "at": 2.9 },
+    { "path": "production/assets/sound/tick.mp3", "scene": 5, "at": 3.2 },
+    { "path": "production/assets/sound/tick.mp3", "scene": 5, "at": 4.84 },
+    { "path": "production/assets/sound/tick.mp3", "scene": 5, "at": 5.56 },
+    { "path": "production/assets/sound/tick.mp3", "scene": 5, "at": 6.9 },
+    { "path": "production/assets/sound/thud.mp3", "scene": 7, "at": 1.34 },
+    { "path": "production/assets/sound/tick.mp3", "scene": 7, "at": 2.74 },
+    { "path": "production/assets/sound/motif.mp3", "scene": 10, "at": 0, "db": -8 },
+    { "path": "production/assets/sound/settle.mp3", "scene": "end", "at": 0 }
+  ],
+  "end": {
+    "short": true,
+    "bg": { "sequence": "production/assets/reel-avatar-bci/AB-01-seq", "fps": 30, "move": "push-in", "from": 1.02, "to": 1.04, "focus": [0.55, 0.4], "scrim": 0.7 },
+    "source": "Nature Neuroscience, 14 Sept 2026. Brosler et al., Chang lab, UCSF.",
+    "note": "Images: generated illustrations."
+  },
+  "caption": "Their avatar talks and waves. Paralysed.\nNature Neuroscience, 14 Sept 2026. Brosler et al., Chang lab, UCSF.\n\nAn ECoG implant and machine-learning decoders let paralysed participants speak and gesture, such as nodding and waving, through an avatar at the same time. Three participants, two in real time, restricted vocabulary, wired, in a lab. A demonstration, not a treatment. Which would you want back first, the words or the wave?\n\n#neuroscience #bci #science #neurotech",
+  "voiceover_script": "Paralysed and unable to speak. Their avatar talks and waves, straight from their brain. This is a brain-computer interface from the Chang lab at UCSF. A high-density implant called ECoG records signals from the brain. Machine-learning decoders turn those signals into speech and into gestures, like nodding and waving, and an on-screen avatar performs both at the same time. Now the honest part. Three participants, two of them driving the avatar in real time, with a restricted vocabulary, over a wired connection, in a lab. This is a demonstration, not a treatment you can go and get.",
+  "scenes": [
+    {
+      "start": 0, "end": 2.54,
+      "bg": { "sequence": "production/assets/reel-avatar-bci/AB-01-seq", "fps": 30, "move": "push-in", "from": 1.0, "to": 1.05, "focus": [0.55, 0.4], "scrim": 0.45, "parallax": true },
+      "caption": "Their avatar talks and waves. Paralysed.", "label_out": 1.5
+    },
+    {
+      "start": 2.54, "end": 6.34,
+      "bg": { "image": "production/assets/reel-avatar-bci/AB-02-avatar-hand.png", "move": "pan-right", "amount": 0.05, "focus": [0.45, 0.38], "scrim": 0.45 },
+      "caption": "Straight from their brain"
+    },
+    {
+      "start": 6.34, "end": 8.8,
+      "bg": { "sequence": "production/assets/reel-avatar-bci/AB-01-seq", "fps": 30, "move": "push-in", "from": 1.05, "to": 1.1, "focus": [0.55, 0.4], "scrim": 0.45 },
+      "caption": "Brain-computer interface"
+    },
+    {
+      "start": 8.8, "end": 13.49,
+      "bg": { "sequence": "production/assets/reel-avatar-bci/AB-04-seq", "fps": 30, "move": "pan-left", "amount": 0.05, "focus": [0.45, 0.4], "scrim": 0.45 },
+      "caption": "Chang lab, UCSF"
+    },
+    {
+      "start": 13.49, "end": 17.82,
+      "bg": { "image": "production/assets/reel-avatar-bci/AB-03-array-close.png", "move": "pan-left", "amount": 0.05, "focus": [0.5, 0.4], "scrim": 0.45 },
+      "caption": "ECoG: a high-density implant"
+    },
+    {
+      "start": 17.82, "end": 25.57,
+      "transition": "wipe-up",
+      "bg": { "sequence": "production/assets/reel-avatar-bci/AB-04-seq", "fps": 30, "move": "push-in", "from": 1.0, "to": 1.06, "focus": [0.5, 0.4], "scrim": 0.75 },
+      "visual": { "type": "lineage", "labels": ["Speech", "Gestures"], "colours": ["cyan", "amber"], "depth": 2, "baseline": "Brain signals", "growStart": 0.4, "growDur": 2.8, "lag": 0.08, "enter": 0.4,
+        "pulses": [ { "t": 4.84, "side": 1 }, { "t": 5.56, "side": 1 }, { "t": 6.9, "side": 0 } ] }
+    },
+    {
+      "start": 25.57, "end": 29.22,
+      "bg": { "image": "production/assets/reel-avatar-bci/AB-02-avatar-hand.png", "move": "push-in", "from": 1.0, "to": 1.08, "focus": [0.45, 0.38], "scrim": 0.45 },
+      "caption": "Both at the same time"
+    },
+    {
+      "start": 29.22, "end": 32.49,
+      "bg": { "sequence": "production/assets/reel-avatar-bci/AB-04-seq", "fps": 30, "move": "push-in", "from": 1.0, "to": 1.06, "focus": [0.5, 0.4], "scrim": 0.45 },
+      "captions": [ { "text": "The honest part", "in": 0, "out": 1.25 } ],
+      "big": { "text": "3", "at": 1.34, "flip": { "at": 2.74, "text": "n = 3" }, "exit": 3.27 }
+    },
+    {
+      "start": 32.49, "end": 34.98,
+      "bg": { "image": "production/assets/reel-avatar-bci/AB-02-avatar-hand.png", "move": "push-out", "from": 1.08, "to": 1.0, "focus": [0.45, 0.38], "scrim": 0.45 },
+      "caption": "2 in real time"
+    },
+    {
+      "start": 34.98, "end": 39.56,
+      "bg": { "image": "production/assets/reel-avatar-bci/AB-05-cable-connector.png", "move": "pan-left", "amount": 0.05, "focus": [0.5, 0.4], "scrim": 0.45 },
+      "caption": "Restricted vocabulary. Wired. A lab."
+    },
+    {
+      "start": 39.56, "end": 43.23,
+      "bg": { "sequence": "production/assets/reel-avatar-bci/AB-01-seq", "fps": 30, "move": "push-out", "from": 1.1, "to": 1.02, "focus": [0.55, 0.4], "scrim": 0.45 },
+      "caption": "A demonstration, not a treatment"
+    }
+  ]
+}

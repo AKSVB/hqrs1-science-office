@@ -1,0 +1,6 @@
+An AI "solved" a $1M problem.
+Lean-verified, not peer-reviewed. OpenAI announcement, 8 Sept 2026; Nature news d41586-026-02842-5; Fields Medallists' statement, 11 Sept 2026.
+
+OpenAI announced on 8 Sept 2026 a multi-agent proof that the forced 3D Navier-Stokes equations can blow up in finite time (Clay cases C and D, not the unforced A and B). By OpenAI's own account: about 10,000 agents, about 88 hours, Lean formalisation in 17 hours. It says it will not claim the prize. On 11 Sept, 25 Fields Medallists at launch published 'A Severe Misalignment of AI in Mathematics', saying AI companies' goals and mathematicians' goals are 'severely misaligned'. Lean-verified but not peer-reviewed. A priority dispute has been reported. Coverage: Nature news, Quanta, 2026. Declaration: https://terrytao.wordpress.com/2026/09/11/a-severe-misalignment-of-ai-in-mathematics/ We will follow it.
+
+#ai #mathematics #science #openai

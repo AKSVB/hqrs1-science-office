@@ -1,0 +1,91 @@
+1
+00:00:00,000 --> 00:00:01,403
+Dark matter may have
+
+2
+00:00:01,403 --> 00:00:02,742
+just hit a detector.
+
+3
+00:00:03,277 --> 00:00:04,790
+Once. But this is
+
+4
+00:00:04,790 --> 00:00:05,684
+not a discovery.
+
+5
+00:00:06,282 --> 00:00:07,468
+One event, a nuclear
+
+6
+00:00:07,468 --> 00:00:11,897
+recoil at 248 keV, over
+
+7
+00:00:11,897 --> 00:00:14,102
+220 live days and
+
+8
+00:00:14,102 --> 00:00:16,595
+a 2.84 tonne-year exposure.
+
+9
+00:00:16,871 --> 00:00:18,667
+Known backgrounds produce an
+
+10
+00:00:18,667 --> 00:00:19,920
+event like this about
+
+11
+00:00:20,052 --> 00:00:21,679
+0.5% of the time.
+
+12
+00:00:22,106 --> 00:00:23,074
+That is not the
+
+13
+00:00:23,074 --> 00:00:24,387
+chance dark matter is
+
+14
+00:00:24,387 --> 00:00:25,447
+real. It is the
+
+15
+00:00:25,447 --> 00:00:26,846
+chance ordinary physics did
+
+16
+00:00:26,846 --> 00:00:28,805
+this anyway. In sigma:
+
+17
+00:00:29,237 --> 00:00:32,120
+3.4 local, 2.6 global.
+
+18
+00:00:32,651 --> 00:00:33,495
+Far short of a
+
+19
+00:00:33,495 --> 00:00:35,082
+discovery. If it were
+
+20
+00:00:35,082 --> 00:00:36,050
+a WIMP, its mass
+
+21
+00:00:36,050 --> 00:00:38,167
+would be above 200 GeV.
+
+22
+00:00:38,570 --> 00:00:39,558
+The paper is a
+
+23
+00:00:39,558 --> 00:00:41,543
+preprint, not yet peer-reviewed.

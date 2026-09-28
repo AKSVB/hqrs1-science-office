@@ -1,0 +1,566 @@
+{
+  "notes": {
+    "storyboard": "storyboards/reel-ai-navier-stokes.md, converted scene by scene. Science unchanged from scripts/reel-ai-navier-stokes.json (fact-check row 12, AMBER, applied 2026-09-28). 'Solved' appears only inside quotation marks (hook line); the declaration is named only by its quoted title; 'Cases C and D, not A and B', 'Announced 8 Sept', '25 Fields Medallists at launch' and 'Lean-verified, not peer-reviewed' are on screen as the row allows.",
+    "timing": "Editor 2026-09-28: scene times are written directly against the Piper track (42.00 s, so fit_audio scales x1.000) and every cut sits on a word boundary of scripts/v2/reel-ai-navier-stokes.words.json: scene 1 on '$1M' (2.39, so the first cut lands under 3.0 s), scene 2 on 'Here', scene 3 on 'OpenAI', the wipe on 'On' (12.28), scene 5 on 'produced', the plate return on '17 hours' (20.52), scene 7 on 'Forced' (the cases label swaps in on 'unforced'), scene 8 on 'and' (25.22; the storyboard's cut on 'matters' would have left a 1.3 s shot), scene 9 on '3 days' with the count-up starting on '25' (local 1.08, flip 2.5, exit 4.3) and the title label rising on 'A' (local 4.4), scene 10 on 'The', scene 11 on 'Big'. Timeline window 1: rail draws 0 to 0.4, cursor 0 to 88 over 5.6 s from 0.4 (lands at local 6.0, as '88 hours' ends at 18.29), tick SFX at each 10 h from the ease-in-out. Window 2: cursor 88 to 105 over 1.0 s from 0.1, readout in 'ticks' mode so it reads 88 h, 90 h, 100 h, 105 h and then rolls once to '88 + 17 h' at 1.6 (the renderer's cursor readout cannot roll to a sum, so the stepped tick readout is used instead of a live count). Words JSON: the renderer's auto timings ported to Python (scratchpad words.py), 'million dollar' merged to '$1M', 'September eighth' to '8 September', 'ten thousand' to '10,000', 'eighty eight hours' to '88 hours', 'seventeen hours' to '17 hours', 'Three days' to '3 days', 'twenty five' to '25'.",
+    "audio": "Narration re-recorded on Piper (en_US-ryan-medium, length-scale 1.12, sentence-silence 0.35) from the spec's voiceover_script with the storyboard's cut applied ('We will follow it. Sources in the caption.' removed; 110 words, 41.94 s, about 157 wpm, no tempo stretch needed). production/assets/voice/reel-ai-navier-stokes-piper-m.mp3 is the take trimmed by 6 dB with ffmpeg so it peaks at -5.9 dBFS; the untrimmed file is reel-ai-navier-stokes-piper.mp3. The ElevenLabs track reel-ai-navier-stokes-voice.mp3 is not used (loose paraphrase, per the storyboard). Bed: the storyboard asks for bed B (news peg); no bed B file exists in production/assets/sound/, so bed A (bed-a-synth.mp3) is used per the brief. Motif at 0.0 and at the payoff (scene 10, 'The work is not peer-reviewed'). Thud on the wipe and on the big number landing; ticks on the readout steps and the flip; settle on the end card.",
+    "numbers": "On screen: $1M (hook line), ~10,000 agents, ~88 h, +17 h, 88 + 17 h (arithmetic on two of OpenAI's figures), Announced 8 Sept, 25 (the one big number, flipping to '25 Fields Medallists at launch'), 11 Sept and 8 Sept 2026 on the end card. All from fact-check row 12. The 120 h rail end is the scale, unlabelled; the readout steps at 10 h.",
+    "plates": "Editor 2026-09-28. All four plates are the storyboard's own code-rendered sequences (turbulent-flow, production/assets/reel-ai-navier-stokes/NS-01-seq to NS-04-seq, 90 JPEG frames each at 30 fps, looping), no substitutions: NS-01 ink plume (hook, scene 2, scene 11, end card so the loop closes on the hook still), NS-02 vortex (scene 1, under both timeline windows, scene 9), NS-03 forced flow (scenes 3, 5, 7), NS-04 free flow (scenes 8, 10). No parallax plate (the subject has no clean edge).",
+    "deviations": "Labels over six words: the declaration's title '\"A Severe Misalignment of AI in Mathematics\"' (7 words, required verbatim by the fact-check row; shown without the date so it is the only text besides the band) and 'Cases C and D, not A and B' (7 words, the row's own wording). Scene 9 runs 7.1 s on one plate (big number then the title label, as the storyboard has it at 6.9 s). Scene 3 runs 4.5 s. The end card source line is three lines at 36 px because the storyboard wants it verbatim. Window 2 readout is stepped, not live (see timing). The timeline's 'Announced 8 Sept' sits as the plate's bottom label, centred under the rail and off its scale, not at the right end.",
+    "alt": "Cover frame (0.8 s): a plume of amber-lit ink curling into two spirals in dark water, with the hook line An AI \"solved\" a $1M problem."
+  },
+  "handle": "@hqrs_1",
+  "style": "bible",
+  "audio": "production/assets/voice/reel-ai-navier-stokes-piper-m.mp3",
+  "fit_audio": true,
+  "music": "production/assets/sound/bed-a-synth.mp3",
+  "sfx": [
+    {
+      "path": "production/assets/sound/motif.mp3",
+      "scene": 0,
+      "at": 0,
+      "db": -8
+    },
+    {
+      "path": "production/assets/sound/thud.mp3",
+      "scene": 4,
+      "at": 0
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 4,
+      "at": 2.11
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 4,
+      "at": 2.55
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 4,
+      "at": 2.86
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 4,
+      "at": 3.11
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 4,
+      "at": 3.33
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 4,
+      "at": 3.59
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 4,
+      "at": 3.92
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 4,
+      "at": 4.41
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 4,
+      "at": 6.0
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 6,
+      "at": 0.41
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 6,
+      "at": 0.68
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 6,
+      "at": 1.1
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 6,
+      "at": 1.6
+    },
+    {
+      "path": "production/assets/sound/thud.mp3",
+      "scene": 9,
+      "at": 1.08
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 9,
+      "at": 1.2
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 9,
+      "at": 1.35
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 9,
+      "at": 1.5
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 9,
+      "at": 1.65
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 9,
+      "at": 1.8
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 9,
+      "at": 2.5
+    },
+    {
+      "path": "production/assets/sound/motif.mp3",
+      "scene": 10,
+      "at": 0,
+      "db": -8
+    },
+    {
+      "path": "production/assets/sound/settle.mp3",
+      "scene": "end",
+      "at": 0
+    }
+  ],
+  "end": {
+    "short": true,
+    "bg": {
+      "sequence": "production/assets/reel-ai-navier-stokes/NS-01-seq",
+      "fps": 30,
+      "move": "push-in",
+      "from": 1.12,
+      "to": 1.14,
+      "focus": [
+        0.5,
+        0.4
+      ],
+      "scrim": 0.7
+    },
+    "source": "Lean-verified, not peer-reviewed. OpenAI announcement, 8 Sept 2026; Nature news d41586-026-02842-5; Fields Medallists' statement, 11 Sept 2026.",
+    "note": "Images: generated illustrations."
+  },
+  "caption": "An AI \"solved\" a $1M problem.\nLean-verified, not peer-reviewed. OpenAI announcement, 8 Sept 2026; Nature news d41586-026-02842-5; Fields Medallists' statement, 11 Sept 2026.\n\nOpenAI announced on 8 Sept 2026 a multi-agent proof that the forced 3D Navier-Stokes equations can blow up in finite time (Clay cases C and D, not the unforced A and B). By OpenAI's own account: about 10,000 agents, about 88 hours, Lean formalisation in 17 hours. It says it will not claim the prize. On 11 Sept, 25 Fields Medallists at launch published 'A Severe Misalignment of AI in Mathematics', saying AI companies' goals and mathematicians' goals are 'severely misaligned'. Lean-verified but not peer-reviewed. A priority dispute has been reported. Coverage: Nature news, Quanta, 2026. Declaration: https://terrytao.wordpress.com/2026/09/11/a-severe-misalignment-of-ai-in-mathematics/ We will follow it.\n\n#ai #mathematics #science #openai",
+  "voiceover_script": "An AI, quote, solved, unquote, a million dollar maths problem. That is the headline. Here is the contested version. OpenAI says its agents proved that a forced Navier-Stokes fluid can blow up. On September eighth, it announced that around ten thousand agents, running for about eighty eight hours, produced that proof, with a further seventeen hours to formalise it in Lean. Forced versus unforced matters here, and OpenAI itself says it will not claim the prize. Three days later, twenty five Fields Medallists published a statement titled A Severe Misalignment of AI in Mathematics. The work is not peer-reviewed, and a priority dispute has been reported. Big claim, big pushback.",
+  "scenes": [
+    {
+      "start": 0,
+      "end": 2.39,
+      "bg": {
+        "sequence": "production/assets/reel-ai-navier-stokes/NS-01-seq",
+        "fps": 30,
+        "move": "push-in",
+        "from": 1.0,
+        "to": 1.04,
+        "focus": [
+          0.5,
+          0.4
+        ],
+        "scrim": 0.45
+      },
+      "caption": "An AI \"solved\" a $1M problem",
+      "label_out": 1.5
+    },
+    {
+      "start": 2.39,
+      "end": 5.77,
+      "bg": {
+        "sequence": "production/assets/reel-ai-navier-stokes/NS-02-seq",
+        "fps": 30,
+        "move": "pan-right",
+        "amount": 0.05,
+        "focus": [
+          0.5,
+          0.4
+        ],
+        "scrim": 0.45
+      },
+      "caption": "The headline"
+    },
+    {
+      "start": 5.77,
+      "end": 7.75,
+      "bg": {
+        "sequence": "production/assets/reel-ai-navier-stokes/NS-01-seq",
+        "fps": 30,
+        "move": "push-in",
+        "from": 1.04,
+        "to": 1.08,
+        "focus": [
+          0.5,
+          0.4
+        ],
+        "scrim": 0.45
+      },
+      "caption": "The contested version"
+    },
+    {
+      "start": 7.75,
+      "end": 12.28,
+      "bg": {
+        "sequence": "production/assets/reel-ai-navier-stokes/NS-03-seq",
+        "fps": 30,
+        "move": "push-in",
+        "from": 1.0,
+        "to": 1.06,
+        "focus": [
+          0.25,
+          0.3
+        ],
+        "scrim": 0.45
+      },
+      "caption": "A forced fluid can blow up"
+    },
+    {
+      "start": 12.28,
+      "end": 18.41,
+      "transition": "wipe-up",
+      "bg": {
+        "sequence": "production/assets/reel-ai-navier-stokes/NS-02-seq",
+        "fps": 30,
+        "move": "pan-left",
+        "amount": 0.04,
+        "focus": [
+          0.5,
+          0.4
+        ],
+        "scrim": 0.75
+      },
+      "visual": {
+        "type": "timeline",
+        "min": 0,
+        "max": 120,
+        "unit": " h",
+        "decimals": 0,
+        "draw": 0.4,
+        "enter": 0.4,
+        "cursor": {
+          "from": 0,
+          "to": 88,
+          "dur": 5.6,
+          "at": 0.4
+        },
+        "cursorText": false,
+        "readout": "cursor",
+        "bracket": {
+          "from": 0,
+          "to": 88,
+          "label": "~10,000 agents",
+          "at": 0.4
+        },
+        "label": "Announced 8 Sept",
+        "ticks": [
+          {
+            "value": 10,
+            "label": ""
+          },
+          {
+            "value": 20,
+            "label": ""
+          },
+          {
+            "value": 30,
+            "label": ""
+          },
+          {
+            "value": 40,
+            "label": ""
+          },
+          {
+            "value": 50,
+            "label": ""
+          },
+          {
+            "value": 60,
+            "label": ""
+          },
+          {
+            "value": 70,
+            "label": ""
+          },
+          {
+            "value": 80,
+            "label": ""
+          },
+          {
+            "value": 88,
+            "label": "Proof, ~88 h",
+            "colour": "amber",
+            "row": "up"
+          },
+          {
+            "value": 100,
+            "label": ""
+          },
+          {
+            "value": 110,
+            "label": ""
+          },
+          {
+            "value": 120,
+            "label": ""
+          }
+        ]
+      }
+    },
+    {
+      "start": 18.41,
+      "end": 20.52,
+      "bg": {
+        "sequence": "production/assets/reel-ai-navier-stokes/NS-03-seq",
+        "fps": 30,
+        "move": "push-in",
+        "from": 1.06,
+        "to": 1.1,
+        "focus": [
+          0.25,
+          0.3
+        ],
+        "scrim": 0.45
+      },
+      "caption": "Forced versions of Navier-Stokes"
+    },
+    {
+      "start": 20.52,
+      "end": 23.07,
+      "bg": {
+        "sequence": "production/assets/reel-ai-navier-stokes/NS-02-seq",
+        "fps": 30,
+        "move": "pan-right",
+        "amount": 0.03,
+        "focus": [
+          0.5,
+          0.4
+        ],
+        "scrim": 0.8
+      },
+      "visual": {
+        "type": "timeline",
+        "min": 0,
+        "max": 120,
+        "unit": " h",
+        "decimals": 0,
+        "enter": 0,
+        "cursor": {
+          "from": 88,
+          "to": 105,
+          "dur": 1.0,
+          "at": 0.1
+        },
+        "cursorText": false,
+        "readout": "ticks",
+        "ticks": [
+          {
+            "value": 10,
+            "label": "",
+            "at": 0
+          },
+          {
+            "value": 20,
+            "label": "",
+            "at": 0
+          },
+          {
+            "value": 30,
+            "label": "",
+            "at": 0
+          },
+          {
+            "value": 40,
+            "label": "",
+            "at": 0
+          },
+          {
+            "value": 50,
+            "label": "",
+            "at": 0
+          },
+          {
+            "value": 60,
+            "label": "",
+            "at": 0
+          },
+          {
+            "value": 70,
+            "label": "",
+            "at": 0
+          },
+          {
+            "value": 80,
+            "label": "",
+            "at": 0
+          },
+          {
+            "value": 88,
+            "label": "Proof, ~88 h",
+            "colour": "amber",
+            "row": "up",
+            "at": 0,
+            "readout": "88 h"
+          },
+          {
+            "value": 90,
+            "label": "",
+            "at": 0.41,
+            "readout": "90 h"
+          },
+          {
+            "value": 100,
+            "label": "",
+            "at": 0.68,
+            "readout": "100 h"
+          },
+          {
+            "value": 105,
+            "label": "Lean, +17 h",
+            "colour": "cyan",
+            "row": "down",
+            "at": 1.1,
+            "readout": "105 h"
+          },
+          {
+            "value": 105,
+            "label": "",
+            "colour": "cyan",
+            "row": "down",
+            "at": 1.6,
+            "readout": "88 + 17 h"
+          },
+          {
+            "value": 110,
+            "label": ""
+          },
+          {
+            "value": 120,
+            "label": ""
+          }
+        ]
+      }
+    },
+    {
+      "start": 23.07,
+      "end": 25.22,
+      "bg": {
+        "sequence": "production/assets/reel-ai-navier-stokes/NS-03-seq",
+        "fps": 30,
+        "move": "pan-left",
+        "amount": 0.04,
+        "focus": [
+          0.3,
+          0.35
+        ],
+        "scrim": 0.45
+      },
+      "captions": [
+        {
+          "text": "Forced",
+          "in": 0,
+          "out": 0.79
+        },
+        {
+          "text": "Cases C and D, not A and B",
+          "in": 0.79
+        }
+      ]
+    },
+    {
+      "start": 25.22,
+      "end": 28.4,
+      "bg": {
+        "sequence": "production/assets/reel-ai-navier-stokes/NS-04-seq",
+        "fps": 30,
+        "move": "push-out",
+        "from": 1.06,
+        "to": 1.0,
+        "focus": [
+          0.5,
+          0.4
+        ],
+        "scrim": 0.45
+      },
+      "caption": "Unforced (cases A, B): still open"
+    },
+    {
+      "start": 28.4,
+      "end": 35.52,
+      "bg": {
+        "sequence": "production/assets/reel-ai-navier-stokes/NS-02-seq",
+        "fps": 30,
+        "move": "push-in",
+        "from": 1.0,
+        "to": 1.08,
+        "focus": [
+          0.5,
+          0.4
+        ],
+        "scrim": 0.45
+      },
+      "big": {
+        "count": {
+          "from": 0,
+          "to": 25
+        },
+        "at": 1.08,
+        "dur": 0.8,
+        "flip": {
+          "at": 2.5,
+          "text": "25 Fields Medallists at launch"
+        },
+        "exit": 4.3
+      },
+      "captions": [
+        {
+          "text": "\"A Severe Misalignment of AI in Mathematics\"",
+          "in": 4.4
+        }
+      ]
+    },
+    {
+      "start": 35.52,
+      "end": 39.89,
+      "bg": {
+        "sequence": "production/assets/reel-ai-navier-stokes/NS-04-seq",
+        "fps": 30,
+        "move": "pan-right",
+        "amount": 0.05,
+        "focus": [
+          0.5,
+          0.4
+        ],
+        "scrim": 0.45
+      },
+      "caption": "Not peer-reviewed. Priority dispute reported."
+    },
+    {
+      "start": 39.89,
+      "end": 42.0,
+      "bg": {
+        "sequence": "production/assets/reel-ai-navier-stokes/NS-01-seq",
+        "fps": 30,
+        "move": "push-in",
+        "from": 1.08,
+        "to": 1.12,
+        "focus": [
+          0.5,
+          0.4
+        ],
+        "scrim": 0.45
+      },
+      "caption": "Big claim. Big pushback."
+    }
+  ]
+}

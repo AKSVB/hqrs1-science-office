@@ -1,0 +1,357 @@
+{
+  "notes": {
+    "storyboard": "storyboards/reel-lz-dark-matter.md, converted scene by scene. Science unchanged from scripts/reel-lz-dark-matter.json (fact-check row 9, GREEN if framed: 'Not a discovery' is on screen twice, scenes 1 and 10; no xenon, no tonnage, no 5-sigma threshold anywhere).",
+    "timing": "Editor B 2026-09-28. Scene times are authored directly against the cut deep-voice track (41.8 s, fit_audio scale x1.000), every cut on a word start from the words JSON: scene 1 starts 0.30 s before 'Once' (3.28) so the flash baked into LZ-02 at 0.3 s and the big number slam land on the word (flip at local 1.6 during 'But this is not', exit 2.5, then the 'Not a discovery' label at local 2.75); the wipe on 'One event' (6.28) with the flash on 'event' (local 0.25), the readout on '248 keV' (local 1.77) and the '220 live days' corner label on '220' (local 5.62); the plate closes on 'and a' (13.86, 7.58 s, under the 8 s cap) so the '2.84 tonne-years' label rides the LZ-03 scene where the words are spoken; scene 4 on 'Known backgrounds', scene 5 on 'about 0.5%', scene 6 on 'That is not', scene 7 on 'It is the chance', the sigma rail on 'In sigma' (28.05) with the local mark on '3.4' (local 1.19) and the cursor run on '2.6' (local 2.41, 0 to 2.6 over 1.0 s, ticks at each 0.5 sigma), scene 9 on 'If it were', scene 10 on 'The paper' (payoff motif). Word timing: the renderer's letter-weighted auto method per speech chunk (ffmpeg silencedetect on the original track, chunks assigned by a dynamic programme with Piper clause durations as weights, sentence ends forced onto pauses); estimates good to about 0.3 s. Band merges: '248 keV', '220', '2.84', '0.5%', '3.4', '2.6', '200 GeV'.",
+    "audio": "Narration: production/assets/voice/reel-lz-dark-matter-voice-cut.mp3: the deep-voice track with the storyboard's cuts made by ffmpeg at silences (removed 5.80 to 10.05 s, 'Here is what the LZ experiment reported on the first of September.', with 0.25 s of silence inserted at the join so the sentence gap stays natural, and 45.75 s to the end, 'Source in the caption.'), 30 to 50 ms fades at the joins, then -1 dB so it peaks at -6.12 dBFS. Bed A at -18 dB. Motif at 0.0 and at the payoff (scene 10). The storyboard's cavern-hum ambience does not exist as an asset and is omitted.",
+    "numbers": "1 (flip '1 event') is the one big number. 248 keV is the flash plate's readout, 220 live days its corner label; 2.84 tonne-years, ~0.5%, 200 GeV and 1 Sept 2026 are scene labels; 3.4 and 2.6 sigma are the rail's marks and the cursor readout (0.0 to 2.6 sigma). The rail runs 0 to 4 as an unlabelled scale; no threshold is drawn. All from row 9.",
+    "plates": "Editor B 2026-09-28. All plates are the Graphics desk's xenon-vessel renders (no paid generation): LZ-01-seq (interior, 90 frames: hook with parallax, under both plates, scene 9, end card), LZ-02-seq (pmt view with the flash at 0.3 s, 105 frames = 3.5 s; scene 1 runs 3.3 s from frame 0 so it never loops), LZ-02b-pmt-faces.png (scenes 5 and 7), LZ-03-vessel-exterior.png (scenes 3, 4, 6, 10). No substitutions. Scene 6 ('That is not the chance dark matter is real') sits on LZ-03 rather than the storyboard's 'LZ-02 continues' so two identical stills never meet at a cut."
+  },
+  "handle": "@hqrs_1",
+  "style": "bible",
+  "audio": "production/assets/voice/reel-lz-dark-matter-voice-cut.mp3",
+  "fit_audio": true,
+  "music": "production/assets/sound/bed-a-synth.mp3",
+  "sfx": [
+    {
+      "path": "production/assets/sound/motif.mp3",
+      "scene": 0,
+      "at": 0,
+      "db": -8
+    },
+    {
+      "path": "production/assets/sound/thud.mp3",
+      "scene": 1,
+      "at": 0.3
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 1,
+      "at": 1.6
+    },
+    {
+      "path": "production/assets/sound/thud.mp3",
+      "scene": 2,
+      "at": 0
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 2,
+      "at": 0.25
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 2,
+      "at": 1.77
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 2,
+      "at": 5.62
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 8,
+      "at": 1.19
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 8,
+      "at": 2.77
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 8,
+      "at": 2.87
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 8,
+      "at": 2.94
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 8,
+      "at": 3.02
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 8,
+      "at": 3.2
+    },
+    {
+      "path": "production/assets/sound/motif.mp3",
+      "scene": 10,
+      "at": 0,
+      "db": -8
+    },
+    {
+      "path": "production/assets/sound/settle.mp3",
+      "scene": "end",
+      "at": 0
+    }
+  ],
+  "end": {
+    "short": true,
+    "bg": {
+      "sequence": "production/assets/reel-lz-dark-matter/LZ-01-seq",
+      "fps": 30,
+      "move": "push-in",
+      "from": 1.08,
+      "to": 1.1,
+      "focus": [
+        0.5,
+        0.4
+      ],
+      "scrim": 0.7
+    },
+    "source": "arXiv preprint, submitted to Physical Review Letters, 2026; not yet peer-reviewed. LZ dark matter experiment, press releases 1 Sept 2026.",
+    "note": "Images: generated illustrations."
+  },
+  "caption": "Dark matter may have hit. Once.\narXiv preprint, submitted to Physical Review Letters, 2026; not yet peer-reviewed. LZ dark matter experiment, 1 Sept 2026.\n\nOne nuclear recoil at 248 keV in 2.84 tonne-years (220 live days). Known backgrounds make such an event about 0.5% of the time: 2.6 sigma global. Not a discovery. What would convince you?\n\n#darkmatter #physics #particlephysics #science",
+  "voiceover_script": "Dark matter may have just hit a detector. Once. But this is not a discovery. One event, a nuclear recoil at two hundred and forty eight kilo electron volts, over two hundred and twenty live days and a two point eight four tonne-year exposure. Known backgrounds produce an event like this about half a percent of the time. That is not the chance dark matter is real. It is the chance ordinary physics did this anyway. In sigma: three point four local, two point six global. Far short of a discovery. If it were a WIMP, its mass would be above two hundred G E V. The paper is a preprint, not yet peer-reviewed.",
+  "scenes": [
+    {
+      "start": 0,
+      "end": 2.98,
+      "bg": {
+        "sequence": "production/assets/reel-lz-dark-matter/LZ-01-seq",
+        "fps": 30,
+        "move": "push-in",
+        "from": 1.0,
+        "to": 1.05,
+        "focus": [
+          0.5,
+          0.4
+        ],
+        "scrim": 0.45,
+        "parallax": true
+      },
+      "caption": "Dark matter may have hit. Once.",
+      "label_out": 1.5
+    },
+    {
+      "start": 2.98,
+      "end": 6.28,
+      "bg": {
+        "sequence": "production/assets/reel-lz-dark-matter/LZ-02-seq",
+        "fps": 30,
+        "move": "push-in",
+        "from": 1.0,
+        "to": 1.06,
+        "focus": [
+          0.62,
+          0.4
+        ],
+        "scrim": 0.45
+      },
+      "big": {
+        "text": "1",
+        "at": 0.3,
+        "flip": {
+          "at": 1.6,
+          "text": "1 event",
+          "size": 150
+        },
+        "exit": 2.5
+      },
+      "captions": [
+        {
+          "text": "Not a discovery",
+          "in": 2.75
+        }
+      ]
+    },
+    {
+      "start": 6.28,
+      "end": 13.86,
+      "transition": "wipe-up",
+      "bg": {
+        "sequence": "production/assets/reel-lz-dark-matter/LZ-01-seq",
+        "fps": 30,
+        "move": "pan-left",
+        "amount": 0.04,
+        "focus": [
+          0.5,
+          0.4
+        ],
+        "scrim": 0.75
+      },
+      "visual": {
+        "type": "flash",
+        "at": 0.25,
+        "x": 0.62,
+        "y": 0.45,
+        "readout": "248 keV",
+        "label": "one nuclear recoil",
+        "readoutAt": 1.77,
+        "waiting": "listening",
+        "enter": 0.4,
+        "labels": [
+          {
+            "text": "220 live days",
+            "at": 5.62,
+            "corner": "bl"
+          }
+        ]
+      }
+    },
+    {
+      "start": 13.86,
+      "end": 16.87,
+      "bg": {
+        "image": "production/assets/reel-lz-dark-matter/LZ-03-vessel-exterior.png",
+        "move": "pan-right",
+        "amount": 0.05,
+        "focus": [
+          0.5,
+          0.42
+        ],
+        "scrim": 0.45
+      },
+      "caption": "2.84 tonne-years"
+    },
+    {
+      "start": 16.87,
+      "end": 19.58,
+      "bg": {
+        "image": "production/assets/reel-lz-dark-matter/LZ-03-vessel-exterior.png",
+        "move": "push-in",
+        "from": 1.0,
+        "to": 1.06,
+        "focus": [
+          0.5,
+          0.42
+        ],
+        "scrim": 0.45
+      },
+      "caption": "LZ experiment, 1 Sept 2026"
+    },
+    {
+      "start": 19.58,
+      "end": 22.11,
+      "bg": {
+        "image": "production/assets/reel-lz-dark-matter/LZ-02b-pmt-faces.png",
+        "move": "pan-left",
+        "amount": 0.04,
+        "focus": [
+          0.5,
+          0.4
+        ],
+        "scrim": 0.45
+      },
+      "caption": "~0.5% from known backgrounds"
+    },
+    {
+      "start": 22.11,
+      "end": 24.93,
+      "bg": {
+        "image": "production/assets/reel-lz-dark-matter/LZ-03-vessel-exterior.png",
+        "move": "push-in",
+        "from": 1.06,
+        "to": 1.12,
+        "focus": [
+          0.5,
+          0.42
+        ],
+        "scrim": 0.45
+      },
+      "caption": "Not the chance it is real"
+    },
+    {
+      "start": 24.93,
+      "end": 28.05,
+      "bg": {
+        "image": "production/assets/reel-lz-dark-matter/LZ-02b-pmt-faces.png",
+        "move": "push-in",
+        "from": 1.0,
+        "to": 1.06,
+        "focus": [
+          0.5,
+          0.4
+        ],
+        "scrim": 0.45
+      },
+      "caption": "Chance ordinary physics did this"
+    },
+    {
+      "start": 28.05,
+      "end": 34.47,
+      "bg": {
+        "sequence": "production/assets/reel-lz-dark-matter/LZ-01-seq",
+        "fps": 30,
+        "move": "pan-right",
+        "amount": 0.04,
+        "focus": [
+          0.5,
+          0.4
+        ],
+        "scrim": 0.8
+      },
+      "visual": {
+        "type": "timeline",
+        "min": 0,
+        "max": 4,
+        "unit": " sigma",
+        "decimals": 1,
+        "enter": 0.4,
+        "draw": 0.4,
+        "cursorText": false,
+        "readout": "cursor",
+        "cursor": {
+          "from": 0,
+          "to": 2.6,
+          "dur": 1.0,
+          "at": 2.41
+        },
+        "ticks": [
+          {
+            "value": 3.4,
+            "label": "Local, 3.4 sigma",
+            "colour": "cyan",
+            "at": 1.19,
+            "row": "up"
+          },
+          {
+            "value": 2.6,
+            "label": "Global, 2.6 sigma",
+            "colour": "amber",
+            "row": "down"
+          }
+        ]
+      }
+    },
+    {
+      "start": 34.47,
+      "end": 38.57,
+      "bg": {
+        "sequence": "production/assets/reel-lz-dark-matter/LZ-01-seq",
+        "fps": 30,
+        "move": "push-out",
+        "from": 1.08,
+        "to": 1.0,
+        "focus": [
+          0.5,
+          0.4
+        ],
+        "scrim": 0.45
+      },
+      "caption": "If a WIMP: above 200 GeV"
+    },
+    {
+      "start": 38.57,
+      "end": 41.8,
+      "bg": {
+        "image": "production/assets/reel-lz-dark-matter/LZ-03-vessel-exterior.png",
+        "move": "push-in",
+        "from": 1.0,
+        "to": 1.06,
+        "focus": [
+          0.5,
+          0.42
+        ],
+        "scrim": 0.45
+      },
+      "caption": "Preprint. Not a discovery."
+    }
+  ]
+}

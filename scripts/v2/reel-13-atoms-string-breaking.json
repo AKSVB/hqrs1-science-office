@@ -1,0 +1,441 @@
+{
+  "notes": {
+    "storyboard": "storyboards/reel-13-atoms-string-breaking.md, converted scene by scene. Science unchanged from scripts/reel-13-atoms-string-breaking.json (fact-check wave 2 row 14, AMBER: 'simulated' is in the hook line, 'first' appears nowhere, the quark analogy lives only in the caption). The storyboard's 8.6 to 11.6 chain scene and the later chain scenes reuse the SB-01 sequence with different moves.",
+    "timing": "Editor B 2026-09-28. Scene times are authored directly against the cut deep-voice track (41.43 s, fit_audio scale x1.000) so every cut sits on a word start from the words JSON: scene 1 on 'the strangest' (2.39), scene 2 on 'Pull', scene 3 on 'and instead', the wipe on 'Physicists' (12.59) with the string breaking on 'breaking' (local 1.46, pull 0.4 to 1.46), scene 5 on '13 ytterbium' (17.92) with the big number slamming at local 0.05 and flipping on 'ions' (local 1.14), scene 6 on 'and used them' (the big number scene keeps 'in a line' so it holds over 1.4 s; the scene 6 label 'A simulated string' names what the sentence says the ions did), the plate return on 'When it broke' (22.68) with the end pairs on 'formed' (local 1.86), the second pairs on 'spread' (3.82) and the third on 'inward' (4.29), scene 8 on 'rather than' (28.14, the 8 s plate cap: the window runs 5.46 s), scene 9 on 'That edge-driven' (the payoff motif), scene 10 on 'To be clear', scene 11 on 'No real quarks'. Word timing: the renderer's letter-weighted auto method applied per speech chunk (ffmpeg silencedetect -40 dB / 0.12 s on the original track; a dynamic programme assigns the script's words to chunks using Piper-synthesised clause durations as weights, sentence ends forced onto pauses), then mapped through the track cut. No speech recogniser exists in this environment, so word times are estimates good to about 0.3 s; 'Thirteen' and 'thirteen' are '13' in the band.",
+    "audio": "Narration: production/assets/voice/reel-13-atoms-string-breaking-voice-cut.mp3: the deep-voice track with the storyboard's two cuts made by ffmpeg at silences (removed 15.00 to 20.95 s, 'Quarks are the classic example, and that is an analogy here, not the experiment.', and 47.35 s to the end, 'De and Monroe, Nature Physics, September twenty twenty six. Source in the caption.'), 30 ms fades at the joins, then -1 dB so it peaks at -6.06 dBFS. Bed A at -18 dB. Motif at 0.0 and at the payoff (scene 9, 'That edge-driven pattern is the result'). The storyboard's lab-hum ambience does not exist as an asset and is omitted.",
+    "numbers": "13 (sites, the big number, the '13 ions' label and flip) is the only number on screen, from the fact-check row. The string-break plate draws no quantity. In edge mode the wavefronts stop at sites 4 and 10 (pairs at 2, 12, 3, 11, 4, 10) and the centre string stays bright: the plate claims 'ends first, spread inward' and nothing about the middle sites.",
+    "plates": "Editor B 2026-09-28. All plates are the Graphics desk's code renders of the ion-chain scene (no paid generation): SB-01 = the 90-frame chain sequence production/assets/reel-13-atoms-string-breaking/SB-01-seq (hook with parallax, scenes 3, 4 and 7 under the plates, 5 under the big number, 8, 11 and the end card so the loop closes on the hook still), SB-02-single-ion.png (scenes 1 and 9), SB-03-trap-wide.png (scenes 2 and 6), SB-04-trap-empty.png (scene 10). No substitutions. Scene 8 ('rather than appearing evenly along the string') is split off the storyboard's 30.9 to 34.5 row so that no still runs over 5 s; its label 'Not evenly along the string' names the contrast the sentence makes."
+  },
+  "handle": "@hqrs_1",
+  "style": "bible",
+  "audio": "production/assets/voice/reel-13-atoms-string-breaking-voice-cut.mp3",
+  "fit_audio": true,
+  "music": "production/assets/sound/bed-a-synth.mp3",
+  "sfx": [
+    {
+      "path": "production/assets/sound/motif.mp3",
+      "scene": 0,
+      "at": 0,
+      "db": -8
+    },
+    {
+      "path": "production/assets/sound/thud.mp3",
+      "scene": 4,
+      "at": 0
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 4,
+      "at": 1.46
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 4,
+      "at": 1.54
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 4,
+      "at": 1.62
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 4,
+      "at": 1.7
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 4,
+      "at": 1.78
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 4,
+      "at": 1.86
+    },
+    {
+      "path": "production/assets/sound/thud.mp3",
+      "scene": 5,
+      "at": 0.05
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 5,
+      "at": 1.14
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 7,
+      "at": 1.86
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 7,
+      "at": 1.93
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 7,
+      "at": 3.82
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 7,
+      "at": 3.89
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 7,
+      "at": 4.29
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 7,
+      "at": 4.36
+    },
+    {
+      "path": "production/assets/sound/motif.mp3",
+      "scene": 9,
+      "at": 0,
+      "db": -8
+    },
+    {
+      "path": "production/assets/sound/settle.mp3",
+      "scene": "end",
+      "at": 0
+    }
+  ],
+  "end": {
+    "short": true,
+    "bg": {
+      "sequence": "production/assets/reel-13-atoms-string-breaking/SB-01-seq",
+      "fps": 30,
+      "move": "push-in",
+      "from": 1.12,
+      "to": 1.14,
+      "focus": [
+        0.5,
+        0.4
+      ],
+      "scrim": 0.7
+    },
+    "source": "Nature Physics, 23 Sept 2026. De, Monroe; Duke Quantum Center.",
+    "note": "Images: generated illustrations."
+  },
+  "caption": "13 atoms simulated particles snapping apart.\nNature Physics, 23 Sept 2026. De, Monroe; Duke Quantum Center.\n\nThirteen ytterbium ions simulated string breaking, an analogue of confined particles snapping into new pairs (quarks are the analogy, not the experiment). The pairs formed at the ends and spread inward. A lattice-model simulation, not real quarks. Which idea should atoms act out next?\n\n#physics #quantum #particlephysics #science",
+  "voiceover_script": "Thirteen atoms just simulated one of the strangest ideas in particle physics. Pull confined particles apart hard enough, and instead of separating, they snap into new pairs. Physicists call it string breaking. A team at the Duke Quantum Center held thirteen ytterbium ions in a line and used them to simulate the string. When it broke, the new pairs formed at the ends first and spread inward, rather than appearing evenly along the string. That edge-driven pattern is the result. To be clear, this is a quantum simulation of a lattice model. No real quarks, no real vacuum.",
+  "scenes": [
+    {
+      "start": 0,
+      "end": 2.39,
+      "bg": {
+        "sequence": "production/assets/reel-13-atoms-string-breaking/SB-01-seq",
+        "fps": 30,
+        "move": "push-in",
+        "from": 1.0,
+        "to": 1.05,
+        "focus": [
+          0.5,
+          0.4
+        ],
+        "scrim": 0.45,
+        "parallax": true
+      },
+      "caption": "13 atoms simulated particles snapping apart",
+      "label_out": 1.5
+    },
+    {
+      "start": 2.39,
+      "end": 5.78,
+      "bg": {
+        "image": "production/assets/reel-13-atoms-string-breaking/SB-02-single-ion.png",
+        "move": "pan-left",
+        "amount": 0.05,
+        "focus": [
+          0.42,
+          0.28
+        ],
+        "scrim": 0.45
+      },
+      "caption": "Particle physics, simulated"
+    },
+    {
+      "start": 5.78,
+      "end": 8.26,
+      "bg": {
+        "image": "production/assets/reel-13-atoms-string-breaking/SB-03-trap-wide.png",
+        "move": "push-in",
+        "from": 1.0,
+        "to": 1.08,
+        "focus": [
+          0.55,
+          0.32
+        ],
+        "scrim": 0.45
+      },
+      "caption": "Confined particles, pulled apart"
+    },
+    {
+      "start": 8.26,
+      "end": 12.59,
+      "bg": {
+        "sequence": "production/assets/reel-13-atoms-string-breaking/SB-01-seq",
+        "fps": 30,
+        "move": "pan-right",
+        "amount": 0.04,
+        "focus": [
+          0.5,
+          0.4
+        ],
+        "scrim": 0.45
+      },
+      "caption": "They snap into new pairs"
+    },
+    {
+      "start": 12.59,
+      "end": 17.92,
+      "transition": "wipe-up",
+      "bg": {
+        "sequence": "production/assets/reel-13-atoms-string-breaking/SB-01-seq",
+        "fps": 30,
+        "move": "push-in",
+        "from": 1.0,
+        "to": 1.06,
+        "focus": [
+          0.5,
+          0.4
+        ],
+        "scrim": 0.75
+      },
+      "visual": {
+        "type": "string-break",
+        "sites": 13,
+        "mode": "uniform",
+        "enter": 0.4,
+        "pull": {
+          "t0": 0.4,
+          "dur": 1.06,
+          "px": 30
+        },
+        "breakAt": 1.46,
+        "pairs": [
+          {
+            "sites": [
+              3
+            ]
+          },
+          {
+            "sites": [
+              5
+            ]
+          },
+          {
+            "sites": [
+              7
+            ]
+          },
+          {
+            "sites": [
+              9
+            ]
+          },
+          {
+            "sites": [
+              11
+            ]
+          }
+        ],
+        "labels": [
+          "String",
+          {
+            "text": "New pairs",
+            "at": 1.46
+          },
+          {
+            "text": "Textbook picture",
+            "at": 1.46
+          }
+        ]
+      }
+    },
+    {
+      "start": 17.92,
+      "end": 20.0,
+      "bg": {
+        "sequence": "production/assets/reel-13-atoms-string-breaking/SB-01-seq",
+        "fps": 30,
+        "move": "push-in",
+        "from": 1.06,
+        "to": 1.1,
+        "focus": [
+          0.5,
+          0.4
+        ],
+        "scrim": 0.45
+      },
+      "big": {
+        "text": "13",
+        "at": 0.05,
+        "flip": {
+          "at": 1.14,
+          "text": "13 ions",
+          "size": 150
+        },
+        "exit": 1.88
+      }
+    },
+    {
+      "start": 20.0,
+      "end": 22.68,
+      "bg": {
+        "image": "production/assets/reel-13-atoms-string-breaking/SB-03-trap-wide.png",
+        "move": "pan-left",
+        "amount": 0.04,
+        "focus": [
+          0.55,
+          0.32
+        ],
+        "scrim": 0.45
+      },
+      "caption": "A simulated string"
+    },
+    {
+      "start": 22.68,
+      "end": 28.14,
+      "bg": {
+        "sequence": "production/assets/reel-13-atoms-string-breaking/SB-01-seq",
+        "fps": 30,
+        "move": "pan-right",
+        "amount": 0.04,
+        "focus": [
+          0.5,
+          0.4
+        ],
+        "scrim": 0.8
+      },
+      "visual": {
+        "type": "string-break",
+        "sites": 13,
+        "mode": "edge",
+        "enter": 0,
+        "breakAt": 1.86,
+        "wavefront": true,
+        "pairs": [
+          {
+            "t": 1.86,
+            "sites": [
+              2
+            ]
+          },
+          {
+            "t": 1.86,
+            "sites": [
+              12
+            ]
+          },
+          {
+            "t": 3.82,
+            "sites": [
+              3
+            ]
+          },
+          {
+            "t": 3.82,
+            "sites": [
+              11
+            ]
+          },
+          {
+            "t": 4.29,
+            "sites": [
+              4
+            ]
+          },
+          {
+            "t": 4.29,
+            "sites": [
+              10
+            ]
+          }
+        ],
+        "labels": [
+          {
+            "text": "Ends first",
+            "at": 1.86
+          },
+          {
+            "text": "Spread inward",
+            "at": 3.82
+          },
+          "13 ions"
+        ]
+      }
+    },
+    {
+      "start": 28.14,
+      "end": 31.2,
+      "bg": {
+        "sequence": "production/assets/reel-13-atoms-string-breaking/SB-01-seq",
+        "fps": 30,
+        "move": "push-in",
+        "from": 1.0,
+        "to": 1.06,
+        "focus": [
+          0.5,
+          0.4
+        ],
+        "scrim": 0.45
+      },
+      "caption": "Not evenly along the string"
+    },
+    {
+      "start": 31.2,
+      "end": 34.43,
+      "bg": {
+        "image": "production/assets/reel-13-atoms-string-breaking/SB-02-single-ion.png",
+        "move": "push-in",
+        "from": 1.0,
+        "to": 1.08,
+        "focus": [
+          0.42,
+          0.28
+        ],
+        "scrim": 0.45
+      },
+      "caption": "Edge-driven"
+    },
+    {
+      "start": 34.43,
+      "end": 38.83,
+      "bg": {
+        "image": "production/assets/reel-13-atoms-string-breaking/SB-04-trap-empty.png",
+        "move": "push-out",
+        "from": 1.08,
+        "to": 1.0,
+        "focus": [
+          0.55,
+          0.32
+        ],
+        "scrim": 0.45
+      },
+      "caption": "A quantum simulation, lattice model"
+    },
+    {
+      "start": 38.83,
+      "end": 41.43,
+      "bg": {
+        "sequence": "production/assets/reel-13-atoms-string-breaking/SB-01-seq",
+        "fps": 30,
+        "move": "push-in",
+        "from": 1.1,
+        "to": 1.12,
+        "focus": [
+          0.5,
+          0.4
+        ],
+        "scrim": 0.45
+      },
+      "caption": "No real quarks, no vacuum"
+    }
+  ]
+}

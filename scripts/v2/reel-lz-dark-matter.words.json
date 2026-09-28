@@ -1,0 +1,457 @@
+[
+ {
+  "word": "Dark",
+  "start": 0.0,
+  "end": 0.335
+ },
+ {
+  "word": "matter",
+  "start": 0.335,
+  "end": 0.798
+ },
+ {
+  "word": "may",
+  "start": 0.798,
+  "end": 1.068
+ },
+ {
+  "word": "have",
+  "start": 1.068,
+  "end": 1.403
+ },
+ {
+  "word": "just",
+  "start": 1.403,
+  "end": 1.738
+ },
+ {
+  "word": "hit",
+  "start": 1.738,
+  "end": 2.008
+ },
+ {
+  "word": "a",
+  "start": 2.008,
+  "end": 2.15
+ },
+ {
+  "word": "detector.",
+  "start": 2.15,
+  "end": 2.742
+ },
+ {
+  "word": "Once.",
+  "start": 3.277,
+  "end": 3.768
+ },
+ {
+  "word": "But",
+  "start": 4.111,
+  "end": 4.337
+ },
+ {
+  "word": "this",
+  "start": 4.337,
+  "end": 4.617
+ },
+ {
+  "word": "is",
+  "start": 4.617,
+  "end": 4.79
+ },
+ {
+  "word": "not",
+  "start": 4.79,
+  "end": 5.016
+ },
+ {
+  "word": "a",
+  "start": 5.016,
+  "end": 5.135
+ },
+ {
+  "word": "discovery.",
+  "start": 5.135,
+  "end": 5.684
+ },
+ {
+  "word": "One",
+  "start": 6.282,
+  "end": 6.527
+ },
+ {
+  "word": "event,",
+  "start": 6.527,
+  "end": 6.888
+ },
+ {
+  "word": "a",
+  "start": 6.888,
+  "end": 7.011
+ },
+ {
+  "word": "nuclear",
+  "start": 7.011,
+  "end": 7.468
+ },
+ {
+  "word": "recoil",
+  "start": 7.468,
+  "end": 7.869
+ },
+ {
+  "word": "at",
+  "start": 7.869,
+  "end": 8.048
+ },
+ {
+  "word": "248 keV,",
+  "start": 8.048,
+  "end": 11.328
+ },
+ {
+  "word": "over",
+  "start": 11.599,
+  "end": 11.897
+ },
+ {
+  "word": "220",
+  "start": 11.897,
+  "end": 13.264
+ },
+ {
+  "word": "live",
+  "start": 13.264,
+  "end": 13.563
+ },
+ {
+  "word": "days",
+  "start": 13.563,
+  "end": 13.861
+ },
+ {
+  "word": "and",
+  "start": 13.861,
+  "end": 14.102
+ },
+ {
+  "word": "a",
+  "start": 14.102,
+  "end": 14.229
+ },
+ {
+  "word": "2.84",
+  "start": 14.229,
+  "end": 15.481
+ },
+ {
+  "word": "tonne-year",
+  "start": 15.481,
+  "end": 16.066
+ },
+ {
+  "word": "exposure.",
+  "start": 16.066,
+  "end": 16.595
+ },
+ {
+  "word": "Known",
+  "start": 16.871,
+  "end": 17.067
+ },
+ {
+  "word": "backgrounds",
+  "start": 17.369,
+  "end": 18.04
+ },
+ {
+  "word": "produce",
+  "start": 18.04,
+  "end": 18.491
+ },
+ {
+  "word": "an",
+  "start": 18.491,
+  "end": 18.667
+ },
+ {
+  "word": "event",
+  "start": 18.667,
+  "end": 19.007
+ },
+ {
+  "word": "like",
+  "start": 19.007,
+  "end": 19.293
+ },
+ {
+  "word": "this",
+  "start": 19.293,
+  "end": 19.579
+ },
+ {
+  "word": "about",
+  "start": 19.579,
+  "end": 19.92
+ },
+ {
+  "word": "0.5%",
+  "start": 20.052,
+  "end": 20.952
+ },
+ {
+  "word": "of",
+  "start": 20.952,
+  "end": 21.137
+ },
+ {
+  "word": "the",
+  "start": 21.137,
+  "end": 21.379
+ },
+ {
+  "word": "time.",
+  "start": 21.379,
+  "end": 21.679
+ },
+ {
+  "word": "That",
+  "start": 22.106,
+  "end": 22.406
+ },
+ {
+  "word": "is",
+  "start": 22.406,
+  "end": 22.59
+ },
+ {
+  "word": "not",
+  "start": 22.59,
+  "end": 22.832
+ },
+ {
+  "word": "the",
+  "start": 22.832,
+  "end": 23.074
+ },
+ {
+  "word": "chance",
+  "start": 23.074,
+  "end": 23.489
+ },
+ {
+  "word": "dark",
+  "start": 23.489,
+  "end": 23.788
+ },
+ {
+  "word": "matter",
+  "start": 23.788,
+  "end": 24.203
+ },
+ {
+  "word": "is",
+  "start": 24.203,
+  "end": 24.387
+ },
+ {
+  "word": "real.",
+  "start": 24.387,
+  "end": 24.687
+ },
+ {
+  "word": "It",
+  "start": 24.932,
+  "end": 25.088
+ },
+ {
+  "word": "is",
+  "start": 25.088,
+  "end": 25.243
+ },
+ {
+  "word": "the",
+  "start": 25.243,
+  "end": 25.447
+ },
+ {
+  "word": "chance",
+  "start": 25.447,
+  "end": 25.797
+ },
+ {
+  "word": "ordinary",
+  "start": 25.797,
+  "end": 26.244
+ },
+ {
+  "word": "physics",
+  "start": 26.244,
+  "end": 26.642
+ },
+ {
+  "word": "did",
+  "start": 26.642,
+  "end": 26.846
+ },
+ {
+  "word": "this",
+  "start": 26.846,
+  "end": 27.099
+ },
+ {
+  "word": "anyway.",
+  "start": 27.099,
+  "end": 27.449
+ },
+ {
+  "word": "In",
+  "start": 28.047,
+  "end": 28.305
+ },
+ {
+  "word": "sigma:",
+  "start": 28.305,
+  "end": 28.805
+ },
+ {
+  "word": "3.4",
+  "start": 29.237,
+  "end": 30.139
+ },
+ {
+  "word": "local,",
+  "start": 30.139,
+  "end": 30.457
+ },
+ {
+  "word": "2.6",
+  "start": 30.457,
+  "end": 31.603
+ },
+ {
+  "word": "global.",
+  "start": 31.603,
+  "end": 32.12
+ },
+ {
+  "word": "Far",
+  "start": 32.651,
+  "end": 32.875
+ },
+ {
+  "word": "short",
+  "start": 32.875,
+  "end": 33.207
+ },
+ {
+  "word": "of",
+  "start": 33.207,
+  "end": 33.378
+ },
+ {
+  "word": "a",
+  "start": 33.378,
+  "end": 33.495
+ },
+ {
+  "word": "discovery.",
+  "start": 33.495,
+  "end": 34.041
+ },
+ {
+  "word": "If",
+  "start": 34.466,
+  "end": 34.636
+ },
+ {
+  "word": "it",
+  "start": 34.636,
+  "end": 34.806
+ },
+ {
+  "word": "were",
+  "start": 34.806,
+  "end": 35.082
+ },
+ {
+  "word": "a",
+  "start": 35.082,
+  "end": 35.199
+ },
+ {
+  "word": "WIMP,",
+  "start": 35.199,
+  "end": 35.475
+ },
+ {
+  "word": "its",
+  "start": 35.475,
+  "end": 35.732
+ },
+ {
+  "word": "mass",
+  "start": 35.732,
+  "end": 36.05
+ },
+ {
+  "word": "would",
+  "start": 36.05,
+  "end": 36.43
+ },
+ {
+  "word": "be",
+  "start": 36.43,
+  "end": 36.625
+ },
+ {
+  "word": "above",
+  "start": 36.625,
+  "end": 37.005
+ },
+ {
+  "word": "200 GeV.",
+  "start": 37.005,
+  "end": 38.167
+ },
+ {
+  "word": "The",
+  "start": 38.57,
+  "end": 38.832
+ },
+ {
+  "word": "paper",
+  "start": 38.832,
+  "end": 39.22
+ },
+ {
+  "word": "is",
+  "start": 39.22,
+  "end": 39.42
+ },
+ {
+  "word": "a",
+  "start": 39.42,
+  "end": 39.558
+ },
+ {
+  "word": "preprint,",
+  "start": 39.558,
+  "end": 40.133
+ },
+ {
+  "word": "not",
+  "start": 40.323,
+  "end": 40.56
+ },
+ {
+  "word": "yet",
+  "start": 40.56,
+  "end": 40.797
+ },
+ {
+  "word": "peer-reviewed.",
+  "start": 40.797,
+  "end": 41.543
+ }
+]

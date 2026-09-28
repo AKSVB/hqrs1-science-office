@@ -1,0 +1,306 @@
+{
+  "notes": {
+    "storyboard": "storyboards/reel-planet-backwards.md, converted scene by scene. Science unchanged from scripts/reel-planet-backwards.json (fact-check wave 2 row 16, GREEN, hook AMBER: 'tilted about 136 degrees, past sideways, into backwards'; 'first retrograde planet found around a red dwarf'; never 'completely backward').",
+    "timing": "Editor B 2026-09-28. Scene times are authored directly against the cut deep-voice track (37.25 s, fit_audio scale x1.000), every cut on a word start from the words JSON: scene 1 on 'backwards' (2.03; the storyboard's 'PB-01 continues' row becomes a cut to PB-04 so the first cut lands before 3.0 s), scene 2 on 'Every planet', the wipe on 'This one' (8.71) with the obliquity sweep starting on 'GJ 3090 b' (local 1.32, 0 to 136 degrees over 3.0 s, the dash flip and the tick/thud at 90 degrees at local 3.01), scene 4 on 'away' (14.36, the window runs 5.65 s), scene 5 on 'It is about', scene 6 on '4.5 times', scene 7 on 'and its year', scene 8 on 'Its orbit' with the big number slamming on '136' (local 1.52) and flipping 1.3 s later, scene 9 on 'past sideways', scene 10 on 'It is the first' (payoff motif), scene 11 on 'and no known'. Word timing: the renderer's letter-weighted auto method per speech chunk (ffmpeg silencedetect on the original track, chunk assignment by dynamic programme with Piper clause durations as weights, sentence ends forced onto pauses); estimates good to about 0.3 s. Band merges: 'GJ 3090 b', '73', '2.2', '4.5', '2.9', '136'.",
+    "audio": "Narration: production/assets/voice/reel-planet-backwards-voice-cut.mp3: the deep-voice track cut at 37.20 s (the silence before 'Yann Carteret and colleagues...', which with the journal sentence and 'Source in the caption' is dropped; the storyboard estimated this cut at 40.7 s, the aligned track puts 'Yann' at 37.27 s), 50 ms fade, then -1 dB so it peaks at -5.95 dBFS. Bed A at -18 dB. Motif at 0.0 and at the payoff (scene 10). No ambience (space).",
+    "numbers": "136° (flip '136 degrees') is the one big number. Scene labels carry 73 light-years, 2.2 x Earth's radius, 4.5 x Earth's mass and a 2.9-day year, one per scene at its cut, all from the fact-check row (radius 2.18, mass 4.52 rounded as the row's own '2.2 x, 4.5 x'). The orbit plate's period 6 s, radius 300 px and tilt 71.3 degrees are drawing scale (the projection factor 0.32), not data; the obliquity sweep ends at 136.",
+    "plates": "Editor B 2026-09-28. PB-01 = production/assets/reel-planet-backwards/PB-01-seq (the tilted-orbit wide sequence, space grade: hook with parallax, under the orbit plate, scenes 7 and 10, end card). PB-03-planet-close.png (scenes 4, 5, 9, 11) and PB-04-equator-crossing.png (scenes 1, 6, 8) are the Graphics renders. SUBSTITUTION: PB-02 (earth-limb view=globe) renders as a back-lit night side with a hairline crescent at every t (the globe view places the sun behind the Earth from the camera), so it is replaced by PB-02-sub-earth-limb.png = earth-limb --t 2.0 --seed 3 with the space grade (Earth's limb at sunrise, the YP-01 view; still Earth, so the label 'Our planets: one direction' stands). The globe view should be fixed by the Graphics desk before it is used anywhere."
+  },
+  "handle": "@hqrs_1",
+  "style": "bible",
+  "audio": "production/assets/voice/reel-planet-backwards-voice-cut.mp3",
+  "fit_audio": true,
+  "music": "production/assets/sound/bed-a-synth.mp3",
+  "sfx": [
+    {
+      "path": "production/assets/sound/motif.mp3",
+      "scene": 0,
+      "at": 0,
+      "db": -8
+    },
+    {
+      "path": "production/assets/sound/thud.mp3",
+      "scene": 3,
+      "at": 0
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 3,
+      "at": 3.01
+    },
+    {
+      "path": "production/assets/sound/thud.mp3",
+      "scene": 3,
+      "at": 3.01
+    },
+    {
+      "path": "production/assets/sound/thud.mp3",
+      "scene": 8,
+      "at": 1.52
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 8,
+      "at": 2.82
+    },
+    {
+      "path": "production/assets/sound/motif.mp3",
+      "scene": 10,
+      "at": 0,
+      "db": -8
+    },
+    {
+      "path": "production/assets/sound/settle.mp3",
+      "scene": "end",
+      "at": 0
+    }
+  ],
+  "end": {
+    "short": true,
+    "bg": {
+      "sequence": "production/assets/reel-planet-backwards/PB-01-seq",
+      "fps": 30,
+      "move": "push-in",
+      "from": 1.12,
+      "to": 1.14,
+      "focus": [
+        0.5,
+        0.4
+      ],
+      "scrim": 0.7
+    },
+    "source": "Astronomy & Astrophysics, Sept 2026; arXiv 2609.24870. Carteret, University of Geneva; NIRPS, La Silla.",
+    "note": "Images: generated illustrations."
+  },
+  "caption": "This planet orbits its star backwards.\nAstronomy & Astrophysics, Sept 2026; arXiv 2609.24870. Carteret, University of Geneva; NIRPS, La Silla.\n\nGJ 3090 b, 73 light-years away, orbits its red dwarf tilted about 136 degrees: past sideways, into backwards. 2.2 Earth radii, 4.5 Earth masses, a 2.9-day year. First retrograde planet found around a red dwarf; no known companion. What flipped it?\n\n#exoplanet #astronomy #space #science",
+  "voiceover_script": "There is a planet orbiting its star backwards, and tilted. Every planet in our solar system goes round in the same direction the Sun spins. This one does not. G J three zero nine zero b sits seventy three light-years away, around a red dwarf star. It is about two point two times Earth's radius, four and a half times its mass, and its year lasts two point nine days. Its orbit is tilted about one hundred and thirty six degrees: past sideways, into backwards. It is the first retrograde planet found around a red dwarf, and no known companion explains how it got there.",
+  "scenes": [
+    {
+      "start": 0,
+      "end": 2.03,
+      "bg": {
+        "sequence": "production/assets/reel-planet-backwards/PB-01-seq",
+        "fps": 30,
+        "move": "push-in",
+        "from": 1.0,
+        "to": 1.05,
+        "focus": [
+          0.5,
+          0.4
+        ],
+        "scrim": 0.45,
+        "parallax": true
+      },
+      "caption": "This planet orbits its star backwards",
+      "label_out": 1.5
+    },
+    {
+      "start": 2.03,
+      "end": 4.03,
+      "bg": {
+        "image": "production/assets/reel-planet-backwards/PB-04-equator-crossing.png",
+        "move": "push-in",
+        "from": 1.0,
+        "to": 1.06,
+        "focus": [
+          0.45,
+          0.42
+        ],
+        "scrim": 0.45
+      },
+      "caption": "Tilted against the star's spin"
+    },
+    {
+      "start": 4.03,
+      "end": 8.71,
+      "bg": {
+        "image": "production/assets/reel-planet-backwards/PB-02-sub-earth-limb.png",
+        "move": "pan-right",
+        "amount": 0.05,
+        "focus": [
+          0.5,
+          0.4
+        ],
+        "scrim": 0.45
+      },
+      "caption": "Our planets: one direction"
+    },
+    {
+      "start": 8.71,
+      "end": 14.36,
+      "transition": "wipe-up",
+      "bg": {
+        "sequence": "production/assets/reel-planet-backwards/PB-01-seq",
+        "fps": 30,
+        "move": "pan-left",
+        "amount": 0.04,
+        "focus": [
+          0.5,
+          0.4
+        ],
+        "scrim": 0.75
+      },
+      "visual": {
+        "type": "orbit",
+        "tilt": 71.3,
+        "starSpin": 8,
+        "starColour": "#ff9a4a",
+        "equator": true,
+        "spinLabel": "Star spin",
+        "orbitLabel": "Orbit",
+        "enter": 0.4,
+        "planets": [
+          {
+            "r": 300,
+            "size": 22,
+            "period": 6,
+            "colour": "amber",
+            "label": "GJ 3090 b"
+          }
+        ],
+        "obliquity": {
+          "from": 0,
+          "to": 136,
+          "at": 1.32,
+          "dur": 3.0
+        }
+      }
+    },
+    {
+      "start": 14.36,
+      "end": 17.16,
+      "bg": {
+        "image": "production/assets/reel-planet-backwards/PB-03-planet-close.png",
+        "move": "push-in",
+        "from": 1.0,
+        "to": 1.08,
+        "focus": [
+          0.62,
+          0.3
+        ],
+        "scrim": 0.45
+      },
+      "caption": "73 light-years, a red dwarf"
+    },
+    {
+      "start": 17.16,
+      "end": 20.09,
+      "bg": {
+        "image": "production/assets/reel-planet-backwards/PB-03-planet-close.png",
+        "move": "push-in",
+        "from": 1.08,
+        "to": 1.12,
+        "focus": [
+          0.62,
+          0.3
+        ],
+        "scrim": 0.45
+      },
+      "caption": "2.2 x Earth's radius"
+    },
+    {
+      "start": 20.09,
+      "end": 21.89,
+      "bg": {
+        "image": "production/assets/reel-planet-backwards/PB-04-equator-crossing.png",
+        "move": "pan-right",
+        "amount": 0.04,
+        "focus": [
+          0.45,
+          0.42
+        ],
+        "scrim": 0.45
+      },
+      "caption": "4.5 x Earth's mass"
+    },
+    {
+      "start": 21.89,
+      "end": 24.59,
+      "bg": {
+        "sequence": "production/assets/reel-planet-backwards/PB-01-seq",
+        "fps": 30,
+        "move": "push-out",
+        "from": 1.08,
+        "to": 1.0,
+        "focus": [
+          0.5,
+          0.4
+        ],
+        "scrim": 0.45
+      },
+      "caption": "A 2.9-day year"
+    },
+    {
+      "start": 24.59,
+      "end": 28.32,
+      "bg": {
+        "image": "production/assets/reel-planet-backwards/PB-04-equator-crossing.png",
+        "move": "push-in",
+        "from": 1.0,
+        "to": 1.08,
+        "focus": [
+          0.45,
+          0.42
+        ],
+        "scrim": 0.45
+      },
+      "big": {
+        "text": "136°",
+        "at": 1.52,
+        "flip": {
+          "at": 2.82,
+          "text": "136 degrees",
+          "size": 150
+        },
+        "exit": 3.52
+      }
+    },
+    {
+      "start": 28.32,
+      "end": 31.07,
+      "bg": {
+        "image": "production/assets/reel-planet-backwards/PB-03-planet-close.png",
+        "move": "pan-left",
+        "amount": 0.04,
+        "focus": [
+          0.62,
+          0.3
+        ],
+        "scrim": 0.45
+      },
+      "caption": "Retrograde orbit"
+    },
+    {
+      "start": 31.07,
+      "end": 34.46,
+      "bg": {
+        "sequence": "production/assets/reel-planet-backwards/PB-01-seq",
+        "fps": 30,
+        "move": "pan-left",
+        "amount": 0.04,
+        "focus": [
+          0.5,
+          0.4
+        ],
+        "scrim": 0.45
+      },
+      "caption": "First retrograde planet, red dwarf"
+    },
+    {
+      "start": 34.46,
+      "end": 37.25,
+      "bg": {
+        "image": "production/assets/reel-planet-backwards/PB-03-planet-close.png",
+        "move": "push-in",
+        "from": 1.04,
+        "to": 1.12,
+        "focus": [
+          0.62,
+          0.3
+        ],
+        "scrim": 0.45
+      },
+      "caption": "No known companion"
+    }
+  ]
+}
