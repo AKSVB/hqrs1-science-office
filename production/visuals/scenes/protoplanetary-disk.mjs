@@ -9,7 +9,7 @@ import { clamp, lerp, smooth } from "./_lib.mjs";
 
 export const kind = "three";
 
-let T, R, scene, cam, W, H, star, starGlow, planet, planetGlow, dust, dustFar, view, rng, sky, streams, planetGroup;
+let T, R, scene, cam, W, H, star, starGlow, planet, planetGlow, dust, dustFar, view, rng, sky, streams, planetGroup, subjectOnly = false;
 const ORBIT = 26; // planet orbit radius in scene units
 
 const makeSprite = (T, size, inner, outer, softness = 1.0) => {
@@ -114,7 +114,7 @@ export async function init(ctx) {
   planetGroup = new T.Group(); planetGroup.renderOrder = 10;
   let map = null;
   if (ctx.hasTexture("jupiter-nasa")) { map = await ctx.loadTexture("jupiter-nasa"); map.colorSpace = T.SRGBColorSpace; map.anisotropy = 4; }
-  const pr = view === "planet" ? 3.2 : 1.6;
+  const pr = view === "wide" ? 1.6 : 3.2;
   const pmat = new T.MeshStandardMaterial({ map, color: map ? new T.Color(0.9, 0.42, 0.30) : new T.Color(0.8, 0.35, 0.2), roughness: 0.9, metalness: 0.0, emissive: new T.Color(0.6, 0.12, 0.02), emissiveMap: map, emissiveIntensity: 1.3 });
   planet = new T.Mesh(new T.SphereGeometry(pr, 64, 48), pmat); planet.rotation.z = 0.15; planet.renderOrder = 10; planetGroup.add(planet);
   const heat = makeSprite(T, 256, "rgba(255,120,60,1)", "rgba(255,80,30,0)");
@@ -131,6 +131,14 @@ export async function init(ctx) {
     streams = new T.Points(geo, mat); planetGroup.add(streams); }
   scene.add(planetGroup);
   scene.add(new T.AmbientLight(0x223048, 0.6));
+  // layer=subject: only the planet, its heat glow and streams on a transparent background (pop-out carousel).
+  subjectOnly = ctx.opts.layer === "subject";
+  if (subjectOnly) {
+    for (const o of [...scene.children]) if (o !== planetGroup && !(o.isLight)) scene.remove(o);
+    planetGlow.scale.set(pr * 2.6, pr * 2.6, 1); planetGlow.material.opacity = 0.3; // tight rim glow only, so the alpha layer stays clean
+    streams.material.opacity = 0.35;
+    const key = new T.DirectionalLight(0xfff0dd, 2.2); key.position.set(-30, 25, 20); scene.add(key);
+  }
 }
 
 export function draw(t) {
@@ -139,7 +147,7 @@ export function draw(t) {
   planet.rotation.y = t * 0.08;
   streams.rotation.y = -t * 0.05;
   starGlow.material.opacity = 0.8 + 0.05 * Math.sin(t * 2.1);
-  planetGlow.material.opacity = (view === "planet" ? 0.55 : 0.9) * (0.95 + 0.05 * Math.sin(t * 1.3));
+  if (!subjectOnly) planetGlow.material.opacity = (view === "planet" ? 0.55 : 0.9) * (0.95 + 0.05 * Math.sin(t * 1.3));
   if (view === "planet") {
     // close on the planet from just above the disk plane, the star beyond it; the disk walls of the gap frame it
     // inside the gap lane, a little above the plane, looking along the lane at the planet with the star beyond it;
@@ -153,7 +161,11 @@ export function draw(t) {
     cam.position.set(Math.cos(a) * d * Math.cos(el), Math.sin(el) * d, Math.sin(a) * d * Math.cos(el));
     cam.lookAt(0, 0, 0); cam.rotateX(-0.13); // pitch down so the disk sits in the upper two thirds and the lower third is space
   }
+  if (view === "hero") { // planet large and centred for the pop-out subject layer, lit from the upper left by the star
+    const p = planetGroup.position, a = orbitA + Math.PI / 2 + 0.6, dist = 3.2 * 5.2;
+    cam.position.set(p.x + Math.cos(a) * dist, 3.0, p.z + Math.sin(a) * dist); cam.lookAt(p.x, 0.2, p.z);
+  }
   cam.updateProjectionMatrix();
-  R.setClearColor(0x03050c, 1);
+  if (subjectOnly) R.setClearColor(0x000000, 0); else R.setClearColor(0x03050c, 1);
   R.render(scene, cam);
 }

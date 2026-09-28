@@ -39,9 +39,11 @@ const frames = opt("--frames") ? +opt("--frames") : 0;
 const fps = +(opt("--fps") ?? 30);
 const t0 = +(opt("--t0") ?? 0);
 const outDir = opt("--out-dir");
-const grade = !has("--no-grade");
+const alpha = has("--alpha"); // subject-only layer on a transparent background (passes --var layer=subject to the scene; no grade)
+const grade = !has("--no-grade") && !alpha;
 const outPng = args[1] && !args[1].startsWith("--") ? resolve(args[1]) : null;
 const opts = {}; args.forEach((a, i) => { if (a === "--var" && args[i + 1]) { const m = args[i + 1].match(/^([^=]+)=(.*)$/); if (m) opts[m[1]] = m[2]; } });
+if (alpha) opts.layer = "subject";
 if (!frames && !outPng) { console.error("need an output png, or --frames N --out-dir dir"); process.exit(1); }
 if (frames && !outDir) { console.error("--frames needs --out-dir"); process.exit(1); }
 
@@ -53,7 +55,7 @@ if (existsSync(texDir)) for (const f of readdirSync(texDir)) if (/\.(png|jpe?g)$
 const threeUrl = pathToFileURL(resolve(here, "../../node_modules/three/build/three.module.js")).href;
 const html = `<!doctype html><html><head><meta charset="utf-8">
 <script type="importmap">{"imports":{"three":"${threeUrl}"}}</script>
-<style>html,body{margin:0;background:#060913;overflow:hidden}canvas{display:block}#out{position:absolute;left:0;top:0}#work{position:absolute;left:0;top:0;visibility:hidden}</style>
+<style>html,body{margin:0;background:${alpha ? "transparent" : "#060913"};overflow:hidden}canvas{display:block}#out{position:absolute;left:0;top:0}#work{position:absolute;left:0;top:0;visibility:hidden}</style>
 </head><body>
 <canvas id="out" width="${W}" height="${H}"></canvas>
 <canvas id="work" width="${W}" height="${H}"></canvas>
@@ -91,7 +93,7 @@ const html = `<!doctype html><html><head><meta charset="utf-8">
   ctx.loadTexture = (name) => new Promise((res, rej) => { if (!ctx.textures[name]) return rej(new Error("no texture " + name)); new THREE.TextureLoader().load(ctx.textures[name], res, undefined, rej); });
   if (kind === "2d") ctx.g = work.getContext("2d");
   else {
-    ctx.renderer = new THREE.WebGLRenderer({ canvas: work, antialias: true, alpha: false, powerPreference: "low-power", preserveDrawingBuffer: true });
+    ctx.renderer = new THREE.WebGLRenderer({ canvas: work, antialias: true, alpha: ${alpha}, premultipliedAlpha: false, powerPreference: "low-power", preserveDrawingBuffer: true });
     ctx.renderer.setPixelRatio(1); ctx.renderer.setSize(W, H, false);
   }
   // Grain tile: one seeded 256x256 monochrome noise tile, offset per frame by a seeded hash of the frame time.
@@ -116,6 +118,7 @@ const html = `<!doctype html><html><head><meta charset="utf-8">
     try {
       mod.draw(t);
       og.globalCompositeOperation = "source-over"; og.globalAlpha = 1;
+      if (${alpha}) og.clearRect(0, 0, W, H);
       og.drawImage(work, 0, 0);
       if (grade) finish(t);
       // Lower-third luminance check (mean Y of the bottom third, as a fraction).
@@ -148,7 +151,7 @@ const renderOne = async (tt, path) => {
   const r = await page.evaluate(({ tt, grade }) => window.plateDraw(tt, grade), { tt, grade });
   if (r.err) { console.error("draw failed:", r.err); await browser.close(); process.exit(1); }
   const b = Date.now();
-  await out.screenshot({ path, type: "png" });
+  await out.screenshot({ path, type: "png", omitBackground: alpha });
   if (profile) console.log(`  draw ${((b - a) / 1000).toFixed(2)} s, screenshot ${((Date.now() - b) / 1000).toFixed(2)} s`);
   return r.lum;
 };

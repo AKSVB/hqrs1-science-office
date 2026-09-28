@@ -3,6 +3,7 @@
 // gold electrode trace catching the single warm reflection, a superconducting circuit trace on the substrate,
 // a standing-wave ripple on the beam (a pure function of t). The quantum ladder is drawn by the reel renderer.
 // Options (--var view=): "beam" (default, QJ-02 macro of the beam), "mount" (QJ-03: the chip on its gold mount with wire bonds).
+// --var exposure=: tone-mapping exposure (default 1.0); the mount view is far from the key and reads best near 2.5.
 import { clamp, lerp, smooth } from "./_lib.mjs";
 
 export const kind = "three";
@@ -12,7 +13,7 @@ let T, R, scene, cam, W, H, beam, beamGeo, base, view, rng, warmLight, dustPts;
 export async function init(ctx) {
   T = ctx.THREE; R = ctx.renderer; W = ctx.W; H = ctx.H; rng = ctx.rng;
   view = ctx.opts.view || "beam";
-  R.outputColorSpace = T.SRGBColorSpace; R.toneMapping = T.ACESFilmicToneMapping; R.toneMappingExposure = 1.0;
+  R.outputColorSpace = T.SRGBColorSpace; R.toneMapping = T.ACESFilmicToneMapping; R.toneMappingExposure = +(ctx.opts.exposure || 1.0); // --var exposure=: editorial lift for the far mount view
   R.shadowMap.enabled = false;
   scene = new T.Scene();
   scene.fog = new T.FogExp2(0x060913, view === "beam" ? 0.022 : 0.016);

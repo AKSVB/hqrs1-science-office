@@ -46,6 +46,27 @@ const plate = (s) => {
   return `<div class="plate"><img src="${pathToFileURL(p).href}" style="object-position:${f[0] * 100}% ${f[1] * 100}%"></div><div class="plate-scrim" style="opacity:${bg.scrim ?? 1}"></div>`;
 };
 
+const popoutHtml = (s, cover) => {
+  const sub = s.subject || {};
+  const p = sub.image ? asset(sub.image) : null;
+  if (p && !existsSync(p)) console.warn(`warning: subject image not found: ${p}`);
+  const x = sub.x ?? 140, y = sub.y ?? 120, w = sub.w ?? 800, rot = sub.rot ?? 0;
+  const shadow = sub.shadow ?? 1;
+  const subj = p && existsSync(p) ? `<div class="po-subject" style="left:${x}px;top:${y}px;width:${w}px;transform:rotate(${rot}deg);filter:drop-shadow(0 ${44 * shadow}px ${70 * shadow}px rgba(0,0,0,${0.75 * shadow})) drop-shadow(0 ${8 * shadow}px ${14 * shadow}px rgba(0,0,0,0.5))"><img src="${pathToFileURL(p).href}"></div>` : "";
+  const pos = (s.text && s.text.top != null) ? `top:${s.text.top}px` : `bottom:${(s.text && s.text.bottom) ?? 170}px`;
+  const align = (s.text && s.text.align) || "left";
+  return `
+    <div class="po-panel${cover ? " cover" : ""}"></div>
+    ${subj}
+    <div class="po-text" style="${pos};text-align:${align}">
+      ${s.kicker ? `<div class="kicker">${rich(s.kicker)}</div>` : ""}
+      ${s.big ? `<div class="po-big" style="font-size:${String(s.big).replace(/[*_]/g, "").length > 9 ? 150 : String(s.big).replace(/[*_]/g, "").length > 6 ? 180 : 210}px">${rich(s.big)}</div>` : ""}
+      ${s.claim ? `<div class="po-claim${cover ? " xl" : ""}">${rich(s.claim)}</div>` : ""}
+      ${s.body ? `<div class="po-body">${rich(s.body)}</div>` : ""}
+      ${s.source ? `<div class="po-source">${rich(s.source)}</div>` : ""}
+    </div>`;
+};
+
 const builders = {
   cover: (s) => `
     <div class="stack grow center">
@@ -99,6 +120,11 @@ const builders = {
       <div class="card" style="margin-top:30px"><div class="body strong">${rich(s.ask || "Save this. Send it to the friend who needs it.")}</div>
         <div class="small" style="margin-top:14px">Follow ${esc(handle)} for one verified science story a day.</div></div>
     </div>`,
+  // popout: a full-bleed plate, an inset window panel, and a subject layer (transparent PNG) composited above the
+  // panel edge so it breaks the frame; text in the panel's lower area, never under the subject.
+  // { bg, subject: { image, x, y, w, rot, shadow }, kicker, claim, big, body, source, text: { top | bottom } }
+  popout: (s) => popoutHtml(s, false),
+  "popout-cover": (s) => popoutHtml(s, true),
   "plate-diagram": (s) => `
     <div class="stack grow center" style="gap:30px">
       ${s.kicker ? `<div class="kicker">${rich(s.kicker)}</div>` : ""}
@@ -112,9 +138,23 @@ const page = (inner, i, s) => `<!doctype html><html><head><meta charset="utf-8">
 <link rel="stylesheet" href="${pathToFileURL(resolve(here, "../brand.css")).href}">
 <style>
   .slide > .stack { position: relative; z-index: 2; }
-  .slide > .foot, .slide > .swipe { z-index: 2; }
+  .slide > .foot, .slide > .swipe { z-index: 5; }
   .slide .plate, .slide .plate-scrim { z-index: 1; }
   .plate-vis { width: 912px; }
+  /* pop-out system */
+  .po-panel { position:absolute; left:84px; right:84px; top:84px; bottom:84px; border-radius:38px; border:2px solid rgba(79,227,240,0.75);
+    background: linear-gradient(180deg, rgba(6,9,19,0.10) 0%, rgba(6,9,19,0.55) 55%, rgba(6,9,19,0.86) 100%);
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.06), 0 30px 80px rgba(0,0,0,0.55); z-index:2; }
+  .po-panel.cover { border-color: rgba(255,255,255,0.55); }
+  .po-subject { position:absolute; z-index:3; pointer-events:none; }
+  .po-subject img { width:100%; height:auto; display:block; }
+  .po-text { position:absolute; left:150px; right:150px; z-index:4; display:flex; flex-direction:column; gap:22px; }
+  .po-claim { font: 700 92px/1.02 var(--font-display); letter-spacing:-0.02em; color:var(--ink); text-shadow: 0 4px 30px rgba(0,0,0,0.7); text-wrap: balance; }
+  .po-claim.xl { font-size: 108px; }
+  .po-big { font: 700 210px/0.95 var(--font-display); letter-spacing:-0.04em; color:var(--accent-2); text-shadow: 0 6px 40px rgba(0,0,0,0.7); }
+  .po-body { font: 500 38px/1.3 var(--font-body); color:var(--ink-2); text-shadow: 0 2px 16px rgba(0,0,0,0.7); max-width: 780px; }
+  .po-source { font: 500 28px/1.35 var(--font-body); color:var(--muted); }
+  .slide > .po-panel, .slide > .po-subject, .slide > .po-text { }
   ${visualCss}
   .vis { max-height: 720px; }
 </style></head>

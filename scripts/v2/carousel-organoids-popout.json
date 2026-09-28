@@ -1,0 +1,33 @@
+{
+  "handle": "@hqrs_1",
+  "notes": {
+    "story": "Five-year cortical organoids matured on schedule (Nature, 19 Aug 2026; fact-check 05 row 6, GREEN).",
+    "system": "pop-out carousel: free three.js plates, subject layer with alpha (cropped to its bounding box) composited over the window panel.",
+    "plates": "organoid-dish view=hero --alpha then crop-alpha.mjs (subjects, ~940x930); view=wells and view=centre (backgrounds); production/assets/popout/",
+    "images_line": "Images: generated illustrations"
+  },
+  "caption": "A brain organoid kept alive for five years matured on a schedule: fetal-like, newborn-like, then early-childhood-like gene expression, with DNA methylation clocks matching time in the dish. About 425,000 cells profiled from about 110 organoids. Resemblance is molecular, not functional. Which childhood-onset disorder would you study with it first? Faravelli, Arlotta and colleagues, Nature, 19 Aug 2026.\n\n#neuroscience #organoids #brain #science",
+  "slides": [
+    { "type": "popout-cover", "bg": { "image": "production/assets/popout/organoid-bg.png", "scrim": 0.45 },
+      "subject": { "image": "production/assets/popout/organoid-subject-crop.png", "x": 300, "y": -150, "w": 1000, "shadow": 1.2 },
+      "kicker": "Nature, August 2026", "claim": "A brain in a dish, *5 years*", "text": { "bottom": 140 } },
+    { "type": "popout", "bg": { "image": "production/assets/popout/organoid-bg-2.png", "scrim": 0.6 },
+      "subject": { "image": "production/assets/popout/organoid-subject-2-crop.png", "x": 470, "y": -60, "w": 640, "rot": -8 },
+      "kicker": "Time in the dish", "big": "5 yr", "claim": "Cortical organoids, still maturing", "body": "Grown from stem cells and kept alive for more than five years, some to about seven.", "text": { "bottom": 140 } },
+    { "type": "popout", "bg": { "image": "production/assets/popout/organoid-bg-3.png", "scrim": 0.6 },
+      "subject": { "image": "production/assets/popout/organoid-subject-3-crop.png", "x": -90, "y": -30, "w": 660, "rot": 12 },
+      "kicker": "The stages", "claim": "Fetal, newborn, then early childhood", "body": "Gene expression moved through three stages, in order, on a schedule like a growing brain.", "text": { "bottom": 140 } },
+    { "type": "popout", "bg": { "image": "production/assets/popout/organoid-bg-4.png", "scrim": 0.6 },
+      "subject": { "image": "production/assets/popout/organoid-subject-4-crop.png", "x": 520, "y": -110, "w": 680, "rot": -20 },
+      "kicker": "The clock", "claim": "Its DNA marks matched the calendar", "body": "DNA methylation clocks read chemical marks that track age. Here they lined up with time in the dish.", "text": { "bottom": 140 } },
+    { "type": "popout", "bg": { "image": "production/assets/popout/organoid-bg-5.png", "scrim": 0.65 },
+      "subject": { "image": "production/assets/popout/organoid-subject-5-crop.png", "x": 600, "y": 10, "w": 560, "rot": 25 },
+      "kicker": "The dataset", "big": "~425,000", "claim": "cells profiled", "body": "From about 110 organoids, combining new and earlier data.", "text": { "bottom": 140 } },
+    { "type": "popout", "bg": { "image": "production/assets/popout/organoid-bg-6.png", "scrim": 0.65 },
+      "subject": { "image": "production/assets/popout/organoid-subject-6-crop.png", "x": -160, "y": -20, "w": 640, "rot": 35, "shadow": 0.9 },
+      "kicker": "Careful", "claim": "It resembles brain tissue in gene expression, not in function", "body": "No thinking, no feeling was shown. The match is molecular.", "text": { "bottom": 140 } },
+    { "type": "popout", "bg": { "image": "production/assets/popout/organoid-bg-7.png", "scrim": 0.7 },
+      "subject": { "image": "production/assets/popout/organoid-subject-7-crop.png", "x": 330, "y": 40, "w": 440, "rot": -35, "shadow": 0.8 },
+      "kicker": "Source", "claim": "Save this. Send it to a friend.", "body": "Faravelli, Arlotta and colleagues, Harvard and the Broad Institute. Nature, 19 August 2026. DOI 10.1038/s41586-026-10877-x.", "source": "Images: generated illustrations. One verified science story a day.", "text": { "bottom": 140 } }
+  ]
+}

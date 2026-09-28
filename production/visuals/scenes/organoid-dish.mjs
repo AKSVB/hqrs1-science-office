@@ -8,7 +8,7 @@ import { clamp, lerp, smooth } from "./_lib.mjs";
 
 export const kind = "three";
 
-let T, R, scene, cam, W, H, view, rng, organoids = [], lamp, dishRim, medium;
+let T, R, scene, cam, W, H, view, rng, organoids = [], lamp, dishRim, medium, subjectOnly = false;
 
 const organoidGeo = (T, ctx, r, seedOff) => {
   const geo = new T.SphereGeometry(r, 220, 160);
@@ -60,7 +60,16 @@ export async function init(ctx) {
   });
   const place = (x, z, r, seedOff, tint = 0xf8e2dc) => { const m = new T.Mesh(organoidGeo(T, ctx, r, seedOff), mat(tint)); m.position.set(x, r * 0.92, z); m.rotation.set(rng() * 6, rng() * 6, rng() * 6); organoids.push(m); scene.add(m); return m; };
   if (view === "wells") { for (let k = 0; k < 7; k++) { const x = -18 + k * 6.2, z = (k % 2 ? 2.5 : -2.5); place(x, z, 1.9 + rng() * 0.4, k * 3.7 + 1); } }
-  else place(view === "centre" ? 0 : 3.2, view === "centre" ? 0 : -1.0, 3.6, 1.0);
+  else place(view === "centre" || view === "hero" ? 0 : 3.2, view === "centre" || view === "hero" ? 0 : -1.0, 3.6, 1.0);
+  // layer=subject: only the organoid(s) on a transparent background (for the pop-out carousel); no dish, bench or fog.
+  subjectOnly = ctx.opts.layer === "subject";
+  if (subjectOnly) {
+    scene.fog = null;
+    lamp = new T.SpotLight(0xffe2c0, 1500, 90, 0.6, 0.6, 1.6); lamp.position.set(-14, 22, 10); lamp.target.position.set(0, 0, 0); scene.add(lamp); scene.add(lamp.target);
+    scene.add(new T.DirectionalLight(0x4f9ad0, 1.8).translateX(12).translateY(6).translateZ(-14));
+    scene.add(new T.HemisphereLight(0x33507a, 0x05080f, 0.5));
+    return;
+  }
 
   // The dish: a glass floor disc (subtle reflection), a bevelled rim, the medium's meniscus as a soft ring.
   const glass = new T.MeshPhysicalMaterial({ color: 0xdde8f2, roughness: 0.08, metalness: 0.0, transmission: 0.85, thickness: 0.6, ior: 1.5, transparent: true, opacity: 0.6, clearcoat: 1.0 });
@@ -89,9 +98,10 @@ export async function init(ctx) {
 export function draw(t) {
   organoids.forEach((o, k) => { o.rotation.y += 0; o.position.y = o.geometry.parameters.radius * 0.92 + Math.sin(t * 0.5 + k) * 0.02; });
   if (view === "wells") { const a = 0.15 + t * 0.006; cam.position.set(Math.sin(a) * 20 - 6, 7.5, Math.cos(a) * 20 + 16); cam.lookAt(-2, 1.2, 0); cam.rotateX(-0.04); }
+  else if (view === "hero") { const a = 0.3 + t * 0.008; cam.position.set(Math.sin(a) * 23, 9.5, Math.cos(a) * 23); cam.lookAt(0, 3.3, 0); } // organoid large and centred, for the pop-out subject layer
   else if (view === "centre") { const a = 0.3 + t * 0.008; cam.position.set(Math.sin(a) * 26, 16, Math.cos(a) * 26); cam.lookAt(0, 2.0, 0); cam.rotateX(-0.16); }
   else { const a = 0.55 + t * 0.008; cam.position.set(Math.sin(a) * 24, 14, Math.cos(a) * 24); cam.lookAt(1.5, 1.8, -0.5); cam.rotateX(-0.04); cam.rotateY(0.03); } // organoid upper right, its edge past the frame; dish rim and bench below
   cam.updateProjectionMatrix();
-  R.setClearColor(0x060913, 1);
+  if (subjectOnly) R.setClearColor(0x000000, 0); else R.setClearColor(0x060913, 1);
   R.render(scene, cam);
 }

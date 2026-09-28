@@ -1,0 +1,33 @@
+{
+  "handle": "@hqrs_1",
+  "notes": {
+    "story": "Elias 2-24 b, youngest known planet, under 1 Myr (ApJL, 16 Sept 2026; fact-check 05 row 7, AMBER: mass model-dependent).",
+    "system": "pop-out carousel: free three.js plates (NASA Jupiter and Tycho textures), subject layer with alpha cropped to its box (1080x781, planet centred, accretion streams either side).",
+    "plates": "protoplanetary-disk view=hero --alpha then crop-alpha.mjs (subjects), view=wide (backgrounds), earth-limb; production/assets/popout/",
+    "images_line": "Images: generated illustrations"
+  },
+  "caption": "Elias 2-24 b is the youngest planet ever found: under 1 million years old, still inside the disk it formed from, about 450 light-years away and about 55 au from its star. Roughly Jupiter's mass; models give about 2 to 4. Found in archival Keck data from 2018 and 2020 by Andrea Bernardi's team at Universidad Diego Portales. What would you look for in old telescope archives? Astrophysical Journal Letters, 16 Sept 2026.\n\n#space #astronomy #exoplanet #science",
+  "slides": [
+    { "type": "popout-cover", "bg": { "image": "production/assets/popout/planet-bg.png", "scrim": 0.35 },
+      "subject": { "image": "production/assets/popout/planet-subject-crop.png", "x": 150, "y": -60, "w": 1150, "shadow": 1.2 },
+      "kicker": "Astrophysical Journal Letters, 2026", "claim": "The *youngest* planet ever found", "text": { "bottom": 140 } },
+    { "type": "popout", "bg": { "image": "production/assets/popout/earth-bg.png", "scrim": 0.45 },
+      "subject": { "image": "production/assets/popout/planet-subject-2-crop.png", "x": 240, "y": -80, "w": 900, "rot": 12 },
+      "kicker": "For scale", "claim": "Earth: 4.5 billion years. This planet: not even 1 million.", "text": { "bottom": 140 } },
+    { "type": "popout", "bg": { "image": "production/assets/popout/planet-bg-3.png", "scrim": 0.55 },
+      "subject": { "image": "production/assets/popout/planet-subject-3-crop.png", "x": -120, "y": -70, "w": 860, "rot": -10 },
+      "kicker": "Age", "big": "< 1 million", "claim": "years old", "body": "The previous youngest planets are all over 5 million years old.", "text": { "bottom": 140 } },
+    { "type": "popout", "bg": { "image": "production/assets/popout/planet-bg-4.png", "scrim": 0.5 },
+      "subject": { "image": "production/assets/popout/planet-subject-4-crop.png", "x": 300, "y": -110, "w": 940, "rot": 20 },
+      "kicker": "Where it sits", "claim": "In a gap it carved in the dust", "body": "Still embedded in its birth disk, about 55 au from its star.", "text": { "bottom": 140 } },
+    { "type": "popout", "bg": { "image": "production/assets/popout/planet-bg-5.png", "scrim": 0.55 },
+      "subject": { "image": "production/assets/popout/planet-subject-5-crop.png", "x": -200, "y": -40, "w": 900, "rot": 30 },
+      "kicker": "Mass, model-dependent", "claim": "Roughly Jupiter's mass. Models say 2 to 4.", "text": { "bottom": 140 } },
+    { "type": "popout", "bg": { "image": "production/assets/popout/planet-bg-6.png", "scrim": 0.55 },
+      "subject": { "image": "production/assets/popout/planet-subject-6-crop.png", "x": 360, "y": -60, "w": 860, "rot": -28 },
+      "kicker": "How it was found", "claim": "In archival Keck data, 2018 and 2020", "body": "About 450 light-years away. Nobody pointed a new telescope at it.", "text": { "bottom": 140 } },
+    { "type": "popout", "bg": { "image": "production/assets/popout/planet-bg-7.png", "scrim": 0.7 },
+      "subject": { "image": "production/assets/popout/planet-subject-7-crop.png", "x": 170, "y": 20, "w": 740, "rot": 40, "shadow": 0.8 },
+      "kicker": "Source", "claim": "Save this. Send it to a friend.", "body": "Bernardi, Cieza and colleagues, Universidad Diego Portales. Astrophysical Journal Letters, 16 September 2026.", "source": "Images: generated illustrations. One verified science story a day.", "text": { "bottom": 140 } }
+  ]
+}
