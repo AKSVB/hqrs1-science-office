@@ -1,0 +1,3 @@
+frame 0/309frame 15/309frame 30/309frame 45/309frame 60/309frame 75/309frame 90/309frame 105/309frame 120/309frame 135/309frame 150/309frame 165/309frame 180/309frame 195/309frame 210/309frame 225/309frame 240/309frame 255/309frame 270/309frame 285/309frame 300/309
+eclipse-corona: 309 frames at 30 fps -> /tmp/plate-seq/EG-loop-raw-2037 in 408.0 s; lower-third luminance max 4.8% OK
+graded 309 frames -> /home/user/hqrs1-science-office/production/assets/loops/EG-loop-raw (space=0)

@@ -1,0 +1,35 @@
+{
+  "notes": {
+    "type": "Loop card (research/09-vidiq-outliers.md section 6, items 1 to 4, 7). One continuous generated visual, no voice, no caption band, bed A only with the motif at 0.0 s, four static lines one at a time in the hook box, the last a question the caption answers in brackets.",
+    "science": "Same story as scripts/v2/reel-planet-backwards.json: fact-check wave 2 row 16 (GREEN, hook AMBER). 136 degrees is 'past sideways, into backwards', never 'completely backward'. The question card is answered in caption line 1 with the row's 'no known companion explains it'.",
+    "plate": "production/assets/loops/PB-loop: tilted-orbit view=wide tilt=136 seed 21, 279 frames rendered with render-seq.sh --space, then make-loop.sh crossfade to 270 frames (the scene's 9 s orbital period, so the planet's phase closes) with a 9-frame (0.3 s) dissolve at the seam for the star's non-periodic rotation. PB-loop-tail holds the last 45 loop frames for the end card, so scenes end at 3 x 9 - 1.5 = 25.5 s and the plate runs phase-continuous through the end card and back to frame 0. Static camera (from = to), as on every looping outlier.",
+    "editor": "Editor 2026-09-29. Total 27.0 s. Cards: 0.1-6.0, 6.0-12.0, 12.0-18.5, 18.5-24.0, then 1.5 s of the plate with no text before the end card (the our_visibleuniverse pattern)."
+  },
+  "handle": "@hqrs_1",
+  "style": "bible",
+  "duration": 27.0,
+  "music": "production/assets/sound/bed-a-synth.mp3",
+  "sfx": [
+    { "path": "production/assets/sound/motif.mp3", "scene": 0, "at": 0, "db": -8 }
+  ],
+  "end": {
+    "seconds": 1.5,
+    "bg": { "sequence": "production/assets/loops/PB-loop-tail", "fps": 30, "move": "push-in", "from": 1.0, "to": 1.0, "focus": [0.5, 0.4], "scrim": 0.5 },
+    "source": "Astronomy & Astrophysics, Sept 2026; arXiv 2609.24870. Carteret, University of Geneva; NIRPS, La Silla.",
+    "note": "Images: generated illustrations."
+  },
+  "caption": "How does a planet end up orbiting backwards? (No one knows yet: no known companion explains it.)\nAstronomy & Astrophysics, Sept 2026; arXiv 2609.24870. Carteret, University of Geneva; NIRPS, La Silla.\n\nGJ 3090 b, 73 light-years away, orbits its red dwarf tilted about 136 degrees to the star's spin: past sideways, into backwards. It is 2.2 times Earth's radius, 4.5 times its mass, and its year lasts 2.9 days. It is the first retrograde planet found around a red dwarf. Every planet in our solar system goes round the way the Sun spins, so something knocked this one over, and no massive companion has been found to explain it. Images are generated illustrations.\n\n#exoplanet #astronomy #space #science",
+  "scenes": [
+    {
+      "start": 0,
+      "end": 25.5,
+      "bg": { "sequence": "production/assets/loops/PB-loop", "fps": 30, "move": "push-in", "from": 1.0, "to": 1.0, "focus": [0.5, 0.4], "scrim": 0.5 },
+      "captions": [
+        { "text": "This planet orbits backwards against its star's spin", "in": 0.1, "out": 6.0 },
+        { "text": "Every planet you know goes the way its star spins", "in": 6.0, "out": 12.0 },
+        { "text": "This one is tilted 136 degrees: past sideways, into backwards", "in": 12.0, "out": 18.5 },
+        { "text": "How does a planet end up like this?", "in": 18.5, "out": 24.0 }
+      ]
+    }
+  ]
+}

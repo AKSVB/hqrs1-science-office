@@ -1,0 +1,35 @@
+{
+  "notes": {
+    "type": "Loop card (research/09-vidiq-outliers.md section 6, items 1 to 4, 7). One continuous generated visual, no voice, no caption band, bed A only with the motif at 0.0 s, four static lines one at a time in the hook box, the last a question the caption answers in brackets.",
+    "science": "Same story as scripts/v2/carousel-project-anchor-popout.json: fact-check 08 row 13 (GREEN, framing AMBER). Wording verbatim from that deck: 'Earth did not lose gravity', 'Gravity is a property of mass', 'It has no off switch', 'NASA documents called Project Anchor ever produced' (a negative cannot be proved, so the line says 'produced'), 'There was a total solar eclipse', 'Spain, Iceland, Greenland'. The hoax's figures ($89 billion, 7 seconds, 14:33 UTC) stay off screen. Not a paper: the end card names the debunks.",
+    "plate": "production/assets/loops/EG-loop: eclipse-corona view=totality seed 41 t0 1.0 (the PA-03 / anchor-bg-6 plate), 309 frames rendered with render-seq.sh (house grade), then make-loop.sh crossfade to 300 frames with a 9-frame (0.3 s) dissolve at the seam (the corona's fbm drift and the prominence pulses are not periodic; both frames are near-identical so the dissolve does not ghost). EG-loop-tail holds the last 45 loop frames for the end card: scenes end at 3 x 10 - 1.5 = 28.5 s, the plate stays phase-continuous through the end card and back to frame 0. Static camera.",
+    "editor": "Editor 2026-09-29. Total 30.0 s. Cards: 0.1-6.5, 6.5-13.5, 13.5-20.0, 20.0-26.5, then 2 s of the plate with no text before the end card. The eclipse is on screen the whole time, so the question card meets addendum item 3(a): the visual is the answer."
+  },
+  "handle": "@hqrs_1",
+  "style": "bible",
+  "duration": 30.0,
+  "music": "production/assets/sound/bed-a-synth.mp3",
+  "sfx": [
+    { "path": "production/assets/sound/motif.mp3", "scene": 0, "at": 0, "db": -8 }
+  ],
+  "end": {
+    "seconds": 1.5,
+    "bg": { "sequence": "production/assets/loops/EG-loop-tail", "fps": 30, "move": "push-in", "from": 1.0, "to": 1.0, "focus": [0.5, 0.4], "scrim": 0.5 },
+    "source": "Not a paper: NASA statement to Snopes (rating False) and Newsweek, Jan and Aug 2026. Eclipse times: NASA.",
+    "note": "Images: generated illustrations."
+  },
+  "caption": "So what did happen on 12 August 2026? (A total solar eclipse, seen from Spain, Iceland and Greenland. Gravity stayed on.)\nNot a paper: NASA statement to Snopes (rating False) and Newsweek, Jan and Aug 2026. Eclipse times: NASA.\n\nThe 'Project Anchor' posts said Earth would lose gravity for 7 seconds at 14:33 UTC on 12 August 2026, citing a leaked '$89 billion NASA document' that no one has ever produced. Gravity is a property of mass; it has no off switch. NASA and fact-checkers debunked it. The real event that day was a total solar eclipse, totality on the ground from 16:58 to 18:34 UTC, up to 2 min 18 s, the first on mainland Europe since 1999. The hoax's time was two hours before it even began. Images are generated illustrations.\n\n#debunk #physics #gravity #eclipse #science",
+  "scenes": [
+    {
+      "start": 0,
+      "end": 28.5,
+      "bg": { "sequence": "production/assets/loops/EG-loop", "fps": 30, "move": "push-in", "from": 1.0, "to": 1.0, "focus": [0.5, 0.4], "scrim": 0.5 },
+      "captions": [
+        { "text": "Earth did not lose gravity on 12 August", "in": 0.1, "out": 6.5 },
+        { "text": "Gravity is a property of mass. It has no off switch", "in": 6.5, "out": 13.5 },
+        { "text": "No NASA document called Project Anchor has ever been produced", "in": 13.5, "out": 20.0 },
+        { "text": "So what did happen that day?", "in": 20.0, "out": 26.5 }
+      ]
+    }
+  ]
+}
