@@ -137,3 +137,11 @@ The Monitor escalates to the Director when: a desk misses its SLA by more than a
 ## 10. Storage rule
 
 GitHub (`AKSVB/hqrs1-science-office`) is the archive of record while the account's cloud credits last. The owner keeps a mirror on the local D: drive at `D:\hqrs1-science-office` by running `tools/sync-to-local.ps1` after each cycle (macOS/Linux: `tools/sync-to-local.sh`). Once cloud credits are exhausted, the local folder becomes the working copy: all new renders, assets and memos are saved there first, and the Editor notes the switch in `DECISION_MEMO.md`. Generated media that would exceed GitHub's comfortable size (large PNG batches, MP4s over 50 MB) goes only to the local folder from that point on, with the spec and prompts still committed so any asset can be regenerated.
+
+## 11. Connector workflow (added 29 September 2026)
+
+- Trend Scout: vidIQ outlier search (5 credits a call), account discovery (10), profile reels (5), watch (10). Monthly budget 150 credits, renews on the 28th. Spend at most 80 on research a month; keep 40 for voice; hold 30 in reserve. Findings go to research/NN-vidiq-*.md, and rules change only through a style-bible addendum.
+- Audio desk: narration is Piper (free) by default. When a Reel is a flagship, the vidIQ voiceover "Brian" (id nPczCjzI2devNBz1zQrb, about 14 credits per 45 s script) may be used. Brian paces about 16 percent slower than Piper, so the words sidecar must be rebuilt.
+- Captions desk: every voiced Reel is aligned with Descript before publishing. Procedure in production/tools/descript-align.md, converter production/tools/descript-words.py. Estimated timings drift up to 1.4 s late in a track; aligned timings are quantised to 0.25 s.
+- Publisher: Google Drive folder "hqrs1 science office" mirrors captions and the README index (publish/drive-mirror.md). The Drive connector cannot upload binaries; videos and slides are pulled from the repo (tools/sync-to-local.ps1) or dragged into Drive by hand.
+- Publishing and owner insights through vidIQ require @hqrs_1 to be connected at app.vidiq.com. Until then no post is published by the office; the user posts from the phone using caption.txt.
