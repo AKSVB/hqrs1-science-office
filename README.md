@@ -53,3 +53,7 @@ node render-reel.mjs ../../scripts/<name>.json --jpeg --audio ../out/<name>/<nam
 5. Sunday: Analytics Officer fills `analytics/weekly_log.csv`, runs `node analytics/projection.mjs`, Monitor reports, Director updates the decision memo.
 
 The full cadence, gates and thresholds are in `OPERATING_MANUAL.md`.
+
+## Running the office locally
+
+See HANDOFF.md (move steps, open items, resume prompt) and CLAUDE.md (what a Claude Code session needs to know). Setup: tools/setup-local.ps1 on Windows, tools/setup-local.sh on Linux or macOS.

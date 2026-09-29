@@ -19,7 +19,7 @@ mkdirSync(dirname(outPng), { recursive: true });
 
 const STATIC = "/usr/local/lib/python3.11/dist-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v7.0.2";
 const ok = (c) => c && spawnSync(c, ["-hide_banner", "-version"]).status === 0;
-const ffmpeg = [process.env.FFMPEG, "ffmpeg", (() => { const r = spawnSync("python3", ["-c", "import imageio_ffmpeg as i; print(i.get_ffmpeg_exe())"]); return r.status === 0 ? r.stdout.toString().trim() : null; })(), existsSync(STATIC) ? STATIC : null].find(ok);
+const ffmpeg = [process.env.FFMPEG, "ffmpeg", (() => { const r = (() => { for (const py of ["python3", "python", "py"]) { const r = spawnSync(py, ["-c", "import imageio_ffmpeg as i; print(i.get_ffmpeg_exe())"]); if (r.status === 0) return r; } return { status: 1, stdout: "" }; })(); return r.status === 0 ? r.stdout.toString().trim() : null; })(), existsSync(STATIC) ? STATIC : null].find(ok);
 if (!ffmpeg) throw new Error("no ffmpeg found (PATH, $FFMPEG, imageio-ffmpeg)");
 
 // Duration and fps from ffmpeg's own stream info (ffprobe is often absent).

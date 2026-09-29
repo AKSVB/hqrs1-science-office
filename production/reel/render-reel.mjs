@@ -65,7 +65,7 @@ const warn = (m) => console.warn("warning: " + m);
 
 // Needs a full ffmpeg (libx264 + aac). Playwright's bundled ffmpeg is too stripped down.
 // Resolution order: $FFMPEG, imageio-ffmpeg's static binary (pip install imageio-ffmpeg), ffmpeg on PATH, the known static path.
-const imageioFfmpeg = (() => { const r = spawnSync("python3", ["-c", "import imageio_ffmpeg as i; print(i.get_ffmpeg_exe())"]); return r.status === 0 ? r.stdout.toString().trim() : null; })();
+const imageioFfmpeg = (() => { const r = (() => { for (const py of ["python3", "python", "py"]) { const r = spawnSync(py, ["-c", "import imageio_ffmpeg as i; print(i.get_ffmpeg_exe())"]); if (r.status === 0) return r; } return { status: 1, stdout: "" }; })(); return r.status === 0 ? r.stdout.toString().trim() : null; })();
 const ffmpegCandidates = [process.env.FFMPEG, imageioFfmpeg, "ffmpeg", "/usr/local/lib/python3.11/dist-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v7.0.2"].filter(Boolean);
 const ffmpeg = ffmpegCandidates.find(c => { const r = spawnSync(c, ["-hide_banner", "-encoders"]); return r.status === 0 && r.stdout.toString().includes("libx264"); });
 if (!ffmpeg) throw new Error("ffmpeg with libx264 not found. Run: pip install imageio-ffmpeg");
