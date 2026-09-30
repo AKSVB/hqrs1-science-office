@@ -1,0 +1,162 @@
+{
+  "notes": {
+    "type": "Loop card (STYLE_BIBLE addendum 29 Sept 2026, items 1 to 4, 6, 7, 9). One continuous generated simulation (spacetime-well, one orbit per 10 s), no voice, no caption band, piano bed with the motif at 0.0 s, five static lines one at a time in the hook box (6 to 12 words), the last a question the caption answers in brackets.",
+    "science": "scripts/loop-spacetime.md; fact-check research/10-fact-check-wave4.md row 14 (GREEN). Every line is from the row's 'may appear on screen' list; the only number is 1.75 arcseconds (1919 lives in the caption, one-number rule). The textbook picture is framed as 'the textbook orbit picture', never 'Newton was wrong'.",
+    "director": "Director decision (scripts/loop-spacetime.md, vidIQ 95): open on 'The textbook orbit picture is wrong. This is the real one' over the flat grid, cut to the well on the Sun line; the 'School drew gravity' card is dropped; five cards.",
+    "plates": "Editor 2026-09-30. All code-rendered with production/visuals/render-plate.mjs (no paid generation). Card 1: SW-02-flat-seq (spacetime-well view=flat, 300 frames, rendered this pass with render-seq.sh --space, seed 1). Card 2: SW-01-seq (wide well). Card 3: SW-03-tilt-up-seq: SW-03-tilt-seq (view=tilt, rendered this pass) zoomed 12 percent and cropped from the top with ffmpeg (scale=1210:2150,crop=1080:1920:65:230) so the Sun sits at about y 0.37, above the hook box; in the raw tilt view the Sun's glow sat behind the line. Card 4: SW-04-ray-seq (view=wide ray=1, rendered this pass). Card 5: SW-01-seq. End card: SW-01-seq frame 0 held as a still. All four sequences share the same clock and seed, so the planet's phase is the same in every view at the same frame index.",
+    "phase": "render-reel.mjs indexes a bg.sequence from the scene's local time (frame = floor(local x 30) mod 300), so each later card would restart the orbit. Workaround (renderer untouched): production/assets/loop-spacetime/phase/<seq>-<k> are the same sequences rotated by k frames (symlinks, make-phase-dirs.sh); k = the card's global start frame mod 300, so card N shows global frame (start + local) and the orbit runs continuously across the cuts: card 2 k=180, card 3 k=60 (360 mod 300), card 4 k=240 (540), card 5 k=120 (720). Cards run 0 to 30.0 s = 900 frames = exactly three orbits, so the last card frame (899, phase 299) leads into the end card (phase 0 still) and the loop returns to card 1 frame 0 (phase 0). This is why the cards end at 30.0 s and not the script's 30.5 s: 30.5 s would put the seam 15 frames off phase. Total 31.5 s.",
+    "camera": "Static (from = to) as on every looping outlier, except card 2, the reveal of the well, which pushes in 1.00 to 1.08 as the brief asks; card 3 is a different view (tilt) so the return to 1.00 is hidden by that cut. Cards 4 and 5 stay at 1.00 so the seam matches frame 0 in scale as well as phase. Scrim 0.5: the hook box (y 900 to 1150) sits over the dim lower grid, the Sun and the well are above it; checked on the contact sheet.",
+    "editor": "Editor 2026-09-30. Cards: 0.1-5.8 (flat), 6.0-11.8 (well, push-in), 12.0-17.8 (tilt), 18.0-23.8 (ray), 24.0-28.8 (well, the question); each line leaves 0.2 s before its cut so the 6-frame fade finishes on its own plate, then 1.2 s of the plate with no text before the end card at 30.0 s. Bed: production/assets/sound/bed-piano-synth.mp3 (35.4 s loopable; fallback bed-a-synth.mp3), motif at 0.0 s, settle on the end card."
+  },
+  "handle": "@hqrs_1",
+  "style": "bible",
+  "duration": 31.5,
+  "music": "production/assets/sound/bed-piano-synth.mp3",
+  "sfx": [
+    {
+      "path": "production/assets/sound/motif.mp3",
+      "scene": 0,
+      "at": 0,
+      "db": -8
+    },
+    {
+      "path": "production/assets/sound/settle.mp3",
+      "scene": "end",
+      "at": 0
+    }
+  ],
+  "end": {
+    "seconds": 1.5,
+    "bg": {
+      "image": "production/assets/loop-spacetime/SW-01-seq/f00000.jpg",
+      "move": "push-in",
+      "from": 1.0,
+      "to": 1.0,
+      "focus": [
+        0.5,
+        0.42
+      ],
+      "scrim": 0.7
+    },
+    "source": "Einstein, Prussian Academy, 25 Nov 1915. Dyson, Eddington and Davidson, 1919 eclipse, Royal Society, 6 Nov 1919.",
+    "note": "Images: generated illustrations. The grid is a 2D analogy of 4D curvature."
+  },
+  "caption": "If nothing pulls Earth, why does it not fly off? (It coasts on the straightest path through space-time the Sun has curved, and that path closes into an orbit.)\nEinstein, Die Feldgleichungen der Gravitation, Prussian Academy, 25 Nov 1915. Dyson, Eddington and Davidson, 1919 eclipse results, Royal Society, 6 Nov 1919.\n\nNewton's textbook picture is a force tugging across empty space. Einstein's is geometry: mass curves space-time and free objects follow its straightest lines. Einstein predicted starlight grazing the Sun bends by 1.75 arcseconds, twice Newton's value. Two expeditions measured it at the 29 May 1919 eclipse and got his number. The dented grid is a 2D analogy of 4D curvature. Images are generated illustrations.\n\n#gravity #physics #einstein #science",
+  "scenes": [
+    {
+      "start": 0,
+      "end": 6.0,
+      "bg": {
+        "sequence": "production/assets/loop-spacetime/SW-02-flat-seq",
+        "fps": 30,
+        "move": "push-in",
+        "from": 1.0,
+        "to": 1.0,
+        "focus": [
+          0.5,
+          0.42
+        ],
+        "scrim": 0.5
+      },
+      "captions": [
+        {
+          "text": "The textbook orbit picture is wrong. This is the real one",
+          "in": 0.1,
+          "out": 5.8
+        }
+      ]
+    },
+    {
+      "start": 6.0,
+      "end": 12.0,
+      "bg": {
+        "sequence": "production/assets/loop-spacetime/phase/SW-01-seq-180",
+        "fps": 30,
+        "move": "push-in",
+        "from": 1.0,
+        "to": 1.08,
+        "focus": [
+          0.5,
+          0.42
+        ],
+        "scrim": 0.5
+      },
+      "captions": [
+        {
+          "text": "The Sun does not pull the planets. It warps space-time",
+          "in": 0,
+          "out": 5.8
+        }
+      ]
+    },
+    {
+      "start": 12.0,
+      "end": 18.0,
+      "bg": {
+        "sequence": "production/assets/loop-spacetime/phase/SW-03-tilt-up-seq-60",
+        "fps": 30,
+        "move": "push-in",
+        "from": 1.0,
+        "to": 1.0,
+        "focus": [
+          0.5,
+          0.42
+        ],
+        "scrim": 0.5
+      },
+      "captions": [
+        {
+          "text": "The Sun curves space-time. Earth just follows the straightest path",
+          "in": 0,
+          "out": 5.8
+        }
+      ]
+    },
+    {
+      "start": 18.0,
+      "end": 24.0,
+      "bg": {
+        "sequence": "production/assets/loop-spacetime/phase/SW-04-ray-seq-240",
+        "fps": 30,
+        "move": "push-in",
+        "from": 1.0,
+        "to": 1.0,
+        "focus": [
+          0.5,
+          0.42
+        ],
+        "scrim": 0.5
+      },
+      "captions": [
+        {
+          "text": "Even starlight bends passing the Sun, by 1.75 arcseconds",
+          "in": 0,
+          "out": 5.8
+        }
+      ]
+    },
+    {
+      "start": 24.0,
+      "end": 30.0,
+      "bg": {
+        "sequence": "production/assets/loop-spacetime/phase/SW-01-seq-120",
+        "fps": 30,
+        "move": "push-in",
+        "from": 1.0,
+        "to": 1.0,
+        "focus": [
+          0.5,
+          0.42
+        ],
+        "scrim": 0.5
+      },
+      "captions": [
+        {
+          "text": "If nothing pulls Earth, why does it not fly off?",
+          "in": 0,
+          "out": 4.8
+        }
+      ]
+    }
+  ]
+}

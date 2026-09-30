@@ -1,0 +1,4 @@
+fit to audio: 40.00 s voice (trimmed 0-40.00 of 40.36), scenes scaled x1.000, total 41.5 s
+frame 0/1245frame 60/1245frame 120/1245frame 180/1245frame 240/1245frame 300/1245frame 360/1245frame 420/1245frame 480/1245frame 540/1245frame 600/1245frame 660/1245frame 720/1245frame 780/1245frame 840/1245frame 900/1245frame 960/1245frame 1020/1245frame 1080/1245frame 1140/1245frame 1200/1245
+captured 1245 frames in 176.1s
+wrote /home/user/hqrs1-science-office/production/out/reel-spacetime/reel-spacetime.mp4 (audio: voice, music, 5 sfx)

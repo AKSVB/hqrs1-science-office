@@ -1,0 +1,107 @@
+1
+00:00:00,250 --> 00:00:01,244
+The Sun does not
+
+2
+00:00:01,244 --> 00:00:02,226
+pull the planets.
+
+3
+00:00:02,505 --> 00:00:03,600
+It warps space-time.
+
+4
+00:00:03,879 --> 00:00:05,207
+School drew gravity as
+
+5
+00:00:05,207 --> 00:00:06,156
+a force, a tug
+
+6
+00:00:06,156 --> 00:00:07,251
+across empty space.
+
+7
+00:00:07,530 --> 00:00:09,305
+Einstein's picture is different.
+
+8
+00:00:09,584 --> 00:00:11,203
+Mass curves space-time, and
+
+9
+00:00:11,203 --> 00:00:12,755
+anything moving through it
+
+10
+00:00:12,755 --> 00:00:14,419
+follows the straightest path
+
+11
+00:00:14,419 --> 00:00:15,692
+it can. For Earth,
+
+12
+00:00:15,815 --> 00:00:16,987
+near the Sun, that
+
+13
+00:00:16,987 --> 00:00:17,981
+path is an orbit.
+
+14
+00:00:18,260 --> 00:00:19,711
+One caveat: this dented
+
+15
+00:00:19,711 --> 00:00:21,207
+sheet is a two-dimensional
+
+16
+00:00:21,207 --> 00:00:22,648
+stand-in for curvature in
+
+17
+00:00:22,648 --> 00:00:24,211
+four dimensions, three of
+
+18
+00:00:24,211 --> 00:00:25,205
+space and one of
+
+19
+00:00:25,205 --> 00:00:26,645
+time. The proof came
+
+20
+00:00:26,645 --> 00:00:28,655
+in 1919. During a
+
+21
+00:00:28,655 --> 00:00:30,609
+total eclipse, starlight grazing
+
+22
+00:00:30,609 --> 00:00:31,547
+the Sun bent by
+
+23
+00:00:31,547 --> 00:00:34,037
+about 1.75 arcseconds, as
+
+24
+00:00:34,037 --> 00:00:35,812
+Einstein predicted. So why
+
+25
+00:00:35,812 --> 00:00:37,252
+does Earth keep circling?
+
+26
+00:00:37,531 --> 00:00:38,916
+That is the straightest
+
+27
+00:00:38,916 --> 00:00:39,731
+road there is.

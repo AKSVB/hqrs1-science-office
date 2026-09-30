@@ -1,0 +1,260 @@
+{
+  "notes": {
+    "storyboard": "Voiced variant of scripts/loop-spacetime.md (section 3, 104 words) on the Piper track. Science: fact-check research/10-fact-check-wave4.md row 14 (GREEN). Same five cards as the loop card (scripts/v2/loop-spacetime.json) as the anchors, plus the caveat line on screen when it is spoken, and the one big number 1.75 arcseconds as a count-up on the word.",
+    "timing": "Editor 2026-09-30. Piper track 40.36 s; audio_end 40.0 (the last word ends at 39.73 s) so the scenes end on frame 1200, an exact multiple of the 300-frame orbit (see phase). Scenes sum to 40.0 so fit_audio scales x1.000. Every cut sits on a word: scene 1 (well) on 'It warps space-time' (2.5), scene 2 (tilt) on 'Einstein's picture is different' (7.533), scene 3 (well, push-in) on 'For Earth, near the Sun' (15.1), scene 4 (tilt, caveat label) on 'One caveat' (18.266), scene 5 (ray) on 'The proof came in 1919' (25.766), scene 6 on 'starlight grazing the Sun' (29.566) with the count-up starting on '1.75' (local 2.327, lands 3.53, flips to 'twice Newton's value' on 'as Einstein predicted' at 4.0, exits 5.5), scene 7 (well) on 'So why does Earth keep circling' (35.4). Words JSON: scripts/v2/reel-spacetime.words.json (the renderer's auto timing run over the spoken form, 'nineteen nineteen' merged to '1919' and 'one point seven five' merged to '1.75' for the band).",
+    "audio": "Narration: production/assets/voice/loop-spacetime-piper-m.mp3 (Piper, mastered, peaks -6.0 dBFS, mean -22 dB). Bed: production/assets/sound/bed-piano-synth.mp3 (35.4 s, looped by the renderer; fallback bed-a-synth.mp3). Motif at 0.0 and at the payoff (scene 7, the question). Thud on the count-up start, tick on the flip, settle on the end card. No SFX on plain cuts.",
+    "numbers": "1.75 arcseconds (big number and band), 1919 (band and the scene 5 label 'The 1919 eclipse'), 'twice Newton's value' (the flip): all in the fact-check row's allowed list. No measured eclipse values.",
+    "plates": "SW-02-flat-seq (scene 0), SW-01-seq wide well (scenes 1, 3, 7 and the end card still), SW-03-tilt-up-seq (scenes 2 and 4; the tilt view zoomed 12 percent and cropped from the top with ffmpeg so the Sun clears the hook box, see loop-spacetime.json notes.plates: the dent in profile for the reveal and for the 'dented sheet' caveat), SW-04-ray-seq (scene 5) and SW-04-ray-dim-seq (scene 6, the same frames dimmed under the count-up). All code-rendered with render-plate.mjs, seed 1, one shared clock.",
+    "phase": "As in loop-spacetime.json: bg.sequence is indexed from scene-local time, so each scene uses production/assets/loop-spacetime/phase/<seq>-<k> with k = global start frame mod 300 (75, 226, 153, 248, 173, 287, 162). Scene starts are set a third of a millisecond under the frame time so the first frame of each scene indexes 0. Scenes end at 40.0 s = frame 1200 = four orbits, so the last frame (phase 299) leads into the end card (phase 0 still) and back to frame 0.",
+    "lines": "The hook line and the card lines are the loop-card lines (10 to 11 words), longer than the bible's six-word voiced-Reel hook, by the brief ('same cards as anchors'); the hook stays up for its 2.5 s scene so 11 words can be read. The starlight card is trimmed to six words because the count-up carries the number. Scene 3 has no label: the band carries 'that path is an orbit' over the moving planet. Every label leaves 0.2 s before its cut so its fade finishes on its own plate. Scene 6 uses SW-04-ray-dim-seq, the ray sequence dimmed to about 62 percent with ffmpeg (colorlevels romax=gomax=bomax=0.62), because the big number sits at the Sun's height and amber on the bare Sun did not read; the scrim is a lower gradient and does not reach the Sun. The dip happens on the cut at 'starlight grazing' and lifts on the cut to the question."
+  },
+  "handle": "@hqrs_1",
+  "style": "bible",
+  "audio": "production/assets/voice/loop-spacetime-piper-m.mp3",
+  "audio_end": 40.0,
+  "fit_audio": true,
+  "music": "production/assets/sound/bed-piano-synth.mp3",
+  "sfx": [
+    {
+      "path": "production/assets/sound/motif.mp3",
+      "scene": 0,
+      "at": 0,
+      "db": -8
+    },
+    {
+      "path": "production/assets/sound/thud.mp3",
+      "scene": 6,
+      "at": 2.327
+    },
+    {
+      "path": "production/assets/sound/tick.mp3",
+      "scene": 6,
+      "at": 4.0
+    },
+    {
+      "path": "production/assets/sound/motif.mp3",
+      "scene": 7,
+      "at": 0,
+      "db": -8
+    },
+    {
+      "path": "production/assets/sound/settle.mp3",
+      "scene": "end",
+      "at": 0
+    }
+  ],
+  "end": {
+    "seconds": 1.5,
+    "bg": {
+      "image": "production/assets/loop-spacetime/SW-01-seq/f00000.jpg",
+      "move": "push-in",
+      "from": 1.0,
+      "to": 1.0,
+      "focus": [
+        0.5,
+        0.42
+      ],
+      "scrim": 0.7
+    },
+    "source": "Einstein, Prussian Academy, 25 Nov 1915. Dyson, Eddington and Davidson, 1919 eclipse, Royal Society, 6 Nov 1919.",
+    "note": "Images: generated illustrations. The grid is a 2D analogy of 4D curvature."
+  },
+  "caption": "If nothing pulls Earth, why does it not fly off? (It coasts on the straightest path through space-time the Sun has curved, and that path closes into an orbit.)\nEinstein, Die Feldgleichungen der Gravitation, Prussian Academy, 25 Nov 1915. Dyson, Eddington and Davidson, 1919 eclipse results, Royal Society, 6 Nov 1919.\n\nNewton's textbook picture is a force tugging across empty space. Einstein's is geometry: mass curves space-time and free objects follow its straightest lines. Einstein predicted starlight grazing the Sun bends by 1.75 arcseconds, twice Newton's value. Two expeditions measured it at the 29 May 1919 eclipse and got his number. The dented grid is a 2D analogy of 4D curvature. Images are generated illustrations.\n\n#gravity #physics #einstein #science",
+  "voiceover_script": "The Sun does not pull the planets. It warps space-time. School drew gravity as a force, a tug across empty space. Einstein's picture is different. Mass curves space-time, and anything moving through it follows the straightest path it can. For Earth, near the Sun, that path is an orbit. One caveat: this dented sheet is a two-dimensional stand-in for curvature in four dimensions, three of space and one of time. The proof came in 1919. During a total eclipse, starlight grazing the Sun bent by about 1.75 arcseconds, as Einstein predicted. So why does Earth keep circling? That is the straightest road there is.",
+  "scenes": [
+    {
+      "start": 0,
+      "end": 2.5,
+      "bg": {
+        "sequence": "production/assets/loop-spacetime/SW-02-flat-seq",
+        "fps": 30,
+        "move": "push-in",
+        "from": 1.0,
+        "to": 1.0,
+        "focus": [
+          0.5,
+          0.42
+        ],
+        "scrim": 0.5
+      },
+      "captions": [
+        {
+          "text": "The textbook orbit picture is wrong. This is the real one",
+          "in": 0.1,
+          "out": 2.3
+        }
+      ]
+    },
+    {
+      "start": 2.5,
+      "end": 7.533,
+      "bg": {
+        "sequence": "production/assets/loop-spacetime/phase/SW-01-seq-75",
+        "fps": 30,
+        "move": "push-in",
+        "from": 1.0,
+        "to": 1.08,
+        "focus": [
+          0.5,
+          0.42
+        ],
+        "scrim": 0.5
+      },
+      "captions": [
+        {
+          "text": "The Sun does not pull the planets. It warps space-time",
+          "in": 0,
+          "out": 4.83
+        }
+      ]
+    },
+    {
+      "start": 7.533,
+      "end": 15.1,
+      "bg": {
+        "sequence": "production/assets/loop-spacetime/phase/SW-03-tilt-up-seq-226",
+        "fps": 30,
+        "move": "push-in",
+        "from": 1.0,
+        "to": 1.0,
+        "focus": [
+          0.5,
+          0.42
+        ],
+        "scrim": 0.5
+      },
+      "captions": [
+        {
+          "text": "The Sun curves space-time. Earth just follows the straightest path",
+          "in": 0,
+          "out": 7.37
+        }
+      ]
+    },
+    {
+      "start": 15.1,
+      "end": 18.266,
+      "bg": {
+        "sequence": "production/assets/loop-spacetime/phase/SW-01-seq-153",
+        "fps": 30,
+        "move": "push-in",
+        "from": 1.0,
+        "to": 1.06,
+        "focus": [
+          0.5,
+          0.42
+        ],
+        "scrim": 0.5
+      }
+    },
+    {
+      "start": 18.266,
+      "end": 25.766,
+      "bg": {
+        "sequence": "production/assets/loop-spacetime/phase/SW-03-tilt-up-seq-248",
+        "fps": 30,
+        "move": "push-in",
+        "from": 1.0,
+        "to": 1.0,
+        "focus": [
+          0.5,
+          0.42
+        ],
+        "scrim": 0.5
+      },
+      "captions": [
+        {
+          "text": "A 2D picture of 4D curvature",
+          "in": 0,
+          "out": 7.3
+        }
+      ]
+    },
+    {
+      "start": 25.766,
+      "end": 29.566,
+      "bg": {
+        "sequence": "production/assets/loop-spacetime/phase/SW-04-ray-seq-173",
+        "fps": 30,
+        "move": "push-in",
+        "from": 1.0,
+        "to": 1.0,
+        "focus": [
+          0.5,
+          0.42
+        ],
+        "scrim": 0.5
+      },
+      "captions": [
+        {
+          "text": "The 1919 eclipse",
+          "in": 0,
+          "out": 3.6
+        }
+      ]
+    },
+    {
+      "start": 29.566,
+      "end": 35.4,
+      "bg": {
+        "sequence": "production/assets/loop-spacetime/phase/SW-04-ray-dim-seq-287",
+        "fps": 30,
+        "move": "push-in",
+        "from": 1.0,
+        "to": 1.0,
+        "focus": [
+          0.5,
+          0.42
+        ],
+        "scrim": 0.5
+      },
+      "captions": [
+        {
+          "text": "Even starlight bends passing the Sun",
+          "in": 0,
+          "out": 2.3
+        }
+      ],
+      "big": {
+        "count": {
+          "from": 0,
+          "to": 1.75,
+          "decimals": 2,
+          "suffix": " arcseconds"
+        },
+        "at": 2.327,
+        "dur": 1.2,
+        "hold": 1.5,
+        "flip": {
+          "at": 4.0,
+          "text": "twice Newton's value",
+          "size": 96
+        },
+        "exit": 5.5
+      }
+    },
+    {
+      "start": 35.4,
+      "end": 40.0,
+      "bg": {
+        "sequence": "production/assets/loop-spacetime/phase/SW-01-seq-162",
+        "fps": 30,
+        "move": "push-in",
+        "from": 1.0,
+        "to": 1.0,
+        "focus": [
+          0.5,
+          0.42
+        ],
+        "scrim": 0.5
+      },
+      "captions": [
+        {
+          "text": "If nothing pulls Earth, why does it not fly off?",
+          "in": 0,
+          "out": 4.4
+        }
+      ]
+    }
+  ]
+}
